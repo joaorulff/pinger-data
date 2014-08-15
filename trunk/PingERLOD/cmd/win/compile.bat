@@ -1,0 +1,2 @@
+CALL "setcp.bat"
+javac -d %PINGERLOD_BIN% -sourcepath %PINGERLOD_SRC% -cp %PINGERLOD_CP% %PINGERLOD_MAINCLASS%

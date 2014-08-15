@@ -1,0 +1,6 @@
+8/14/2014 3:50:25 -- PID=1432 -- Downloading CSV files for throughput throughput
+8/14/2014 3:50:25 -- PID=1432 -- Generating the HashMap NodeDetails from JSON file...
+8/14/2014 3:50:25 -- PID=1432 -- ...done! It took 0.125 seconds.
+8/14/2014 3:50:25 -- PID=1432 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.SLAC.STANFORD.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=throughput
+8/14/2014 3:50:30 -- PID=1432 -- Written into file c:/downloadedCSVthroughput/throughput/EDU.SLAC.STANFORD.N3_100.csv
+8/14/2014 3:50:30 -- PID=1432 -- Finally done! It took 0.08813333333333334 minutes.

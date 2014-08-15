@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www-iepm.slac.stanford.edu/pinger/lod/resource#"
+ 	xml:base="http://www-iepm.slac.stanford.edu/pinger/lod/resource#"
+ 	xmlns:dc="http://purl.org/dc/elements/1.1/"
+ 	xmlns:MU="http://www-iepm.slac.stanford.edu/pinger/lod/ontology/MomentUnits.owl#"
+ 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ 	xmlns:dbp-rsrc="http://dbpedia.org/resource/"
+ 	xmlns:dbp-prop="http://dbpedia.org/property/"
+ 	xmlns:fb="http://rdf.freebase.com/ns/"
+ 	xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ 	xmlns:gn="http://sws.geonames.org/"
+ 	xmlns:dbp-owl="http://dbpedia.org/ontology/"
+ 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ 	xmlns:time="http://www.w3.org/2006/time#"
+ 	xmlns:Units="http://www-iepm.slac.stanford.edu/pinger/lod/ontology/Units.owl/#"
+ 	xmlns:MGC="http://www-iepm.slac.stanford.edu/pinger/lod/ontology/MomentGeneralConcepts.owl#"
+ 	xmlns:owl="http://www.w3.org/2002/07/owl#"
+ 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ 	xmlns:MD="http://www-iepm.slac.stanford.edu/pinger/lod/ontology/MomentDataV2.owl#"
+ 	xmlns:gn-ont="http://www.geonames.org/ontology#">
+</rdf:RDF>

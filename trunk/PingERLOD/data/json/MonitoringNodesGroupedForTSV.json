@@ -1,0 +1,127 @@
+{
+  "threadMonitoring1": [
+    "airuniversity.seecs.edu.pk",
+    "aup.seecs.edu.pk",
+    "brunsvigia.tenet.ac.za"
+  ],
+  "threadMonitoring2": [
+    "cae.seecs.edu.pk",
+    "hepnrc.hep.net",
+    "hunnas.learn.ac.lk"
+  ],
+  "threadMonitoring3": [
+    "icfamon.dl.ac.uk",
+    "kinnaird.seecs.edu.pk",
+    "maggie1.seecs.edu.pk"
+  ],
+  "threadMonitoring4": [
+    "maggie2.seecs.edu.pk",
+    "monitor.seecs.edu.pk",
+    "multivac.sdsc.edu"
+  ],
+  "threadMonitoring5": [
+    "netmon.physics.carleton.ca",
+    "npm.neduet.edu.pk",
+    "ns3.pieas.edu.pk"
+  ],
+  "threadMonitoring6": [
+    "nuisb.seecs.edu.pk",
+    "nukhimain.seecs.edu.pk",
+    "ping.desy.de"
+  ],
+  "threadMonitoring7": [
+    "ping.riken.jp",
+    "pinger-ncp.ncp.edu.pk",
+    "pinger.acmesecurity.org"
+  ],
+  "threadMonitoring8": [
+    "pinger.aiou.edu.pk",
+    "pinger.arn.dz",
+    "pinger.ascr.doe.gov"
+  ],
+  "threadMonitoring9": [
+    "pinger.cdac.in",
+    "pinger.cdacmumbai.in",
+    "pinger.cemb.edu.pk"
+  ],
+  "threadMonitoring10": [
+    "pinger.cern.ch",
+    "pinger.comsats.edu.pk",
+    "pinger.cse.ust.hk"
+  ],
+  "threadMonitoring11": [
+    "pinger.es.net",
+    "pinger.fsksm.utm.my",
+    "pinger.fsktm.um.edu.my"
+  ],
+  "threadMonitoring12": [
+    "pinger.giki.edu.pk",
+    "pinger.ictp.it",
+    "pinger.isra.edu.pk"
+  ],
+  "threadMonitoring13": [
+    "pinger.kohat.edu.pk",
+    "pinger.lcwu.edu.pk",
+    "pinger.lhr.nu.edu.pk"
+  ],
+  "threadMonitoring14": [
+    "pinger.nca.edu.pk",
+    "pinger.nchc.org.tw",
+    "pinger.numl.edu.pk"
+  ],
+  "threadMonitoring15": [
+    "pinger.nwfpuet.edu.pk",
+    "pinger.pern.edu.pk",
+    "pinger.sesame.org.jo"
+  ],
+  "threadMonitoring16": [
+    "pinger.slac.stanford.edu",
+    "pinger.sprace.org.br",
+    "pinger.stanford.edu"
+  ],
+  "threadMonitoring17": [
+    "pinger.uet.edu.pk",
+    "pinger.uettaxila.edu.pk",
+    "pinger.unesp.br"
+  ],
+  "threadMonitoring18": [
+    "pinger.unimas.my",
+    "pinger.uob.edu.pk",
+    "pinger.usindh.edu.pk"
+  ],
+  "threadMonitoring19": [
+    "pinger.vu.edu.pk",
+    "pingerfsbd.pern.edu.pk",
+    "pingerisl-air.pern.edu.pk"
+  ],
+  "threadMonitoring20": [
+    "pingerisl-fjwu.pern.edu.pk",
+    "pingerisl-qau.pern.edu.pk",
+    "pingerjms.pern.edu.pk"
+  ],
+  "threadMonitoring21": [
+    "pingerkhi-cpsp.pern.edu.pk",
+    "pingerkhi-uok.pern.edu.pk",
+    "pingerkhi.pern.edu.pk"
+  ],
+  "threadMonitoring22": [
+    "pingerlhr-gcu.pern.edu.pk",
+    "pingerlhr-pu.pern.edu.pk",
+    "pingerlhr.pern.edu.pk"
+  ],
+  "threadMonitoring23": [
+    "pingerqta.pern.edu.pk",
+    "quest.seecs.edu.pk",
+    "rainbow.inp.nsk.su"
+  ],
+  "threadMonitoring24": [
+    "sitka.triumf.ca",
+    "t2-monitor.ultralight.org",
+    "ultralog.ampath.net"
+  ],
+  "threadMonitoring25": [
+    "v-www.ihep.ac.cn",
+    "web.hepgrid.uerj.br",
+    "www.umss.edu.bo"
+  ]
+}

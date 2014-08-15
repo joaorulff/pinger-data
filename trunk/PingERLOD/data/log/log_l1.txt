@@ -1,0 +1,2 @@
+8/14/2013 11:5:5 -- PID=447279374 -- Using Sesame Server: http://wanmon.slac.stanford.edu:8181/openrdf-sesame
+8/14/2013 11:5:5 -- PID=447279374 -- Local host name: OCIO-PC79374

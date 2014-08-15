@@ -1,0 +1,5 @@
+8/14/2013 11:6:2 -- PID=2165279374 -- Downloading TSV files for throughput last60days
+8/14/2013 11:6:2 -- PID=2165279374 -- Generating NTriples files and Loading the Repository for throughput [last60days]
+8/14/2013 11:6:2 -- PID=2165279374 -- Deleting tmp directory...
+8/14/2013 11:6:2 -- PID=2165279374 -- Deleted!
+8/14/2013 11:6:2 -- PID=2165279374 -- Finally done! It took 5.833333333333334E-4 minutes.

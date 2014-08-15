@@ -1,0 +1,1 @@
+8/15/2013 18:1:52 -- PID=1226079374 -- ERROR: Node Key: www.kazrena.kz - Could not find a town for the node with PingERLat=43.2, PingERLong=76.9
