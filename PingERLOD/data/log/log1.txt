@@ -1,0 +1,480 @@
+8/13/2013 15:7:44 -- PID=1708879374 -- Using Sesame Server: http://wanmon.slac.stanford.edu:8181/openrdf-sesame
+8/13/2013 15:7:44 -- PID=1708879374 -- Local host name: OCIO-PC79374
+8/13/2013 15:7:44 -- PID=1708879374 -- Instantiating Measurement Parameters...
+8/13/2013 15:7:44 -- PID=1708879374 -- Connected to the repository.
+8/13/2013 15:7:44 -- PID=1708879374 -- Transactions commited successfully.
+8/13/2013 15:7:44 -- PID=1708879374 -- Connected to the repository.
+8/13/2013 15:7:45 -- PID=1708879374 -- Transactions commited successfully.
+8/13/2013 15:7:45 -- PID=1708879374 -- Connected to the repository.
+8/13/2013 15:7:45 -- PID=1708879374 -- Transactions commited successfully.
+8/13/2013 15:7:45 -- PID=1708879374 -- Connected to the repository.
+8/13/2013 15:7:45 -- PID=1708879374 -- Transactions commited successfully.
+8/13/2013 15:7:45 -- PID=1708879374 -- Connected to the repository.
+8/13/2013 15:7:45 -- PID=1708879374 -- Transactions commited successfully.
+8/13/2013 15:7:46 -- PID=1708879374 -- Loading the file C:\tmp\pinger\data_pid1708879374\ntriples\n1.ntriples into the repository...
+8/13/2013 15:7:50 -- PID=1708879374 -- File C:\tmp\pinger\data_pid1708879374\ntriples\n1.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:7:50 -- PID=1708879374 -- There are still 0 files remaining in the triples directory to be inserted.
+8/13/2013 15:7:50 -- PID=1708879374 -- Deleting tmp directory...
+8/13/2013 15:7:50 -- PID=1708879374 -- Deleted!
+8/13/2013 15:7:50 -- PID=1708879374 -- Finally done! It took 0.09735 minutes.
+8/13/2013 15:8:6 -- PID=847279374 -- Using Sesame Server: http://wanmon.slac.stanford.edu:8181/openrdf-sesame
+8/13/2013 15:8:6 -- PID=847279374 -- Local host name: OCIO-PC79374
+8/13/2013 15:8:6 -- PID=847279374 -- There are still remaning files to be loaded into the repository...
+8/13/2013 15:8:6 -- PID=847279374 -- Downloading TSV files for throughput last60days
+8/13/2013 15:8:6 -- PID=847279374 -- Generating the HashMap NodeDetails from JSON file...
+8/13/2013 15:8:6 -- PID=847279374 -- Generating the HashMap NodeDetails from JSON file...
+8/13/2013 15:8:6 -- PID=847279374 -- Generating the HashMap NodeDetails from JSON file...
+8/13/2013 15:8:6 -- PID=847279374 -- ...done! It took 0.183 seconds.
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.CAE.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERKHI-UOK.PERN.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.SLAC.STANFORD.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.USINDH.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- ...done! It took 0.07 seconds.
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=RU.NSK.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- ...done! It took 0.225 seconds.
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.AIRUNIVERSITY.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.CEMB.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.SEECS.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=JP.RIKEN.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGER.IBA-SUK.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NUML.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.UETTAXILA.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERISL-FJWU.PERN.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PERNLHRPOP.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=CN.AC.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.KINNAIRD.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PIEAS.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=DZ.ARN.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.LCWU.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:6 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=GOV.ESNET.NOC.N4&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:15 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/DZ.ARN.N3_100.tsv
+8/13/2013 15:8:15 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=GOV.DOE.N8&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:15 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.KINNAIRD.SEECS.EDU_100.tsv
+8/13/2013 15:8:15 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.SEECS.EDU.N6&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:16 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/GOV.ESNET.NOC.N4_100.tsv
+8/13/2013 15:8:16 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=MY.UTM.PINGER&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:16 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.USINDH.EDU.N2_100.tsv
+8/13/2013 15:8:16 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.VU.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:16 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERISL-FJWU.PERN.EDU_100.tsv
+8/13/2013 15:8:16 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERISL-QAU.PERN.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:16 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.AIRUNIVERSITY.EDU.N2_100.tsv
+8/13/2013 15:8:16 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.AUP.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:16 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.SEECS.EDU.N2_100.tsv
+8/13/2013 15:8:16 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.SDSC.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:18 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/CN.AC.N3_100.tsv
+8/13/2013 15:8:18 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=BR.HEPGRID.UERJ.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:18 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/RU.NSK.N1_100.tsv
+8/13/2013 15:8:18 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=CA.TRIUMF.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:18 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PIEAS.EDU.N2_100.tsv
+8/13/2013 15:8:18 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NUISB.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:20 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGER.IBA-SUK.EDU_100.tsv
+8/13/2013 15:8:20 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=IT.ICTP.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:21 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.LCWU.EDU.N2_100.tsv
+8/13/2013 15:8:21 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NU.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:22 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PERNLHRPOP.EDU.N1_100.tsv
+8/13/2013 15:8:22 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PERNMTNPOP.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:22 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.UETTAXILA.EDU.N1_100.tsv
+8/13/2013 15:8:22 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=BR.UNESP.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:22 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERKHI-UOK.PERN.EDU_100.tsv
+8/13/2013 15:8:22 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PERNKHIPOP.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:23 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NUML.EDU_100.tsv
+8/13/2013 15:8:23 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NWFPUET.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:23 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.CEMB.EDU.N2_100.tsv
+8/13/2013 15:8:23 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=CH.CERN.N20&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:24 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.AUP.SEECS.EDU_100.tsv
+8/13/2013 15:8:24 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=ZA.TENET.AC.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:24 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/JP.RIKEN.N3_100.tsv
+8/13/2013 15:8:24 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NCP.EDU.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:24 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.CAE.SEECS.EDU_100.tsv
+8/13/2013 15:8:24 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=GOV.FNAL.N10&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:24 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.VU.EDU_100.tsv
+8/13/2013 15:8:24 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PERNFSBDPOP.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:25 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/GOV.DOE.N8_100.tsv
+8/13/2013 15:8:25 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=IN.PUNE.CDAC.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:28 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NU.EDU.N2_100.tsv
+8/13/2013 15:8:28 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NCA.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:29 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/EDU.SDSC.N1_100.tsv
+8/13/2013 15:8:29 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=CA.CARLETON.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:29 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/CH.CERN.N20_100.tsv
+8/13/2013 15:8:29 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.COMSATS.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:29 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/GOV.FNAL.N10_100.tsv
+8/13/2013 15:8:29 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=LK.LEARN.AC.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:29 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PERNFSBDPOP.EDU.N1_100.tsv
+8/13/2013 15:8:29 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERISL-AIR.PERN_EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:31 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/BR.HEPGRID.UERJ.N2_100.tsv
+8/13/2013 15:8:31 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=BO.UMSS.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:31 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/MY.UTM.PINGER_100.tsv
+8/13/2013 15:8:31 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=MY.UM.PINGER&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:32 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PERNMTNPOP.EDU.N2_100.tsv
+8/13/2013 15:8:32 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERQTA.PERN.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:32 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/IT.ICTP.N1_100.tsv
+8/13/2013 15:8:32 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.ISRA.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:32 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/CA.TRIUMF.N1_100.tsv
+8/13/2013 15:8:32 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=ORG.CALTECH.ULTRALIGHT.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:33 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NUISB.SEECS.EDU_100.tsv
+8/13/2013 15:8:33 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NUKHIMAIN.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:34 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.SEECS.EDU.N6_100.tsv
+8/13/2013 15:8:34 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.SEECS.EDU.N7&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:34 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/ZA.TENET.AC.N1_100.tsv
+8/13/2013 15:8:34 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.BUITMS.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:36 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/LK.LEARN.AC.N2_100.tsv
+8/13/2013 15:8:36 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=UK.DL.AC.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:37 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/IN.PUNE.CDAC.N2_100.tsv
+8/13/2013 15:8:37 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=IN.CDACMUMBAI.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:37 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/CA.CARLETON.N2_100.tsv
+8/13/2013 15:8:37 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.NEDUET.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:37 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NCP.EDU.N3_100.tsv
+8/13/2013 15:8:37 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=BR.ACMESECURITY.ORG&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:38 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERISL-QAU.PERN.EDU_100.tsv
+8/13/2013 15:8:38 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PERNSINDHUPOP.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:39 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NWFPUET.EDU.N1_100.tsv
+8/13/2013 15:8:39 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PERN.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:39 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NCA.EDU.N2_100.tsv
+8/13/2013 15:8:39 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/BR.UNESP.N1_100.tsv
+8/13/2013 15:8:39 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=MY.UNIMAS.N4&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:39 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=TW.NCHC.ORG.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:41 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.COMSATS.EDU.N2_100.tsv
+8/13/2013 15:8:41 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=HK.CSE.UST.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:41 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/BR.ACMESECURITY.ORG_100.tsv
+8/13/2013 15:8:41 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.AIOU.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:41 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERISL-AIR.PERN_EDU.N1_100.tsv
+8/13/2013 15:8:41 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NUKHIMAIN.SEECS.EDU_100.tsv
+8/13/2013 15:8:41 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=DE.DESY.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:41 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.BUITMS.SEECS.EDU_100.tsv
+8/13/2013 15:8:42 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.NEDUET.EDU.N1_100.tsv
+8/13/2013 15:8:44 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PERNKHIPOP.EDU.N2_100.tsv
+8/13/2013 15:8:44 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERLHR-GCU.PERN.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:44 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.AIOU.EDU.N2_100.tsv
+8/13/2013 15:8:44 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/TW.NCHC.ORG.N2_100.tsv
+8/13/2013 15:8:44 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/MY.UM.PINGER_100.tsv
+8/13/2013 15:8:44 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.GIKI.EDU.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:44 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/UK.DL.AC.N2_100.tsv
+8/13/2013 15:8:45 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/ORG.CALTECH.ULTRALIGHT.N1_100.tsv
+8/13/2013 15:8:45 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=NET.AMPATH.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:45 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/EDU.SLAC.STANFORD.N3_100.tsv
+8/13/2013 15:8:45 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=BR.ORG.SPRACE.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:45 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERQTA.PERN.EDU.N2_100.tsv
+8/13/2013 15:8:45 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.QUEST.SEECS.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:45 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/BO.UMSS.EDU.N1_100.tsv
+8/13/2013 15:8:45 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=BF.UNIV-OUAGA.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:46 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/IN.CDACMUMBAI.N1_100.tsv
+8/13/2013 15:8:46 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.SEECS.EDU.N7_100.tsv
+8/13/2013 15:8:47 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/DE.DESY.N1_100.tsv
+8/13/2013 15:8:47 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/MY.UNIMAS.N4_100.tsv
+8/13/2013 15:8:47 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.UOB.EDU.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:47 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PERNSINDHUPOP.EDU.N2_100.tsv
+8/13/2013 15:8:47 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERKHI-CPSP.PERN.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:47 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.ISRA.EDU.N2_100.tsv
+8/13/2013 15:8:47 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.KOHAT.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:48 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/BF.UNIV-OUAGA.N1_100.tsv
+8/13/2013 15:8:48 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PERN.EDU.N1_100.tsv
+8/13/2013 15:8:48 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=JO.SESAME.ORG.N1&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:48 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/HK.CSE.UST.N1_100.tsv
+8/13/2013 15:8:49 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.QUEST.SEECS.EDU_100.tsv
+8/13/2013 15:8:51 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/BR.ORG.SPRACE.N2_100.tsv
+8/13/2013 15:8:51 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.STANFORD.N9&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:51 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.GIKI.EDU.N1_100.tsv
+8/13/2013 15:8:51 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERLHR-GCU.PERN.EDU_100.tsv
+8/13/2013 15:8:51 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.PINGERLHR-PU.PERN.EDU&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:51 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.KOHAT.EDU.N2_100.tsv
+8/13/2013 15:8:51 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/NET.AMPATH.N2_100.tsv
+8/13/2013 15:8:52 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.UOB.EDU.N3_100.tsv
+8/13/2013 15:8:52 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/JO.SESAME.ORG.N1_100.tsv
+8/13/2013 15:8:52 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERKHI-CPSP.PERN.EDU_100.tsv
+8/13/2013 15:8:53 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/EDU.STANFORD.N9_100.tsv
+8/13/2013 15:8:53 -- PID=847279374 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=PK.UET.EDU.N2&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=last60days
+8/13/2013 15:8:54 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.PINGERLHR-PU.PERN.EDU_100.tsv
+8/13/2013 15:8:55 -- PID=847279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/tsv/throughput/last60days/PK.UET.EDU.N2_100.tsv
+8/13/2013 15:8:55 -- PID=847279374 -- Generating NTriples files and Loading the Repository for throughput [last60days]
+8/13/2013 15:8:55 -- PID=847279374 -- Generating NTriples Files for: throughput last60days 100
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.055 to get the tsv file and process its content from rainbow.inp.nsk.su.
+8/13/2013 15:8:56 -- PID=847279374 -- Generating the MonitoringMonitoredGroupedJSON from JSON file...
+8/13/2013 15:8:56 -- PID=847279374 -- ...done! It took 0.005 seconds.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.109 to get the tsv file and process its content from buitms.seecs.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.183 to get the tsv file and process its content from pinger.uet.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.314 to get the tsv file and process its content from npm.neduet.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.351 to get the tsv file and process its content from pinger.vu.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.361 to get the tsv file and process its content from pinger.usindh.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.003 to get the tsv file and process its content from www.univ-ouaga.bf.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.372 to get the tsv file and process its content from pingerfsbd.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.005 to get the tsv file and process its content from www.upesh.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.381 to get the tsv file and process its content from pingerisl-fjwu.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.387 to get the tsv file and process its content from pingerkhi-uok.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.39 to get the tsv file and process its content from pingerlhr.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.397 to get the tsv file and process its content from pingerqta.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.406 to get the tsv file and process its content from airuniversity.seecs.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.247 to get the tsv file and process its content from multivac.sdsc.edu.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.238 to get the tsv file and process its content from maggie1.seecs.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.233 to get the tsv file and process its content from pingerisl-air.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.148 to get the tsv file and process its content from pinger.cse.ust.hk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.216 to get the tsv file and process its content from pingerjms.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.435 to get the tsv file and process its content from pinger.unesp.br.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.204 to get the tsv file and process its content from www.umss.edu.bo.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.201 to get the tsv file and process its content from v-www.ihep.ac.cn.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.197 to get the tsv file and process its content from t2-monitor.ultralight.org.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.45 to get the tsv file and process its content from pinger.cdacmumbai.in.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.483 to get the tsv file and process its content from pinger.aiou.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.485 to get the tsv file and process its content from ping.desy.de.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.154 to get the tsv file and process its content from pinger.giki.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.495 to get the tsv file and process its content from pingerlhr-gcu.pern.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.493 to get the tsv file and process its content from pinger.unimas.my.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.194 to get the tsv file and process its content from icfamon.dl.ac.uk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.189 to get the tsv file and process its content from hepnrc.hep.net.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.172 to get the tsv file and process its content from pinger.sprace.org.br.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.168 to get the tsv file and process its content from pinger.sesame.org.jo.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.162 to get the tsv file and process its content from pinger.kohat.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.451 to get the tsv file and process its content from pinger.lhr.nu.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.454 to get the tsv file and process its content from pinger.nchc.org.tw.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.461 to get the tsv file and process its content from pinger.cern.ch.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.489 to get the tsv file and process its content from nuisb.seecs.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.542 to get the tsv file and process its content from ultralog.ampath.net.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.551 to get the tsv file and process its content from pinger.uettaxila.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.459 to get the tsv file and process its content from pinger.nwfpuet.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.479 to get the tsv file and process its content from pinger.ascr.doe.gov.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.561 to get the tsv file and process its content from pinger.stanford.edu.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.557 to get the tsv file and process its content from pinger.acmesecurity.org.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.475 to get the tsv file and process its content from pinger.ictp.it.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.466 to get the tsv file and process its content from pinger.fsksm.utm.my.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.489 to get the tsv file and process its content from pinger-ncp.ncp.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.605 to get the tsv file and process its content from pinger.numl.edu.pk.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.61 to get the tsv file and process its content from sitka.triumf.ca.
+8/13/2013 15:8:56 -- PID=847279374 -- It took 0.612 to get the tsv file and process its content from pinger.nca.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.176 to get the tsv file and process its content from pinger.lcwu.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.36 to get the tsv file and process its content from quest.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.359 to get the tsv file and process its content from pinger.es.net.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.372 to get the tsv file and process its content from pinger.cemb.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.356 to get the tsv file and process its content from pinger.comsats.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.662 to get the tsv file and process its content from web.hepgrid.uerj.br.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.398 to get the tsv file and process its content from pinger.uob.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.67 to get the tsv file and process its content from pingerkhi.pern.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.678 to get the tsv file and process its content from pingerisl-qau.pern.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.394 to get the tsv file and process its content from pingerkhi-cpsp.pern.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.683 to get the tsv file and process its content from aup.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.39 to get the tsv file and process its content from pingerlhr-pu.pern.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.396 to get the tsv file and process its content from ns3.pieas.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.381 to get the tsv file and process its content from pinger.arn.dz.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.384 to get the tsv file and process its content from nukhimain.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.698 to get the tsv file and process its content from cae.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.703 to get the tsv file and process its content from netmon.physics.carleton.ca.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.369 to get the tsv file and process its content from pinger.cdac.in.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.702 to get the tsv file and process its content from monitor.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.717 to get the tsv file and process its content from pinger.iba-suk.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.714 to get the tsv file and process its content from pinger.fsktm.um.edu.my.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.709 to get the tsv file and process its content from ping.riken.jp.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.733 to get the tsv file and process its content from pinger.isra.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.735 to get the tsv file and process its content from pinger.pern.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.752 to get the tsv file and process its content from brunsvigia.tenet.ac.za.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.763 to get the tsv file and process its content from pinger.slac.stanford.edu.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.766 to get the tsv file and process its content from kinnaird.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.763 to get the tsv file and process its content from hunnas.learn.ac.lk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.784 to get the tsv file and process its content from maggie2.seecs.edu.pk.
+8/13/2013 15:8:57 -- PID=847279374 -- It took 1.799 to get the tsv file and process its content from pingermtn.pern.edu.pk.
+8/13/2013 15:9:18 -- PID=847279374 -- Time to process the TSV files and to generate the NTriples files: 22.917 seconds.
+8/13/2013 15:9:18 -- PID=847279374 -- Now, loading the Ntriples files into the Repository...
+8/13/2013 15:9:18 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_1.ntriples into the repository...
+8/13/2013 15:18:6 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_1.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:18:6 -- PID=847279374 -- There are still 67 files remaining in the triples directory to be inserted.
+8/13/2013 15:18:6 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_10.ntriples into the repository...
+8/13/2013 15:22:47 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_10.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:22:47 -- PID=847279374 -- There are still 66 files remaining in the triples directory to be inserted.
+8/13/2013 15:22:47 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_11.ntriples into the repository...
+8/13/2013 15:27:2 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_11.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:27:2 -- PID=847279374 -- There are still 65 files remaining in the triples directory to be inserted.
+8/13/2013 15:27:2 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_12.ntriples into the repository...
+8/13/2013 15:32:6 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_12.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:32:6 -- PID=847279374 -- There are still 64 files remaining in the triples directory to be inserted.
+8/13/2013 15:32:6 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_13.ntriples into the repository...
+8/13/2013 15:36:12 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_13.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:36:12 -- PID=847279374 -- There are still 63 files remaining in the triples directory to be inserted.
+8/13/2013 15:36:12 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_14.ntriples into the repository...
+8/13/2013 15:41:1 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_14.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:41:1 -- PID=847279374 -- There are still 62 files remaining in the triples directory to be inserted.
+8/13/2013 15:41:1 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_15.ntriples into the repository...
+8/13/2013 15:45:40 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_15.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:45:40 -- PID=847279374 -- There are still 61 files remaining in the triples directory to be inserted.
+8/13/2013 15:45:40 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_16.ntriples into the repository...
+8/13/2013 15:49:35 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_16.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:49:35 -- PID=847279374 -- There are still 60 files remaining in the triples directory to be inserted.
+8/13/2013 15:49:35 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_17.ntriples into the repository...
+8/13/2013 15:53:9 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_17.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:53:10 -- PID=847279374 -- There are still 59 files remaining in the triples directory to be inserted.
+8/13/2013 15:53:10 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_18.ntriples into the repository...
+8/13/2013 15:57:42 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_18.ntriples was sucessfully included and is now being deleted.
+8/13/2013 15:57:42 -- PID=847279374 -- There are still 58 files remaining in the triples directory to be inserted.
+8/13/2013 15:57:42 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_19.ntriples into the repository...
+8/13/2013 16:1:48 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_19.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:1:48 -- PID=847279374 -- There are still 57 files remaining in the triples directory to be inserted.
+8/13/2013 16:1:48 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_2.ntriples into the repository...
+8/13/2013 16:5:33 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_2.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:5:33 -- PID=847279374 -- There are still 56 files remaining in the triples directory to be inserted.
+8/13/2013 16:5:33 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_20.ntriples into the repository...
+8/13/2013 16:9:48 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_20.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:9:48 -- PID=847279374 -- There are still 55 files remaining in the triples directory to be inserted.
+8/13/2013 16:9:48 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_21.ntriples into the repository...
+8/13/2013 16:13:56 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_21.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:13:56 -- PID=847279374 -- There are still 54 files remaining in the triples directory to be inserted.
+8/13/2013 16:13:56 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_22.ntriples into the repository...
+8/13/2013 16:18:46 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_22.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:18:46 -- PID=847279374 -- There are still 53 files remaining in the triples directory to be inserted.
+8/13/2013 16:18:46 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_23.ntriples into the repository...
+8/13/2013 16:23:28 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_23.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:23:28 -- PID=847279374 -- There are still 52 files remaining in the triples directory to be inserted.
+8/13/2013 16:23:28 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_24.ntriples into the repository...
+8/13/2013 16:28:8 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_24.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:28:8 -- PID=847279374 -- There are still 51 files remaining in the triples directory to be inserted.
+8/13/2013 16:28:8 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_25.ntriples into the repository...
+8/13/2013 16:31:52 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_25.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:31:52 -- PID=847279374 -- There are still 50 files remaining in the triples directory to be inserted.
+8/13/2013 16:31:52 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_26.ntriples into the repository...
+8/13/2013 16:36:34 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_26.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:36:34 -- PID=847279374 -- There are still 49 files remaining in the triples directory to be inserted.
+8/13/2013 16:36:34 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_27.ntriples into the repository...
+8/13/2013 16:41:1 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_27.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:41:1 -- PID=847279374 -- There are still 48 files remaining in the triples directory to be inserted.
+8/13/2013 16:41:1 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_28.ntriples into the repository...
+8/13/2013 16:45:36 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_28.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:45:36 -- PID=847279374 -- There are still 47 files remaining in the triples directory to be inserted.
+8/13/2013 16:45:36 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_29.ntriples into the repository...
+8/13/2013 16:49:51 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_29.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:49:51 -- PID=847279374 -- There are still 46 files remaining in the triples directory to be inserted.
+8/13/2013 16:49:51 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_3.ntriples into the repository...
+8/13/2013 16:54:23 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_3.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:54:23 -- PID=847279374 -- There are still 45 files remaining in the triples directory to be inserted.
+8/13/2013 16:54:23 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_30.ntriples into the repository...
+8/13/2013 16:58:0 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_30.ntriples was sucessfully included and is now being deleted.
+8/13/2013 16:58:0 -- PID=847279374 -- There are still 44 files remaining in the triples directory to be inserted.
+8/13/2013 16:58:0 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_31.ntriples into the repository...
+8/13/2013 17:1:55 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_31.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:1:55 -- PID=847279374 -- There are still 43 files remaining in the triples directory to be inserted.
+8/13/2013 17:1:55 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_32.ntriples into the repository...
+8/13/2013 17:6:7 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_32.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:6:7 -- PID=847279374 -- There are still 42 files remaining in the triples directory to be inserted.
+8/13/2013 17:6:7 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_33.ntriples into the repository...
+8/13/2013 17:11:17 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_33.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:11:17 -- PID=847279374 -- There are still 41 files remaining in the triples directory to be inserted.
+8/13/2013 17:11:17 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_34.ntriples into the repository...
+8/13/2013 17:15:26 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_34.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:15:26 -- PID=847279374 -- There are still 40 files remaining in the triples directory to be inserted.
+8/13/2013 17:15:26 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_35.ntriples into the repository...
+8/13/2013 17:19:34 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_35.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:19:34 -- PID=847279374 -- There are still 39 files remaining in the triples directory to be inserted.
+8/13/2013 17:19:34 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_36.ntriples into the repository...
+8/13/2013 17:24:3 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_36.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:24:3 -- PID=847279374 -- There are still 38 files remaining in the triples directory to be inserted.
+8/13/2013 17:24:3 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_37.ntriples into the repository...
+8/13/2013 17:28:36 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_37.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:28:36 -- PID=847279374 -- There are still 37 files remaining in the triples directory to be inserted.
+8/13/2013 17:28:36 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_38.ntriples into the repository...
+8/13/2013 17:32:53 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_38.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:32:53 -- PID=847279374 -- There are still 36 files remaining in the triples directory to be inserted.
+8/13/2013 17:32:53 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_39.ntriples into the repository...
+8/13/2013 17:36:43 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_39.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:36:44 -- PID=847279374 -- There are still 35 files remaining in the triples directory to be inserted.
+8/13/2013 17:36:44 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_4.ntriples into the repository...
+8/13/2013 17:43:13 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_4.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:43:13 -- PID=847279374 -- There are still 34 files remaining in the triples directory to be inserted.
+8/13/2013 17:43:13 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_40.ntriples into the repository...
+8/13/2013 17:49:38 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_40.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:49:38 -- PID=847279374 -- There are still 33 files remaining in the triples directory to be inserted.
+8/13/2013 17:49:38 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_41.ntriples into the repository...
+8/13/2013 17:55:30 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_41.ntriples was sucessfully included and is now being deleted.
+8/13/2013 17:55:30 -- PID=847279374 -- There are still 32 files remaining in the triples directory to be inserted.
+8/13/2013 17:55:30 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_42.ntriples into the repository...
+8/13/2013 18:1:26 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_42.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:1:26 -- PID=847279374 -- There are still 31 files remaining in the triples directory to be inserted.
+8/13/2013 18:1:26 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_43.ntriples into the repository...
+8/13/2013 18:8:23 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_43.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:8:23 -- PID=847279374 -- There are still 30 files remaining in the triples directory to be inserted.
+8/13/2013 18:8:23 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_44.ntriples into the repository...
+8/13/2013 18:14:10 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_44.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:14:10 -- PID=847279374 -- There are still 29 files remaining in the triples directory to be inserted.
+8/13/2013 18:14:10 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_45.ntriples into the repository...
+8/13/2013 18:22:47 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_45.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:22:47 -- PID=847279374 -- There are still 28 files remaining in the triples directory to be inserted.
+8/13/2013 18:22:47 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_46.ntriples into the repository...
+8/13/2013 18:32:44 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_46.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:32:44 -- PID=847279374 -- There are still 27 files remaining in the triples directory to be inserted.
+8/13/2013 18:32:44 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_47.ntriples into the repository...
+8/13/2013 18:41:11 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_47.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:41:11 -- PID=847279374 -- There are still 26 files remaining in the triples directory to be inserted.
+8/13/2013 18:41:11 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_48.ntriples into the repository...
+8/13/2013 18:49:25 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_48.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:49:25 -- PID=847279374 -- There are still 25 files remaining in the triples directory to be inserted.
+8/13/2013 18:49:25 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_49.ntriples into the repository...
+8/13/2013 18:58:16 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_49.ntriples was sucessfully included and is now being deleted.
+8/13/2013 18:58:16 -- PID=847279374 -- There are still 24 files remaining in the triples directory to be inserted.
+8/13/2013 18:58:16 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_5.ntriples into the repository...
+8/13/2013 19:6:42 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_5.ntriples was sucessfully included and is now being deleted.
+8/13/2013 19:6:42 -- PID=847279374 -- There are still 23 files remaining in the triples directory to be inserted.
+8/13/2013 19:6:42 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_50.ntriples into the repository...
+8/13/2013 19:14:40 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_50.ntriples was sucessfully included and is now being deleted.
+8/13/2013 19:14:40 -- PID=847279374 -- There are still 22 files remaining in the triples directory to be inserted.
+8/13/2013 19:14:40 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_51.ntriples into the repository...
+8/13/2013 19:21:52 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_51.ntriples was sucessfully included and is now being deleted.
+8/13/2013 19:21:52 -- PID=847279374 -- There are still 21 files remaining in the triples directory to be inserted.
+8/13/2013 19:21:52 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_52.ntriples into the repository...
+8/13/2013 19:29:44 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_52.ntriples was sucessfully included and is now being deleted.
+8/13/2013 19:29:44 -- PID=847279374 -- There are still 20 files remaining in the triples directory to be inserted.
+8/13/2013 19:29:44 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_53.ntriples into the repository...
+8/13/2013 19:37:46 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_53.ntriples was sucessfully included and is now being deleted.
+8/13/2013 19:37:46 -- PID=847279374 -- There are still 19 files remaining in the triples directory to be inserted.
+8/13/2013 19:37:46 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_54.ntriples into the repository...
+8/13/2013 19:46:15 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_54.ntriples was sucessfully included and is now being deleted.
+8/13/2013 19:46:15 -- PID=847279374 -- There are still 18 files remaining in the triples directory to be inserted.
+8/13/2013 19:46:15 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_55.ntriples into the repository...
+8/13/2013 21:3:31 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_55.ntriples was sucessfully included and is now being deleted.
+8/13/2013 21:3:31 -- PID=847279374 -- There are still 17 files remaining in the triples directory to be inserted.
+8/13/2013 21:3:31 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_56.ntriples into the repository...
+8/13/2013 21:12:20 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_56.ntriples was sucessfully included and is now being deleted.
+8/13/2013 21:12:20 -- PID=847279374 -- There are still 16 files remaining in the triples directory to be inserted.
+8/13/2013 21:12:20 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_57.ntriples into the repository...
+8/13/2013 21:22:44 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_57.ntriples was sucessfully included and is now being deleted.
+8/13/2013 21:22:44 -- PID=847279374 -- There are still 15 files remaining in the triples directory to be inserted.
+8/13/2013 21:22:44 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_58.ntriples into the repository...
+8/13/2013 21:31:54 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_58.ntriples was sucessfully included and is now being deleted.
+8/13/2013 21:31:54 -- PID=847279374 -- There are still 14 files remaining in the triples directory to be inserted.
+8/13/2013 21:31:54 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_59.ntriples into the repository...
+8/13/2013 21:42:16 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_59.ntriples was sucessfully included and is now being deleted.
+8/13/2013 21:42:16 -- PID=847279374 -- There are still 13 files remaining in the triples directory to be inserted.
+8/13/2013 21:42:16 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_6.ntriples into the repository...
+8/13/2013 21:51:48 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_6.ntriples was sucessfully included and is now being deleted.
+8/13/2013 21:51:48 -- PID=847279374 -- There are still 12 files remaining in the triples directory to be inserted.
+8/13/2013 21:51:48 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_60.ntriples into the repository...
+8/13/2013 22:1:15 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_60.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:1:15 -- PID=847279374 -- There are still 11 files remaining in the triples directory to be inserted.
+8/13/2013 22:1:15 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_61.ntriples into the repository...
+8/13/2013 22:10:55 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_61.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:10:55 -- PID=847279374 -- There are still 10 files remaining in the triples directory to be inserted.
+8/13/2013 22:10:55 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_62.ntriples into the repository...
+8/13/2013 22:19:7 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_62.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:19:7 -- PID=847279374 -- There are still 9 files remaining in the triples directory to be inserted.
+8/13/2013 22:19:7 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_63.ntriples into the repository...
+8/13/2013 22:28:15 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_63.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:28:15 -- PID=847279374 -- There are still 8 files remaining in the triples directory to be inserted.
+8/13/2013 22:28:15 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_64.ntriples into the repository...
+8/13/2013 22:36:43 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_64.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:36:43 -- PID=847279374 -- There are still 7 files remaining in the triples directory to be inserted.
+8/13/2013 22:36:43 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_65.ntriples into the repository...
+8/13/2013 22:46:10 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_65.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:46:10 -- PID=847279374 -- There are still 6 files remaining in the triples directory to be inserted.
+8/13/2013 22:46:10 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_66.ntriples into the repository...
+8/13/2013 22:55:2 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_66.ntriples was sucessfully included and is now being deleted.
+8/13/2013 22:55:2 -- PID=847279374 -- There are still 5 files remaining in the triples directory to be inserted.
+8/13/2013 22:55:2 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_67.ntriples into the repository...
+8/13/2013 23:4:3 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_67.ntriples was sucessfully included and is now being deleted.
+8/13/2013 23:4:3 -- PID=847279374 -- There are still 4 files remaining in the triples directory to be inserted.
+8/13/2013 23:4:3 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_68.ntriples into the repository...
+8/13/2013 23:15:18 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_68.ntriples was sucessfully included and is now being deleted.
+8/13/2013 23:15:18 -- PID=847279374 -- There are still 3 files remaining in the triples directory to be inserted.
+8/13/2013 23:15:18 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_7.ntriples into the repository...
+8/13/2013 23:25:25 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_7.ntriples was sucessfully included and is now being deleted.
+8/13/2013 23:25:25 -- PID=847279374 -- There are still 2 files remaining in the triples directory to be inserted.
+8/13/2013 23:25:25 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_8.ntriples into the repository...
+8/13/2013 23:34:36 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_8.ntriples was sucessfully included and is now being deleted.
+8/13/2013 23:34:36 -- PID=847279374 -- There are still 1 files remaining in the triples directory to be inserted.
+8/13/2013 23:34:36 -- PID=847279374 -- Loading the file C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_9.ntriples into the repository...
+8/13/2013 23:44:39 -- PID=847279374 -- File C:\tmp\pinger\data_pid847279374\ntriples\last60days_throughput_9.ntriples was sucessfully included and is now being deleted.
+8/13/2013 23:44:39 -- PID=847279374 -- There are still 0 files remaining in the triples directory to be inserted.
+8/13/2013 23:44:40 -- PID=847279374 -- Deleting tmp directory...
+8/13/2013 23:44:47 -- PID=847279374 -- Deleted!
+8/13/2013 23:44:47 -- PID=847279374 -- Finally done! It took 516.6978 minutes.

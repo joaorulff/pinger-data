@@ -1,0 +1,8 @@
+8/14/2014 18:20:32 -- PID=4668 -- Downloading CSV files for  
+8/14/2014 18:20:32 -- PID=4668 -- Generating the HashMap NodeDetails from JSON file...
+8/14/2014 18:20:32 -- PID=4668 -- ...done! It took 0.116 seconds.
+8/14/2014 18:20:32 -- PID=4668 -- Finally done! It took 0.00335 minutes.
+8/15/2014 8:38:57 -- PID=3848 -- Downloading CSV files for  
+8/15/2014 8:38:57 -- PID=3848 -- Generating the HashMap NodeDetails from JSON file...
+8/15/2014 8:38:57 -- PID=3848 -- ...done! It took 0.267 seconds.
+8/15/2014 8:38:57 -- PID=3848 -- Finally done! It took 0.007166666666666667 minutes.

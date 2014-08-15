@@ -1,0 +1,9 @@
+8/15/2013 11:51:46 -- PID=1029279374 -- Generating NodeDetails JSON. 'Downloading Nodes.cf from web'=true, 'all nodes'=false
+8/15/2013 11:51:47 -- PID=1029279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/perl/nodes.cf
+8/15/2013 11:51:47 -- PID=1029279374 -- C:/strawberry/perl/bin/perl C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/perl/getNodeDetails.pl
+8/15/2013 11:51:51 -- PID=1029279374 -- JSON NODE_DETAILS generated!
+9/10/2013 21:28:29 -- PID=9748 -- Generating NodeDetails JSON. 'Downloading Nodes.cf from web'=true, 'all nodes'=false
+9/10/2013 21:28:37 -- PID=9748 -- Written into file C:/Users/Renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/perl/nodes.cf
+9/10/2013 21:28:37 -- PID=9748 -- C:/strawberry/perl/bin/perl C:/Users/Renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/perl/getNodeDetails.pl
+9/10/2013 21:28:40 -- PID=9748 -- JSON NODE_DETAILS generated!
+9/10/2013 21:28:40 -- PID=9748 -- Finally done! It took 0.17461666666666667 minutes.

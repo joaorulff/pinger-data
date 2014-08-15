@@ -1,0 +1,10 @@
+8/15/2013 11:51:51 -- PID=1029279374 -- Generating JSON Monitoring Hosts...
+8/15/2013 11:51:52 -- PID=1029279374 -- Generating the HashMap NodeDetails from JSON file...
+8/15/2013 11:51:53 -- PID=1029279374 -- ...done! It took 1.087 seconds.
+8/15/2013 11:52:27 -- PID=1029279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/json/MonitoringMonitoredNodes.json
+8/15/2013 11:52:27 -- PID=1029279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/json/MonitoringNodesGrouped.json
+8/15/2013 11:52:32 -- PID=1029279374 -- Could not get monitored list for maggie2.semaggie2.seecs.edu.pk
+8/15/2013 11:53:0 -- PID=1029279374 -- Could not get monitored list for www.unwww.univ-ouaga.bf
+8/15/2013 11:53:0 -- PID=1029279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/json/MonitoringMonitoredNodesGrouped.json
+8/15/2013 11:53:1 -- PID=1029279374 -- Written into file C:/Users/renan/Dropbox/PendriveOnline/SLAC/JavaWorkspace/PingERLOD/data/json/MonitoringNodesGroupedForTSV.json
+8/15/2013 11:53:1 -- PID=1029279374 -- Finally done! It took 1.2413333333333334 minutes.

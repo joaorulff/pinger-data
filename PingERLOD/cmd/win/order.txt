@@ -1,0 +1,10 @@
+1. prefixes_continents_countries.sh
+
+2. node_details_json.sh
+3. towns
+4. schools
+5. nodes
+6. jsons_aux.sh
+7. measurements_timestamp.sh
+
+8. metrics/*

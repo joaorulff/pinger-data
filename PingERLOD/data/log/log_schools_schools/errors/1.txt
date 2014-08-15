@@ -1,0 +1,454 @@
+8/15/2013 13:12:17 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 13:24:53 -- PID=1258479374 -- getInfoFromDBPedia -- com.hp.hpl.jena.sparql.expr.ExprException: Regex: Pattern exception: java.util.regex.PatternSyntaxException: Dangling meta character '?' near index 19
+XO Communications???
+                   ^ [com.hp.hpl.jena.sparql.expr.RegexJava.makePattern(RegexJava.java:52), com.hp.hpl.jena.sparql.expr.RegexJava.<init>(RegexJava.java:33), com.hp.hpl.jena.sparql.expr.E_Regex.makeRegexEngine(E_Regex.java:110), com.hp.hpl.jena.sparql.expr.E_Regex.makeRegexEngine(E_Regex.java:103), com.hp.hpl.jena.sparql.expr.E_Regex.init(E_Regex.java:75), com.hp.hpl.jena.sparql.expr.E_Regex.<init>(E_Regex.java:62), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.RegexExpression(SPARQLParser11.java:4361), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.BuiltInCall(SPARQLParser11.java:4325), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.Constraint(SPARQLParser11.java:2283), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.Filter(SPARQLParser11.java:2211), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GraphPatternNotTriples(SPARQLParser11.java:1888), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GroupGraphPatternSub(SPARQLParser11.java:1765), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GroupGraphPattern(SPARQLParser11.java:1702), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GroupOrUnionGraphPattern(SPARQLParser11.java:2184), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GraphPatternNotTriples(SPARQLParser11.java:1873), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GroupGraphPatternSub(SPARQLParser11.java:1765), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.GroupGraphPattern(SPARQLParser11.java:1702), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.WhereClause(SPARQLParser11.java:446), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.SelectQuery(SPARQLParser11.java:134), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.Query(SPARQLParser11.java:50), com.hp.hpl.jena.sparql.lang.sparql_11.SPARQLParser11.QueryUnit(SPARQLParser11.java:41), com.hp.hpl.jena.sparql.lang.ParserSPARQL11$1.exec(ParserSPARQL11.java:49), com.hp.hpl.jena.sparql.lang.ParserSPARQL11.perform(ParserSPARQL11.java:98), com.hp.hpl.jena.sparql.lang.ParserSPARQL11.parse$(ParserSPARQL11.java:53), com.hp.hpl.jena.sparql.lang.SPARQLParser.parse(SPARQLParser.java:37), com.hp.hpl.jena.query.QueryFactory.parse(QueryFactory.java:156), com.hp.hpl.jena.query.QueryFactory.create(QueryFactory.java:79), com.hp.hpl.jena.query.QueryFactory.create(QueryFactory.java:52), com.hp.hpl.jena.query.QueryFactory.create(QueryFactory.java:40), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:31), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 13:46:39 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:1:44 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:2:47 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:4:0 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:9:29 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:13:34 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:16:11 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:18:32 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:22:49 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:25:22 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:33:22 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:36:55 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 404 File not found
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Error HTTP/1.1 404 File not found</title>
+  </head>
+  <body>
+    <h3>Error HTTP/1.1 404 File not found</h3><pre>
+The requested URL was not found    URI  = '/sparql/'
+  </pre></body></html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:38:42 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:39:45 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:41:4 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:48:52 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:52:26 -- PID=1258479374 -- SchoolModelREST.getInfoFromDBPedia  -- HttpException: 502 Bad Gateway
+<html>
+    <head>
+	<title>Web Site Under Maintenance</title>
+    </head>
+    <body>
+	<div><img src="data:image/gif;base64,R0lGODlhMgAyAOYAAO/v7+7u7u3t7f//AOzs7Ovr6+rq6unp6ejo6Ofn5+bm5uXl5eTk5ODg4N/f397e3t3d3dzc3Nvb29ra2tnZ2djY2NfX19PT09LS0tHR0dDQ0M/Pz87OzszMzMvLy8rKysnJycjIyMbGxsXFxcTExMPDw8LCwsHBwby8vLu7u7e3t7a2trW1tbS0tLOzs7KysqysrKqqqqioqKampqWlpaSkpKGhoZ2dnZycnJqampmZmZiYmJWVlZSUlJKSko6OjoyMjIuLi4qKioaGhoWFhYSEhIGBgYCAgH9/f319fXl5eXh4eHd3d3Z2dnJycm5ubm1tbWlpaWdnZ2VlZWNjY2JiYgAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEHAFcALAAAAAAyADIAAAf/gFeCg4SFhoeIiYqLjI2Oj5CRkVaUVpKXiJWVCQkIBgKYkpQDpAOUEhENDAYAoY6jpaSUGxcUDQqgroqwsbJWJB4XEQwEuplWvb2UKCIaEgwFxoW8yaWUKiUbE9DSgtSmlcpWLCYc29HG35rqVi0n5tyu3+CayZQu7+eh8/Th9lb44KGbhKzauoL/AuqDNOpgQ3/VwCmM1wgWwn4RDQLMR3EXwo/rMibkOPBYLGQHTYkcCa+YyZP9Cl7EqLGFiQ0SFuSaNjPmR3EQxbEooSFCglY8/zlcWu+fDBUiLjQwYIjaQ4gzQ2q8ASPFBwoMdnrr6TNiU40+bLwwgcEB1aRA/89mZHdESI4YKTpISGAoATuUQTWetHJEyRAeM1SAoLAA6aAEEqxa5Cfr3xEoTIr0oLEihAUGjgUhgLCBl7/AFlX6OjLliWHEihmHvlKgwQUSk2VKNr2aShQnSezi1cu3UIAFFDyguOprsFxKR6pIebKESNq1bd8WMmBbhIqHvnSnBBddCpQmRn5w9QpW7CAACSJoKMGiYfjwIaFLP38ESI6nUU2ViAALSLCBCS1QZhZh+zWBRBA6zDBUUUcpQgADE3BwggsKilPeeQ/uMINNOOnESAEYasghWR42GOIME7l0YoobdqifeQ4GIeJEJc2YYY0s3giijjCSJAmKP65oGcQVOL7IIyZIqigZa1E80cQRRD4ZSpRAanLZE04sYQQQEWrpCpcJVlIYE0okQcQPEbojUDdRmsCCDDj4IMQQRQwhhA84yEDOnN3QhuEGJagAgw068NADDzrYAAM22nREJwMSaDBCCi/EMEMNM8TwQgojOGNpoRdGcMEHJqSgwgoqpGDCB8IQU+ghAijgQAUZdABCCCB0kEEFDuByKyIAHMDAAxJUYEEFEjzAwAGzHVuIAAYowMC2CnxibSMABCButd+WK0ggADs=" style="float:left;"/>
+	    <div style="font-weight: bold; font-size:18px; font-family: verdana;">
+		The web-site you are currently trying to access is under maintenance at this time. <br/>
+		We are sorry for any inconvenience this has caused.</div></div>
+    </body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execGet(HttpQuery.java:289), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:240), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getInfoFromDBPedia(SchoolModelREST.java:30), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:42), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:54:0 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 14:57:21 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:7:14 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:8:17 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:9:20 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:10:24 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:11:27 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:12:52 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:21:38 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:22:58 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:26:20 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:27:24 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:28:53 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 15:30:33 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:4:17 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:7:42 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:12:10 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:18:56 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:21:4 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:22:7 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:23:11 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:24:14 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:25:18 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:34:27 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:37:7 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:42:37 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:46:32 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:47:35 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 16:50:27 -- PID=1258479374 -- SchoolModelREST.getInfoFromDBPedia  -- HttpException: 502 Bad Gateway
+<html>
+    <head>
+	<title>Web Site Under Maintenance</title>
+    </head>
+    <body>
+	<div><img src="data:image/gif;base64,R0lGODlhMgAyAOYAAO/v7+7u7u3t7f//AOzs7Ovr6+rq6unp6ejo6Ofn5+bm5uXl5eTk5ODg4N/f397e3t3d3dzc3Nvb29ra2tnZ2djY2NfX19PT09LS0tHR0dDQ0M/Pz87OzszMzMvLy8rKysnJycjIyMbGxsXFxcTExMPDw8LCwsHBwby8vLu7u7e3t7a2trW1tbS0tLOzs7KysqysrKqqqqioqKampqWlpaSkpKGhoZ2dnZycnJqampmZmZiYmJWVlZSUlJKSko6OjoyMjIuLi4qKioaGhoWFhYSEhIGBgYCAgH9/f319fXl5eXh4eHd3d3Z2dnJycm5ubm1tbWlpaWdnZ2VlZWNjY2JiYgAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEHAFcALAAAAAAyADIAAAf/gFeCg4SFhoeIiYqLjI2Oj5CRkVaUVpKXiJWVCQkIBgKYkpQDpAOUEhENDAYAoY6jpaSUGxcUDQqgroqwsbJWJB4XEQwEuplWvb2UKCIaEgwFxoW8yaWUKiUbE9DSgtSmlcpWLCYc29HG35rqVi0n5tyu3+CayZQu7+eh8/Th9lb44KGbhKzauoL/AuqDNOpgQ3/VwCmM1wgWwn4RDQLMR3EXwo/rMibkOPBYLGQHTYkcCa+YyZP9Cl7EqLGFiQ0SFuSaNjPmR3EQxbEooSFCglY8/zlcWu+fDBUiLjQwYIjaQ4gzQ2q8ASPFBwoMdnrr6TNiU40+bLwwgcEB1aRA/89mZHdESI4YKTpISGAoATuUQTWetHJEyRAeM1SAoLAA6aAEEqxa5Cfr3xEoTIr0oLEihAUGjgUhgLCBl7/AFlX6OjLliWHEihmHvlKgwQUSk2VKNr2aShQnSezi1cu3UIAFFDyguOprsFxKR6pIebKESNq1bd8WMmBbhIqHvnSnBBddCpQmRn5w9QpW7CAACSJoKMGiYfjwIaFLP38ESI6nUU2ViAALSLCBCS1QZhZh+zWBRBA6zDBUUUcpQgADE3BwggsKilPeeQ/uMINNOOnESAEYasghWR42GOIME7l0YoobdqifeQ4GIeJEJc2YYY0s3giijjCSJAmKP65oGcQVOL7IIyZIqigZa1E80cQRRD4ZSpRAanLZE04sYQQQEWrpCpcJVlIYE0okQcQPEbojUDdRmsCCDDj4IMQQRQwhhA84yEDOnN3QhuEGJagAgw068NADDzrYAAM22nREJwMSaDBCCi/EMEMNM8TwQgojOGNpoRdGcMEHJqSgwgoqpGDCB8IQU+ghAijgQAUZdABCCCB0kEEFDuByKyIAHMDAAxJUYEEFEjzAwAGzHVuIAAYowMC2CnxibSMABCButd+WK0ggADs=" style="float:left;"/>
+	    <div style="font-weight: bold; font-size:18px; font-family: verdana;">
+		The web-site you are currently trying to access is under maintenance at this time. <br/>
+		We are sorry for any inconvenience this has caused.</div></div>
+    </body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execGet(HttpQuery.java:289), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:240), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getInfoFromDBPedia(SchoolModelREST.java:30), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:42), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 17:15:24 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
+8/15/2013 17:16:27 -- PID=1258479374 -- getInfoFromDBPedia -- HttpException: 405 Not Allowed
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>
+ [com.hp.hpl.jena.sparql.engine.http.HttpQuery.execCommon(HttpQuery.java:444), com.hp.hpl.jena.sparql.engine.http.HttpQuery.execPost(HttpQuery.java:344), com.hp.hpl.jena.sparql.engine.http.HttpQuery.exec(HttpQuery.java:239), com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP.execSelect(QueryEngineHTTP.java:302), edu.stanford.slac.pinger.rest.query.QuerySparqlEndpoints.getResultAsJson(QuerySparqlEndpoints.java:33), edu.stanford.slac.pinger.rest.query.SchoolModelREST.getDBPediaSchool(SchoolModelREST.java:243), edu.stanford.slac.pinger.instantiator.physicallocation.SchoolInstantiator.start(SchoolInstantiator.java:36), edu.stanford.slac.pinger.Start.schools(Start.java:182), edu.stanford.slac.pinger.Start.start(Start.java:106), edu.stanford.slac.pinger.Start.main(Start.java:85)] 
