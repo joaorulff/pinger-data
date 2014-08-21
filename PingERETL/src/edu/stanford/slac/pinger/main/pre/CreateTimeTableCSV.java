@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.main;
+package edu.stanford.slac.pinger.main.pre;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

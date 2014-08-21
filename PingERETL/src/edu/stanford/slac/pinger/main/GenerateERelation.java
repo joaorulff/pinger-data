@@ -14,7 +14,9 @@ public class GenerateERelation {
 			args = new String[]{
 				"debug=0",
 				//C:\Users\Renan\Dropbox\PendriveOnline\_Mestrado\WfC\WfETL\exp\csvDownloader\0\.\downloadedCSV\allyearly_pinger.slac.stanford.edu_100_throughput.csv
-				"activityTag=csvDownloader,extractorFile=c:/extractor/file.txt,fields=METRIC;TICK;MONITOR;CSV_FILE,inputDataset=throughput;allyearly;pinger.slac.stanford.edu,downloadedCSVDirectory=./downloadedCSV"
+				//"activityTag=csvDownloader,extractorFile=c:/extractor/file.txt,fields=METRIC;TICK;MONITOR;CSV_FILE,inputDataset=throughput;allyearly;pinger.slac.stanford.edu,downloadedCSVDirectory=./downloadedCSV"
+				//"activityTag=transformer,extractorFile=./ERelation.txt,fields=METRIC;TICK;MONITOR;TRANSFORMED_FILE,inputDataset=throughput;allyearly;pinger.slac.stanford.edu,transformedFilesDirectory=C:/Users/Renan/Dropbox/PendriveOnline/_Mestrado/WfC/WfETL/exp/_shared/transformedFiles"
+				"activityTag=generateInput,extractorFile=./ERelation.txt,inputDatasetFile=./s.txt"
 			};
 		}	
 		start(args);
@@ -44,6 +46,8 @@ public class GenerateERelation {
 					content = generateERForCsvDownloader(ags);
 				else if (activityTag.contains("transformer"))
 					content = generateERForTransformer(ags);
+				else if (activityTag.contains("generateInput"))
+					content = generateERForGenerateInput(ags);
 			} else if (ag.contains("extractorFile")) {
 				extractorFile = ag.replace("extractorFile=", "");
 			}
@@ -92,7 +96,7 @@ public class GenerateERelation {
 		for (String ag : ags) {
 			if (ag.contains("fields")) {
 				fields = ag.replace("fields=", "");
-			} else if (ag.contains("downloadedCSVDirectory")) {
+			} else if (ag.contains("transformedFilesDirectory")) {
 				transformedFilesDirectory = ag.replace("transformedFilesDirectory=", "");
 			} else if (ag.contains("inputDataset")) {
 				inputDataset = ag.replace("inputDataset=", "");
@@ -118,5 +122,22 @@ public class GenerateERelation {
 		return sb.toString();
 		
 	}
+	
+
+	public static String generateERForGenerateInput(String[] ags) {
+		String inputDatasetFile = null;
+		for (String ag : ags) {
+			if (ag.contains("inputDatasetFile")) {
+				inputDatasetFile = ag.replace("inputDatasetFile=", "");
+			}
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append("INPUTDATASET_FILE\n");
+		sb.append(inputDatasetFile);
+		return sb.toString();
+		
+	}
+	
 	
 }

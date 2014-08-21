@@ -4,7 +4,6 @@ import java.io.File;
 
 import com.google.gson.JsonObject;
 
-import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.rest.HttpGetter;
@@ -24,7 +23,7 @@ public class PingtableCSVDownloader {
 	public void run() {
 			JsonObject monitoringNodeDetails = null;
 			try {
-				monitoringNodeDetails = C.getNodeDetails().get(monitorNode).getAsJsonObject();
+				monitoringNodeDetails = Utils.getNodeDetails().get(monitorNode).getAsJsonObject();
 			} catch (Exception e) {
 				Logger.log("Error with " + monitorNode, e, "errors");
 				return;

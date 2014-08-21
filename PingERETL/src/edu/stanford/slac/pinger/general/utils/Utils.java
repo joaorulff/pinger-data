@@ -248,4 +248,32 @@ public class Utils {
 		}
 		return ret;	
 	}
+	
+	private static JsonObject NODE_DETAILS = null;
+	public static JsonObject getNodeDetails() {
+		if (NODE_DETAILS==null) {
+			Logger.log("Generating the HashMap NodeDetails from JSON file...");
+			long t1 = System.currentTimeMillis();
+			NODE_DETAILS = Utils.getJsonAsObject(C.NODEDETAILS_JSON_FILE);
+			long t2 = System.currentTimeMillis();
+			Logger.log("...done! It took " + (t2-t1)/1000.0 + " seconds.");
+		} 
+		return NODE_DETAILS;
+	}
+	
+	private static JsonObject _MonitorMonitoredJSON = null;
+	public static JsonObject getMonitorMonitoredJSON() {
+		if (_MonitorMonitoredJSON==null) {
+			Logger.log("Generating the MonitoringMonitoredGroupedJSON from JSON file...");
+			long t1 = System.currentTimeMillis();
+			_MonitorMonitoredJSON = Utils.getJsonAsObject(C.MONITORING_MONITORED_JSON_FILE);
+			long t2 = System.currentTimeMillis();
+			Logger.log("...done! It took " + (t2-t1)/1000.0 + " seconds.");
+		} 
+		return _MonitorMonitoredJSON;
+	}
+	public static void setMonitoringMonitoredGroupedJSON(JsonObject MonitoringMonitoredGroupedJSON) {
+		_MonitorMonitoredJSON = MonitoringMonitoredGroupedJSON;
+	}
+
 }

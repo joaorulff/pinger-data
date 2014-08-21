@@ -5,8 +5,9 @@ import java.util.HashMap;
 import com.google.gson.JsonArray;
 
 import edu.stanford.slac.pinger.etl.loader.local.FileHandler;
-import edu.stanford.slac.pinger.etl.transformer.PingMeasurementCSVBuilder;
 import edu.stanford.slac.pinger.etl.transformer.CSVProcessorFromFile;
+import edu.stanford.slac.pinger.etl.transformer.PingMeasurementCSVBuilder;
+import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
@@ -21,7 +22,6 @@ public class TransformAndSavePingtableCSV {
 				"transformFile=1,inputFilePath=./downloadedCSV/throughput_allyearly_100_pinger.slac.stanford.edu.csv,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=last365days",
 			};
 		}		
-	
 		start(args);
 	}
 
@@ -52,7 +52,7 @@ public class TransformAndSavePingtableCSV {
 		if (map==null) return;
 		
 		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric); 
-		JsonArray monitoredArr = C.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
+		JsonArray monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
 	
 		PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, C.DEFAULT_PACKET_SIZE, tickParameter);
 		measurement.run();
