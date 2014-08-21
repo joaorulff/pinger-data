@@ -188,3 +188,15 @@
 8/15/2014 10:44:5 -- PID=1048 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.SLAC.STANFORD.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=allyearly
 8/15/2014 10:44:22 -- PID=1048 -- Written into file C:\Users\Renan\Dropbox\PendriveOnline\_Mestrado\WfC\WfETL\exp\_shared\downloadedCSV\throughput_allyearly_100_pinger.slac.stanford.edu.csv
 8/15/2014 10:44:22 -- PID=1048 -- Finally done! It took 0.2931666666666667 minutes.
+8/15/2014 22:58:14 -- PID=6728 -- Downloading CSV files for throughput allyearly
+8/15/2014 22:58:14 -- PID=6728 -- Generating the HashMap NodeDetails from JSON file...
+8/15/2014 22:58:15 -- PID=6728 -- ...done! It took 0.125 seconds.
+8/15/2014 22:58:15 -- PID=6728 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.SLAC.STANFORD.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=allyearly
+8/15/2014 22:58:20 -- PID=6728 -- Written into file C:\Users\Renan\Dropbox\PendriveOnline\_Mestrado\WfC\WfETL\exp\_shared\downloadedCSV\throughput_allyearly_100_pinger.slac.stanford.edu.csv
+8/15/2014 22:58:20 -- PID=6728 -- Finally done! It took 0.0875 minutes.
+8/16/2014 0:20:27 -- PID=8116 -- Downloading CSV files for throughput allyearly
+8/16/2014 0:20:27 -- PID=8116 -- Generating the HashMap NodeDetails from JSON file...
+8/16/2014 0:20:27 -- PID=8116 -- ...done! It took 0.111 seconds.
+8/16/2014 0:20:27 -- PID=8116 -- http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&file=throughput&by=by-node&size=100&from=EDU.SLAC.STANFORD.N3&to=WORLD&ex=none&only=all&dataset=hep&percentage=any&dnode=on&tick=allyearly
+8/16/2014 0:20:32 -- PID=8116 -- Written into file C:\Users\Renan\Dropbox\PendriveOnline\_Mestrado\WfC\WfETL\exp\_shared\downloadedCSV\throughput_allyearly_100_pinger.slac.stanford.edu.csv
+8/16/2014 0:20:32 -- PID=8116 -- Finally done! It took 0.09498333333333334 minutes.

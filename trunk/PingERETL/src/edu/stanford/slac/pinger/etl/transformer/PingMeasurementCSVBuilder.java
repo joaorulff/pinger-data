@@ -13,6 +13,7 @@ import edu.stanford.slac.pinger.etl.pre_extractor.time.GenerateTimeMap;
 import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.MeasurementUtils;
+import edu.stanford.slac.pinger.general.utils.Utils;
 
 public class PingMeasurementCSVBuilder {
 
@@ -38,7 +39,7 @@ public class PingMeasurementCSVBuilder {
 	
 	public void run() {
 
-		JsonObject monitoringNodeDetails = C.getNodeDetails().get(monitoring).getAsJsonObject();
+		JsonObject monitoringNodeDetails = Utils.getNodeDetails().get(monitoring).getAsJsonObject();
 		String fromSourceName =  monitoringNodeDetails.get("SourceName").getAsString();
 		String fromNickName =  monitoringNodeDetails.get("SourceNickName").getAsString();
 
@@ -49,7 +50,7 @@ public class PingMeasurementCSVBuilder {
 
 			JsonObject monitoredNodeDetails = null;
 			try {
-				monitoredNodeDetails = C.getNodeDetails().get(monitored).getAsJsonObject();
+				monitoredNodeDetails = Utils.getNodeDetails().get(monitored).getAsJsonObject();
 			} catch (Exception e) {
 				Logger.log("Tried to get details about " + monitored, e, "errors");
 				continue;
