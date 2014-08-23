@@ -91,7 +91,7 @@ public class CreateTimeTableCSV {
             label = monthShortName + year;
             timeTableContent += id + "," + year + "," + month + "," + day + "," + unit + "," + timeStamp + "," + label + "\n";
             
-            date.set(Calendar.DAY_OF_MONTH, date.get(Calendar.DAY_OF_MONTH)+1); //Next day
+            date.set(Calendar.MONTH, date.get(Calendar.MONTH)+1); //Next month
 		}
         
 		/* ***** Year Granularity ***** */
@@ -106,7 +106,7 @@ public class CreateTimeTableCSV {
             label = year;
             timeTableContent += id + "," + year + "," + month + "," + day + "," + unit + "," + timeStamp + "," + label + "\n";
             
-            date.set(Calendar.DAY_OF_MONTH, date.get(Calendar.DAY_OF_MONTH)+1); //Next day
+            date.set(Calendar.YEAR, date.get(Calendar.YEAR)+1); //Next year
 		}
         
         Utils.createFileGrantingPermissions(timeTableFilePath);
