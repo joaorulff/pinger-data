@@ -1,7 +1,13 @@
 package edu.stanford.slac.pinger.getcountriesinformation;
 
-//this class compares countries of geonames from http://peric.github.io/GetCountries/ with countries 
-// of http://www-iepm.slac.stanford.edu/pinger/pingerworld/all-nodes.cf and shows a CSV format
+/* this class compares countries of geonames from http://peric.github.io/GetCountries/ with countries 
+* of http://www-iepm.slac.stanford.edu/pinger/pingerworld/all-nodes.cf and shows a CSV format
+* id,countryCode,countryName,population,continentCode,areaInSqKm. The don't match SLAC countries are put with null parameters.
+* 
+* The final arquive with the manual adjustments can be founded at data/csv/allcountries.csv. This arquive was generated doing visual comparison 
+* between the data/allcountriesgeonames.json for the unmatched countries.
+* 
+*/
 
 public class generateCountriesCSV {
 	
@@ -50,25 +56,22 @@ public class generateCountriesCSV {
 		//System.out.println(countriesG[0][1].toLowerCase()); 
 		
 		//System.out.println(countriesS[0].toLowerCase()); 
-		int equals = 0;
-		
-		
-		for (i = 0; i < countriesS.length ; i++) {    	
+		int match = 0;
+		String[] dontmatches = new String[100]; // this vector is for get the don't matches slac countries names	
+		int l = 0;
 			
-						
+		for (i = 0; i < countriesS.length ; i++) {    	
+				
 			//System.out.println(countriesS[i]);			
 						
-			for (j = 0; j < countriesG.length ; j++) {    	
-			 	
+			for (j = 0; j < countriesG.length ; j++) {    	 	
 			                          
-					//System.out.print(countriesG[j][1]);
-									  	
+					//System.out.print(countriesG[j][1]);						  	
 					
 					if (countriesS[i].equalsIgnoreCase(countriesG[j][1])){
 						//System.out.println(countriesS[i]); 
 						//System.out.println(countriesG[j][1]);
-						equals++;
-						
+											
 						for (k = 0; k < countriesG[0].length ; k++) {
 							
 							equalCountries[m][k] = countriesG[j][k];
@@ -76,17 +79,51 @@ public class generateCountriesCSV {
 											
 							
 						}
+						match = 1;	
+						m++;	
 						
-						m++;
+					}				
+			}     
 			
-						
-					}
-					
-			}     	
-
+			if (match == 0){
 				
+				dontmatches[l] = countriesS[i];
+				l++;				
+			}
+			
+			match = 0;					
 		}
 		
+		/*for (i = 0; i < equalCountries.length ; i++) {    	
+	 	
+		for (j = 0; j < equalCountries[0].length; j++) {                            
+			System.out.print(equalCountries[i][0]);
+		
+		}          	
+
+		System.out.print("\n");
+		}*/
+		
+		j = 0;
+		
+		while(equalCountries[j][1]!=null){		
+				
+			l = j;
+			j++;		
+		}	
+		
+		l++; // getting the first null position
+		
+		i = 0;
+	
+		while (dontmatches[i]!= null){  	
+			
+			equalCountries[l][1] = 	dontmatches[i];
+			i++;
+			l++;
+			
+		}
+	
 		//System.out.println(equalCountries[1][0]);
 		//System.out.println(equalCountries[1][1]);
 		//System.out.println(equalCountries[1][2]);
@@ -115,6 +152,8 @@ public class generateCountriesCSV {
 		System.out.print("\n");
 		}*/
 		
+		// generating the format
+		
 		String line = "";
 		int id = 0;
 		
@@ -131,21 +170,12 @@ public class generateCountriesCSV {
 				if(j==4){System.out.println(equalCountries[i][j]);}
 				else{
 					
-					System.out.print(equalCountries[i][j]+",");	
-					
-				}				
-			
-			
-			}
-		
-		}
-	
-		
-		
+					System.out.print(equalCountries[i][j]+",");						
+				}		
+			}	
+		}	
 		
 			
 	}
-		
-
 }
 
