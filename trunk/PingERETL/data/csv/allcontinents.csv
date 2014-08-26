@@ -1,6 +1,6 @@
 id,continentCode,continentName,population,areaInSqKm
 0,AF,Africa,1111000000000,30221532.0
-1,EU,Balkans,null,60000000,666700.0
+1,EU,Balkans,60000000,666700.0
 2,AS,Central Asia,66453533,4003451.0 
 3,AS,East Asia,1555784500,11839074.0 
 4,EU,Europe,742500000,10180000.0
