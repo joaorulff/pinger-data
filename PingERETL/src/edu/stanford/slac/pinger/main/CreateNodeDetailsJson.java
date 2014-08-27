@@ -132,7 +132,7 @@ public class CreateNodeDetailsJson {
 						nodeDetailsContent += "\t\t\"ContactInformation\":" + value + "\",\n";
 						break;
 					case 17:
-						nodeDetailsContent += "\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n";	//The last line of description node doesn't end with comma
+						nodeDetailsContent += "\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n";	//The last line of node description doesn't end with comma
 						break;
 					default:
 						break;
