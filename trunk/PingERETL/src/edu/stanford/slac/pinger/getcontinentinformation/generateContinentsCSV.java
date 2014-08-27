@@ -12,7 +12,7 @@ public class generateContinentsCSV {
 		
 		System.out.print("id,continentCode,continentName,population,areaInSqKm"+"\n");
 		
-		int id = 0;
+		int id = 1;
 						
 		for(i=0;i<continentsnames.length;i++){
 					

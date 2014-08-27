@@ -292,3 +292,5 @@
 8/19/2014 17:41:22 -- PID=4892 -- Written into file C:/Users/Renan/Dropbox/PendriveOnline/pinger-data-svn/PingERETL/data/json/countries.json
 8/19/2014 17:42:14 -- PID=1752 -- Written into file C:/Users/Renan/Dropbox/PendriveOnline/pinger-data-svn/PingERETL/data/json/countries.json
 8/19/2014 17:43:58 -- PID=2632 -- Written into file C:/Users/Renan/Dropbox/PendriveOnline/pinger-data-svn/PingERETL/data/json/countries.json
+8/27/2014 16:3:6 -- PID=249612 -- Written into file ./databaseTablesCSV/timeTable.csv
+8/27/2014 16:4:0 -- PID=406012 -- Written into file ./databaseTablesCSV/timeTable.csv

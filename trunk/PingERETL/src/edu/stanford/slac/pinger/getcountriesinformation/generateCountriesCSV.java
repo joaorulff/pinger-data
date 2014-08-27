@@ -12,8 +12,7 @@ package edu.stanford.slac.pinger.getcountriesinformation;
 public class generateCountriesCSV {
 	
 	public static void main(String[] args) {
-		
-		
+				
 		getCountriesGeonames g = new getCountriesGeonames();
 		getCountriesSLAC s = new getCountriesSLAC();
 		
@@ -155,13 +154,15 @@ public class generateCountriesCSV {
 		// generating the format
 		
 		String line = "";
-		int id = 0;
+		int id = 1;
 		
 		System.out.print("id,countryCode,countryName,population,continentCode,areaInSqKm"+"\n");	
 								
 		for (i = 0; i < equalCountries.length ; i++) {    
 			
 			for (j = 0; j < equalCountries[0].length ; j++) {    
+				
+				if (equalCountries[i][j] == null){equalCountries[i][j] = "\\N";}
 				
 				if(j==0){ 
 					System.out.print(id+",");
@@ -174,6 +175,7 @@ public class generateCountriesCSV {
 				}		
 			}	
 		}	
+		
 		
 			
 	}
