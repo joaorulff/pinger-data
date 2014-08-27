@@ -27,14 +27,19 @@ public class CreateNodeDetailsJson {
 		Boolean descriptionEnding = false;
 		
 		while ((inputLine = in.readLine()) != null && descriptionBeginning == false){
+			urlContent += inputLine + "\n";
+			
 			if (inputLine.startsWith("%NODE_DETAILS")){
 				descriptionBeginning = true;
 			}
 		}
 		
+		urlContent += inputLine + "\n";
 		nodeDetails += inputLine + "\n";
 		
 		while ((inputLine = in.readLine()) != null && descriptionEnding == false){
+			urlContent += inputLine + "\n";
+			
 			if (inputLine.startsWith(");")){
 				descriptionEnding = true;
 			}else{
@@ -42,11 +47,13 @@ public class CreateNodeDetailsJson {
 			}
 		}
 		
+		while ((inputLine = in.readLine()) != null){
+			urlContent += inputLine + "\n";
+		}
+		
 		in.close();
 		
-		//System.out.println("nodeDetails: " + nodeDetails);
-		
-		String[] eachNodeDetails = nodeDetails.split("],\n");	
+		String[] eachNodeDetails = nodeDetails.split("],\n\n");	
 		String[] temp = null;
 		String nodeName = null;
 		String nodeInfo = null;
@@ -57,93 +64,82 @@ public class CreateNodeDetailsJson {
 		
 		String nodeDetailsContent = "{\n\n";
 		
-		for (int i = 0; i < eachNodeDetails.length; i++){
-			System.out.println("----LAÇO " + i + " ----");
-			System.out.println("nodeDetails: " + eachNodeDetails[i]);
-			
+		for (int i = 0; i < eachNodeDetails.length; i++){			
 			temp = eachNodeDetails[i].split("=>");
-			nodeName = temp[0];
-			nodeInfo = temp[1];
+			nodeName = temp[0].trim();
+			nodeInfo = temp[1].trim();
 			
-			//System.out.println("nodeName: " + nodeName);
-			//System.out.println("nodeInfo: " + nodeInfo);
-			
-			
-			nodeLineInfo = nodeInfo.split("\",");
+			nodeLineInfo = nodeInfo.split("\",\n");
 			
 			for (int j = 0; j < nodeLineInfo.length; j++){
-				value = nodeLineInfo[j];
+				value = nodeLineInfo[j].trim();
 				
-				switch(j) {
+				switch (j) {
 					case 0:
 						nodeID++;
-						value.replace("[", " ");
 						nodeDetailsContent += "\t{\n\t\t\"NodeID\":\"" + nodeID + "\",\n"
-											+ "\t\t\"NodeName\":\"" + nodeName + "\",\n"
-											+ "\t\t\"NodeIP\":\"" + value + "\",\n";
+											+ "\t\t\"NodeName\":" + nodeName + ",\n"
+											+ "\t\t\"NodeIP\":" + value.substring(1).trim() + "\",\n";	//Ignore the initial "["
 						break;
 					case 1:
-						nodeDetailsContent += "\t\t\"NodeSiteName\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"NodeSiteName\":" + value + "\",\n";
 						break;
 					case 2:
-						nodeDetailsContent += "\t\t\"NodeNickName\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"NodeNickName\":" + value + "\",\n";
 						break;
 					case 3:
-						nodeDetailsContent += "\t\t\"NodeFullName\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"NodeFullName\":" + value + "\",\n";
 						break;
 					case 4:
-						nodeDetailsContent += "\t\t\"LocationDescription\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"LocationDescription\":" + value + "\",\n";
 						break;
 					case 5:
-						nodeDetailsContent += "\t\t\"Country\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"Country\":" + value + "\",\n";
 						break;
 					case 6:
-						nodeDetailsContent += "\t\t\"Continent\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"Continent\":" + value + "\",\n";
 						break;
 					case 7:
 						String[] coord = value.split(" ");
-						nodeDetailsContent += "\t\t\"Latitude\":\"" + coord[0] + "\",\n"
-											+ "\t\t\"Longitude\":\"" + coord[1] + "\",\n";
+						nodeDetailsContent += "\t\t\"Latitude\":" + coord[0].trim() + "\",\n"
+											+ "\t\t\"Longitude\":\"" + coord[1].trim() + "\",\n";
 						break;
 					case 8:
-						nodeDetailsContent += "\t\t\"ProjectType\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"ProjectType\":" + value + "\",\n";
 						break;
 					case 9:
-						nodeDetailsContent += "\t\t\"PingServer\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"PingServer\":" + value + "\",\n";
 						break;
 					case 10:
-						nodeDetailsContent += "\t\t\"TraceServer\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"TraceServer\":" + value + "\",\n";
 						break;
 					case 11:
-						nodeDetailsContent += "\t\t\"DataServer\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"DataServer\":" + value + "\",\n";
 						break;
 					case 12:
-						nodeDetailsContent += "\t\t\"NodeURL\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"NodeURL\":" + value + "\",\n";
 						break;
 					case 13:
-						nodeDetailsContent += "\t\t\"NodeGMT\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"NodeGMT\":" + value + "\",\n";
 						break;
 					case 14:
-						nodeDetailsContent += "\t\t\"Group\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"Group\":" + value + "\",\n";
 						break;
 					case 15:
-						nodeDetailsContent += "\t\t\"AppUser\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"AppUser\":" + value + "\",\n";
 						break;
 					case 16:
-						nodeDetailsContent += "\t\t\"ContactInformation\":\"" + value + "\",\n";
+						nodeDetailsContent += "\t\t\"ContactInformation\":" + value + "\",\n";
 						break;
 					case 17:
-						nodeDetailsContent += "\t\t\"Comments\":\"" + value + "\"\n";
+						nodeDetailsContent += "\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n";	//The last line of description node doesn't end with comma
 						break;
 					default:
 						break;
 				}
 			}
 			nodeDetailsContent += "\t}\n\n";
-			//System.out.println("nodeDetailsContent: " + nodeDetailsContent);
-			//System.out.println("-------------------");
-		}
-		
+		}	
 		
         Utils.createFileGrantingPermissions(nodesFilePath);
         Utils.writeIntoFile(urlContent, nodesFilePath);
