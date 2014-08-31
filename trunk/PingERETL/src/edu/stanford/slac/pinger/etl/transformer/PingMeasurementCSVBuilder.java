@@ -9,8 +9,6 @@ import com.google.gson.JsonObject;
 import edu.stanford.slac.pinger.beans.MetricBean;
 import edu.stanford.slac.pinger.beans.PingMeasurementBean;
 import edu.stanford.slac.pinger.etl.loader.local.FileHandler;
-import edu.stanford.slac.pinger.etl.pre_extractor.time.GenerateTimeMap;
-import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.MeasurementUtils;
 import edu.stanford.slac.pinger.general.utils.Utils;
@@ -35,7 +33,7 @@ public class PingMeasurementCSVBuilder {
 	static long sequence = 1;
 
 	//TODO: This will not work either... maybe utilization of Lucene to index...
-	static HashMap<String, Long> timeMap = GenerateTimeMap.getMap();
+	//static HashMap<String, Long> timeMap = GenerateTimeMap.getMap();
 	
 	public void run() {
 
@@ -97,7 +95,7 @@ public class PingMeasurementCSVBuilder {
 			pmb.setMetricId(metricBean.getId());
 			pmb.setSourceNodeId(2);
 			pmb.setDestinationNodeId(3);
-			pmb.setTimeId(timeMap.get(time));
+			//pmb.setTimeId(timeMap.get(time));
 			pmb.setValue(timeValue.get(time));
 			
 			fileHandler.addRow(pmb.toString());

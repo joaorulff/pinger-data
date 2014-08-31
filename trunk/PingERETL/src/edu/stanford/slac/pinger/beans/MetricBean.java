@@ -1,9 +1,11 @@
 package edu.stanford.slac.pinger.beans;
 
-public class MetricBean {
+public class MetricBean implements Comparable<MetricBean> {
 
 	String key, defaultUnit, displayName, instantiationName;
 	int id;
+	
+	public static final String CSV_HEADER = "#id,display_name,instantiation_mame,default_unit\n";
 	
 	public MetricBean(String key, String defaultUnit, String displayName,
 			String instantiationName, int id) {
@@ -58,5 +60,22 @@ public class MetricBean {
 				+ ", displayName=" + displayName + ", instantiationName="
 				+ instantiationName + ", id=" + id + "]";
 	}
+	
+	public String toString(char dmtr) {
+		return (id+"") + dmtr + displayName + dmtr + instantiationName + dmtr + defaultUnit;
+	}
+	
+	@Override
+	public int compareTo(MetricBean other) {
+		int thisId = this.id;
+		int otherId = other.id;
+		if (thisId > otherId)
+			return 1;
+		else if (thisId < otherId)
+			return -1;
+		else //(thisId == otherId)
+			return 0;
+	}
+
 
 }

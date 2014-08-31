@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.getcountriesinformation;
+package edu.stanford.slac.pinger.etl.pre_extractor.geographic.country;
 
 /* this class compares countries of geonames from http://peric.github.io/GetCountries/ with countries 
 * of http://www-iepm.slac.stanford.edu/pinger/pingerworld/all-nodes.cf and shows a CSV format
@@ -9,12 +9,12 @@ package edu.stanford.slac.pinger.getcountriesinformation;
 * 
 */
 
-public class generateCountriesCSV {
+public class GenerateCountriesCSV {
 	
 	public static void main(String[] args) {
 				
-		getCountriesGeonames g = new getCountriesGeonames();
-		getCountriesSLAC s = new getCountriesSLAC();
+		GetCountriesGeonames g = new GetCountriesGeonames();
+		GetCountriesSLAC s = new GetCountriesSLAC();
 		
 		String[][] countriesG = g.getGeonameCountries();
 		String[] countriesS = s.getSLACCountries();
