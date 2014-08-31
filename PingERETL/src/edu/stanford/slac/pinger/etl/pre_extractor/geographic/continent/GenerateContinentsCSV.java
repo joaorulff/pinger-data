@@ -1,12 +1,12 @@
-package edu.stanford.slac.pinger.getcontinentinformation;
+package edu.stanford.slac.pinger.etl.pre_extractor.geographic.continent;
 
 // the complete file can be found at data/csv/allcontinents.csv
 
-public class generateContinentsCSV {
+public class GenerateContinentsCSV {
 	
 	public static void main(String[] args) {
 	
-		getContinentsSLAC c = new getContinentsSLAC();
+		GetContinentsSLAC c = new GetContinentsSLAC();
 		int i;
 		String continentsnames[] = c.getSLACContinents();
 		

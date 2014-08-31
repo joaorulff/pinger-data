@@ -137,6 +137,10 @@ public class Utils {
 
 	public static void writeIntoFile(String content, String filePath) {
 		try {
+			File fout = new File(filePath);
+			if (!fout.exists()) {
+				fout.createNewFile();
+			}
 			PrintWriter out = new PrintWriter(filePath);
 			out.println(content);
 			out.close();

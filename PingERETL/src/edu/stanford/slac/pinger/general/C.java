@@ -52,6 +52,8 @@ public final class C {
 	public static boolean continue_town = true;
 	public static boolean continue_country = true;
 	
+	public static final String NULL_CHARACTER = "\\N";
+	
 	
 	public static int DEBUG_LEVEL=-1;
 	public static boolean IS_TO_LOAD_REMAINING=false;
@@ -89,6 +91,12 @@ public final class C {
 	public static final String PERL_DIR = PROJECT_HOME+"data/perl/";
 	public static final String REMAINING_NTRIPLES =  PROJECT_HOME+"data/remaining_ntriples.txt";
 	public static final String EXPORT_FILE = "C:/pinger-export/export.n3";
+	
+	
+	public static final String CONTINENT_CSV = CSV_DIR + "continent.csv";
+	public static final String COUNTRY_CSV = CSV_DIR + "country.csv";
+	public static final String METRIC_CSV = CSV_DIR + "metric.csv";
+	
 	/* *****************************************************************
 	 * ***************** Web Sparql Endpoints **************************
 	 ******************************************************************* */ 	

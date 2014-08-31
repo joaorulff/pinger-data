@@ -11,6 +11,11 @@ public class CreateTimeTableCSV {
 
 	public static final String NULL_VALUE = "\\N";
 	
+	public static final int YEAR_GRANULARITY = 1;
+	public static final int MONTH_GRANULARITY = 2;
+	public static final int DAY_GRANULARITY = 3;
+	
+	
 	private static Calendar setInitialDate(){
 		Calendar date = Calendar.getInstance();
 		
@@ -42,7 +47,7 @@ public class CreateTimeTableCSV {
 		String month = null;
 		String day = null;
 		//String hour = null;
-		String unit = null;
+		int unit = 0;
 		String timeStamp = null;
 		String label = null;
 		
@@ -64,7 +69,7 @@ public class CreateTimeTableCSV {
             month = f.format(date.get(Calendar.MONTH)+1); //A month is represented by an integer from 0 to 11
             monthShortName = date.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale.ENGLISH);
             day = f.format(date.get(Calendar.DAY_OF_MONTH));
-            unit = "Day";
+            unit = DAY_GRANULARITY;
             timeStamp = year + "-" + month + "-" + day;
             label = yearShortFormat + monthShortName + day;
             timeTableContent += id + "," + year + "," + month + "," + day + "," + unit + "," + timeStamp + "," + label + "\n";
@@ -81,12 +86,12 @@ public class CreateTimeTableCSV {
             month = f.format(date.get(Calendar.MONTH)+1); //A month is represented by an integer from 0 to 11
             monthShortName = date.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale.ENGLISH);
             day = NULL_VALUE;
-            unit = "Month";
+            unit = MONTH_GRANULARITY;
             timeStamp = year + "-" + month;
             label = monthShortName + year;
             timeTableContent += id + "," + year + "," + month + "," + day + "," + unit + "," + timeStamp + "," + label + "\n";
             
-            date.set(Calendar.DAY_OF_MONTH, date.get(Calendar.DAY_OF_MONTH)+1); //Next day
+            date.set(Calendar.MONTH, date.get(Calendar.MONTH)+1); //Next month
 		}
         
 		/* ***** Year Granularity ***** */
@@ -96,12 +101,12 @@ public class CreateTimeTableCSV {
             year = String.valueOf(date.get(Calendar.YEAR));
             month = NULL_VALUE;
             day = NULL_VALUE;
-            unit = "Year";
+            unit = YEAR_GRANULARITY;
             timeStamp = year;
             label = year;
             timeTableContent += id + "," + year + "," + month + "," + day + "," + unit + "," + timeStamp + "," + label + "\n";
             
-            date.set(Calendar.DAY_OF_MONTH, date.get(Calendar.DAY_OF_MONTH)+1); //Next day
+            date.set(Calendar.YEAR, date.get(Calendar.YEAR)+1); //Next year
 		}
         
         Utils.createFileGrantingPermissions(timeTableFilePath);

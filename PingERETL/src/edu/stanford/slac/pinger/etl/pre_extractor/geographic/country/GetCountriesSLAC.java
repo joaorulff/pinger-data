@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.getcountriesinformation;
+package edu.stanford.slac.pinger.etl.pre_extractor.geographic.country;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,7 +17,7 @@ import java.util.TreeSet;
 
 //ATTENTION: if update this file remove de coma em "korea , rep"
 
-public class getCountriesSLAC {
+public class GetCountriesSLAC {
 	
 	public String[] getSLACCountries() {
 		 

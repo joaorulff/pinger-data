@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.getcontinentinformation;
+package edu.stanford.slac.pinger.etl.pre_extractor.geographic.continent;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,7 +12,7 @@ import java.util.TreeSet;
  *  and returns a not repeated string array of names
  */
 
-public class getContinentsSLAC {
+public class GetContinentsSLAC {
 	
 	public String[] getSLACContinents() {
 		 
