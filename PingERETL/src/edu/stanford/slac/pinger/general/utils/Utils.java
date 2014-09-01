@@ -141,7 +141,7 @@ public class Utils {
 			if (!fout.exists()) {
 				fout.createNewFile();
 			}
-			PrintWriter out = new PrintWriter(filePath);
+			PrintWriter out = new PrintWriter(filePath, "UTF-8");
 			out.println(content);
 			out.close();
 			Logger.log("Written into file " + filePath);
@@ -263,6 +263,14 @@ public class Utils {
 			Logger.log("...done! It took " + (t2-t1)/1000.0 + " seconds.");
 		} 
 		return NODE_DETAILS;
+	}
+	
+	private static JsonObject PINGER_COUNTRIES = null;
+	public static JsonObject getPingERCountries() {
+		if (PINGER_COUNTRIES==null) {
+			PINGER_COUNTRIES = Utils.getJsonAsObject(C.COUNTRIES_JSON);
+		} 
+		return PINGER_COUNTRIES;
 	}
 	
 	private static JsonObject _MonitorMonitoredJSON = null;
