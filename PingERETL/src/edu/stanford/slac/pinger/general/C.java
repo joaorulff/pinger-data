@@ -55,7 +55,7 @@ public final class C {
 	public static final String NULL_CHARACTER = "\\N";
 	
 	
-	public static int DEBUG_LEVEL=-1;
+	public static int DEBUG_LEVEL=1;
 	public static boolean IS_TO_LOAD_REMAINING=false;
 	
 	/* *******************************************************
@@ -110,6 +110,14 @@ public final class C {
 	public static final String DBPEDIA_ENDPOINT = "http://dbpedia.org/sparql/";
 	public static final String FACTFORGE_ENDPOINT = "http://factforge.net/sparql";
 	public static final String FACTFORGE_ENDPOINT_JSON = FACTFORGE_ENDPOINT+".json";
+	
+	
+	
+	/* *****************************************************************
+	 * ***************** URLs **************************
+	 ******************************************************************* */ 	
+	
+	public static final String NODE_DETAILS_CF = "http://www-iepm.slac.stanford.edu/pinger/pingerworld/nodes.cf";
 
 	/* *******************************************************************
 	 * ************* General Functions ***********************************

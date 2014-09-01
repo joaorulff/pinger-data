@@ -1,4 +1,4 @@
-#Wed Aug 27 12:30:04 2014. This file was created on Wed Aug 27 12:30:04 2014
+#Mon Sep  1 06:30:05 2014. This file was created on Mon Sep  1 06:30:05 2014
 #  by /afs/slac/package/pinger/guthrie/node.pl -o
 #  from pwd=/afs/slac.stanford.edu/u/sf/pinger for pinger on host lnxcron.slac.stanford.edu.
 # /afs/slac/package/pinger/guthrie/node.pl needs to be run whenever the Guthrie database is updated.
@@ -4650,7 +4650,7 @@ Pingserver added by Fida 02/12/2010.
     "Uganda",
     "Africa",
     "0.32 32.58",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -4660,7 +4660,8 @@ Pingserver added by Fida 02/12/2010.
     "jlab7.jlab.org oceanus.slac.stanford.edu pitcairn.mcs.anl.gov ",
     " Prof. Badru Kiggundu<civil\@starcom.co.ug>",
     "{193.219.212.7>217.113.72.21 Thu Jun 15 13:39:35 2006} [potential beacon when have monitired for longer] Mail exchange for starcom.co.ug, add by cottrell 1/25/2000.
-217.113.72.21>41.190.128.21 by Cottrell 3/25/09.",
+217.113.72.21>41.190.128.21 by Cottrell 3/25/09.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "ns.fq.edu.uy" => [
@@ -8370,25 +8371,26 @@ Changed IP from 196.12.203.30 to 196.12.203.30 & corrected lat/long, enabled by 
   ],
 
     "www.univ-sba.dz" => [
-    "80.249.75.2",
+    "193.194.79.135",
     "univ-sba.dz",
     "DZ.UNIV-SBA",
     "Universite Djillali Liabes",
     "Sidi Bel Abbes, Algeria",
     "Algeria",
     "Africa",
-    "35.2 2.6",
+    "35.204872 -0.621063",
     "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
-    "",
+    "http://www.univ-sba.d",
     "",
     "ARAB.LEAGUE MEDITERRANEAN N.AFRICA NORTH_AFRICA ",
     "",
-    "",
+    "Google",
     "Add by Cottrell 7/4/06, Google.
-Made Beacon by Cottrell 10/16/2010.",
+Made Beacon by Cottrell 10/16/2010.
+80.249.75.2=>193.194.79.135 by Cottrell 8/27/2014.",
   ],
 
     "www.psi.gov.ps" => [
@@ -9790,7 +9792,7 @@ Changed to Beacon by Amber Zeb 11/17/2011.
     "Tanzania",
     "Africa",
     "-6.8133 39.2893",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -9802,7 +9804,7 @@ Changed to Beacon by Amber Zeb 11/17/2011.
     "Added by Shahryar on 6/14/07.
 84.233.212.6 => 84.233.212.4 by Cottrell 11/15/08.
 IP address updated from 84.233.212.4 to 41.77.226.4 by Amber Zeb 5/6/11.
-Made Beacon, by Cottrell 9/20/2013.",
+Made Beacon, by Cottrell 8/30/2014.",
   ],
 
     "om16.omantel.net.om" => [
@@ -10648,7 +10650,7 @@ Lat Long improved. Asad 1/14/14",
     "Angola",
     "Africa",
     "-8.84 13.23",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -10660,7 +10662,8 @@ Lat Long improved. Asad 1/14/14",
     "Added 5/23/07 by jaredg.
 Changed IP address from 
 196.29.206.23 by Fahad Satti
-on 10/07/09",
+on 10/07/09.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.nic.ci" => [
@@ -11627,7 +11630,7 @@ Updated IP address from 83.229.22.51 to 83.229.125.114 by Amber Zeb 5/6/11.
     "Malawi",
     "Africa",
     "-15.8027 35.0217",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -11636,7 +11639,8 @@ Updated IP address from 83.229.22.51 to 83.229.125.114 by Amber Zeb 5/6/11.
     "E.AFRICA SUB.SAHARA ",
     "",
     "Margaret Ngwira <mengwira\@ubuntunet..net>",
-    "Add by Cottrell 5/12/09.",
+    "Add by Cottrell 5/12/09.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "gplhost.co.il" => [
@@ -13075,7 +13079,7 @@ IP address changed to 84.16.93.108, old IP address works new one does not.
     "Morocco",
     "Africa",
     "34.0253 -6.8361",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -13084,7 +13088,8 @@ IP address changed to 84.16.93.108, old IP address works new one does not.
     "ARAB.LEAGUE MEDITERRANEAN N.AFRICA NORTH_AFRICA ",
     "",
     "Google",
-    "Add by Cottrell 7/4/09.",
+    "Add by Cottrell 7/4/09.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.aerodept.edu.ly" => [
@@ -13716,7 +13721,7 @@ Made a Beacon for Malaysia case study, by Cottrell 1/25/2014.",
     "Swaziland",
     "Africa",
     "-26.3167 31.133",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -13725,7 +13730,8 @@ Made a Beacon for Malaysia case study, by Cottrell 1/25/2014.",
     "S.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Add by Cottrell 8/16/09.",
+    "Add by Cottrell 8/16/09.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "pinger.sprace.org.br" => [
@@ -15708,7 +15714,7 @@ Made Beacon, by Raja Asad 7/15/14",
     "Botswana",
     "Africa",
     "-24.6464 25.9119",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -15717,7 +15723,8 @@ Made Beacon, by Raja Asad 7/15/14",
     "S.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Add by Cottrell, March 13, 2012.",
+    "Add by Cottrell, March 13, 2012.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.oag.org.bw" => [
@@ -16133,7 +16140,7 @@ Made Beacon - Asad 1/17/14",
     "Madagascar",
     "Africa",
     "-18.9149 47.5316",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "",
@@ -16142,7 +16149,8 @@ Made Beacon - Asad 1/17/14",
     "E.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Added by Amber Zeb 11/17/2011.",
+    "Added by Amber Zeb 11/17/2011.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.aun.edu.ng" => [
@@ -16280,7 +16288,7 @@ Made Beacon - Asad 1/17/14",
     "Democratic Republic of Congo",
     "Africa",
     "-4.3208 15.298",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -16289,7 +16297,8 @@ Made Beacon - Asad 1/17/14",
     "",
     "",
     "Google",
-    "Add by Cottrell 3/26/2011.",
+    "Add by Cottrell 3/26/2011.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "airuniversity.seecs.edu.pk" => [
@@ -17443,7 +17452,7 @@ set to beacon by Raja 7/15/14",
     "Somalia",
     "Africa",
     "11.2833 49.1667",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -17452,7 +17461,8 @@ set to beacon by Raja 7/15/14",
     "ARAB.LEAGUE E.AFRICA ",
     "",
     "",
-    "Add by Cottrell 12/19/2011.",
+    "Add by Cottrell 12/19/2011.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.out.ac.tz" => [
@@ -18156,7 +18166,7 @@ Set to beacon by Raja 7/15/14",
     "Cameroon",
     "Africa",
     "3.8964 11.5073",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -18165,7 +18175,8 @@ Set to beacon by Raja 7/15/14",
     "C.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Add by Cottrell 10/11/2013.",
+    "Add by Cottrell 10/11/2013.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.eritel.com.er" => [
@@ -18660,7 +18671,7 @@ Set to beacon by Raja 7/15/14",
     "Sudan",
     "Africa",
     "15.6100 32.5424",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -18669,7 +18680,8 @@ Set to beacon by Raja 7/15/14",
     "ARAB.LEAGUE N.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Add by Cottrell, 9/24/2013.",
+    "Add by Cottrell, 9/24/2013.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.mpaal.org.br" => [
@@ -19256,7 +19268,7 @@ Made Beacon by Cottrell 8/22/2014.",
     "Eritrea",
     "Africa",
     "16.6663 38.4758",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -19265,7 +19277,8 @@ Made Beacon by Cottrell 8/22/2014.",
     "E.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Add by Cottrell 12/1/2013",
+    "Add by Cottrell 12/1/2013.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.o.com.bh" => [
@@ -21815,6 +21828,48 @@ Made monitoring host, by cottrell 5/29/2014.",
     "Replace pp2.it.su.se, add by Cottrell 9/30/2014. ",
   ],
 
+    "www.slc.dz" => [
+    "81.52.165.36",
+    "slc.dz",
+    "DZ.SLC.WWW",
+    "Smart Link Communications",
+    "24/1 Chemin AEK Gadouche  16405 Hydra, Algiers",
+    "Algeria",
+    "Africa",
+    "36.753520 3.025309",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "http://www.slc.dz",
+    "",
+    "ARAB.LEAGUE MEDITERRANEAN N.AFRICA ",
+    "",
+    "Google",
+    "Add by Cottrell 8/27/2014.",
+  ],
+
+    "www.ons.dz" => [
+    "196.20.66.99",
+    "ons.dz",
+    "DZ.ONS.WWW",
+    "Office National des Statistiques",
+    "Rue Mohamed Belkacemi, Oued Kniss, Ruisseau, Algiers",
+    "Algeria",
+    "Africa",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "http://www.ons.dz/",
+    "",
+    "ARAB.LEAGUE MEDITERRANEAN N.AFRICA ",
+    "",
+    "Google",
+    "Add by Cottrell 8/27/2014.",
+  ],
+
     "www.hust.edu.vn" => [
     "202.191.56.199",
     "hust.edu.vn",
@@ -21992,7 +22047,7 @@ Made monitoring host, by cottrell 5/29/2014.",
     "Burundi",
     "Africa",
     "-3.3833 29.3667",
-    "NOT-SET",
+    "B",
     "NOT-SET",
     "NOT-SET",
     "NOT-SET",
@@ -22001,7 +22056,8 @@ Made monitoring host, by cottrell 5/29/2014.",
     "C.AFRICA E.AFRICA SUB.SAHARA ",
     "",
     "Google",
-    "Add by Cottrell 7/24/2014.",
+    "Add by Cottrell 7/24/2014.
+Made Beacon by Cottrell 8/30/2014.",
   ],
 
     "www.oapburundi.bi" => [
@@ -22361,6 +22417,27 @@ Made monitoring host, by cottrell 5/29/2014.",
     "",
     "Google",
     "Add by Cottrell, 7/5/2014.",
+  ],
+
+    "pinger.uum.edu.my" => [
+    "103.5.183.14",
+    "uum.edu.my",
+    "MY.UUM.EDU.PINGER",
+    "University Utara Malaysia",
+    "Sintok",
+    "Malaysia",
+    "S.E. Asia",
+    "6.4612 100.5043",
+    "M",
+    "http://pinger.uum.edu.my/cgi-bin/traceroute.pl?function=ping",
+    "http://pinger.uum.edu.my/cgi-bin/traceroute.pl?",
+    "http://pinger.uum.edu.my/cgi-bin/ping_data.pl?",
+    "http://www.uum.edu.my/",
+    "",
+    "",
+    "",
+    "Adib M. Monzer Habbal <adib\@uum.edu.my>",
+    "Added 8/30/2014.",
   ],
 
     "www.vnuhcm.edu.vn" => [
@@ -23425,6 +23502,27 @@ Made monitoring host, by cottrell 5/29/2014.",
     "Add by Cottrell 7/29/2014.",
   ],
 
+    "www.andi.dz" => [
+    "213.179.181.44",
+    "andi.dz",
+    "DZ.ANDI.WWW",
+    "National Agency of Investment and Development",
+    "Route Nationale N? 5 Cinq Maisons , Mohammadia Alger ",
+    "Algeria",
+    "Africa",
+    "36.733333 3.133333",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "NOT-SET",
+    "http://www.andi.dz",
+    "",
+    "ARAB.LEAGUE MEDITERRANEAN N.AFRICA ",
+    "",
+    "Google",
+    "Add by Cottrell 8/27/2014.",
+  ],
+
 );
 %data_servers=(
   "airuniversity.seecs.edu.pk" => ["http://airuniversity.seecs.edu.pk/cgi-bin/ping_data.pl?", ],
@@ -23482,6 +23580,7 @@ Made monitoring host, by cottrell 5/29/2014.",
   "pinger.unimas.my" => ["http://pinger.unimas.my/cgi-bin/ping_data.pl?", ],
   "pinger.uob.edu.pk" => ["http://pinger.uob.edu.pk/cgi-bin/ping_data.pl?", ],
   "pinger.usindh.edu.pk" => ["http://pinger.usindh.edu.pk/cgi-bin/ping_data.pl?", ],
+  "pinger.uum.edu.my" => ["http://pinger.uum.edu.my/cgi-bin/ping_data.pl?", ],
   "pinger.vu.edu.pk" => ["http://pinger.vu.edu.pk/cgi-bin/ping_data.pl?", ],
   "pinger2.if.ufrj.br" => ["http://pinger2.if.ufrj.br/cgi-bin/ping_data.pl?", ],
   "pinger2.unimas.my" => ["http://pinger2.unimas.my/cgi-bin/ping_data.pl?", ],
@@ -23512,7 +23611,7 @@ Made monitoring host, by cottrell 5/29/2014.",
   "www.upesh.edu.pk" => ["http://www.upesh.edu.pk/cgi-bin/ping_data.pl?", ],
 );
 
-@hep_monitoring_sites=("BD.DAFFODILVARSITY.EDU.PINGER","BF.UNIV-OUAGA.N1","BO.UMSS.EDU.N1","BR.HEPGRID.UERJ.N2","BR.ORG.SPRACE.N2","BR.UFRJ.PINGER","BR.UNESP.N1","CA.CARLETON.N2","CA.TRIUMF.N4","CH.CERN.N20","CN.AC.N3","DE.DESY.N1","DZ.ARN.N3","EDU.SDSC.N1","EDU.SLAC.STANFORD.N3","EDU.STANFORD.N9","GOV.DOE.N8","GOV.ESNET.NOC.N4","GOV.FNAL.N10","IN.CDACMUMBAI.N1","IN.PUNE.CDAC.N2","IT.ICTP.N1","JO.SESAME.ORG.N1","JP.RIKEN.N3","LK.LEARN.AC.N2","MY.UM.PINGER","MY.UNIMAS.N4","MY.UNIMAS.RASPBERRY","MY.UTM.PINGER","NET.AMPATH.N2","ORG.CALTECH.ULTRALIGHT.N1","PK.AIOU.EDU.N2","PK.AIRUNIVERSITY.EDU.N2","PK.AUP.SEECS.EDU","PK.BUITMS.SEECS.EDU","PK.CAE.SEECS.EDU","PK.CEMB.EDU.N2","PK.COMSATS.EDU.N2","PK.COMSATSSWL.EDU","PK.GIKI.EDU.N1","PK.ISRA.EDU.N2","PK.KINNAIRD.SEECS.EDU","PK.KOHAT.EDU.N2","PK.LCWU.EDU.N2","PK.NCA.EDU.N2","PK.NCP.EDU.N3","PK.NEDUET.EDU.N1","PK.NU.EDU.N2","PK.NUISB.SEECS.EDU","PK.NUKHIMAIN.SEECS.EDU","PK.NUML.EDU","PK.NWFPUET.EDU.N1","PK.PERN.EDU.N1","PK.PERNFSBDPOP.EDU.N1","PK.PERNKHIPOP.EDU.N2","PK.PERNLHRPOP.EDU.N1","PK.PERNMTNPOP.EDU.N2","PK.PERNPWRPOP.EDU.N2","PK.PERNSINDHUPOP.EDU.N2","PK.PIEAS.EDU.N2","PK.PINGER.IBA-SUK.EDU","PK.PINGERISL-AIR.PERN_EDU.N1","PK.PINGERISL-FJWU.PERN.EDU","PK.PINGERISL-QAU.PERN.EDU","PK.PINGERKHI-CPSP.PERN.EDU","PK.PINGERKHI-UOK.PERN.EDU","PK.PINGERLHR-GCU.PERN.EDU","PK.PINGERLHR-PU.PERN.EDU","PK.PINGERQTA.PERN.EDU.N2","PK.QUEST.SEECS.EDU","PK.SAU.SEECS.EDU","PK.SEECS.EDU.N2","PK.SEECS.EDU.N6","PK.SEECS.EDU.N7","PK.UET.EDU.N2","PK.UETTAXILA.EDU.N1","PK.UOB.EDU.N3","PK.UPESH.EDU.N2","PK.USINDH.EDU.N2","PK.VU.EDU","RU.NSK.N1","TW.NCHC.ORG.N2","ZA.TENET.AC.N1",);
+@hep_monitoring_sites=("BD.DAFFODILVARSITY.EDU.PINGER","BF.UNIV-OUAGA.N1","BO.UMSS.EDU.N1","BR.HEPGRID.UERJ.N2","BR.ORG.SPRACE.N2","BR.UFRJ.PINGER","BR.UNESP.N1","CA.CARLETON.N2","CA.TRIUMF.N4","CH.CERN.N20","CN.AC.N3","DE.DESY.N1","DZ.ARN.N3","EDU.SDSC.N1","EDU.SLAC.STANFORD.N3","EDU.STANFORD.N9","GOV.DOE.N8","GOV.ESNET.NOC.N4","GOV.FNAL.N10","IN.CDACMUMBAI.N1","IN.PUNE.CDAC.N2","IT.ICTP.N1","JO.SESAME.ORG.N1","JP.RIKEN.N3","LK.LEARN.AC.N2","MY.UM.PINGER","MY.UNIMAS.N4","MY.UNIMAS.RASPBERRY","MY.UTM.PINGER","MY.UUM.EDU.PINGER","NET.AMPATH.N2","ORG.CALTECH.ULTRALIGHT.N1","PK.AIOU.EDU.N2","PK.AIRUNIVERSITY.EDU.N2","PK.AUP.SEECS.EDU","PK.BUITMS.SEECS.EDU","PK.CAE.SEECS.EDU","PK.CEMB.EDU.N2","PK.COMSATS.EDU.N2","PK.COMSATSSWL.EDU","PK.GIKI.EDU.N1","PK.ISRA.EDU.N2","PK.KINNAIRD.SEECS.EDU","PK.KOHAT.EDU.N2","PK.LCWU.EDU.N2","PK.NCA.EDU.N2","PK.NCP.EDU.N3","PK.NEDUET.EDU.N1","PK.NU.EDU.N2","PK.NUISB.SEECS.EDU","PK.NUKHIMAIN.SEECS.EDU","PK.NUML.EDU","PK.NWFPUET.EDU.N1","PK.PERN.EDU.N1","PK.PERNFSBDPOP.EDU.N1","PK.PERNKHIPOP.EDU.N2","PK.PERNLHRPOP.EDU.N1","PK.PERNMTNPOP.EDU.N2","PK.PERNPWRPOP.EDU.N2","PK.PERNSINDHUPOP.EDU.N2","PK.PIEAS.EDU.N2","PK.PINGER.IBA-SUK.EDU","PK.PINGERISL-AIR.PERN_EDU.N1","PK.PINGERISL-FJWU.PERN.EDU","PK.PINGERISL-QAU.PERN.EDU","PK.PINGERKHI-CPSP.PERN.EDU","PK.PINGERKHI-UOK.PERN.EDU","PK.PINGERLHR-GCU.PERN.EDU","PK.PINGERLHR-PU.PERN.EDU","PK.PINGERQTA.PERN.EDU.N2","PK.QUEST.SEECS.EDU","PK.SAU.SEECS.EDU","PK.SEECS.EDU.N2","PK.SEECS.EDU.N6","PK.SEECS.EDU.N7","PK.UET.EDU.N2","PK.UETTAXILA.EDU.N1","PK.UOB.EDU.N3","PK.UPESH.EDU.N2","PK.USINDH.EDU.N2","PK.VU.EDU","RU.NSK.N1","TW.NCHC.ORG.N2","ZA.TENET.AC.N1",);
 
 @monitoring_countries=("Algeria","Bangladesh","Bolivia","Brazil","Burkina Faso","Canada","China","Germany","India","Italy","Japan","Jordan","Malaysia","Pakistan","Russia","South Africa","Sri Lanka","Switzerland","Taiwan","United States",);
 
