@@ -1,0 +1,13 @@
+#id,display_name,instantiation_mame,default_unit
+1,Throughput,TCPThroughputMeasurement,Kilobitpersec
+2,Packet Loss,PacketLossMeasurement,percent
+3,Average RTT,AverageRoundTripDelayMeasurement,millisecond
+4,MOS,MOSMeasurement,Dimensionless
+5,Directivity,DirectivityMeasurement,Dimensionless
+6,Conditional Loss Probability,ConditionalLossProbabilityMeasurement,percent
+7,Duplicate Packets,DuplicatePacketsMeasurement,Dimensionless
+8,Inter Packet Delay Variation,InterPacketDelayVariationMeasurement,millisecond
+9,Unreachability,PingUnreachabilityMeasurement,Dimensionless
+10,Zero Packet Loss Frequency,ZeroPacketLossFrequencyMeasurement,percent
+11,Minimum RTT,MinimumRoundTripDelayMeasurement,millisecond
+
