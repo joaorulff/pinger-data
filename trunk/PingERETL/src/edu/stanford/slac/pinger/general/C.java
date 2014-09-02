@@ -61,7 +61,7 @@ public final class C {
 	/* *******************************************************
 	 * ***************** JSON Files **************************
 	 ********************************************************* */ 
-	public static final String NODEDETAILS_JSON_FILE = PROJECT_HOME+"data/json/NodeDetails_old.json";
+	public static final String NODEDETAILS_JSON_FILE = PROJECT_HOME+"data/json/NodeDetails.json";
 	public static final String MONITORING_MONITORED_JSON_FILE = PROJECT_HOME+"data/json/MonitoringMonitoredNodes.json";
 	public static final String MONITORING_MONITORED_GROUPED_JSON_FILE = PROJECT_HOME+"data/json/MonitoringMonitoredNodesGrouped.json";
 	public static final String MONITORING_NODES_GROUPED = PROJECT_HOME+"data/json/MonitoringNodesGrouped.json"; //used for parallelizing the process of creating a NTriple file. It could create more than 1 file at time, 1 for each monitoring node.

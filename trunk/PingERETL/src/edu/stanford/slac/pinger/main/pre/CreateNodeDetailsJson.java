@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
+import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 
@@ -16,7 +17,7 @@ public class CreateNodeDetailsJson {
 		String urlContent = "";
 		
 		try {
-			URL nodesCfUrl = new URL("http://www-iepm.slac.stanford.edu/pinger/pingerworld/nodes.cf");
+			URL nodesCfUrl = new URL(C.NODE_DETAILS_CF);
 			URLConnection uc = nodesCfUrl.openConnection();
 
 			BufferedReader in = new BufferedReader(new InputStreamReader(uc.getInputStream()));
@@ -69,7 +70,7 @@ public class CreateNodeDetailsJson {
 
 		for (int i = 0; i < eachNodeDetails.length; i++){
 			try {
-				temp = eachNodeDetails[i].split("=>");
+				temp = eachNodeDetails[i].split(" => [^a-zA-Z0-9]");
 				nodeName = temp[0].trim();
 				nodeInfo = temp[1].trim();
 
@@ -159,8 +160,8 @@ public class CreateNodeDetailsJson {
 			}
 		}	
 
-		Utils.writeIntoFile(urlContent, "./data/perl/nodes.cf");
-		Utils.writeIntoFile(nodeDetailsContent, "./data/json/NodeDetails.json");
+		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
+		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
 	}
 
 }
