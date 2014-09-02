@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -286,6 +287,28 @@ public class Utils {
 	}
 	public static void setMonitoringMonitoredGroupedJSON(JsonObject MonitoringMonitoredGroupedJSON) {
 		_MonitorMonitoredJSON = MonitoringMonitoredGroupedJSON;
+	}
+	
+	public static Calendar setInitialDate(){
+		Calendar date = Calendar.getInstance();
+		
+		date.set(Calendar.DAY_OF_MONTH, 1);
+		date.set(Calendar.MONTH, Calendar.JANUARY);
+		date.set(Calendar.YEAR, 1998);
+		
+		return date;
+	}
+	
+	public static Calendar setFinalDate(){
+		Calendar date = Calendar.getInstance();
+		
+		int currentYear = date.get(Calendar.YEAR);
+		
+		date.set(Calendar.DAY_OF_MONTH, 1);
+		date.set(Calendar.MONTH, Calendar.JANUARY);
+		date.set(Calendar.YEAR, currentYear+1);
+		
+		return date;
 	}
 
 }
