@@ -111,8 +111,8 @@ public class CreateNodeDetailsJson {
 								nodeDetailsContent += "\t\t\"Latitude\":" + coord[0].trim() + "\",\n"
 													+ "\t\t\"Longitude\":\"" + coord[1].trim() + "\",\n";
 							} else {
-								nodeDetailsContent += "\t\t\"Latitude\":" + "\"\" " + "\",\n"
-													+ "\t\t\"Longitude\":\"" + "\"\" " + "\",\n";
+								nodeDetailsContent += "\t\t\"Latitude\":\"\",\n"
+													+ "\t\t\"Longitude\":\"\",\n";
 							}
 							break;
 						case 8:
@@ -164,7 +164,7 @@ public class CreateNodeDetailsJson {
 		nodeDetailsContent += "\n}";
 		
 		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
-		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
+		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);	
 	}
 
 }
