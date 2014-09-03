@@ -152,14 +152,15 @@ public class CreateNodeDetailsJson {
 							break;
 					}
 				}
-				nodeDetailsContent += "\t},\n\n";
+				nodeDetailsContent += "\t},";
 
 			} catch (Exception e) {
 				Logger.error(e);
 				continue;
 			}
 		}	
-
+		nodeDetailsContent = nodeDetailsContent.substring(0,nodeDetailsContent.length()-1);
+		nodeDetailsContent += "\n}";
 		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
 		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
 	}
