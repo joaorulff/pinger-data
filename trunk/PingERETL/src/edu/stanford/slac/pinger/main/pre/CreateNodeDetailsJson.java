@@ -70,7 +70,7 @@ public class CreateNodeDetailsJson {
 
 		for (int i = 0; i < eachNodeDetails.length; i++){
 			try {
-				temp = eachNodeDetails[i].split(" => [^a-zA-Z0-9]");
+				temp = eachNodeDetails[i].split(" => [^-a-zA-Z0-9]");
 				nodeName = temp[0].trim();
 				nodeInfo = temp[1].trim();
 
@@ -159,8 +159,10 @@ public class CreateNodeDetailsJson {
 				continue;
 			}
 		}	
+		
 		nodeDetailsContent = nodeDetailsContent.substring(0,nodeDetailsContent.length()-1);
 		nodeDetailsContent += "\n}";
+		
 		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
 		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
 	}
