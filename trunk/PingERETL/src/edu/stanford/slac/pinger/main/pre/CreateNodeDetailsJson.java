@@ -107,8 +107,10 @@ public class CreateNodeDetailsJson {
 							break;
 						case 7:
 							if (!value.contains("\"\"") && !value.contains("NOT-SET")) {
-								String[] coord = value.split(" ");
-								nodeDetailsContent += "\t\t\"Latitude\":" + coord[0].trim() + "\",\n"
+								String latLongValue = value.replace('"', ' ');
+								latLongValue.trim();
+								String[] coord = latLongValue.split("[0-9] ");
+								nodeDetailsContent += "\t\t\"Latitude\":\"" + coord[0].trim() + "\",\n"
 													+ "\t\t\"Longitude\":\"" + coord[1].trim() + "\",\n";
 							} else {
 								nodeDetailsContent += "\t\t\"Latitude\":\"\",\n"
@@ -164,7 +166,7 @@ public class CreateNodeDetailsJson {
 		nodeDetailsContent += "\n}";
 		
 		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
-		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);	
+		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
 	}
 
 }
