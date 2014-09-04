@@ -21,11 +21,13 @@ public class CreateMonthCSV {
 		
 		NumberFormat f = new DecimalFormat("00"); 
 		
-		String monthFileContent = "ID,Year,Month,TimeStamp,Label\n";
+		String monthFileContent = "#ID,Year,Month,TimeStamp,Label\n";
 		
 		Calendar date = Utils.setInitialDate();		
 		Calendar finalDate = Utils.setFinalDate();
 
+		String jsonMonths = "{";
+		
 		while (date.getTime().before(finalDate.getTime())){			
         	id++;        	
             year = String.valueOf(date.get(Calendar.YEAR));
@@ -35,8 +37,14 @@ public class CreateMonthCSV {
             label = monthShortName + year;
             monthFileContent += id + "," + year + "," + month + "," + timeStamp + "," + label + "\n";
             
+            jsonMonths += "\""+ label + "\"" + ":" + id + ",";
+            
             date.set(Calendar.MONTH, date.get(Calendar.MONTH)+1); //Next month
 		}
+		
+		jsonMonths =  jsonMonths.substring(0,jsonMonths.length()-1) + "}";
+		
+		Utils.writeIntoFile(jsonMonths, C.MONTHS_JSON);
 		
         Utils.writeIntoFile(monthFileContent, C.MONTH_CSV);
 

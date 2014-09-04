@@ -19,7 +19,7 @@ public class TransformAndSavePingtableCSV {
 		if (args.length == 0) {
 			args = new String[]{
 				"debug=0",
-				"transformFile=1,inputFilePath=./downloadedCSV/throughput_allyearly_100_pinger.slac.stanford.edu.csv,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=last365days",
+				"transformFile=1,inputFilePath=c:/downloadedCSV/2010_throughput_daily_01_100_pinger.slac.stanford.edu.csv,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2010",
 			};
 		}		
 		start(args);
@@ -33,6 +33,7 @@ public class TransformAndSavePingtableCSV {
 		String metric = null;
 		String tickParameter = null;
 		String transformedFilesDirectory = null;
+		String year = null;
 		for (String ag : ags) {
 			if (ag.contains("metric")) {
 				metric = ag.replace("metric=", "").trim();
@@ -40,7 +41,9 @@ public class TransformAndSavePingtableCSV {
 				inputFilePath = ag.replace("inputFilePath=", "").trim();
 			} else if (ag.contains("tick")) {
 				tickParameter = ag.replace("tick=", "").trim();
-			} else if (ag.contains("monitorNode")) {
+			} else if (ag.contains("year")) {
+				year = ag.replace("year=", "").trim();
+			}  else if (ag.contains("monitorNode")) {
 				monitorNode = ag.replace("monitorNode=", "").trim();				
 			} else if (ag.contains("transformedFilesDirectory")) {
 				transformedFilesDirectory = ag.replace("transformedFilesDirectory=", "").trim();				
@@ -51,10 +54,10 @@ public class TransformAndSavePingtableCSV {
 		HashMap<String,HashMap<String, String>> map = csvProcessor.getMap();
 		if (map==null) return;
 		
-		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric); 
+		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year); 
 		JsonArray monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
 	
-		PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, C.DEFAULT_PACKET_SIZE, tickParameter);
+		PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, C.DEFAULT_PACKET_SIZE, tickParameter, year, null);
 		measurement.run();
 		
 		outputFileHandler.writeTriplesAndClean();
