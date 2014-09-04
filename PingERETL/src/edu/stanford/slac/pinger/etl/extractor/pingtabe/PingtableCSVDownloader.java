@@ -10,10 +10,12 @@ import edu.stanford.slac.pinger.rest.HttpGetter;
 
 public class PingtableCSVDownloader {
 
-	private String metric, tickParameter;
+	private String metric, tickParameter, year, month;
 	private String monitorNode, packetSize;
 	private String downloadedCSVDirectory;
-	public PingtableCSVDownloader(String downloadedCSVDirectory, String monitorNode, String metric, String packetSize, String tickParameter) {
+	public PingtableCSVDownloader(String downloadedCSVDirectory, String monitorNode, String metric, String packetSize, String tickParameter, String year, String month) {
+		this.year = year;
+		this.month = month;
 		this.downloadedCSVDirectory = downloadedCSVDirectory;
 		this.tickParameter = tickParameter;
 		this.metric = metric;
@@ -21,16 +23,59 @@ public class PingtableCSVDownloader {
 		this.packetSize = packetSize;
 	}
 	public void run() {
-			JsonObject monitoringNodeDetails = null;
-			try {
-				monitoringNodeDetails = Utils.getNodeDetails().get(monitorNode).getAsJsonObject();
-			} catch (Exception e) {
-				Logger.log("Error with " + monitorNode, e, "errors");
-				return;
-			}
-			String fromNickName =  monitoringNodeDetails.get("SourceNickName").getAsString();
+		JsonObject monitoringNodeDetails = null;
+		try {
+			monitoringNodeDetails = Utils.getNodeDetails().get(monitorNode).getAsJsonObject();
+		} catch (Exception e) {
+			Logger.log("Error with " + monitorNode, e, "errors");
+			return;
+		}
+		String fromNickName =  monitoringNodeDetails.get("NodeNickName").getAsString();
+		if (year!=null && month == null) {
+			getPingtableAndWriteTSVFileDaily(fromNickName);
+		} else {
 			getPingtableAndWriteTSVFile(fromNickName);
+		}
 	}
+
+	private void getPingtableAndWriteTSVFileDaily(String fromNickName) {
+		String months[] = {"01","02","03","04","05","06","07","08","09","10","11","12"};
+
+		for (String month : months) {
+			String url =     	
+					"http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&"+
+							"file="+metric+"&"+
+							"by=by-node&" +
+							"size="+packetSize+"&"+
+							"from="+fromNickName+"&"+
+							"to=WORLD&" +
+							"ex=none&only=all&dataset=hep&percentage=any&dnode=on&"+
+							"tick="+tickParameter+"&"+
+							"year="+year+"&"+
+							"month="+month;
+
+
+			String htmlContent = getPingTableTSV(url);
+			if (htmlContent == null) {
+				Logger.log("Warning: Could not get TSV file for the URL: " + url, "errors");
+				continue;
+			}
+			File downloadedDir = new File(downloadedCSVDirectory);
+			if (!downloadedDir.exists()) {
+				downloadedDir.mkdirs();
+			}
+			downloadedCSVDirectory = downloadedDir.getAbsolutePath() + File.separator;
+			String dirPath = downloadedCSVDirectory;
+			File dir = new File(dirPath);
+			if (!dir.exists()) {
+				dir.mkdirs();
+			}
+			String filePath = dirPath + year + "_" + metric + "_" + tickParameter + "_" + month + "_" + packetSize + "_" + monitorNode+".csv";
+			Utils.createFileGrantingPermissions(filePath);
+			Utils.writeIntoFile(htmlContent, filePath);
+		}
+	}
+
 	private void getPingtableAndWriteTSVFile(String fromNickName) {
 		String url =     	
 				"http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&"+
@@ -51,7 +96,7 @@ public class PingtableCSVDownloader {
 			downloadedDir.mkdirs();
 		}
 		downloadedCSVDirectory = downloadedDir.getAbsolutePath() + File.separator;
-		
+
 		String dirPath = downloadedCSVDirectory;
 		File dir = new File(dirPath);
 		if (!dir.exists()) {
@@ -64,8 +109,10 @@ public class PingtableCSVDownloader {
 	private static String getPingTableTSV(String URL) {
 		Logger.log(URL);
 		String s = HttpGetter.readPage(URL);		
-		if (s.contains("<h1>Sorry</h1>")) return null;
+		if (s.contains(">Sorry<")) return null;
 		return s;
 	}
-	
+
+
+
 }

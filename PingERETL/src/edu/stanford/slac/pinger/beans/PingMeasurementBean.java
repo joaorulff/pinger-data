@@ -58,7 +58,7 @@ public class PingMeasurementBean {
 
 	@Override
 	public String toString() {
-		return	id + "," +
+		return	//id + "," +
 				sourceNodeId + "," +
 				destinationNodeId + "," +
 				metricId + "," +
@@ -66,12 +66,4 @@ public class PingMeasurementBean {
 				value + "\n";
 	}
 	
-	public String toString(char delimiter) {
-		return	id + delimiter +
-				sourceNodeId + delimiter +
-				destinationNodeId + delimiter +
-				metricId + delimiter +
-				timeId + delimiter + 
-				value + "\n";
-	}
 }

@@ -23,11 +23,13 @@ public class CreateDayCSV {
 		
 		NumberFormat f = new DecimalFormat("00"); 
 		
-		String dayFileContent = "ID,Year,Month,Day,TimeStamp,Label\n";
+		String dayFileContent = "#ID,Year,Month,Day,TimeStamp,Label\n";
 		
 		Calendar date = Utils.setInitialDate();		
 		Calendar finalDate = Utils.setFinalDate();
 
+		String jsonDays = "{";
+		
 		while (date.getTime().before(finalDate.getTime())){			
         	id++;        	
             year = String.valueOf(date.get(Calendar.YEAR));
@@ -39,9 +41,14 @@ public class CreateDayCSV {
             label = yearShortFormat + monthShortName + day;
             dayFileContent += id + "," + year + "," + month + "," + day + "," + timeStamp + "," + label + "\n";
             
+            jsonDays += "\""+ label + "\"" + ":" + id + ",";
+            
             date.set(Calendar.DAY_OF_MONTH, date.get(Calendar.DAY_OF_MONTH)+1); //Next day
 		}
 		
+		jsonDays =  jsonDays.substring(0,jsonDays.length()-1) + "}";
+		
+		Utils.writeIntoFile(jsonDays, C.DAYS_JSON);
 		Utils.writeIntoFile(dayFileContent, C.DAY_CSV);
 
 	}

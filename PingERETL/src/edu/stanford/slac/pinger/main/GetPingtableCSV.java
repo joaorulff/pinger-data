@@ -8,19 +8,19 @@ import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
 
 public class GetPingtableCSV {
-public static void main(String[] args) {
-		
+	public static void main(String[] args) {
+
 		if (args.length == 0) {
 			args = new String[]{
-				/**
-				 *debug=0 -> it prints in stdout most of the log messages;
-				 *debug=-1 -> only critical errors 
-				 */
-				"debug=0",
-				"downlaodCSVFiles=1,downloadedCSVDirectory=c:\\downloadedCSV,monitorNodes=[pinger.slac.stanford.edu],metrics=[throughput],ticks=[allyearly]",
+					/**
+					 *debug=0 -> it prints in stdout most of the log messages;
+					 *debug=-1 -> only critical errors 
+					 */
+					"debug=0",
+					"downlaodCSVFiles=1,downloadedCSVDirectory=c:\\downloadedCSV,monitorNodes=[aup.seecs.edu.pk],metrics=[throughput],ticks=[daily],years=[2012]",
 			};
 		}		
-	
+
 		start(args);
 	}
 
@@ -46,6 +46,7 @@ public static void main(String[] args) {
 		String ags[] = arg.split(",");
 		String metrics[] = null;
 		String ticks[] = null;
+		String years[] = null;
 		String monitorNodes[] = null;
 		String downloadedCSVDirectory = null;
 		for (String ag : ags) {
@@ -57,28 +58,32 @@ public static void main(String[] args) {
 				String s = ag.replace("ticks=[", "");
 				s = s.replace("]", "");
 				ticks = s.split("-");
-			}  else if (ag.contains("downloadedCSVDirectory")) {
-			 	downloadedCSVDirectory = ag.replace("downloadedCSVDirectory=", "");
+			} else if (ag.contains("years")) {
+				String s = ag.replace("years=[", "");
+				s = s.replace("]", "");
+				years = s.split("-");
+			} else if (ag.contains("downloadedCSVDirectory")) {
+				downloadedCSVDirectory = ag.replace("downloadedCSVDirectory=", "");
 			} else if (ag.contains("monitorNodes")) {
 				String s = ag.replace("monitorNodes=[", "");
 				s = s.replace("]", "");
 				monitorNodes = s.split("-");
 			} 
 		}
-				
+
 		Logger.FILE_PREFIX += Arrays.toString(metrics).replace("[", "").replace("]", "").replace(", ", "_") + "_";
 		Logger.FILE_PREFIX += Arrays.toString(ticks).replace("[", "").replace("]", "").replace(", ", "_") + "_";
-	
+
 		for (String monitorNode : monitorNodes)  
 			for (String metric : metrics) 
-				for (String tick : ticks) {
-					Logger.log("Downloading CSV files for " + metric + " " + tick );
-					PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick);
-					pingtableCSVDownloader.run();
-				}
+				for (String tick : ticks)
+					for (String year : years) {
+						Logger.log("Downloading CSV files for " + metric + " " + tick );
+						PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, null);
+						pingtableCSVDownloader.run();
+					}
+
 
 	}
 
-	
-	
 }

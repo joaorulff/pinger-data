@@ -31,8 +31,10 @@ public class FileHandler  {
 	private String transformedFilesDirectory;
 	private String currentTick;
 	private String currentMetric;
+	private String year;
 	
-	public FileHandler(String transformedFilesDirectory, String currentTick, String currentMetric) {
+	public FileHandler(String transformedFilesDirectory, String currentTick, String currentMetric, String year) {
+		this.year = year;
 		this.transformedFilesDirectory = transformedFilesDirectory;
 		this.currentTick = currentTick;
 		this.currentMetric = currentMetric;
@@ -95,7 +97,7 @@ public class FileHandler  {
 		currentFileIndex = 1;
 		String fileName = null;
 		if (currentTick != null && currentMetric != null)
-			fileName = currentMetric + "_" +  currentTick+ "_" + currentFileIndex;
+			fileName = year + "_" + currentMetric + "_" +  currentTick+ "_" + currentFileIndex;
 		else {
 			fileName = "n"+currentFileIndex;
 		}

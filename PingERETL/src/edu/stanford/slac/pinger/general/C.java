@@ -60,19 +60,27 @@ public final class C {
 	
 	/* *******************************************************
 	 * ***************** JSON Files **************************
-	 ********************************************************* */ 
+	 ********************************************************* */
+	public static final String JSON_DIR = PROJECT_HOME+"data/json/";
+	
 	public static final String NODEDETAILS_JSON_FILE = PROJECT_HOME+"data/json/NodeDetails.json";
-	public static final String MONITORING_MONITORED_JSON_FILE = PROJECT_HOME+"data/json/MonitoringMonitoredNodes.json";
-	public static final String MONITORING_MONITORED_GROUPED_JSON_FILE = PROJECT_HOME+"data/json/MonitoringMonitoredNodesGrouped.json";
-	public static final String MONITORING_NODES_GROUPED = PROJECT_HOME+"data/json/MonitoringNodesGrouped.json"; //used for parallelizing the process of creating a NTriple file. It could create more than 1 file at time, 1 for each monitoring node.
-	public static final String MONITORING_NODES_GROUPED_FOR_TSV = PROJECT_HOME+"data/json/MonitoringNodesGroupedForTSV.json";
-	public static final String COUNTRIES_GEONAMES_JSON = PROJECT_HOME+"data/json/countries_geonames.json";
-	public static final String COUNTRIES_JSON = PROJECT_HOME+"data/json/countries.json";
-	public static final String MONITORING_MONITORED_COUNTRIES = PROJECT_HOME+"data/json/monitoring_monitored_countries.json";
+	public static final String MONITORING_MONITORED_JSON_FILE = JSON_DIR+"MonitoringMonitoredNodes.json";
+	public static final String MONITORING_MONITORED_GROUPED_JSON_FILE = JSON_DIR+"MonitoringMonitoredNodesGrouped.json";
+	public static final String MONITORING_NODES_GROUPED = JSON_DIR+"MonitoringNodesGrouped.json"; //used for parallelizing the process of creating a NTriple file. It could create more than 1 file at time, 1 for each monitoring node.
+	public static final String MONITORING_NODES_GROUPED_FOR_TSV = JSON_DIR+"MonitoringNodesGroupedForTSV.json";
+	public static final String COUNTRIES_GEONAMES_JSON = JSON_DIR+"countries_geonames.json";
+	public static final String COUNTRIES_JSON = JSON_DIR+"countries.json";
+	public static final String MONITORING_MONITORED_COUNTRIES = JSON_DIR+"monitoring_monitored_countries.json";
 	
 	public static final String MONITORING_MONITORED_JSON_FILE_WWW = "/afs/slac.stanford.edu/g/www/www-iepm/pinger/lod/data/json/MonitoringMonitoredNodes.js";
 	public static final String MONITORING_MONITORED_COUNTRIES_WWW = "/afs/slac.stanford.edu/g/www/www-iepm/pinger/lod/data/json/monitoring_monitored_countries.js";
 
+	public static final String DAYS_JSON = JSON_DIR + "daysIds.json";
+	public static final String MONTHS_JSON = JSON_DIR + "monthsIds.json";
+	public static final String YEARS_JSON = JSON_DIR + "yearsIds.json";
+
+	
+	
 	/* *******************************************************
 	 * ***************** CSV Files **************************
 	 ********************************************************* */ 
@@ -81,7 +89,8 @@ public final class C {
 
 	public static final String CONTINENT_CSV = CSV_DIR + "continent.csv";
 	public static final String COUNTRY_CSV = CSV_DIR + "country.csv";
-	public static final String DAY_CSV = CSV_DIR + "day.csv";	
+	public static final String DAY_CSV = CSV_DIR + "day.csv";
+	
 	public static final String DESTINATION_NODE_CSV = CSV_DIR + "destination_node.csv";
 	public static final String METRIC_CSV = CSV_DIR + "metric.csv";
 	public static final String MONTH_CSV = CSV_DIR + "month.csv";	
