@@ -150,7 +150,7 @@ public class Utils {
 			Logger.log("C.writeIntoFile", e, "errors");
 		}
 	}
-	
+
 	public static void cleanDirectory(String dir) {
 		try {
 			File fileDir = new File(dir);
@@ -170,9 +170,9 @@ public class Utils {
 			Logger.log("cleanDirectory", e, "errors");
 		}
 	}
-	
-	
-	
+
+
+
 	public static boolean deleteDirAndContents(String dir) {
 		try {
 			FileUtils.deleteDirectory(new File(dir));
@@ -182,7 +182,7 @@ public class Utils {
 			return false;
 		}
 	}
-	
+
 	private static String currentPID = null;
 	public static String getCurrentPID() {
 		if (currentPID==null) {
@@ -201,14 +201,14 @@ public class Utils {
 		}
 		return sb.toString();
 	}
-	
+
 	public static void mkDir(String dirStr) {
 		File dir = new File(dirStr);
 		if (!dir.exists()) {
 			dir.mkdirs();
 		}
 	}
-	
+
 	public static void mkTmpDirGrantingPermissions(String dirStr) {
 		mkDir(dirStr);
 		try {
@@ -220,7 +220,7 @@ public class Utils {
 			Logger.log(e + " mkDirGrantingPermissions("+dirStr+")");
 		}
 	}
-	
+
 	public static void mkDirGrantingPermissions(String dirStr) {
 		mkDir(dirStr);
 		try {
@@ -231,8 +231,8 @@ public class Utils {
 			Logger.log(e + " mkDirGrantingPermissions("+dirStr+")");
 		}
 	}
-	
-	
+
+
 	public static File createFileGrantingPermissions(String filePath) {
 		try {
 			File file = new File(filePath);
@@ -245,7 +245,7 @@ public class Utils {
 			return null;
 		}
 	}
-	
+
 	public static String join(String arr[], String joiner) {
 		String ret = "";
 		for (String s : arr) {
@@ -253,7 +253,7 @@ public class Utils {
 		}
 		return ret;	
 	}
-	
+
 	private static JsonObject NODE_DETAILS = null;
 	public static JsonObject getNodeDetails() {
 		if (NODE_DETAILS==null) {
@@ -265,7 +265,7 @@ public class Utils {
 		} 
 		return NODE_DETAILS;
 	}
-	
+
 	private static JsonObject PINGER_COUNTRIES = null;
 	public static JsonObject getPingERCountries() {
 		if (PINGER_COUNTRIES==null) {
@@ -273,7 +273,7 @@ public class Utils {
 		} 
 		return PINGER_COUNTRIES;
 	}
-	
+
 	private static JsonObject _MonitorMonitoredJSON = null;
 	public static JsonObject getMonitorMonitoredJSON() {
 		if (_MonitorMonitoredJSON==null) {
@@ -288,27 +288,62 @@ public class Utils {
 	public static void setMonitoringMonitoredGroupedJSON(JsonObject MonitoringMonitoredGroupedJSON) {
 		_MonitorMonitoredJSON = MonitoringMonitoredGroupedJSON;
 	}
-	
+
 	public static Calendar setInitialDate(){
 		Calendar date = Calendar.getInstance();
-		
+
 		date.set(Calendar.DAY_OF_MONTH, 1);
 		date.set(Calendar.MONTH, Calendar.JANUARY);
 		date.set(Calendar.YEAR, 1998);
-		
+
 		return date;
 	}
-	
+
 	public static Calendar setFinalDate(){
 		Calendar date = Calendar.getInstance();
-		
+
 		int currentYear = date.get(Calendar.YEAR);
-		
+
 		date.set(Calendar.DAY_OF_MONTH, 1);
 		date.set(Calendar.MONTH, Calendar.JANUARY);
 		date.set(Calendar.YEAR, currentYear+1);
-		
+
 		return date;
+	}
+
+	public static String getCurrentMethodName() {
+		try {
+			return Thread.currentThread().getStackTrace()[2].getMethodName(); //shows name of the function which called this function
+		} catch (Exception e) {
+			return "unknownMethodName";
+		}
+	}
+
+	public static String[] getMonths() {
+		String months[] = {"01","02","03","04","05","06","07","08","09","10","11","12"};
+		return months;
+	}
+
+	private static String fileNameBeginning;
+	public static String getFileNameBeginning(String tick, String metric, String year, String monitor) {
+		if (fileNameBeginning!=null) {
+			return fileNameBeginning;
+		} else {
+			if (tick != null && metric != null && year != null) {
+				fileNameBeginning = year + "_" + metric + "_" +  monitor + "_" + tick;
+			} else {
+				fileNameBeginning = "n_";
+			}
+			return fileNameBeginning;
+		}
+	}
+
+	private static JsonObject countriesJson;
+	public static JsonObject getCountriesJson() {
+		if (countriesJson==null) {
+			countriesJson = Utils.getJsonAsObject(C.COUNTRIES_JSON);
+		}
+		return countriesJson;
 	}
 
 }

@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.main.pre;
+package edu.stanford.slac.pinger.main.pre.dimensions.time;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

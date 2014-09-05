@@ -25,19 +25,20 @@ public class FileHandler  {
 	
 	private static int CUT_HEAP_MEMORY = -1;
 	private static int CUT_HD = -1;
-	private StringBuffer fileContent;
-
+	private StringBuffer fileContent; //StringBuffer is synchronized
 	
 	private String transformedFilesDirectory;
-	private String currentTick;
-	private String currentMetric;
+	private String tick;
+	private String metric;
 	private String year;
+	private String monitor;
 	
-	public FileHandler(String transformedFilesDirectory, String currentTick, String currentMetric, String year) {
+	public FileHandler(String transformedFilesDirectory, String tick, String metric, String year, String monitor) {
 		this.year = year;
 		this.transformedFilesDirectory = transformedFilesDirectory;
-		this.currentTick = currentTick;
-		this.currentMetric = currentMetric;
+		this.tick = tick;
+		this.metric = metric;
+		this.monitor = monitor;
 		start();
 	}
 	
@@ -54,16 +55,11 @@ public class FileHandler  {
 			try {
 				if (fileContentSize >= CUT_HD) {
 					fileContentSize = 0;
-					String fileName;
-					if (currentTick != null && currentMetric != null)
-						fileName = currentMetric + "_" +  currentTick + "_" + currentFileIndex++;
-					else {
-						fileName = "n"+currentFileIndex++;
-					}
-					currentFilePath = transformedFilesDirectory+fileName+".csv";
+					currentFileIndex++;
+					currentFilePath = transformedFilesDirectory+getFileName();
 					Utils.createFileGrantingPermissions(currentFilePath);
 				}
-				PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(currentFilePath, true)));
+				PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(currentFilePath, false)));
 				out.write(fileContent.toString());
 				out.close();
 				fileContentSize += fileContent.length();
@@ -74,16 +70,21 @@ public class FileHandler  {
 		}
 	}
 
-	public void writeTriplesAndClean() {
+	public void writeContentAndClean() {
 		try {
 			PrintWriter out;
-			out = new PrintWriter(new BufferedWriter(new FileWriter(currentFilePath, true)));
+			out = new PrintWriter(new BufferedWriter(new FileWriter(currentFilePath, false)));
 			out.write(fileContent.toString());
 			out.close();
 			fileContent = new StringBuffer();
 		} catch (Exception e) {
-			Logger.error(FileHandler.class.getName()+".writeTriplesAndClean " ,  e);
+			Logger.error(FileHandler.class.getName()+".writeContentAndClean " ,  e);
 		}
+	}
+	
+	private String getFileName() {
+		String fileName = Utils.getFileNameBeginning(tick, metric, year, monitor) + "_" + currentFileIndex + ".csv";
+		return fileName;
 	}
 
 	public void start() {
@@ -95,23 +96,17 @@ public class FileHandler  {
 		fileContent = new StringBuffer();
 		fileContentSize = 0;
 		currentFileIndex = 1;
-		String fileName = null;
-		if (currentTick != null && currentMetric != null)
-			fileName = year + "_" + currentMetric + "_" +  currentTick+ "_" + currentFileIndex;
-		else {
-			fileName = "n"+currentFileIndex;
-		}
-		currentFilePath = transformedFilesDirectory+fileName+".csv";
+		currentFilePath = transformedFilesDirectory+getFileName();
 		Utils.createFileGrantingPermissions(currentFilePath);
 		
 		CUT_HEAP_MEMORY = (int) (Runtime.getRuntime().freeMemory()/C.CUT_HEAP_COEF); //divided by 2 is the standard.. divided by 10 generates lots of files of ~ 13 MB
-		CUT_HD = C.CUT_HD*C.MB;
+		CUT_HD = C.CUT_HD;
 		
 		
 	}
 	
-	public void setCurrentTick(String currentTick) {this.currentTick = currentTick;}
-	public void setCurrentMetric(String currentMetric) {this.currentMetric = currentMetric;}
+	public void setCurrentTick(String currentTick) {this.tick = currentTick;}
+	public void setCurrentMetric(String currentMetric) {this.metric = currentMetric;}
 
 
 }
