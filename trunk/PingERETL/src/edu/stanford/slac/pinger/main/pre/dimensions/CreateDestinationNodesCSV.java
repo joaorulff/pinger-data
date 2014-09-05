@@ -23,18 +23,22 @@ public class CreateDestinationNodesCSV {
 		 for (Entry<String, JsonElement> eachNodeDetailsEntry : nodeDetails.entrySet()) {
 			 
 			 JsonObject eachNodeDetails = (JsonObject) eachNodeDetailsEntry.getValue();
-			 
-			 String nodeName =  eachNodeDetails.get("SourceName").getAsString();
-			 String nodeIP =  eachNodeDetails.get("SourceIP").getAsString();
+						 			 
+			 String nodeID =  eachNodeDetails.get("NodeID").getAsString();
+			 String nodeName =  eachNodeDetails.get("NodeName").getAsString();
+			 String nodeIP =  eachNodeDetails.get("NodeIP").getAsString();
+			 String latitude =  eachNodeDetails.get("Latitude").getAsString();
+			 String longitude =  eachNodeDetails.get("Longitude").getAsString();
+			 String nodeNickName =  eachNodeDetails.get("NodeNickName").getAsString();
+			 String nodeFullName =  eachNodeDetails.get("NodeFullName").getAsString();
+			 String nodeSiteName =  eachNodeDetails.get("NodeSiteName").getAsString();
+			 String projectType =  eachNodeDetails.get("ProjectType").getAsString();
+			
 			 String idStr = String.valueOf(id++);
 			 
-			 
-			 NetworkNodeBean nb = new NetworkNodeBean(idStr, nodeName, nodeIP);
-			 
+			 NetworkNodeBean nb = new NetworkNodeBean(idStr, nodeName, nodeIP, latitude, longitude, nodeNickName, nodeFullName, nodeSiteName, projectType);
 			 
 			 sb.append(nb.toString(','));
-			 
-			 
 			 
 		 }
 		 
@@ -44,3 +48,4 @@ public class CreateDestinationNodesCSV {
 	}
 
 }
+
