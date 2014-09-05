@@ -13,28 +13,7 @@ public final class C {
 		setInitConstantsBasedOnTheOS();		
 		setProjectHome();
 	}
-
 	
-	/* *******************************************************************
-	 * ************* Initial Properties ************************************
-	 ******************************************************************* */
-	/*
-	 * The following line should be uncommented when putting in production.
-	 */
-	//public static final String SESAME_SERVER = "http://wanmon.slac.stanford.edu:8181/openrdf-sesame";
-	public static final String REPOSITORY_ID =  "pinger";
-
-	
-	public static String PERL_HOME;
-	public static String TMP_DIR;
-	public static String OS;
-	
-	public static final String DATA_TMP_DIR = TMP_DIR+"data_pid"+Utils.getCurrentPID()+"/";
-	public static final int CUT_HEAP_COEF = 10;
-	public static final int CUT_HD = 5;
-	public static final String[] GEONAMES_USERNAME = {"pinger","renansouza","renan2","renan3","demo"};
-	//http://www.geonames.org/manageaccount
-
 
 	/* *******************************************************************
 	 * ************* Other General Public Constants *******************
@@ -57,6 +36,29 @@ public final class C {
 	
 	public static int DEBUG_LEVEL=1;
 	public static boolean IS_TO_LOAD_REMAINING=false;
+
+	
+	/* *******************************************************************
+	 * ************* Initial Properties ************************************
+	 ******************************************************************* */
+	/*
+	 * The following line should be uncommented when putting in production.
+	 */
+	//public static final String SESAME_SERVER = "http://wanmon.slac.stanford.edu:8181/openrdf-sesame";
+	public static final String REPOSITORY_ID =  "pinger";
+
+	
+	public static String PERL_HOME;
+	public static String TMP_DIR;
+	public static String OS;
+	
+	public static final String DATA_TMP_DIR = TMP_DIR+"data_pid"+Utils.getCurrentPID()+"/";
+	public static final int CUT_HEAP_COEF = 10;
+	public static final int CUT_HD = 500 * MB;
+	public static final String[] GEONAMES_USERNAME = {"pinger","renansouza","renan2","renan3","demo"};
+	//http://www.geonames.org/manageaccount
+
+
 	
 	/* *******************************************************
 	 * ***************** JSON Files **************************

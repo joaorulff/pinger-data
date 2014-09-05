@@ -1,5 +1,6 @@
 package edu.stanford.slac.pinger.etl.transformer;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -8,13 +9,30 @@ import edu.stanford.slac.pinger.general.utils.Utils;
 
 public class CSVProcessorFromFile {
 
-	private String inputFilePath;
-	public CSVProcessorFromFile(String inputFilePath) {
-		this.inputFilePath = inputFilePath;
+	private String inputDir;
+	private String year, metric, tick, monitor;
+	
+	public CSVProcessorFromFile(String inputDir, String year, String metric, String tick, String monitor) {
+		this.inputDir = inputDir;
+		this.year = year;
+		this.metric = metric;
+		this.tick = tick;
+		this.monitor = monitor;
 	}
-
-	public HashMap<String,HashMap<String, String>> getMap() {
-		String csv = Utils.readFile(inputFilePath);
+	
+	public ArrayList<HashMap<String,HashMap<String, String>>> getMonthsInAnYearMaps() {
+		 ArrayList<HashMap<String,HashMap<String, String>>> monthsInAnYearMaps = new  ArrayList<HashMap<String,HashMap<String, String>>>();
+		 for (String month : Utils.getMonths()) {
+			 HashMap<String,HashMap<String, String>> map = getMap(month);
+			 if (map!=null)
+				 monthsInAnYearMaps.add(map);
+		 }
+		 return monthsInAnYearMaps;
+	}
+	
+	private HashMap<String,HashMap<String, String>> getMap(String month) {
+		String filePath = inputDir + Utils.getFileNameBeginning(tick, metric, year, monitor) +"_"+month+".csv";
+		String csv = Utils.readFile(filePath);
 		if (csv==null) return null;
 		String []lines = csv.split("\n");
 		String []head = lines[0].split("\\s");

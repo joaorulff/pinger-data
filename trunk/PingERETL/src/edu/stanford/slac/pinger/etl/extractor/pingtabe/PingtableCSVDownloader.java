@@ -8,6 +8,11 @@ import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.rest.HttpGetter;
 
+/**
+ * We can improve this class (programming patterns only) by making a PingtableCSVDownloader which instantiates PingtableCSVDownloaderDaily or PingtableCSVDownloaderHourly
+ * @author Renan
+ *
+ */
 public class PingtableCSVDownloader {
 
 	private String metric, tickParameter, year, month;
@@ -31,17 +36,15 @@ public class PingtableCSVDownloader {
 			return;
 		}
 		String fromNickName =  monitoringNodeDetails.get("NodeNickName").getAsString();
-		if (year!=null && month == null) {
+		if (year!= null && month == null) {
 			getPingtableAndWriteTSVFileDaily(fromNickName);
 		} else {
-			getPingtableAndWriteTSVFile(fromNickName);
+			getPingtableAndWriteTSVFileOriginal(fromNickName);
 		}
 	}
 
 	private void getPingtableAndWriteTSVFileDaily(String fromNickName) {
-		String months[] = {"01","02","03","04","05","06","07","08","09","10","11","12"};
-
-		for (String month : months) {
+		for (String month : Utils.getMonths()) {
 			String url =     	
 					"http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&"+
 							"file="+metric+"&"+
@@ -70,13 +73,13 @@ public class PingtableCSVDownloader {
 			if (!dir.exists()) {
 				dir.mkdirs();
 			}
-			String filePath = dirPath + year + "_" + metric + "_" + tickParameter + "_" + month + "_" + packetSize + "_" + monitorNode+".csv";
+			String filePath = dirPath + year + "_" + metric + "_" + monitorNode + "_" + tickParameter + "_" + month +".csv";
 			Utils.createFileGrantingPermissions(filePath);
 			Utils.writeIntoFile(htmlContent, filePath);
 		}
 	}
 
-	private void getPingtableAndWriteTSVFile(String fromNickName) {
+	private void getPingtableAndWriteTSVFileOriginal(String fromNickName) {
 		String url =     	
 				"http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&"+
 						"file="+metric+"&"+

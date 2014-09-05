@@ -1,5 +1,6 @@
 package edu.stanford.slac.pinger.main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.google.gson.JsonArray;
@@ -7,28 +8,26 @@ import com.google.gson.JsonArray;
 import edu.stanford.slac.pinger.etl.loader.local.FileHandler;
 import edu.stanford.slac.pinger.etl.transformer.CSVProcessorFromFile;
 import edu.stanford.slac.pinger.etl.transformer.PingMeasurementCSVBuilder;
-import edu.stanford.slac.pinger.general.utils.Utils;
-import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
+import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
 
 public class TransformAndSavePingtableCSV {
 
 	public static void main(String[] args) {
-		
 		if (args.length == 0) {
 			args = new String[]{
-				"debug=0",
-				"transformFile=1,inputFilePath=c:/downloadedCSV/2010_throughput_daily_01_100_pinger.slac.stanford.edu.csv,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2010",
+					"debug=0",
+					"transformFile=1,inputDir=c:/downloadedCSV/,transformedFilesDirectory=./transformedFiles,monitorNode=aup.seecs.edu.pk,metric=throughput,tick=daily,year=2012",
 			};
 		}		
 		start(args);
 	}
 
 	public static void transformFile(String arg) {
-			
+
 		String ags[] = arg.split(",");
-		String inputFilePath = null;
+		String inputDir = null;
 		String monitorNode = null;	
 		String metric = null;
 		String tickParameter = null;
@@ -37,8 +36,8 @@ public class TransformAndSavePingtableCSV {
 		for (String ag : ags) {
 			if (ag.contains("metric")) {
 				metric = ag.replace("metric=", "").trim();
-			} else if (ag.contains("inputFilePath")) {
-				inputFilePath = ag.replace("inputFilePath=", "").trim();
+			} else if (ag.contains("inputDir")) {
+				inputDir = ag.replace("inputDir=", "").trim();
 			} else if (ag.contains("tick")) {
 				tickParameter = ag.replace("tick=", "").trim();
 			} else if (ag.contains("year")) {
@@ -49,18 +48,19 @@ public class TransformAndSavePingtableCSV {
 				transformedFilesDirectory = ag.replace("transformedFilesDirectory=", "").trim();				
 			} 
 		}
-		
-		CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputFilePath); 
-		HashMap<String,HashMap<String, String>> map = csvProcessor.getMap();
-		if (map==null) return;
-		
-		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year); 
+		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode); 
 		JsonArray monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
-	
-		PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, C.DEFAULT_PACKET_SIZE, tickParameter, year, null);
-		measurement.run();
+
+		CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode); 
 		
-		outputFileHandler.writeTriplesAndClean();
+		ArrayList<HashMap<String,HashMap<String, String>>> monthsInAnYearMaps = csvProcessor.getMonthsInAnYearMaps();
+
+		for (HashMap<String,HashMap<String, String>> map : monthsInAnYearMaps) {
+			PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, tickParameter, year, null);
+			measurement.run();
+		}
+		outputFileHandler.writeContentAndClean();
+
 	}
 
 	public static void start(String[] args) {	
