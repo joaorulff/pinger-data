@@ -47,6 +47,7 @@ public class GetPingtableCSV {
 		String metrics[] = null;
 		String ticks[] = null;
 		String years[] = null;
+		String months[] = null;
 		String monitorNodes[] = null;
 		String downloadedCSVDirectory = null;
 		for (String ag : ags) {
@@ -62,7 +63,11 @@ public class GetPingtableCSV {
 				String s = ag.replace("years=[", "");
 				s = s.replace("]", "");
 				years = s.split("-");
-			} else if (ag.contains("downloadedCSVDirectory")) {
+			}else if (ag.contains("months")) {
+				String s = ag.replace("months=[", "");
+				s = s.replace("]", "");
+				months = s.split("-");
+			}else if (ag.contains("downloadedCSVDirectory")) {
 				downloadedCSVDirectory = ag.replace("downloadedCSVDirectory=", "");
 			} else if (ag.contains("monitorNodes")) {
 				String s = ag.replace("monitorNodes=[", "");
@@ -77,11 +82,11 @@ public class GetPingtableCSV {
 		for (String monitorNode : monitorNodes)  
 			for (String metric : metrics) 
 				for (String tick : ticks)
-					for (String year : years) {
-						Logger.log("Downloading CSV files for " + metric + " " + tick );
-						PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, null);
-						pingtableCSVDownloader.run();
-					}
+					for (String year : years) { 
+							Logger.log("Downloading CSV files for " + metric + " " + tick );
+							PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, null);
+							pingtableCSVDownloader.run();
+						}
 
 
 	}

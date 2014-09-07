@@ -36,11 +36,7 @@ public class PingtableCSVDownloader {
 			return;
 		}
 		String fromNickName =  monitoringNodeDetails.get("NodeNickName").getAsString();
-		if (year!= null && month == null) {
-			getPingtableAndWriteTSVFileDaily(fromNickName);
-		} else {
-			getPingtableAndWriteTSVFileOriginal(fromNickName);
-		}
+		getPingtableAndWriteTSVFileDaily(fromNickName);
 	}
 
 	private void getPingtableAndWriteTSVFileDaily(String fromNickName) {
@@ -60,7 +56,7 @@ public class PingtableCSVDownloader {
 
 			String htmlContent = getPingTableTSV(url);
 			if (htmlContent == null) {
-				Logger.log("Warning: Could not get TSV file for the URL: " + url, "errors");
+				//Logger.log("Warning! Could not get TSV file for the URL: " + url, "errors");
 				continue;
 			}
 			File downloadedDir = new File(downloadedCSVDirectory);
@@ -79,6 +75,7 @@ public class PingtableCSVDownloader {
 		}
 	}
 
+	@Deprecated
 	private void getPingtableAndWriteTSVFileOriginal(String fromNickName) {
 		String url =     	
 				"http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&"+
@@ -111,9 +108,12 @@ public class PingtableCSVDownloader {
 	}
 	private static String getPingTableTSV(String URL) {
 		Logger.log(URL);
-		String s = HttpGetter.readPage(URL);		
-		if (s.contains(">Sorry<")) return null;
-		return s;
+		String s = HttpGetter.readPage(URL);
+		if (s != null && s.contains(">Sorry<")){
+			Logger.error("Error code 02: Sorry message appeared in the URL: " + URL);
+			return null;
+		} else if (s==null) return null;
+		else return s;
 	}
 
 

@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
@@ -15,7 +17,7 @@ public class CreateNodeDetailsJson {
 	public static void main(String[] args)  {
 		String nodeDetails = "";
 		String urlContent = "";
-		
+
 		try {
 			URL nodesCfUrl = new URL(C.NODE_DETAILS_CF);
 			URLConnection uc = nodesCfUrl.openConnection();
@@ -68,6 +70,8 @@ public class CreateNodeDetailsJson {
 
 		String nodeDetailsContent = "{\n\n";
 
+		Pattern latlongPattern = Pattern.compile("([0-9]+([.][0-9]+)?)([ ]|[\t])([0-9]+([.][0-9]+)?)");
+
 		for (int i = 0; i < eachNodeDetails.length; i++){
 			try {
 				temp = eachNodeDetails[i].split(" => [^-a-zA-Z0-9]");
@@ -80,78 +84,83 @@ public class CreateNodeDetailsJson {
 					value = nodeLineInfo[j].trim();
 
 					switch (j) {
-						case 0:
-							nodeID++;
-							nodeDetailsContent += "\t" + nodeName + ": {\n"
-												+ "\t\t\"NodeID\":\"" + nodeID + "\",\n"
-												+ "\t\t\"NodeName\":" + nodeName + ",\n"
-												+ "\t\t\"NodeIP\":" + value.substring(1).trim() + "\",\n";	//Ignore the initial "["
-							break;
-						case 1:
-							nodeDetailsContent += "\t\t\"NodeSiteName\":" + value + "\",\n";
-							break;
-						case 2:
-							nodeDetailsContent += "\t\t\"NodeNickName\":" + value + "\",\n";
-							break;
-						case 3:
-							nodeDetailsContent += "\t\t\"NodeFullName\":" + value + "\",\n";
-							break;
-						case 4:
-							nodeDetailsContent += "\t\t\"LocationDescription\":" + value + "\",\n";
-							break;
-						case 5:
-							nodeDetailsContent += "\t\t\"Country\":" + value + "\",\n";
-							break;
-						case 6:
-							nodeDetailsContent += "\t\t\"Continent\":" + value + "\",\n";
-							break;
-						case 7:
-							if (!value.contains("\"\"") && !value.contains("NOT-SET")) {
-								String latLongValue = value.replace('"', ' ');
-								latLongValue.trim();
-								String[] coord = latLongValue.split("[0-9] ");
-								nodeDetailsContent += "\t\t\"Latitude\":\"" + coord[0].trim() + "\",\n"
-													+ "\t\t\"Longitude\":\"" + coord[1].trim() + "\",\n";
-							} else {
+					case 0:
+						nodeID++;
+						nodeDetailsContent += "\t" + nodeName + ": {\n"
+								+ "\t\t\"NodeID\":\"" + nodeID + "\",\n"
+								+ "\t\t\"NodeName\":" + nodeName + ",\n"
+								+ "\t\t\"NodeIP\":" + value.substring(1).trim() + "\",\n";	//Ignore the initial "["
+						break;
+					case 1:
+						nodeDetailsContent += "\t\t\"NodeSiteName\":" + value + "\",\n";
+						break;
+					case 2:
+						nodeDetailsContent += "\t\t\"NodeNickName\":" + value + "\",\n";
+						break;
+					case 3:
+						nodeDetailsContent += "\t\t\"NodeFullName\":" + value + "\",\n";
+						break;
+					case 4:
+						nodeDetailsContent += "\t\t\"LocationDescription\":" + value + "\",\n";
+						break;
+					case 5:
+						nodeDetailsContent += "\t\t\"Country\":" + value + "\",\n";
+						break;
+					case 6:
+						nodeDetailsContent += "\t\t\"Continent\":" + value + "\",\n";
+						break;
+					case 7:
+						try {
+							if (value.contains("\"\"") || value.contains("NOT-SET")) {
 								nodeDetailsContent += "\t\t\"Latitude\":\"\",\n"
-													+ "\t\t\"Longitude\":\"\",\n";
+										+ "\t\t\"Longitude\":\"\",\n";
+
+							} else {
+								Matcher m = latlongPattern.matcher(value);
+								if( m.matches()) {
+									nodeDetailsContent += "\t\t\"Latitude\":\"" + m.group(1).trim() + "\",\n"
+											+ "\t\t\"Longitude\":\"" + m.group(4).trim() + "\",\n";
+								}
 							}
-							break;
-						case 8:
-							nodeDetailsContent += "\t\t\"ProjectType\":" + value + "\",\n";
-							break;
-						case 9:
-							nodeDetailsContent += "\t\t\"PingServer\":" + value + "\",\n";
-							break;
-						case 10:
-							nodeDetailsContent += "\t\t\"TraceServer\":" + value + "\",\n";
-							break;
-						case 11:
-							nodeDetailsContent += "\t\t\"DataServer\":" + value + "\",\n";
-							break;
-						case 12:
-							nodeDetailsContent += "\t\t\"NodeURL\":" + value + "\",\n";
-							break;
-						case 13:
-							nodeDetailsContent += "\t\t\"NodeGMT\":" + value + "\",\n";
-							break;
-						case 14:
-							nodeDetailsContent += "\t\t\"Group\":" + value + "\",\n";
-							break;
-						case 15:
-							nodeDetailsContent += "\t\t\"AppUser\":" + value + "\",\n";
-							break;
-						case 16:
-							nodeDetailsContent += "\t\t\"ContactInformation\":" + value + "\",\n";
-							break;
-						case 17:
-							if (value.contains("\n")) {
-								value = value.replace("\n", " ");
-							}
-							nodeDetailsContent += "\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n";	//The last line of node description doesn't end with comma
-							break;
-						default:
-							break;
+						} catch (Exception e) {
+							System.out.println(value);
+						}
+						break;
+					case 8:
+						nodeDetailsContent += "\t\t\"ProjectType\":" + value + "\",\n";
+						break;
+					case 9:
+						nodeDetailsContent += "\t\t\"PingServer\":" + value + "\",\n";
+						break;
+					case 10:
+						nodeDetailsContent += "\t\t\"TraceServer\":" + value + "\",\n";
+						break;
+					case 11:
+						nodeDetailsContent += "\t\t\"DataServer\":" + value + "\",\n";
+						break;
+					case 12:
+						nodeDetailsContent += "\t\t\"NodeURL\":" + value + "\",\n";
+						break;
+					case 13:
+						nodeDetailsContent += "\t\t\"NodeGMT\":" + value + "\",\n";
+						break;
+					case 14:
+						nodeDetailsContent += "\t\t\"Group\":" + value + "\",\n";
+						break;
+					case 15:
+						nodeDetailsContent += "\t\t\"AppUser\":" + value + "\",\n";
+						break;
+					case 16:
+						nodeDetailsContent += "\t\t\"ContactInformation\":" + value + "\",\n";
+						break;
+					case 17:
+						if (value.contains("\n")) {
+							value = value.replace("\n", " ");
+						}
+						nodeDetailsContent += "\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n";	//The last line of node description doesn't end with comma
+						break;
+					default:
+						break;
 					}
 				}
 				nodeDetailsContent += "\t},";
@@ -161,12 +170,18 @@ public class CreateNodeDetailsJson {
 				continue;
 			}
 		}	
-		
+
 		nodeDetailsContent = nodeDetailsContent.substring(0,nodeDetailsContent.length()-1);
 		nodeDetailsContent += "\n}";
-		
+
 		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
 		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
+
+		try {
+			Utils.getNodeDetails();
+		} catch (Exception e) {
+			Logger.error(e);
+		}
 	}
 
 }

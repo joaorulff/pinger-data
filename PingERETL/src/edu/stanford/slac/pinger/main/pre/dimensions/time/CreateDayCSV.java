@@ -25,8 +25,8 @@ public class CreateDayCSV {
 		
 		String dayFileContent = "#ID,Year,Month,Day,TimeStamp,Label\n";
 		
-		Calendar date = Utils.setInitialDate();		
-		Calendar finalDate = Utils.setFinalDate();
+		Calendar date = Utils.getInitialDate();		
+		Calendar finalDate = Utils.getFinalDate();
 
 		String jsonDays = "{";
 		

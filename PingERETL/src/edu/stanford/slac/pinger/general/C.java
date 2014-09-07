@@ -135,6 +135,7 @@ public final class C {
 	 ******************************************************************* */ 	
 	
 	public static final String NODE_DETAILS_CF = "http://www-iepm.slac.stanford.edu/pinger/pingerworld/nodes.cf";
+	public static final String NODE_DETAILS_ALL_CF = "http://www-iepm.slac.stanford.edu/pinger/pingerworld/all-nodes.cf";
 
 	/* *******************************************************************
 	 * ************* General Functions ***********************************

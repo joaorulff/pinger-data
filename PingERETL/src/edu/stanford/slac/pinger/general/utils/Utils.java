@@ -289,7 +289,7 @@ public class Utils {
 		_MonitorMonitoredJSON = MonitoringMonitoredGroupedJSON;
 	}
 
-	public static Calendar setInitialDate(){
+	public static Calendar getInitialDate(){
 		Calendar date = Calendar.getInstance();
 
 		date.set(Calendar.DAY_OF_MONTH, 1);
@@ -299,7 +299,7 @@ public class Utils {
 		return date;
 	}
 
-	public static Calendar setFinalDate(){
+	public static Calendar getFinalDate(){
 		Calendar date = Calendar.getInstance();
 
 		int currentYear = date.get(Calendar.YEAR);
@@ -323,6 +323,17 @@ public class Utils {
 		String months[] = {"01","02","03","04","05","06","07","08","09","10","11","12"};
 		return months;
 	}
+	
+	public static String[] getYears() {
+		int firstYear = getInitialDate().get(Calendar.YEAR);
+		int lastYear = getFinalDate().get(Calendar.YEAR);
+		String years[] = new String[lastYear-firstYear+1];
+		for (int i = firstYear; i <= lastYear; i++) {
+			years[i-firstYear] = i+"";
+		}
+		return years;
+	}
+	
 
 	private static String fileNameBeginning;
 	public static String getFileNameBeginning(String tick, String metric, String year, String monitor) {
