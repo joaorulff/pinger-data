@@ -1,4 +1,4 @@
-#Wed Sep  3 12:30:03 2014. This file was created on Wed Sep  3 12:30:03 2014
+#Sat Sep  6 18:30:04 2014. This file was created on Sat Sep  6 18:30:04 2014
 #  by /afs/slac/package/pinger/guthrie/node.pl -o
 #  from pwd=/afs/slac.stanford.edu/u/sf/pinger for pinger on host lnxcron.slac.stanford.edu.
 # /afs/slac/package/pinger/guthrie/node.pl needs to be run whenever the Guthrie database is updated.
@@ -25401,5 +25401,5 @@ Made Beacon by Cottrell 8/30/2014.",
 @dmonitoring_continents=("","Africa","Balkans","Central Asia","East Asia","Europe","Latin America","Middle East","NOT-SET","North America","Oceania","Russia","S.E. Asia","South Asia",);
 
 @dremote_continents=("","Africa","Balkans","Central Asia","East Asia","Europe","Latin America","Middle East","NOT-SET","North America","Oceania","Russia","S.E. Asia","South Asia",);
-
+1;
 

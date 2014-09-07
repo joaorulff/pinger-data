@@ -23,8 +23,8 @@ public class CreateMonthCSV {
 		
 		String monthFileContent = "#ID,Year,Month,TimeStamp,Label\n";
 		
-		Calendar date = Utils.setInitialDate();		
-		Calendar finalDate = Utils.setFinalDate();
+		Calendar date = Utils.getInitialDate();		
+		Calendar finalDate = Utils.getFinalDate();
 
 		String jsonMonths = "{";
 		

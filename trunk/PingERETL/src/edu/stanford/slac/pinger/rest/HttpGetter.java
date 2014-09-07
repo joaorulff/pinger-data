@@ -15,8 +15,8 @@ import edu.stanford.slac.pinger.general.Logger;
 
 public class HttpGetter {
 
-	private static final int MAX_ATTEMPT = 5;
-	private static final int TIMEOUT = 500;
+	private static final int MAX_ATTEMPT = 35;
+	private static final int TIMEOUT = 5000; //ms
 
 	public static String readPage(String URL) {
 		int attempt = 0;
@@ -36,7 +36,7 @@ public class HttpGetter {
 				return s;
 			}
 			catch (Exception e){				
-				Logger.log(" Attempt " + attempt + " to access URL: "+ URL + " timed out.", e);
+				Logger.log("Attempt " + attempt + " to access URL: "+ URL + " timed out.", e);
 				continue;
 			}finally {
 				if (in != null) {
@@ -48,7 +48,7 @@ public class HttpGetter {
 				}
 			}
 		}
-		Logger.error("Maximum attempts exceeded to access the URL " + URL);
+		Logger.error("Error code: 01; Maximum attempts exceeded to access the URL " + URL);
 		return null;
 	}
 

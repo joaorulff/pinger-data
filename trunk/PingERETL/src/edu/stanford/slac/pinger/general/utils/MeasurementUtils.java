@@ -56,11 +56,11 @@ public final class MeasurementUtils {
 
 		
 		//These following metrics are not being considered:
-		//mapMetricBean.put("iqr", new MetricBean("iqr", "millisecond", "Interquartile Range", "SimpleMeasurementIQRMeasurement", 12));
-		//mapMetricBean.put("maximum_rtt", new MetricBean("maximum_rtt", "millisecond", "Maximum RTT", "MaximumRoundTripDelayMeasurement", 13));
-		//mapMetricBean.put("minimum_packet_loss", new MetricBean("minimum_packet_loss", "percent", "Minimum Packet Loss", "MinimumPacketLossMeasurement", 14));
-		//mapMetricBean.put("out_of_order_packets", new MetricBean("out_of_order_packets", "Dimensionless", "Packets Out of Order", "OutOfOrderPacketsMeasurement", 15));
-		//mapMetricBean.put("unpredictability", new MetricBean("unpredictability", "Dimensionless", "Unpredictability", "PingUnpredictabilityMeasurement", 16));
+		mapMetricBean.put("iqr", new MetricBean("iqr", "millisecond", "Interquartile Range", "SimpleMeasurementIQRMeasurement", 12));
+		mapMetricBean.put("maximum_rtt", new MetricBean("maximum_rtt", "millisecond", "Maximum RTT", "MaximumRoundTripDelayMeasurement", 13));
+		mapMetricBean.put("minimum_packet_loss", new MetricBean("minimum_packet_loss", "percent", "Minimum Packet Loss", "MinimumPacketLossMeasurement", 14));
+		mapMetricBean.put("out_of_order_packets", new MetricBean("out_of_order_packets", "Dimensionless", "Packets Out of Order", "OutOfOrderPacketsMeasurement", 15));
+		mapMetricBean.put("unpredictability", new MetricBean("unpredictability", "Dimensionless", "Unpredictability", "PingUnpredictabilityMeasurement", 16));
 	}
 	
 

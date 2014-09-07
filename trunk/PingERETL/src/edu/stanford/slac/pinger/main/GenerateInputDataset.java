@@ -1,5 +1,6 @@
 package edu.stanford.slac.pinger.main;
 
+import java.util.ArrayList;
 import java.util.Map.Entry;
 
 import com.google.gson.JsonElement;
@@ -7,6 +8,7 @@ import com.google.gson.JsonObject;
 
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.MeasurementUtils;
+import edu.stanford.slac.pinger.general.utils.NodesUtils;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
 
@@ -15,13 +17,13 @@ public class GenerateInputDataset {
 	public static void main(String[] args) {
 		if (args.length == 0) {
 			args = new String[]{
-				"debug=0",
-				"inputDatasetFile=./Input.dataset"
+					"debug=0",
+					"inputDatasetFile=./Input.dataset"
 			};
 		}	
 		start(args);
 	}
-	
+
 	public static void start(String[] args) {
 
 		String inputDatasetFile = null;
@@ -36,28 +38,30 @@ public class GenerateInputDataset {
 		} catch (Exception e) {
 			Logger.log("start", e, "errors");
 		}
-		
-		JsonObject monitorMonitoredJson = Utils.getMonitorMonitoredJSON();
-		if (monitorMonitoredJson == null) {
-			Logger.log(GenerateInputDataset.class + "Json Null", "errors");
-			return;
-		}
 
+		
+		ArrayList<String> sourceNodes = NodesUtils.getSourceNodes();
+
+		String tick = "daily";
 		StringBuilder output = new StringBuilder();
-		output.append("METRIC;TICK;MONITOR\n");
-		for (String metric : MeasurementUtils.METRICS) {
-			for (String tick : MeasurementUtils.TICKS) {
-				for (Entry<String, JsonElement> entry : monitorMonitoredJson.entrySet()) {
-					String monitor = entry.getKey();
-					output.append(metric+";"+tick+";"+monitor+"\n");
-				}
-			}
+		output.append("YEAR;MONTH;METRIC;TICK;MONITOR\n");
+		ArrayList<String> years = new ArrayList<String>();
+		for (int i = 2003; i <= 2014; i++) {
+			years.add(i+"");
 		}
+		
+		for (String year : years) 
+			for (String metric : MeasurementUtils.METRICS)
+				//for (String tick : MeasurementUtils.TICKS)
+				//for (String month : Utils.getMonths()) 
+					for (String monitor : sourceNodes) {
+						output.append(year+";"+metric+";"+tick+";"+monitor+"\n");
+					}
 
 		Utils.writeIntoFile(output.toString(), inputDatasetFile);
-		
+
 		Logger.log("Input dataset was generated!");
 	}
 
-	
+
 }
