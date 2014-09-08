@@ -33,7 +33,10 @@ public class CSVProcessorFromFile {
 	private HashMap<String,HashMap<String, String>> getMap(String month) {
 		String filePath = inputDir + Utils.getFileNameBeginning(tick, metric, year, monitor) +"_"+month+".csv";
 		String csv = Utils.readFile(filePath);
-		if (csv==null) return null;
+		if (csv==null) {
+			Logger.error("Error code 01: File does not exist: " + filePath);
+			return null;
+		}
 		String []lines = csv.split("\n");
 		String []head = lines[0].split("\\s");
 

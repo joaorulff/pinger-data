@@ -1,13 +1,10 @@
 package edu.stanford.slac.pinger.main.pre.dimensions;
 
 import java.util.ArrayList;
-import java.util.Map.Entry;
 
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import edu.stanford.slac.pinger.beans.NetworkNodeBean;
-import edu.stanford.slac.pinger.beans.NetworkSourceNodeBean;
 import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.NodesUtils;
@@ -45,7 +42,7 @@ public class CreateSourceNodesCSV {
 				 
 				 String idStr = String.valueOf(id++);
 				 
-				 NetworkSourceNodeBean nsb = new NetworkSourceNodeBean(idStr, nodeName, nodeIP, latitude, longitude, nodeNickName, nodeFullName, nodeSiteName, projectType);
+				 NetworkNodeBean nsb = new NetworkNodeBean(idStr, nodeName, nodeIP, latitude, longitude, nodeNickName, nodeFullName, nodeSiteName, projectType);
 				 
 				 sb.append(nsb.toString(','));			 
 				 

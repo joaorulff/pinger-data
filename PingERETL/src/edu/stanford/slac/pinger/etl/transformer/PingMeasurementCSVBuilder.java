@@ -56,7 +56,7 @@ public class PingMeasurementCSVBuilder {
 			sourceContinentId = Integer.parseInt(ContinentBean.MAP.get(
 					continentInitials).getId());
 		} catch (Exception e) {
-			Logger.log("Tried to get details about " + monitoring, e, "errors");
+			Logger.error("Error code: 03 - Tried to get details about " + monitoring, e, "errors");
 			return;
 		}
 
@@ -85,7 +85,7 @@ public class PingMeasurementCSVBuilder {
 						.get(continentInitials).getId());
 
 			} catch (Exception e) {
-				Logger.log("Tried to get details about " + monitored, e,
+				Logger.error("Error code: 03 - Tried to get details about " + monitored, e,
 						"errors");
 				continue;
 			}
@@ -116,14 +116,14 @@ public class PingMeasurementCSVBuilder {
 		try {
 			mapMetricBean = MeasurementUtils.mapMetricBean;
 		} catch (Exception e) {
-			Logger.error("Error when getting map.", e);
+			Logger.error("Error code: 02 - Error when getting map.", e);
 			System.exit(-1);
 		}
 		MetricBean metricBean = null;
 		try {
 			metricBean = mapMetricBean.get(metric);
 		} catch (Exception e) {
-			Logger.error("Error when getting Metric Bean.", e);
+			Logger.error("Error code: 02 - Error when getting Metric Bean.", e);
 			System.exit(-1);
 		}
 
@@ -145,7 +145,7 @@ public class PingMeasurementCSVBuilder {
 			try {
 				timeFromDaysJson = Long.parseLong(days.get(time).getAsString());
 			} catch (Exception e) {
-				Logger.error(time + " is not a valid time.");
+				Logger.error("Error code: 04 - " + time + " is not a valid time.");
 				continue;
 			}
 
