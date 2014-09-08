@@ -11,6 +11,7 @@ import edu.stanford.slac.pinger.etl.transformer.PingMeasurementCSVBuilder;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
+import edu.stanford.slac.pinger.main.pre.CreateNodeDetailsJson;
 
 public class TransformAndSavePingtableCSV {
 
@@ -18,7 +19,7 @@ public class TransformAndSavePingtableCSV {
 		if (args.length == 0) {
 			args = new String[]{
 					"debug=0",
-					"transformFile=1,inputDir=c:/downloadedCSV/,transformedFilesDirectory=./transformedFiles,monitorNode=aup.seecs.edu.pk,metric=throughput,tick=daily,year=2012",
+					"transformFile=1,inputDir=/home/renan/Documents/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
 			};
 		}		
 		start(args);
@@ -26,6 +27,8 @@ public class TransformAndSavePingtableCSV {
 
 	public static void transformFile(String arg) {
 
+		
+		
 		String ags[] = arg.split(",");
 		String inputDir = null;
 		String monitorNode = null;	
