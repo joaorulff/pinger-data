@@ -36,9 +36,6 @@ public class PingMeasurementCSVBuilder {
 		this.tickParameter = tickParameter;
 	}
 
-	// TODO: It will not work.
-	static long sequence = 1;
-
 	public void run() {
 
 		JsonObject sourceNodeDetails = Utils.getNodeDetails().get(monitoring)

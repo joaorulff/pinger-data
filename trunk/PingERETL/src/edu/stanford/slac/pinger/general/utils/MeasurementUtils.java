@@ -21,6 +21,7 @@ public final class MeasurementUtils {
 	};
 	
 	public static String[] METRICS = {
+		/*
 		"throughput",
 		"packet_loss",
 		"average_rtt",
@@ -32,11 +33,13 @@ public final class MeasurementUtils {
 		"unreachability",
 		"zero_packet_loss_frequency",
 		"minimum_rtt",
-		//"iqr",
-		//"maximum_rtt",
-		//"minimum_packet_loss",
-		//"out_of_order_packets",
-		//"unpredictability",
+		*/
+		
+		"iqr",
+		"maximum_rtt",
+		"minimum_packet_loss",
+		"out_of_order_packets",
+		"unpredictability",
 	};
 	
 	public static HashMap<String,MetricBean> mapMetricBean = null;
@@ -54,13 +57,14 @@ public final class MeasurementUtils {
 		mapMetricBean.put("zero_packet_loss_frequency", new MetricBean("zero_packet_loss_frequency", "percent", "Zero Packet Loss Frequency", "ZeroPacketLossFrequencyMeasurement", 10));
 		mapMetricBean.put("minimum_rtt", new MetricBean("minimum_rtt", "millisecond", "Minimum RTT", "MinimumRoundTripDelayMeasurement", 11));
 
-		
+		/*
 		//These following metrics are not being considered:
 		mapMetricBean.put("iqr", new MetricBean("iqr", "millisecond", "Interquartile Range", "SimpleMeasurementIQRMeasurement", 12));
 		mapMetricBean.put("maximum_rtt", new MetricBean("maximum_rtt", "millisecond", "Maximum RTT", "MaximumRoundTripDelayMeasurement", 13));
 		mapMetricBean.put("minimum_packet_loss", new MetricBean("minimum_packet_loss", "percent", "Minimum Packet Loss", "MinimumPacketLossMeasurement", 14));
 		mapMetricBean.put("out_of_order_packets", new MetricBean("out_of_order_packets", "Dimensionless", "Packets Out of Order", "OutOfOrderPacketsMeasurement", 15));
 		mapMetricBean.put("unpredictability", new MetricBean("unpredictability", "Dimensionless", "Unpredictability", "PingUnpredictabilityMeasurement", 16));
+		*/
 	}
 	
 

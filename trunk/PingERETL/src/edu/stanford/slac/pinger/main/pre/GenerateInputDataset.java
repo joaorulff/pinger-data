@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.main;
+package edu.stanford.slac.pinger.main.pre;
 
 import java.util.ArrayList;
 import java.util.Map.Entry;
@@ -44,18 +44,23 @@ public class GenerateInputDataset {
 
 		String tick = "daily";
 		StringBuilder output = new StringBuilder();
-		output.append("YEAR;MONTH;METRIC;TICK;MONITOR\n");
+		output.append("YEAR;METRIC;TICK;MONITOR;MAXATTEMPT;TIMEOUT\n");
+		//output.append("YEAR;METRIC;TICK;MONITOR\n");
 		ArrayList<String> years = new ArrayList<String>();
 		for (int i = 2003; i <= 2014; i++) {
 			years.add(i+"");
 		}
+		
+		String MAXATTEMPT = "35";
+		String TIMEOUT = "500";
 		
 		for (String year : years) 
 			for (String metric : MeasurementUtils.METRICS)
 				//for (String tick : MeasurementUtils.TICKS)
 				//for (String month : Utils.getMonths()) 
 					for (String monitor : sourceNodes) {
-						output.append(year+";"+metric+";"+tick+";"+monitor+"\n");
+						output.append(year+";"+metric+";"+tick+";"+monitor+";"+MAXATTEMPT+";"+TIMEOUT+"\n");
+						//output.append(year+";"+metric+";"+tick+";"+monitor+"\n");
 					}
 
 		Utils.writeIntoFile(output.toString(), inputDatasetFile);

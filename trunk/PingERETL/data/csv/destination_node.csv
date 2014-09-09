@@ -1,1085 +1,954 @@
-#id,node_name,node_ip,latitude,longitude,nick_name,full_name,site_name,project_type
-1,www.lanl.gov,204.121.3.13",35.7,-105.15,GOV.LANL.N7,Los Alamos National Laboratory,lanl.gov,NOT-SET,
-2,rzserv2.gsi.de,140.181.69.13",49.8,8.67,DE.GSI.N1,(GSI) Gesellschaft fuer Schwerionenforschung m.b.H,gsi.de,Z,
-3,sunysb.edu,129.49.2.176",40.915,-73.1199,EDU.SUNYSB.N1,State University of New York at Stony Brook,sunysb.edu,Z,
-4,umn.edu,134.84.119.207",44.9,-93.25,EDU.UMN.N4,University of Minnesota,umn.edu,Z,
-5,gluino.phys.unm.edu,198.59.169.74",35.0,-106.65,EDU.UNM.N1,University of New Mexico,unm.edu,Z,
-6,utdallas.edu,129.110.10.36",32.9,-96.66,EDU.UTDALLAS.N2,University of Texas at Dallas,utdallas.edu,NOT-SET,
-7,if.ufrj.br,146.164.36.15",-22.8,-43.28,BR.UFRJ.N2,Universidade Federal do Rio de Janeiro,ufrj.br,NOT-SET,
-8,spin.riken.bnl.gov,130.199.80.216",40.7,-72.90,GOV.BNL.N3,Brookhaven National Laboratory,bnl.gov,Z,
-9,hepnrc.hep.net,131.225.110.18",4,-88,GOV.FNAL.N10,HEP Information Center at Fermilab,fnal.gov,M,
-10,ping.cern.ch,137.138.28.176",46.2,6.07,CH.CERN.N1,European Center for Particle Physics,cern.ch,B,
-11,icfamon.rl.ac.uk,130.246.135.152",51.572,-1.3099,UK.RL.AC.N1,Rutherford Appleton Laboratory,rl.ac.uk,NOT-SET,
-12,pc-isdn.desy.de,131.169.118.33",53.5,9.98,DE.DESY.N2,Deutsches Elektronen-Synchrotron,desy.de,Z,
-13,www.desy.de,131.169.30.61",53.5,9.98,DE.DESY.N4,Deutsches Elektronen-Synchrotron,desy.de,ZNN,
-14,utkvm1.utk.edu,160.36.178.69",35.9,-83.91,EDU.UTK.N1,University of Tennessee at Knoxville,utk.edu,NOT-SET,
-15,hep.physics.mcgill.ca,132.206.6.88",45.505,-73.5782,CA.MCGILL.N1,McGill University,mcgill.ca,NOT-SET,
-16,lbl.gov,128.3.7.82",37.8,-122.27,GOV.LBL.N1,Lawrence Berkeley National Laboratory,lbl.gov,Z,
-17,monet.astro.uiuc.edu,128.174.51.155",40.1,-88.21,UIUC,University of Illinois at Urbana Champaign,uiuc.edu,Z,
-18,zebu.uoregon.edu,128.223.21.25",44.0,-123.09,EDU.UOREGON.N3,University of Oregon,uoregon.edu,NOT-SET,
-19,sun01a.desy.de,131.169.200.2",53.5,9.98,DE.DESY.N5,Deutsches Elektronen-Synchrotron,desy.de,Z,
-20,www.triumf.ca,142.90.113.81",49.247,-123.2304,CA.TRIUMF.N2,TRIUMF Facility,triumf.ca,NOT-SET,
-21,cornell.edu,128.253.161.179",41.4,-81.68,EDU.CORNELL.N1,Cornell University,cornell.edu,Z,
-22,www.thphys.may.ie,149.157.205.5",53.33,-6.250,IE.MAY.N1,NUI Maynooth Dept. of Mathematical Physics,may.ie,NOT-SET,
-23,lnsuni1.lns.infn.it,192.84.151.3",41.88,12.500,INFN-LNS,National Institue of Nuclear Physics,lns.infn.it,Z,
-24,surf.sno.laurentian.ca,142.51.70.5",43.65,-79.333,SNO,Laurentian University,sno.laurentian.ca,ZN,
-25,sg4.tsukuba.jp.hep.net,202.13.200.2",35.70,139.767,JP.TSUKUBA.JP.HEP.N1,High Energy Physics Institute of Physics,sg4.tsukuba.jp.hep.net,NOT-SET,
-26,nic.bme.hu,152.66.115.1",47.4,19.25,BME-HU,Budapest University of Technology,bme.hu,ZN,
-27,db.nea.fr,193.51.64.1",48.86,2.333,NEA-FR,Nuclear Energy Agency,nea.fr,Z,
-28,192.83.196.111,192.83.196.111",25.00,121.400,192.83.196.111,NOT-SET,TANetBackbone-MOE.edu.tw,ZN,
-29,147.231.26.40,147.231.26.40",50.0,14.433,CZ.FZU.N1,Academy of Sciences of the Czech Republic,fzu.cz,ZN,
-30,netwatch.sinica.edu.tw,140.109.13.101",25.0,121.63,TW.ASCC.NET.N31,Academia Sinica,sinica.edu.tw,Z,
-31,mailhub.scl.ameslab.gov,147.155.137.19",42.03,-93.617,GOV.AMESLAB.N5,Scalable Computing Laboratory,ameslab.gov,Z,
-32,www.ikf.physik.uni-frankfurt.de,141.2.243.3",52.27,13.180,UNI-Frankfurt,Institute for Nuclear Physics of the Johann Wolfgang Goethe-Universitat,uni-frankfurt.de,ZN,
-33,caltech.edu,131.215.239.108",34.1,-118.14,EDU.CALTECH.N2,California Institute of Technology,caltech.edu,NOT-SET,
-34,www.ihep.ac.cn,202.38.128.8",39.9,116.43,CN.IHEP.AC.N3,Beijing Institute of High Energy Physics,ihep.ac.cn,NOT-SET,
-35,netmon.physics.carleton.ca,134.117.14.93",45.4,-75.70,CA.CARLETON.N2,Carleton University,carleton.ca,M,
-36,buphy.bu.edu,128.197.41.42",42.36,-71.050,EDU.BU.N3,Boston Universtity,bu.edu,NOT-SET,
-37,netgate.net,205.214.169.4",37.3,-121.93,NET.NETGATE.N1,Netgate,netgate.net,NOT-SET,
-38,ohio-state.edu,128.146.214.28",39.96,-83.000,OHIO-STATE,Ohio State University,ohio-state.edu,Z,
-39,ludens.elte.hu,157.181.2.1",47.4,19.25,HU.ELTE.N1,ELTE,elte.hu,NOT-SET,
-40,www-hep.phys.cmu.edu,128.2.115.21",40.4,-80.00,EDU.CMU.N3,Carnegie Mellon University,cmu.edu,NOT-SET,
-41,www.infn.it,193.206.84.220",41.88,12.500,IT.INFN.N14,National Institute of Nulear Physics,infn.it,NOT-SET,
-42,dns.sinica.edu.tw,140.109.1.10",25.0,121.63,TW.SINICA.EDU.N1,Academia Sinica,sinica.edu.tw,B,
-43,icsun1.ic.ornl.gov,128.219.64.47",36.01,-84.250,GOV.ORNL.N4,Oak Ridge National Laboratory,ornl.gov,Z,
-44,cmu.edu,128.2.10.162",40.4,-80.00,EDU.CMU.N1,Carnegie Mellon University,cmu.edu,Z,
-45,moe.rice.edu,128.42.205.44",29.83,-95.000,EDU.RICE.N1,Rice University,rice.edu,NOT-SET,
-46,yale.edu,128.36.0.1",42.3,-71.06,EDU.YALE.N2,Yale University,yale.edu,ZN,
-47,osfserver.le.infn.it,192.84.152.11",41.88,12.500,INFN-LE,National Institute of Nulear Physics,le.infn.it,Z,
-48,wisc.edu,144.92.9.144",43.0,-89.40,EDU.WISC.N3,University of Wisconsin,wisc.edu,Z,
-49,nyu.edu,128.122.253.92",40.84,-73.867,NYU,New York University,nyu.edu,Z,
-50,www.cisco.com,198.133.219.25",37.33,-121.867,CISCO,Cisco Systems,cisco.com,Z,
-51,ippm.utah.edu,155.99.55.11",40.54,-111.883,EDU.UTAH.N1,University of Utah,utah.edu,Z,
-52,scipp.ucsc.edu,128.114.130.20",36.9,-122.03,EDU.UCSC.N1,University of California - Santa Cruz,ucsc.edu,NOT-SET,
-53,heptel.rl.ac.uk,193.63.181.6",51.7,-1.25,UK.RL.AC.N5,Rutherford Appleton Laboratory,rl.ac.uk,Z,
-54,dns.edu.cn,202.112.0.35",39.91,116.417,CN.EDU.N1,China Education and Research Network,edu.cn,NOT-SET,
-55,mvxrm1.roma1.infn.it,141.108.5.3",41.8,12.50,INFN-ROMA,INFN Rome,roma1.infn.it,ZN,
-56,www.nersc.gov,128.55.6.34",37.87,-122.267,GOV.NERSC.N2,National Energy Research Scientific Computing Center,nersc.gov,Z,
-57,www.er.doe.gov,205.254.141.139",38.9,-77.04,GOV.DOE.N3,Office of Science U.S. Department of Energy,doe.gov,Z,
-58,www.data.com,12.130.5.36",40.27,-74.517,DATA-COM,NetworkMagazine.com,data.com,ZN,
-59,hep1.c.u-tokyo.ac.jp,157.82.60.173",35.70,139.767,JP.U-TOKYO.AC.N2,University of Tokyo,u-tokyo.ac.jp,NOT-SET,
-60,avaxfi.fi.infn.it,192.84.145.14",41.88,12.500,INFN-FI,National Institue of Nuclear Physics,fi.infn.it,ZN,
-61,rockvax.rockefeller.edu,129.85.1.21",40.84,-73.867,ROCKEFELLER,Rockefeller University,rockefeller.edu,Z,
-62,vaxmi.mi.infn.it,192.84.138.1",41.88,12.500,INFN-MI,INFN Milano,mi.infn.it,ZNN,
-63,ns1.es.net,198.128.2.10",37.87,-122.267,NET.ES.N1,Energy Sciences Network,es.net,NOT-SET,
-64,pa.cache.nlanr.net,192.172.226.121",32.8,-117.24,NET.NLANR.N3,National Laboratory for Applied Network Research,nlanr.net,NOT-SET,
-65,www.fys.uio.no,129.240.84.18",59.93,10.750,NO.UIO.N1,University of Oslo,uio.no,ZN,
-66,www.in2p3.fr,134.158.69.48",48.86,2.333,FR.IN2P3.N9,IN2P3,in2p3.fr,NOT-SET,
-67,140.109.246.1,140.109.246.1",25.0,121.45,TW.ASCC.NET.N2,Academia Sinica Computing Centre,ascc.net,ZN,
-68,140.109.32.1,140.109.32.1",25.0,121.45,TW.ASCC.NET.N3,Academia Sinica Computing Centre,ascc.net,ZN,
-69,www.cern.ch,137.138.144.168",46.23249,6.045914,CH.CERN.N9,European Center for Particle Physics,cern.ch,NOT-SET,
-70,www.phys.s.u-tokyo.ac.jp,133.11.1.3",35.70,139.767,JP.U-TOKYO.AC.N3,University of Tokyo,u-tokyo.ac.jp,NOT-SET,
-71,lobelia.physics.wisc.edu,128.104.28.5",43.0,-89.40,EDU.WISC.N1,University of Wisconsin,physics.wisc.edu,Z,
-72,arizona.edu,128.196.128.233",32.21,-110.967,EDU.ARIZONA.N1,The University of Arizona,arizona.edu,Z,
-73,usuhs.mil,131.158.7.14",38.9,-77.10,MIL.USUHS.N1,Uniformed Services University,usuhs.mil,Z,
-74,wsgs00.lngs.infn.it,192.84.135.4",41.88,12.500,INFN-IT,National Institue of Nuclear Physics,lngs.infn.it,ZN,
-75,dxcnaf.cnaf.infn.it,131.154.3.1",44.5,11.33,IT.INFN.N7,INFN National Center for Telematics and Informatics.,cnaf.infn.it,B,
-76,mvxme1.me.infn.it,192.135.18.10",41.88,12.500,INFN-ME,National Institue of Nuclear Physics,me.infn.it,Z,
-77,www.supercomp.org,63.118.7.16",40.65,-73.955,SUPERCOMP,Super Computing Conference Series,supercomp.org,Z,
-78,carmen.to.infn.it,192.84.137.1",41.88,12.500,INFN-TO,INFN Torino,to.infn.it,ZN,
-79,washington.edu,140.142.3.7",47.6,-122.32,EDU.WASHINGTON.N3,University of Washington,washington.edu,Z,
-80,www.hep.anl.gov,146.139.180.60",41.85,-88.017,GOV.ANL.N1,Argonne National Laboratory,anl.gov,NOT-SET,
-81,www.ecm.ub.es,161.116.81.151",41.2,2.07,ES.ECM.UB.N1,University of Barcelona,ub.es,NOT-SET,
-82,130.209.4.16,130.209.4.16",51.50,-0.167,UK.AC.N1,University of Glasgow,gla.ac.uk,ZN,
-83,dsna1.na.infn.it,192.84.134.50",40.8,14.20,IT.INFN.N6,INFN Napoli,na.infn.it,B,
-84,ns2.sztaki.hu,193.225.86.1",47.4,19.25,SZTAKI-HU,Computer and Automation Research Institute of the Hungarian Academy of Sciences,sztaki.hu,ZN,
-85,bu.edu,128.197.27.7",42.36,-71.050,EDU.BU.N2,Boston Universtity,bu.edu,Z,
-86,www.u-tokyo.ac.jp,133.11.114.194",35.70,139.767,JP.U-TOKYO.AC.N1,University of Tokyo,u-tokyo.ac.jp,NOT-SET,
-87,cavssy.ca.infn.it,192.84.132.1",41.88,12.500,INFN-CA,National Institute of Nuclear Physics,ca.infn.it,ZN,
-88,192.215.17.39,192.215.17.39",40.27,-74.517,192.215.17.39,Data.com,data.com,Z,
-89,ns1.pi.infn.it,212.189.152.2",41.88,12.500,IT.PI.INFN.N1,INFN Pisa,pi.infn.it,ZN,
-90,omnigate.clarkson.edu,128.153.4.2",44.67,-74.983,CLARKSON,Clarkson University,clarkson.edu,Z,
-91,www.nikhef.nl,192.16.199.160",52.35,4.900,NL.NIKHEF.N1,National Institute for Nulear Physics and High Energy Physics,nikhef.nl,B,
-92,ftp.eso.org,134.171.56.106",50.73,7.100,ftp.eso.org,European Southern Observatory,ftp.eso.org,Z,
-93,www.slac.stanford.edu,134.79.18.188",37.4,-122.20,EDU.SLAC.STANFORD.N2,Stanford Linear Accelerator Center,slac.stanford.edu,NOT-SET,
-94,www.gsi.de,140.181.64.223",52.27,13.180,DE.GSI.N1,GSI,gsi.de,NOT-SET,
-95,needmore.physics.indiana.edu,129.79.157.90",39.1,-86.53,EDU.INDIANA.N1,Indiana University,indiana.edu,NOT-SET,
-96,www.scl.ameslab.gov,147.155.137.28",42.03,-93.617,GOV.AMESLAB.N4,Scalable Computing Laboratory,ameslab.gov,Z,
-97,140.109.1.1,140.109.1.1",25.0,121.45,TW.ASCC.NET.N1,Academia Sinica Computing Centre,ascc.net,ZN,
-98,syr.edu,128.230.18.35",43.05,-76.150,EDU.SYR.N1,Syracuse University,syr.edu,Z,
-99,www.ps.uci.edu,128.200.48.62",33.6,-117.75,EDU.UCI.N1,University of California - Irvine,uci.edu,NOT-SET,
-100,alp4ct.ct.infn.it,192.84.150.104",41.88,12.500,INFN-CT,National Institute of Nuclear Physics,ct.infn.it,ZN,
-101,www.pa.msu.edu,35.9.68.172",42.73,-84.467,EDU.MSU.PA.N1,Michigan State University,pa.msu.edu,NOT-SET,
-102,www.nbi.dk,130.225.212.5",55.686,12.5719,DK.NBI.N1,Niels Bohr Institute,nbi.dk,NOT-SET,
-103,www.mppmu.mpg.de,134.107.24.10",48.1,11.58,DE.MPG.N1,NOT-SET,mpg.de,NOT-SET,
-104,w4.lns.cornell.edu,128.84.44.110",41.4,-81.68,EDU.CORNELL.N3,Cornell University,cornell.edu,NOT-SET,
-105,wayne.edu,141.217.1.22",42.44,-83.117,EDU.WAYNE.N1,Wayne State University,wayne.edu,Z,
-106,ftp.noao.edu,140.252.1.52",32.21,-110.967,EDU.NOAO.N1,The National Optical Astronomy Observatory,noao.edu,NOT-SET,
-107,ftp.physics.carleton.ca,134.117.14.27",45.4,-75.70,CA.CARLETON.N1,Carleton University,carleton.ca,B,
-108,sarcee.phys.ualberta.ca,129.128.7.65",53.52,-113.526,CA.UALBERTA.N2,University of Alberta,ualberta.ca,Z,
-109,www.sun.com,192.9.49.33",37.38,-122.067,SUN,Sun Microsystems,sun.com,ZN,
-110,alfalfa.pas.rochester.edu,128.151.144.230",43.1,-77.60,EDU.ROCHESTER.N1,University of Rochester,rochester.edu,NOT-SET,
-111,www.lightning.net,216.218.186.2",37.51,-121.896,LIGHTNING-NET,Lighning Internet Services,lightning.net,Z,
-112,trieste-gw1.ts.infn.it,140.105.6.1",45.6,13.80,INFN-TS,INFN Trieste,ts.infn.it,ZNN,
-113,canel5.iis.sinica.edu.tw,140.109.19.1",25.0,121.63,TW.ASCC.NET.N34,Academia Sinica,sinica.edu.tw,Z,
-114,www.het.brown.edu,128.148.26.157",41.81,-71.400,EDU.BROWN.N3,Brown University,brown.edu,Z,
-115,www.ill.fr,193.49.43.124",48.86,2.333,FR.ILL.N1,Laue-Langevin Institute,ill.fr,NOT-SET,
-116,fed.ornl.gov,134.167.108.3",36.01,-84.250,ORNL,Oak Ridge National Laboratory,ornl.gov,Z,
-117,lns62.lns.cornell.edu,128.84.47.62",41.4,-81.68,EDU.CORNELL.N2,Cornell University,cornell.edu,NOT-SET,
-118,raman.physics.ucla.edu,128.97.23.117",34.05,-118.250,EDU.UCLA.N2,University of California - Los Angeles,ucla.edu,Z,
-119,www.es.net,198.128.3.112",37.87,-122.267,ES-NET,Energy Sciences Network,es.net,Z,
-120,140.109.18.50,140.109.18.50",25.00,121.400,TW.ASCC.NET.N36,Academia Sinica,sinica.edu.tw,ZN,
-121,ftp.stsci.edu,130.167.1.16",39.28,-76.617,EDU.STSCI.N1,Space Telescope Science Institute,stsci.edu,NOT-SET,
-122,www.ccs.ornl.gov,134.167.16.23",36.01,-84.250,ORNL,Center for Computational Sciences at ORNL,ornl.gov,ZN,
-123,cio-sys.cisco.com,192.31.7.130",37.33,-121.867,CISCO,Cisco Systems,cisco.com,Z,
-124,www.kph.uni-mainz.de,134.93.178.19",52.27,13.180,DE.UNI-MAINZ.N2,Johannes Gutenberg-University,uni-mainz.de,NOT-SET,
-125,canel4.iis.sinica.edu.tw,140.109.20.1",25.0,121.63,TW.ASCC.NET.N35,Academia Sinica,sinica.edu.tw,ZN,
-126,ornl.gov,128.219.128.17",36.01,-84.250,GOV.ORNL.N2,Oak Ridge National Laboratory,ornl.gov,Z,
-127,ftp.jach.hawaii.edu,128.171.90.222",21.31,-157.850,EDU.HAWAII.N3,University of Hawaii,hawaii.edu,Z,
-128,charm.physics.ucsb.edu,128.111.19.35",34.42,-119.683,EDU.UCSB.N1,University of California - Santa Barbara,ucsb.edu,NOT-SET,
-129,sitka.triumf.ca,142.90.106.59",49.247,-123.2308,CA.TRIUMF.N4,TRIUMF Facility,triumf.ca,MB,
-130,desperado.utd.rochester.edu,128.151.7.1",43.1,-77.60,ROCHESTER,University of Rochester,rochester.edu,Z,
-131,info.fuw.edu.pl,193.0.80.28",52.25,21.000,PL.FUW.EDU.N1,NOT-SET,fuw.edu.pl,NOT-SET,
-132,calvin.niams.nih.gov,165.112.114.25",38.98,-77.083,NIH,National Institute of Arthritis and Musculoskeletal and Skin Diseases,nih.gov,Z,
-133,www.fnal.gov,131.225.70.2",41.8,-88.31,GOV.FNAL.N2,Fermi National Accelerator Laboratory,fnal.gov,NOT-SET,
-134,d.root-servers.net,128.8.10.90",38.98,-76.933,NET.ROOT-SERVERS.N3,Root Server-D,root-servers.net,NOT-SET,
-135,www.physik.rwth-aachen.de,134.130.4.35",52.27,13.180,DE.RWTH-AACHEN.N1,The Aachen University of Technology,rwth-aachen.de,NOT-SET,
-136,www.ihep.su,194.190.161.169",55.75,37.583,RU.IHEP.N1,Institute for High Energy Physics,ihep.su,NOT-SET,
-137,aip.org,192.58.150.10",40.71,-73.583,ORG.AIP.N1,American Institute of Physics,aip.org,Z,
-138,ucr.edu,138.23.226.101",33.98,-117.350,UCR,University of California - Riverside,ucr.edu,Z,
-139,www.mcs.anl.gov,140.221.9.81",41.85,-88.017,GOV.ANL.N2,Argonne National Laboratory,anl.gov,Z,
-140,purdue.edu,128.210.7.199",40.4,-86.91,EDU.PURDUE.N2,Purdue University,purdue.edu,Z,
-141,server2.infn.it,131.154.1.3",41.88,12.500,IT.INFN.N16,INFN,infn.it,ZN,
-142,ping.rmki.kfki.hu,148.6.176.200",47.50,19.083,HU.KFKI.N1,KFKI Research Institute for Particle and Nulear Physics,rmki.kfki.hu,B,
-143,grpmail1.mail.vanderbilt.edu,129.59.1.112",36.16,-86.750,EDU.VANDERBILT.N1,Vanderbilt University,vanderbilt.edu,Z,
-144,nuclear.physics.sunysb.edu,129.49.30.2",40.915,-73.1199,EDU.SUNYSB.N2,Stony Brook Physics and Astronomy,sunysb.edu,Z,
-145,www.hepi.edu.ge,217.147.226.4",41.75,44.9,GE.HEPI.EDU.N1,High Energ Institute,hepi.edu.ge,NOT-SET,
-146,argus.stanford.edu,171.64.7.115",37.42860,-122.169344,EDU.STANFORD.N1,Stanford University,stanford.edu,NOT-SET,
-147,eltca1.epfl.ch,128.178.128.21",46.520,6.5682,CH.EPFL.N1,EPFL,epfl.ch,B,
-148,znsun1.ifh.de,141.34.1.16",52.27,13.180,DE.IFH.N1,Deutsches Elektronen-Synchrotron,ifh.de,NOT-SET,
-149,cache.kr.apan.net,203.255.248.3",37.55,126.967,cache.kr.apan.net,Asia-Pacific  Advanced Network Korea Consortium,cache.kr.apan.net,Z,
-150,ns.concentric.net,207.155.183.72",37.32,-122.017,concentric.net,XO Communications???,concentric.net,Z,
-151,ns.kotis.net,203.233.202.33",37.55,126.967,kotis.net,Korea Trade Infromation Services,kotis.net,Z,
-152,noc.kr.apan.net,203.255.248.51",37.5,127,noc.kr.apan.net,NOT-SET,noc.kr.apan.net,Z,
-153,ns.uu.net,137.39.1.3",38.84,-77.300,uu.net,UUNET-Worldcom,uu.net,Z,
-154,ns.kornet.ne.kr,211.216.50.150",37.55,126.967,kornet.ne.kr,KORNET,kornet.ne.kr,Z,
-155,ns.psi.net,38.8.48.2",38.97,-77.383,psi.net,PSINet,psi.net,Z,
-156,domen.uninett.no,158.38.62.25",59.93,10.750,NO.UNINETT.N1,Norwegian Academic Network for Research and Education,uninett.no,Z,
-157,ns.hana.ne.kr,220.90.238.66",37.55,126.967,hana.ne.kr,NOT-SET,hana.ne.kr,Z,
-158,ns.kreonet.re.kr,134.75.30.1",37.55,126.967,kreonet.re.kr,Korea Research Environment Open Network,kreonet.re.kr,Z,
-159,ns.krnic.net,202.30.50.50",37.55,126.967,krnic.net,NOT-SET,krnic.net,Z,
-160,www.netvalley.net,216.187.103.168",37.5,127,netvalley.net,NOT-SET,netvalley.net,Z,
-161,ns2.jp.apan.net,203.181.248.30",37.55,126.967,NET.APAN.N1,Asia-Pacific Advanced Network,ns2.jp.apan.net,Z,
-162,ns.hanarotel.net,210.180.98.85",37.5,127,hanarotel.net,Hananet,hanarotel.net,Z,
-163,ns.shinbiro.net,202.30.143.11",37.55,126.967,shinbiro.net,Shinbiro,shinbiro.net,Z,
-164,ns.thrunet.co.kr,210.117.65.100",37.55,126.967,thrunet.co.kr,NOT-SET,thrunet.co.kr,Z,
-165,ns.bora.net,164.124.101.2",37.55,126.967,bora.net,Boranet,bora.net,Z,
-166,www.channeli.net,210.112.192.30",37.5,127,channeli.net,NOT-SET,channeli.net,Z,
-167,ns.netsgo.com,210.115.125.37",37.55,126.967,netsgo.com,Netsgo,netsgo.com,Z,
-168,ns.demon.co.uk,158.152.1.193",51.50,-0.167,demon.co.uk,Demon,demon.co.uk,Z,
-169,ns.above.net,207.126.96.162",37.33,-121.867,above.net,Metromedia Fiber Network,above.net,Z,
-170,ns.digex.net,164.109.1.3",39.00,-76.867,digex.net,Digex,digex.net,Z,
-171,ns.hitel.net,203.245.15.2",37.55,126.967,hitel.net,Hitel,hitel.net,Z,
-172,ns.uchicago.edu,128.135.12.23",41.88,-87.617,uchicago.edu,University of Chicago,uchicago.edu,Z,
-173,skitter.kaist.kr.apan.net,192.249.24.30",37.55,126.967,kaist.kr.apan.net,Asia-Pacific Advanced Network,kaist.kr.apan.net,Z,
-174,ns.kiev.ua,193.29.220.3",50.50,30.467,UA.KIEV.N1,Kyiv Navigator,kiev.ua,NOT-SET,
-175,julius.ktl.mii.lt,193.219.50.3",54.56,25.317,LT.MII.N1,Lithuania Academic and Research Network Litnet,mii.lt,B,
-176,ba.sanet.sk,192.108.138.12",48.20,16.550,SK.SANET.N1,Slovak Academic Network,sanet.sk,B,
-177,kadri.ut.ee,193.40.5.94",58.2,26.30,EE.UT.N1,University of Tartu,ut.ee,B,
-178,www.uoa.gr,195.134.71.229",38.00,23.733,GR.UOA.N1,University of Athens,uoa.gr,NOT-SET,
-179,ns2.indiana.edu,129.79.5.100",39.16,-86.517,ns2.indiana.edu,Indiana University,indiana.edu,ZN,
-180,www.nren.nasa.gov,198.10.138.131",37.412,-122.062,nren.nasa.gov,NASA Research & Education Network,nren.nasa.gov,ZN,
-181,aim-e1.ph.net,165.220.1.29",14.60,120.983,ph.net,Philippine Network Foundation,ph.net,Z,
-182,203.255.248.205,203.255.248.205",37.55,126.967,kr.apan.net,Asia-Pacific Advanced Network Korea Consortium,kr.apan.net,ZN,
-183,152.3.57.20,152.3.57.20",35.99,-78.883,duke.edu,Duke University,duke.edu,Z,
-184,hepwww.ph.qmw.ac.uk,138.37.51.91",51.50,-0.167,UK.QMW.AC.N1,Queen Mary and Westfield College,qmw.ac.uk,NOT-SET,
-185,tpr.kr.apan.net,203.255.248.1",37.55,126.967,tpr.kr.apan.net,Asia-Pacific Advanced Network,tpr.kr.apan.net,ZN,
-186,ns1.tcd.ie,134.226.1.114",53.33,-6.250,IE.TCD.N1,Trinity College Dublin,tcd.ie,NOT-SET,
-187,ns-ext.vix.com,204.152.184.64",37.42,-122.250,vix.com,Vixie Enterprises,vix.com,Z,
-188,www.uol.com.br,200.221.2.45",-15.78,-47.917,BR.UOL.N1,UOL,uol.com.br,NOT-SET,
-189,ns3.nic.fr,192.134.0.49",48.86,2.333,nic.fr,Associano French Network Information Center,nic.fr,Z,
-190,ns.dns.br,200.160.0.5",-15.78,-47.917,BR.DNS.N1,DNS Brasil,dns.br,NOT-SET,
-191,h-st2-7.aspn.net,63.25.143.3",34.05,-118.3,aspn.net,Asia-Pacific Advanced Network,aspn.net,Z,
-192,ns2.dns.br,200.19.119.99",-15.78,-47.917,BR.DNS.N3,DNS Brasil,dns.br,Z,
-193,www.agestado.com.br,200.182.48.131",-15.78,-47.917,agestado.com.br,Estado.com,agestado.com.br,Z,
-194,www.centroin.com.br,200.225.63.214",-15.78,-47.917,CENTROIN.BR,Centroin Internet Provider,www.centroin.com.br,Z,
-195,www.btm.com.br,200.218.6.3",-15.78,-47.917,BTM.BR,Bank of Tokyo-Mitsubishi Brasil,www.btm.com.br,Z,
-196,www.globalone.com.br,189.126.103.227",-15.78,-47.917,BR.GLOBALONE.COM.N1,Equant,globalone.com.br,NOT-SET,
-197,www.embratel.net.br,200.255.125.206",-15.78,-47.917,BR.EMBRATEL.NET.N1,Embratel,embratel.net.br,NOT-SET,
-198,ns.hip.fi,128.214.56.84",60.16,24.967,FI.HIP.N1,Helsinki Institute of Physics,hip.fi,NOT-SET,
-199,www.pol34.pl,212.51.192.18",52.25,21.000,PL.POL34.N1,Polish Scientific Broadband Network,pol34.pl,NOT-SET,
-200,ns.nownuri.net,203.238.128.24",37.55,126.967,nownuri.net,Nownuri,nownuri.net,Z,
-201,frcu.eun.eg,193.227.1.1",30.05,31.250,EG.EUN.N1,Egyptian Universities Network,eun.eg,B,
-202,www.uzsci.net,83.69.129.8",41.3,69.3,UZ.UZSCI.NET.N1,UzSciNet: Scientific & Education Network for Uzbekistan,uzsci.net,NOT-SET,
-203,www.dcc.uchile.cl,192.80.24.4",-33.40,-70.667,CL.UCHILE.N1,University of Chile,dcc.uchile.cl,NOT-SET,
-204,netslave1.cc.monash.edu.au,130.194.1.99",-37.8,144.97,AU.MONASH.EDU.N1,Monash University,monash.edu.au,NOT-SET,
-205,munnari.oz.au,202.29.151.3",-35.25,149.133,AU.OZ.N1,University of Melbourne,munnari.oz.au,NOT-SET,
-206,leonis.nus.edu.sg,137.132.1.18",1.28,103.850,leonis.nus.edu.sg,University of Singapore,leonis.nus.edu.sg,Z,
-207,www.singaren.net.sg,203.30.39.3",1.28,103.850,SG.SINGAREN.NET.N1,Singaren,singaren.net.sg,B,
-208,128.250.54.22,128.250.54.22",-35.25,149.133,AU.UNIMELB.N1,Universtity of Melbourne,unimelb.edu.au,Z,
-209,www.utm.my,161.139.21.51",1.558,103.6384,MY.UTM.N1,University Teknologi Malaysia,utm.my,NOT-SET,
-210,www.itb.ac.id,167.205.1.34",-6.914,107.6098,ID.ITB.AC.N1,Institute of Technology Bandung,itb.ac.id,NOT-SET,
-211,magic.mn,202.131.224.80",47.5,106.53,MN.MAGIC.N1,NOT-SET,magic.mn,B,
-212,enterprise.phys.vt.edu,198.82.152.153",37.2,-80.42,EDU.VT.N1,Virginia Tech,vt.edu,NOT-SET,
-213,www.hep.uiuc.edu,128.174.118.162",40.1,-88.21,EDU.UIUC.N1,University of Illinois at Urbana Champaign,uiuc.edu,NOT-SET,
-214,mnhepw.hep.umn.edu,128.101.220.105",44.9,-93.25,EDU.UMN.N3,University of Minnesota,umn.edu,Z,
-215,216.59.82.1,216.59.82.1",35.82,-78.817,TG.HOME-FPOINT.NET,Farpoint Technologies,fpoint.net,Z,
-216,rainbow.inp.nsk.su,84.237.43.50",54.848,83.1125,RU.NSK.N1,Institute for Nuclear Physics,nsk.su,MWB,
-217,mail2.starcom.co.ug,41.190.128.21",0.3,32.58,UG.STARCOM.CO.N1,NOT-SET,starcom.co.ug,B,
-218,ns.fq.edu.uy,164.73.160.194",-34.5,-56.11,UY.FQ.EDU.N1,University of Uruguay,fq.edu.uy,NOT-SET,
-219,ping.cs.wisc.edu,128.105.252.4",43.07,-89.383,EDU.WISC.N2,University of Wisconsin,wisc.edu,NOT-SET,
-220,www.univ-mahajanga.mg,41.188.42.18",-16.4,46.25,MG.UNIV-MAHAJANGA.N1,Universite de Mahajanga,univ-mahajanga.mg,NOT-SET,
-221,www.registro.br,200.160.2.3",-15.78,-47.917,BR.REGISTRO.N1,Registro Internet Domain Service,registro.br,NOT-SET,
-222,www.fapesp.br,143.108.10.6",-15.78,-47.917,BR.FAPESP.N1,The State of Sao Paulo Research Foundation,fapesp.br,NOT-SET,
-223,lnfnet.lnf.infn.it,193.206.84.12",41.6,12.60,IT.INFN.N5,INFN Frascati,lnf.infn.it,NOT-SET,
-224,netvideo.bnl.gov,130.199.5.34",40.81,-73.167,GOV.BNL.N9,Brookhaven National Laboratory,bnl.gov,Z,
-225,mcs.anl.gov,140.221.9.6",41.85,-88.017,GOV.ANL.N5,Mathematics and Computer Science Division-ANL,anl.gov,NOT-SET,
-226,iastate.edu,129.186.1.99",42.03,-93.617,EDU.IASTATE.N1,Iowa State University,iastate.edu,NOT-SET,
-227,www.physics.rutgers.edu,128.6.228.190",40.49,-74.399,EDU.RUTGERS.N1,Rutgers University,rutgers.edu,NOT-SET,
-228,lurch.cns.syr.edu,128.230.12.5",43.05,-76.150,EDU.SYR.N2,Syracuse University,syr.edu,Z,
-229,ns1.alfred.edu,149.84.147.232",42.253,-77.788,EDU.ALFRED.N2,Alfred University,alfred.edu,NOT-SET,
-230,dns.cit.cornell.edu,192.35.82.50",42.44,-76.500,Cornell,Cornell University,cornell.edu,Z,
-231,noc4.sysadm.suny.edu,141.254.1.11",42.65,-73.750,SUNY,The State University of New York,suny.edu,Z,
-232,www.lip.pt,193.136.91.226",38.73,-9.133,PT.LIP.N1,High Energy Physics and Associated Instrumentation Laboratory,lip.pt,NOT-SET,
-233,csflinux.rl.ac.uk,130.246.183.136",51.50,-0.167,UK.RL.AC.N6,Rutherford Appleton Laboratory,rl.ac.uk,Z,
-234,www.sc.doe.gov,205.254.144.200",38.89,-77.017,GOV.DOE.N6,U.S. Dept. of Energy,doe.gov,Z,
-235,ns.sinp.msu.ru,213.131.0.1",55.75,37.583,RU.MSU.N2,Moscow State University Network,msu.ru,NOT-SET,
-236,orpheus.sc.intel.com,143.183.2.11",37.34,-121.933,INTEL,Intel,sc.intel.com,Z,
-237,www.pnae.mg,196.192.40.200",-18.8,47.5,MG.PNAE.N1,Office National pour l'Environment,pnae.mg,NOT-SET,
-238,www.brunet.bn,61.6.254.1",4.890,114.9422,BN.BRUNET,Nanyang Technological University,brunet.bn,NOT-SET,
-239,www.voctech.org.bn,202.93.208.90",4.8,115,BN.VOCTECH.N1,SEAMEO VOCTECH,voctech.org.bn,Z,
-240,www.mfa.gov.bn,202.160.15.163",4.8,115,BN.MFA.GOV.N1,Minister of Foreign Affairs and Trade,mfa.gov.bn,Z,
-241,snowmassserver.snowmass2001.org,131.225.68.53",41.8,-88.31,SNOWMASS,NOT-SET,snowmass2001.org,Z,
-242,www.ucla.edu,169.232.55.224",34.0,-118.24,EDU.UCLA.N1,University of California - Los Angeles,ucla.edu,NOT-SET,
-243,adsl-63-204-8-81.dsl.snfc21.pacbell.net,63.204.8.81",37.4,-122.18,NET.MOSS-PBI.N1,NOT-SET,adsl-63-204-8-81.dsl.snfc21.pacbell.net,Z,
-244,www.phy.bris.ac.uk,137.222.30.8",51.459,-2.6021,UK.BRIS.AC.N1,University of Bristol,bris.ac.uk,NOT-SET,
-245,cdhf2.gsfc.nasa.gov,192.67.83.6",39.,-76.88,GOV.GSFC.NASA.N2,NASA Goddard Space Flight Center,gsfc.nasa.gov,Z,
-246,ping.isnic.is,193.4.58.91",64.1,-21.97,IS.ISNIC.N1,ISNIC Registry,isnic.is,NOT-SET,
-247,ping.rhnet.is,130.208.16.20",64.1,-21.97,IS.RHNET.N1,NOT-SET,rhnet.is,NOT-SET,
-248,multivac.sdsc.edu,132.249.20.57",32.883,-117.238,EDU.SDSC.N1,San Diego Supercomputing Center,sdsc.edu,M,
-249,131.154.99.10,131.154.99.10",41.8,12.5,IT.INFN.N20,National Institute of Nulear Physics,infn.it,Z,
-250,www.rl.ac.uk,130.246.135.175",51.7,-1.25,UK.RL.AC.N7,Rutherford Appleton Laboratory,rl.ac.uk,Z,
-251,mail192.er.doe.gov,192.73.213.47",38.9,-77.04,GOV.DOE.N7,US Dept of Energy,doe.gov,Z,
-252,vidconf.triumf.ca,142.90.114.155",49.247,-123.2306,CA.TRIUMF.N2,TRIUMF,vidconf.triumf.ca,ZW,
-253,stargrid01.rcf.bnl.gov,130.199.6.111",40.7,-72.92,GOV.BNL.N10,Brookhaven National Lab,stargrid01.rcf.bnl.gov,Z,
-254,hoss.ece.rice.edu,128.42.246.165",29.83,-95.000,EDU.RICE.N2,Rice University,ece.rice.edu,Z,
-255,199.77.194.26,199.77.194.26",33.7,-84.39,NODE1.SOX.I2.EDU,NOT-SET,199.77.194.26,Z,
-256,www.sdsc.edu,132.249.21.111",32.7,-117.16,EDU.SDSC.N4,San Diego Supercomputing Center,sdsc.edu,NOT-SET,
-257,ping.desy.de,131.169.5.90",53.574,9.8779,DE.DESY.N1,Deutsches Elektronen-Synchrotron,desy.de,M,
-258,gppnm.gridpp.rl.ac.uk,130.246.187.2",51.7,-1.25,UK.RL.AC.N9,Rutherford Appleton Laboratory,rl.ac.uk,Z,
-259,ns.jp.apan.net,203.181.248.3",35.6,139.75,JP.APAN.NET.N2,Asia-Pacific Advanced Network,jp.apan.net,NOT-SET,
-260,thorin.physik.uni-mainz.de,134.93.129.216",52.27,13.180,DE.UNI-MAINZ.N3,Johannes Gutenberg-University,uni-mainz.de,NOT-SET,
-261,mathrisc1.lunet.edu,192.135.141.11",35.9,-97.26,EDU.LUNET.N2,Langston University,lunet.edu,NOT-SET,
-262,ouhep1.nhn.ou.edu,129.15.30.147",35.1,-97.26,EDU.OU.N1,University of Oklahoma,ou.edu,NOT-SET,
-263,ccd0.in2p3.fr,134.158.105.60",45.7,4.85,FR.IN2P3.N12,IN2P3,in2p3.fr,NOT-SET,
-264,gntmon.oucs.ox.ac.uk,163.1.13.20",51.7,-1.25,UK.OX.AC.N1,University of Oxford,ox.ac.uk,Z,
-265,dzero.bu.edu,128.197.41.63",42.3,-71.06,EDU.BU.N4,NOT-SET,bu.edu,NOT-SET,
-266,www.hep.brown.edu,128.148.63.160",41.81,-71.400,EDU.BROWN.N2,Brown University,brown.edu,NOT-SET,
-267,www.indo.net.id,202.159.32.22",-6.1,106.75,ID.INDO.NET.N1,NOT-SET,indo.net.id,NOT-SET,
-268,mail.kipt.kharkov.ua,193.239.180.1",5,36.25,UA.KHARKOV.N1,Kharkov Institute of Physics and Technology,kharkov.ua,B,
-269,guide.just.edu.jo,87.236.232.129",32.5,35.85,JO.JUST.EDU.N1,Jordan University of Science and Technology,just.edu.jo,NOT-SET,
-270,www.ug.edu.gh,197.255.124.90",5.654,-0.1903,GH.UG.EDU.N1,University of Ghana,ug.edu.gh,NOT-SET,
-271,main.kyungwon.ac.kr,203.249.126.5",37.,127,KR.KYUNGWON.AC.N1,NOT-SET,kyungwon.ac.kr,B,
-272,www.ru.ac.bd,180.211.185.196",24.3,88.60,BD.RU.AC.N1,NOT-SET,ru.ac.bd,NOT-SET,
-273,www.physics.umd.edu,128.8.140.6",38.9,-76.93,EDU.UMD.N4,University of Maryland,umd.edu,NOT-SET,
-274,fisica.usac.edu.gt,168.234.75.209",14.624,-90.5328,GT.USAC.EDU.N1,Universidad de San Carlos de Guatemala,usac.edu.gt,B,
-275,mail.prl.res.in,210.212.155.234",23.0,72.65,IN.AHMEDABAD.PRL.N1,Physical Research Laboratory,prl.res.in,NOT-SET,
-276,thunderbird.internet2.edu,207.75.164.95",42.2,-83.73,NODE1.INTERNET2.EDU,Internet2,thunderbird.internet2.edu,ZW,
-277,pinger.hep.caltech.edu,131.215.116.42",34.1,-118.14,EDU.CALTECH.N1,Caltech HEP,caltech.edu,NOT-SET,
-278,www.mt.net.mk,195.26.152.130",42.003,21.4522,MK.NET.N1,NOT-SET,mt.net.mk,B,
-279,octopus.phy.bg.ac.yu,147.91.80.11",44.50,20.290,UBELGRADE,University of Belgrade,bg.ac.yu,Z,
-280,oppie.physics.umd.edu,129.2.42.5",38.9,-76.93,EDU.UMD.N5,University of Maryland,umd.edu,Z,
-281,www.univ-ouaga.bf,212.52.131.9",12.378,-1.4997,BF.UNIV-OUAGA.N1,Universite de Ouagadougou,univ-ouaga.bf,MB,
-282,mail.gnet.tn,193.95.75.236",36.8,10.22,TN.GNET.N1,GlobalNET,gnet.tn,B,
-283,chez.mana.pf,202.3.227.242",-17.5,-149.57,PF.MANA.N1,Mana Internet Access,mana.pf,NOT-SET,
-284,www.ioe.edu.np,202.70.91.13",27.716,85.3166,NP.IOE.EDU.N1,Tribhuvan University,ioe.edu.np,NOT-SET,
-285,www.cbn.net.id,210.210.191.202",-6.1,106.75,ID.CBN.NET.N1,CBN,cbn.net.id,NOT-SET,
-286,www.indosat.net.id,124.81.92.144",-6.1,106.75,ID.INDOSAT.NET.N1,Indosat M2,indosat.net.id,NOT-SET,
-287,www.uem.mz,196.3.96.21",-25.9,32.56,MZ.UEM.N1,Universidade Eduardo Mondlane,uem.mz,B,
-288,www.micti.co.mz,196.3.97.231",-25.9,32.56,MZ.MICTI.CO.N1,Mozambique ICT Institute,micti.co.mz,NOT-SET,
-289,pollinbg.in2p3.fr,134.158.128.120",48.4,2.10,FR.IN2P3.N3,IN2P3,in2p3.fr,NOT-SET,
-290,ccali.in2p3.fr,134.158.240.4",48.4,2.10,FR.IN2P3.N4,IN2P3,ccali.in2p3.fr,NOT-SET,
-291,www.muchs.ac.tz,41.223.231.40",-6.807,39.2734,TZ.MUCHS.AC.N1,Muhimbili University of Health and Applied Science,muchs.ac.tz,NOT-SET,
-292,www.uet.edu.pk,111.68.102.6",31.5,74.36,PK.UET.EDU.N1,University of Engineering & Technology,uet.edu.pk,NOT-SET,
-293,cad.zju.edu.cn,210.32.131.2",30.2,120.17,CN.ZJU.EDU.N1,Zhejiang University,zju.edu.cn,NOT-SET,
-294,www.hz.zj.cn,61.175.163.41",30.2,120.17,CN.ZJ.N1,China Telecom,hz.zj.cn,NOT-SET,
-295,www.refer.sn,213.154.65.67",14.75,-17.3333,SN.REFER.N1,Agence universitaire de la Francophonie,refer.sn,NOT-SET,
-296,sadc-fanr.org.zw,193.220.40.13",-17.8,31.05,ZW.SADC-FANR.ORG.N1,SADC Food Security Programme,sadc-fanr.org.zw,Z,
-297,pingerlhr-pu.pern.edu.pk,111.68.102.214",31.5030,74.308098,PK.PINGERLHR-PU.PERN.EDU,Punjab University,pern.edu.pk,M,
-298,infn-garr.pi.infn.it,212.189.154.1",43.7,10.4,IT.INFN.N19,INFN,infn.it,NOT-SET,
-299,www.adach.ae,86.96.196.32",24.419,54.4468,AE.ADACH.N1,Abu Dhabi Authority for Cultural Heritage,adach.ae,NOT-SET,
-300,pinger.slac.stanford.edu,134.79.104.80",37.417,-122.2035,EDU.SLAC.STANFORD.N3,Stanford Linear Accelerator Center,slac.stanford.edu,MB,
-301,svr1dx.fisica.uniud.it,158.110.40.19",46.0,13.23,IT.UNIUD.N1,University of Udine, Dept. of Physics,fisica.uniud.it,NOT-SET,
-302,gamsv01.in2p3.fr,193.48.98.5",43.,3.88,FR.IN2P3.N5,IN2P3,in2p3.fr,NOT-SET,
-303,ns.conacyt.gob.sv,168.243.10.151",13.6,-89.17,SV.CONACYT.GOB.N1,CONSEJO NACIONAL DE CIENCIA Y TECNOLOGIA REPUBLICA DE EL SALVADOR, C.A,conacyt.gob.sv,NOT-SET,
-304,ns.cybercentro.com.sv,201.247.241.145",13.6,-89.17,SV.CYBERCENTRO.COM.N1,CyberCentro,cybercentro.com.sv,NOT-SET,
-305,cir.red.sv,168.243.254.1",13.6,-89.17,SV.RED.N1,red.sv,red.sv,B,
-306,www.ubd.edu.bn,202.160.1.64",4.976,114.8950,BN.UBD.EDU,Uniiversity of Brunei Darusalam,ubd.edu.bn,NOT-SET,
-307,dmzmon0.deemz.net,198.49.208.10",41.8,-88.31,NODE1.FNAL.GOV,Fermilab,dmzmon0.deemz.net,ZW,
-308,atgrid.grid.umich.edu,141.211.43.109",42.2,-83.73,EDU.UMICH.N4,Univ. of Michigan,atgrid.grid.umich.edu,Z,
-309,niobe.ncsa.uiuc.edu,141.142.36.38",40.1,-88.21,NODE1.UIUC.EDU,University of Illinois at Urbana-Champaign,niobe.ncsa.uiuc.edu,ZNW,
-310,198.10.49.62,198.10.49.62",39.0,-76.87,NODE2.GSFC.NASA.GOV,Goddard Space Flight Center,198.10.49.62,Z,
-311,pdsfgrid2.nersc.gov,128.55.24.27",37.8,-122.27,GOV.NERSC.N4,NERSC,pdsfgrid2.nersc.gov,Z,
-312,pdsfgrid4.nersc.gov,128.55.24.29",37.8,-122.27,GOV.NERSC.N5,NERSC,pdsfgrid4.nersc.gov,Z,
-313,mercury.uvic.ca,142.104.193.196",48.4,-123.35,CA.UVIC.N1,University of Victoria,uvic.ca,NOT-SET,
-314,www.monash.edu.my,59.191.192.148",3.,101.62,MY.MONASH.EDU.N1,Monash University,monash.edu.my,NOT-SET,
-315,www.msu.ru,193.232.113.151",55.7,37.7,RU.MSU.N1,Moscow State University,msu.ru,NOT-SET,
-316,www.tsc.ru,84.237.0.66",56.,85.08,RU.TSC.N1,Tomsk Educational Network,tsc.ru,NOT-SET,
-317,www.irk.ru,195.206.58.122",52.,104.25,RU.IRK.N1,Irkutsk,irk.ru,NOT-SET,
-318,www.uran.ru,195.19.155.194",56.8,60.6,RU.URAN.N1,Ural Branch Russian Academy of Sciences,uran.ru,NOT-SET,
-319,www.unn.ru,85.143.0.20",56.3,44,RU.UNN.N1,Nizhy Novgorod University,unn.ru,NOT-SET,
-320,www.runnet.ru,85.142.191.3",59.9,30.42,RU.RUNNET.N1,Federal Center RUNNet St. Petersburg,runnet.ru,NOT-SET,
-321,www.dvo.ru,94.198.16.4",43.1,131.9,RU.DVO.N1,Vladivostok,dvo.ru,NOT-SET,
-322,ns.osaka-u.ac.jp,133.1.192.4",34.6,135.5,JP.OSAKA-U.AC.N1,Osaka University,osaka-u.ac.jp,NOT-SET,
-323,www.ionmed.agh.edu.pl,149.156.96.9",50.0,19.92,PL.IONMED.AGH.EDU.N1,Krakow Research Center for Ion Engineering,ionmed.agh.edu.pl,NOT-SET,
-324,mit.edu,18.7.22.69",42.3,-71.11,EDU.MIT.N2,Massachusetts Institute of Technology,mit.edu,NOT-SET,
-325,uoregon.edu,128.223.142.125",44.0,-123.09,EDU.UOREGON.N2,University of Oregon,uoregon.edu,NOT-SET,
-326,ihep.ac.cn,202.38.128.6",39.9,116.4,CN.IHEP.AC.N2,Institute of High Energy Physics Chinese Academy of Sciences,ihep.ac.cn,B,
-327,utk.edu,160.36.179.25",35.9,-83.92,EDU.UTK.N2,The University of Tennessee,utk.edu,NOT-SET,
-328,www.cyfronet.krakow.pl,149.156.2.252",50.0,19.92,PL.CYFRONET.KRAKOW.N1,Academic Computer Centre Cyfronet AGH,cyfronet.krakow.pl,NOT-SET,
-329,www.montclair.edu,130.68.1.187",40.8,-74.21,EDU.MONTCLAIR.N1,Montclair State University,montclair.edu,NOT-SET,
-330,ucsd.edu,132.239.180.101",32.7,-117.16,EDU.UCSD.N2,University of California,ucsd.edu,NOT-SET,
-331,phy.duke.edu,152.3.182.1",35.9,-78.90,EDU.DUKE.N1,Duke University Department of Physics,phy.duke.edu,NOT-SET,
-332,llnl.gov,128.115.249.1",37.6,-121.77,GOV.LLNL.N2,Lawrence Livermore National Laboratory,llnl.gov,Z,
-333,ai3-sfc.jp.apan.net,203.181.248.241",37.55,126.967,NET.APAN.N4,Asia-Pacific Advanced Network,jp.apan.net,Z,
-334,portal.ucb.edu.bo,190.129.73.16",-16.,-68.15,BO.UCB.EDU.N1,Universidad Casslica Boliviana San Pablo,ucb.edu.bo,NOT-SET,
-335,www.una.py,200.10.228.135",-25.3,-57.53,PY.WWW.UNA.N1,Universidad Nacional de Asuncion,una.py,B,
-336,www.fisica.edu.uy,164.73.83.126",-34.91,-56.167,UY.FISICA.EDU.N1,University of the Republic,fisica.edu.uy,B,
-337,www.cudi.edu.mx,132.248.194.81",19.2,-103.72,MX.CUDI.EDU.N1,Corporaci n Universitaria para el Desarrollo de Internet, A.C.,cudi.edu.mx,NOT-SET,
-338,www.uca.edu.sv,168.243.1.4",13.6,-89.17,SV.UCA.EDU.N1,University of Central America,uca.edu.sv,NOT-SET,
-339,www.aims.ac.za,41.206.196.194",-34.107,18.4705,ZA.AIMS.AC.N1,African Institute for Mathematical Sciences (AIMS),aims.ac.za,NOT-SET,
-340,www.csir.co.za,146.64.81.59",-25.4,28.11,ZA.CSIR.CO.N1,World Association of Industry and Technology Researck Organizations,csir.co.za,NOT-SET,
-341,www.sustech.edu,41.67.53.4",15.561,32.5408,SD.SUSTECH.EDU.N1,Sudan University of Science and Technology,sustech.edu,NOT-SET,
-342,www.ml.refer.org,196.200.90.99",12.6,-7.98,ML.ORG.REFER.N1,University of Bamako,refer.org,B,
-343,www.kie.ac.rw,196.12.157.205",-1.9,30.07,RW.KIE.AC.N1,Institute of Education,kie.ac.rw,NOT-SET,
-344,www.uac.bj.refer.org,81.91.236.226",6.,2.52,BJ.ORG.UAC.REFER.N1,Universite d Abomey Calavi,refer.org,NOT-SET,
-345,www.iitkgp.ac.in,202.63.234.243",22.5,89.14,IN.IIKGP.AC,Indian Institute of Technology,www.iitkgp.ac.in,Z,
-346,www.iitk.ac.in,203.200.95.142",26.4,80.35,IN.IITK.AC.N1,Indian Institute of Technology,www.iitk.ac.in,Z,
-347,www.unesp.br,200.145.1.9",-23.,-46.6,BR.UNESP.N3,Universidade Estadual Paulista,unesp.br,NOT-SET,
-348,www.upesh.edu.pk,121.52.147.5",34.0,71.48,PK.UPESH.EDU.N2,University of Peshawar,upesh.edu.pk,M,
-349,sirsyed.ssuet.edu.pk,111.68.108.179",24.9,67.1,PK.SIRSYED.SSUET.EDU.N1,Sir Syed University of Engineering & Technology,ssuet.edu.pk,NOT-SET,
-350,www.unitec.edu,200.107.212.133",15.4,-88.02,HN.EDU.UNITEC.N1,Universidad Tecnologica Centroamericana,unitec.edu,B,
-351,www.cau.ac.kr,165.194.95.137",37.55,126.967,KR.CAU.AC.N1,Chung-Ang University,cau.ac.kr,NOT-SET,
-352,www.hallym.ac.kr,210.115.225.12",37.7,128.90,KR.HALLYM.AC.KR,Hallym University,hallym.ac.kr,NOT-SET,
-353,www.knu.ac.kr,155.230.11.1",35.8,128.59,KR.KNU.AC.N1,Kyungpook National University,knu.ac.kr,NOT-SET,
-354,www.anadolu.edu.tr,193.140.21.18",39.7,30.5,TR.ANADOLU.EDU.N1,Anadolu University,anadolu.edu.tr,B,
-355,www.tau.ac.il,132.66.16.6",32.0,34.77,IL.TAU.AC.N1,Tel Aviv University,tau.ac.il,B,
-356,www.iucc.ac.il,128.139.202.17",32.8,34.98,IL.IUCC.AC.N1,The Inter-University Computation Center,iucc.ac.il,NOT-SET,
-357,brunsvigia.tenet.ac.za,196.21.99.222",-33.9,18.42,ZA.TENET.AC.N1,Tertiary Education Network,tenet.ac.za,MB,
-358,www.eldjazair.net.dz,193.194.64.71",36.736,3.0564,DZ.ELDJAZAIR.NET.N1,www.eldjazair.net.dz,eldjazair.net.dz,NOT-SET,
-359,www.ru.ac.za,146.231.129.7",-33.3,26.51,ZA.RU.AC.N1,Rhodes University,ru.ac.za,NOT-SET,
-360,www.sajhe.org.za,163.200.147.39",-33.93,18.8663,ZA.SAJHE.ORG.N1,South African Journal of Higher Education University of South Africa,sajhe.org.za,NOT-SET,
-361,www.museumsnc.co.za,196.211.11.236",-33.5,18.22,ZA.MUSEUMSNC.CO,McGREGOR MUSEUM,museumsnc.co.za,NOT-SET,
-362,www.kist.ac.rw,41.197.25.6",-1.9,30.07,RW.KIST.AC.N1,Kigali Institute of Science and Technology,kist.ac.rw,B,
-363,ns2.retina.ar,200.10.202.4",-34.3,-58.28,AR.RETINA.N2,Red Teleinformatica Academica,retina.ar,NOT-SET,
-364,v-www.ihep.ac.cn,202.38.128.7",39.9,116.4,CN.AC.N3,Institute of High Energy Physics Chinese Academy of Sciences,ihep.ac.cn,M,
-365,www.carnet.hr,161.53.160.25",45.81,15.933,HR.CARNET.N2,Croatian Academic and Research Network,carnet.hr,B,
-366,b.root-servers.net,192.228.79.201",34.0,-118.24,NET.ROOT-SERVERS.N1,Internet Root Server,b.root-servers.net,NOT-SET,
-367,www.intercollege.ac.cy,82.116.203.18",35.1,33.35,CY.INTERCOLLEGE.AC.N1,Intercollege,intercollege.ac.cy,NOT-SET,
-368,rftpexp.rhic.bnl.gov,130.199.54.10",40.7,-72.92,GOV.RHIC.BNL.N1,Brookhaven National Lab,bnl.gov,NOT-SET,
-369,www.ntc.net.np,202.70.64.2",27.6,85.32,NP.NTC.NET.N1,Nepal Telecom,ntc.net.np,NOT-SET,
-370,www.most.gov.np,202.45.144.21",27.7,85.32,NP.MOST.GOV.N1,Ministry of Environment, Science and Technology,most.gov.np,NOT-SET,
-371,www.uoi.gr,195.130.120.109",39.4,20.47,GR.UOI,University of Ioannina,uoi.gr,NOT-SET,
-372,www.bu.edu,128.197.26.35",42.3,-71.06,EDU.BU.N1,Boston University,bu.edu,B,
-373,www.harvard.edu,173.203.129.90",42.3,-71.06,EDU.HARVARD.N1,Harvard University,harvard.edu,I,
-374,www.utl.co.ug,196.0.0.243",0.1,32.25,UG.UTL.CO.N1,Uganda Telecom,utl.co.ug,NOT-SET,
-375,ns1.retina.ar,200.10.202.3",-34.3,-58.28,AR.RETINA.N1,Red Teleinformatica Academica,retina.ar,NOT-SET,
-376,glastlnx06.slac.stanford.edu,134.79.86.186",37.4,-122.20,EDU.SLAC.GLASTLNX06,GLAST host at SLAC,slac.stanford.edu,NOT-SET,
-377,waib.gouv.bj,81.91.232.2",9.,2.25,BJ.GOUV.N1,Le Benin,gouv.bj,B,
-378,www.uni-mb.si,164.8.23.111",46.3,15.40,SI.UNI-MB.N1,University of Maribor,uni-mb.si,B,
-379,www.uchicago.edu,128.135.13.112",41.8,-87.65,EDU.UCHICAGO.N1,University of Chicago,uchicago.edu,NOT-SET,
-380,www.indiana.edu,129.79.78.192",39.1,-86.53,EDU.INDIANA.N2,Indiana University,indiana.edu,NOT-SET,
-381,ns1.uta.edu,129.107.1.9",30.2,-97.74,EDU.UTA.N1,University of Texas - Austin,uta.edu,I,
-382,www.lunet.edu,192.135.141.50",35.4,-97.51,EDU.LUNET.N4,Langston University,lunet.edu,I,
-383,www.okstate.edu,139.78.99.6",36.1,-97.01,EDU.OKSTATE.N1,Oklahoma State University,okstate.edu,NOT-SET,
-384,pinger.ictp.it,140.105.28.117",45.7074,13.716527,IT.ICTP.N1,International Centre for Theoretical Physics,ictp.it,MB,
-385,www.aui.ma,196.12.203.30",33.533,-5.1167,MA.AUI,Al Akhawayn University in Ifrane,aui.ma,NOT-SET,
-386,www.univ-sba.dz,193.194.79.135",35.20487,-0.621063,DZ.UNIV-SBA,Universite Djillali Liabes,univ-sba.dz,B,
-387,www.psi.gov.ps,217.66.226.35",31.5,35.12,PS.PSI.GOV.N1,Palestine Standards Institution,psi.gov.ps,NOT-SET,
-388,www.ndu.edu.lb,193.188.135.35",34.4,35.6,LB.NDU.EDU,Notre Dame University,ndu.edu.lb,NOT-SET,
-389,aias.cs.ucy.ac.cy,194.42.16.1",35.1,33.35,CY.CS.UCY.AC.N1,University of Cyprus,ucy.ac.cy,NOT-SET,
-390,net.shams.edu.eg,193.227.20.23",30.,31.4,EG.SHAMS.EDU,Ain Shams University,shams.edu.eg,NOT-SET,
-391,www.fulbright.org.cy,194.154.128.22",35.1,33.35,CY.FULBRIGHT.ORG.N1,CYPRUS FULBRIGHT COMMISSION,fulbright.org.cy,NOT-SET,
-392,www.ecnu.edu.cn,202.101.26.146",31.2,121.47,CN.ECNU.EDU.N1,East China Normal University,ecnu.edu.cn,NOT-SET,
-393,pinger.comsats.edu.pk,203.124.40.43",33.651,73.1566,PK.COMSATS.EDU.N2,COMSATS Institute of Information Technology,comsats.edu.pk,M,
-394,www.ub.edu.bi,41.79.226.194",3.378,29.3838,BI.UB.EDU.WWW,University of Burundi,ub.edu.bi,NOT-SET,
-395,www.ams.ac.ir,194.225.16.5",35.696,51.4231,IR.AMS.AC.N1,Iranian Acacemy of Medical Sciences,ams.ac.ir,NOT-SET,
-396,pinger.pern.edu.pk,111.68.106.254",33.67331,73.054431,PK.PERN.EDU.N1,Pakistan Education and Research Network,pern.edu.pk,M,
-397,www.auth.gr,155.207.1.12",40.6,22.96,GR.AUTH,Aristotle University of Thessaloniki,auth.gr,NOT-SET,
-398,www.bracuniversity.net,202.168.254.6",23.7,90.38,BD.BRACUNIVERSITY.NET.N1,BRAC University,bracuniversity.net,NOT-SET,
-399,mel-a-ext1.aarnet.net.au,202.158.195.132",-37.837,144.9851,AU.AARNET.MELBOURNE.N1,AARnet PoP Melbourne,aarnet.net.au,NOT-SET,
-400,www.pgia.ac.lk,203.94.67.67",7.2,80.60,LK.PGIA.AC.N1,Post Graduate Institute of Agriculture,pgia.ac.lk,NOT-SET,
-401,www.csir.org.gh,41.220.48.79",5.5,-0.22,GH.CSIR.ORG.N1,Council for Scientific & Industrial research,csir.org.gh,B,
-402,www.ub.tg,41.207.188.27",6.145,1.2034,TG.UB.N1,University of Lome,ub.tg,NOT-SET,
-403,www.cbu.edu.zm,41.63.3.8",-15.41,28.283,ZM.CBU.EDU.N1,Copperbelt University,cbu.edu.zm,NOT-SET,
-404,pinger.stanford.edu,171.66.6.39",37.4284,-122.177496,EDU.STANFORD.N9,Stanford University,stanford.edu,M,
-405,www.multinet.af,202.86.23.70",34.,69.17,AF.MULTINET.N1,Multinet,multinet.af,NOT-SET,
-406,www.ic.cd,41.194.60.3",-4.2,15.5,CD.IC.N1,InterConnect ISP,ic.cd,NOT-SET,
-407,www.kazrena.kz,89.250.80.3",43.,76.9,KZ.KAZRENA.N1,Kazakhstan Research and Education Network Association,kazrena.kz,B,
-408,www.microcom.cd,66.36.196.209",-4.2,15.5,CD.MICROCOM.N1,Microm Internet provider,microcom.cd,NOT-SET,
-409,www.rub.edu.bt,202.144.158.150",27.3,89.45,BT.RUB.EDU.N1,The Royal University of Bhutan,rub.edu.bt,NOT-SET,
-410,www.duet.ac.bd,203.112.196.165",24.5,92.05,BD.DUET.AC.N1,Dhaka University of Engineering and Technology,duet.ac.bd,NOT-SET,
-411,cdcnet.uniandes.edu.co,157.253.1.13",4.,-74.08,CO.UNIANDES.EDU.N4,Universidad de Los Andes,uniandes.edu.co,NOT-SET,
-412,adl-a-ext1.aarnet.net.au,202.158.195.68",-34.923,138.5892,AU.AARNET.ADELAIDE.N1,AARNET PoP Adelaide,aarnet.net.au,B,
-413,www.adsl.com.na,196.1.28.12",-22.5,17.08,NA.ADSL-ISP.COM.N1,Internet Technologies Namibia,adsl.com.na,Z,
-414,www.kku.edu.sa,212.26.68.5",18.2,42.5,SA.KKU.EDU.N1,King Khalid University,kku.edu.sa,NOT-SET,
-415,cbinet.bi,196.2.12.32",-3.376,29.3593,BI.CBINET.N1,Internet Burundi,cbinet.bi,NOT-SET,
-416,www.criba.edu.ar,168.96.204.37",-34.58,-58.67,AR.CRIBA.EDU.N1,Centro Regional de Investigaciones Basicas y Aplicadas de Bahia Blanca,criba.edu.ar,NOT-SET,
-417,institutokilpatrick.edu.pa,168.77.202.30",9.01,-79.55,PA.EDU.INSTITUTOKILPATRICK.N1,William H Kilpatrick,www.institutokilpatrick.edu.pa,B,
-418,hba-a-pm1.aarnet.net.au,202.158.196.194",-42.90,147.325,AU.AARNET.HOBART.N2,AARnet PoP at Hobart, Tasmania,aarnet.net.au,B,
-419,drw-a-pm1.aarnet.net.au,202.158.196.202",-12.444,130.833,AU.AARNET.DARWIN.N2,AARNET PoP Darwin,aarnet.net.au,NOT-SET,
-420,www.poly.ac.mw,41.221.97.114",-15.803,35.0271,MW.POLY.AC.N1,University of Malawi - Malawi Polytechnic,poly.ac.mw,NOT-SET,
-421,pinger-ncp.ncp.edu.pk,111.68.99.142",33.750,73.1650,PK.NCP.EDU.N3,National Centre for Physics, Quaid-e-Azam Uiversity,ncp.edu.pk,M,
-422,www.giki.edu.pk,121.52.144.100",34.066,72.6167,PK.GIKI.EDU.N3,Ghulam Ishaq Khan Institute,giki.edu.pk,NOT-SET,
-423,www.rwandaparliament.gov.rw,41.74.172.4",-2.0,30.00,RW.RWANDAPARLIAMENT.N1,Rawanda Parliament,rwandaparliament.gov.rw,NOT-SET,
-424,www.rol.net.mv,202.21.176.41",4.166,73.5,MV.ROL.N1,Rajje Online,rol.net.mv,NOT-SET,
-425,www.uam.es,150.244.9.237",40.,-3.68,ES.UAM.N1,Universid Autonoma de Madrid,uam.es,NOT-SET,
-426,www.ac.lk,192.248.1.164",,81,LK.AC.N1,Lanka Education And Research Network NREN of Sri Lanka,ac.lk,NOT-SET,
-427,www.hellenic.ac.zw,196.29.35.76",-17.8,31.03,ZW.HELLENIC.AC.N1,Hellenic School,hellenic.ac.zw,NOT-SET,
-428,mctest.itep.ru,194.85.69.140",55.75,37.583,RU.ITEP.N1,Moscow Institute for Theoretical and Experimental Physics,itep.ru,B,
-429,www.umss.edu.bo,200.87.182.20",-17.4,-66.17,BO.UMSS.EDU.N1,University Mayor de San Simon,umss.edu.bo,MB,
-430,www.vnn.vn,203.162.168.130",21.0,105.85,VN.VNN.N1,Vietnam Net,vnn.vn,NOT-SET,
-431,www.singtel.com,203.208.248.10",1.3,103.8,SG.SINGTEL.COM.N1,SingTel,singtel.com,NOT-SET,
-432,www.cuc.edu.ve,201.249.245.167",10.,-66.92,VE.CUC.EDU.N1,Colegio Universitario de Caracas,cuc.edu.ve,B,
-433,www.cst.edu.ve,200.6.155.210",10.,-64.7,VE.CST.EDU.N1,Colegia Santa Teresita,cst.edu.ve,NOT-SET,
-434,www.ifs.ac.lk,192.248.97.1",7.29,80.635,LK.IFS.AC.N1,Institute of Fundamental Studies,ifs.ac.lk,NOT-SET,
-435,pinger.ascr.doe.gov,192.73.213.124",39.1,-77.25,GOV.DOE.N8,US Department of Energy HQ,ascr.doe.gov,M,
-436,www.hut.edu.vn,202.191.57.195",21.0,105.52,VN.HUT.EDU.N1,Hanoi University of Technology,hut.edu.vn,NOT-SET,
-437,tg.refer.org,41.207.188.10",6.1,1.35,TG.REFER.ORG.N1,Campus Numirique Francophone de Lomi,refer.org,B,
-438,pinger.cdacmumbai.in,202.141.151.30",18.9,72.85,IN.CDACMUMBAI.N1,Centre for Development of Advanced Computing,cdacmumbai.in,MB,
-439,www.uia.mx,192.203.177.1",19.4,-99.17,MX.UIA.N1,Universidad Iberoamerica,uia.mx,B,
-440,mail.neda.af,117.55.192.5",34.,69.17,AF.NEDA.N1,NEDA TElecommunications,neda.af,NOT-SET,
-441,www.usep.edu.ph,202.137.113.149",7.,125.7,PH.USEP.EDU.N1,University of Southeastern Philippines,usep.edu.ph,B,
-442,www.ait.ac.th,203.159.12.5",13.96,100.62,TH.AIT.AC.N1,Asian Institute of Technology,ait.ac.th,NOT-SET,
-443,www.rsu.ac.th,110.164.199.217",14.016,100.73,TH.RSU.AC.N1,Rangsit University,rsu.ac.th,NOT-SET,
-444,www.tse.com.er,196.200.102.6",15.333,38.9351,ER.TSE.COM.N1,TSEiNET ISP,tse.com.er,NOT-SET,
-445,aspu.edu.jo,217.29.240.15",31.9,35.93,JO.ASPU.EDU.N1,Applied Science University,aspu.edu.jo,NOT-SET,
-446,www.6telecoms.co.tz,41.77.226.4",-6.813,39.2893,TZ.TELECOM.N1,Six Telecom,6telecoms.co.tz,B,
-447,om16.omantel.net.om,212.72.1.186",23.5,58.58,OM.NET.OMANTEL.N1,Oman Telecom,omantel.net.om,NOT-SET,
-448,library.ucb.edu.bh,81.22.17.7",26.21,50.583,BH.UCB.EDU.N1,University College of Bahrain Library,ucb.edh.bh,NOT-SET,
-449,speedtest.techconcepts.co.za,66.8.85.147",-26.0,27.54,ZA.TECHCONCEPTS.CO.N1,Speedtest South Africa,techconcepts.co.za,NOT-SET,
-450,dcc.bg,213.167.0.228",42.1,24.75,BG.DCC.N1,Speedtest Bulgaria,dcc.bg,NOT-SET,
-451,megalan.bg,95.111.55.251",42.4,23.2,BG.MEGALAN.N1,Speedtest Bulgaria,megalan.bg,NOT-SET,
-452,www.mof.gov.sd,196.202.144.245",15.588,32.5342,SD.MOF.GOV.N1,Ministry of Finance and Nation al Economy,mof.gov.sd,NOT-SET,
-453,mail.lttnet.net,62.240.32.4",32.876,13.1875,LY.LTTNET.NET,Libya Telecom and Technology,lttnet.net.ly,B,
-454,pinger.nchc.org.tw,140.110.20.230",24.80,120.971,TW.NCHC.ORG.N2,National Center for High Performance Computing,nchc.org.tw,M,
-455,ongkot.kmutt.ac.th,202.44.8.66",13.68,100.74,TH.KMUTT.AC.N2,King Mongkut's University of Technology,kmutt.ac.th,B,
-456,speedcheck.liwest.at,212.33.36.190",48.,14.3,AT.LIWEST.N1,Speedtest Austria,liwest.at,NOT-SET,
-457,aidabg.net,195.24.54.2",41.3,25.64,BG.AIDABG.NET.N1,Speedtest Bulgaria,aidabg.net,NOT-SET,
-458,speedtest-roubaix.snsci.net,91.121.112.28",50.4,3.11,FR.SPEEDTEST.SNSCI.NET.N1,Speedtest France,speedtest.snsci.net,NOT-SET,
-459,speedtest.ontelecoms.gr,91.132.5.198",37.9,23.73,GR.ONETELECOMS.N1,Speedtest Greece,ontelecoms.gr,NOT-SET,
-460,speedtest.tsl.gr,147.52.17.45",35.,25.8,GR.TSL.N1,Speedtest Greece,tsl.gr,NOT-SET,
-461,westnet.ie,78.153.203.102",53.2,-6.25,IE.WESTNET.N1,Speedtest Ireland,westnet.ie,NOT-SET,
-462,speedtest.airwire.ie,195.222.111.223",53.2,-9.04,IE.AIRWIRE.N1,Speedtest Ireland,airwire.ie,NOT-SET,
-463,fwi.ie,82.195.146.32",52.6,-8.62,IE.FWI.N1,Speedtest Ireland,fwi.ie,NOT-SET,
-464,prime.edu.np,202.52.0.9",27.4,85.20,NP.PRIME.EDU.N1,Prime College,prime.edu.np,NOT-SET,
-465,www.tresor.ga,217.77.72.249",0.383,9.45,GA.TRESOR.N1,Tresor Public Gabon,tresor.ga,B,
-466,www.afe.mr,82.151.64.110",18.0,-15.97,MR.AFE.N1,AGIR EN FAVEUR DE  L'ENVIRONNEMENT (A.F.E),afe.mr,B,
-467,linhost2.utic.net.ba,195.130.35.104",43.8,18.383,BA.UTIC.NET.N1,University Teleinformatic Center,utic.net.ba,B,
-468,speedtest.orangemali.net,196.200.80.4",12.3,-8,ML.ORNGEMALI.NET.N1,Speedtest Mali,orangemali.net,NOT-SET,
-469,speedtest.rack66.com,85.88.55.41",50.,4.22,BE.RACK66.COM.N1,Speedtest Belgium,rack66.com,NOT-SET,
-470,speedtest2.giganet.hu,193.138.125.61",47.9,21.72,HU.GIGANET.N1,Speedtest Hungary,giganet.hu,NOT-SET,
-471,speedtest.dsl.li,82.117.0.15",47.2,9.53,LI.DSL.N1,Speedtest Liechtenstein,dsl.li,NOT-SET,
-472,speedtest.kis.lt,193.0.251.8",54.1,23.16,LT.WEB0.KIS.N1,Speedtest Lithuania,web0.kis.lt,NOT-SET,
-473,speed.chassco.net,112.78.219.248",48.1,17.12,SK.CHASSCO.NET.N1,Speedtest Slovak Republic,chassco.net,NOT-SET,
-474,speedtest.servihosting.es,84.232.1.9",38.2,0.47,ES.SERVIHOSTING.N1,Speedtest Spain,servihosting.es,NOT-SET,
-475,pinger.es.net,198.128.3.19",37.87,-122.267,GOV.ESNET.NOC.N4,ESnet NOC,es.net,M,
-476,mail.fcien.edu.uy,164.73.80.11",-34.8,-56.17,UY.FCIEN.EDU.N2,Facultad de Ciencias, Universidad de la Republica,fcien.edu.uy,NOT-SET,
-477,speedtest.ratiokontakt.de,212.63.133.222",49.2,11.5,DE.RATIOKONTAKT.N1,Speedtest Germany,ratiokontakt.de,NOT-SET,
-478,speedtest.starnet.md,77.67.73.222",47.0,28.87,MD.STARNET.N1,Speedtest Moldova,starnet.md,NOT-SET,
-479,gbps.no,213.158.230.10",59.5,10.45,NO.GBPS.N1,Speedtest Norway,gbps.no,NOT-SET,
-480,speed.alienstation.ro,89.115.178.1",44.1,28.65,RO.ALIENSTATION.N1,Speedtest Romania,alienstation.ro,NOT-SET,
-481,speedtest.bitcom.com.br,187.63.191.2",-28.9,-51.61,BR.BITCOM.COM.N1,Speedtest Brazil,bitcom.com.br,NOT-SET,
-482,gua.amnetdatos.net,200.30.144.3",14.3,-90.33,GT.AMNETDATOS.NET.N1,Speedtest Guatemala,amnetdatos.net,NOT-SET,
-483,speedtest.cablecolor.hn,190.92.1.5",14.0,-87.22,HN.CABLECOLOR.N1,Speedtest Honduras,cablecolor.hn,NOT-SET,
-484,namunu.learn.ac.lk,192.248.1.161",6.9,79.85,LK.LEARN.AC.N1,Lanka Education And Research Network,learn.ac.lk,B,
-485,www-05.nexus.ao,41.221.254.23",-8.8,13.23,AO.NEXUS.N1,Nexus Telecom Angola,nexus.ao,B,
-486,www.nic.ci,213.136.100.82",5.341,-4.0281,CI.NIC.N1,Network Information Center,nic.ci,B,
-487,speedtest.ivory.azstarnet.az,89.147.255.10",40.,49.88,AZ.IVORY.AZSTARNET.N1,Speedtest Azerbaijan,ivory.azstarnet.az,NOT-SET,
-488,web-a.lvdats.lv,93.177.237.245",57.6,24.83,LV.WEB-A-LVDATS.N1,Speedtest Latvia,web-a.lvdats.lv,B,
-489,sopee.net,62.87.220.34",51.0,17.02,PL.SOPEE.NET.N1,Speedtest Poland,sopee.net,NOT-SET,
-490,speedtest.tmnet.se,84.243.62.5",55.3,13.52,SE.TMNET.N1,Speedtest Sweden,tmnet.se,NOT-SET,
-491,speedtest.dc.utel.ua,213.186.113.5",50.4,30.52,UA.UTEL.N1,Speedtest Ukraine,utel.ua,NOT-SET,
-492,speedtest.bbmax.co.uk,85.233.160.167",51.,0.07,UK.BBMAX.CO.N1,Speedtest United Kingdom,bbmax.co.uk,NOT-SET,
-493,speedtest.amnetdatos.com.ni,165.98.132.8",12.1,-86.25,NI.AMNETDATOS.COM.N1,Speedtest Nicaragua,amnetdatos.com.ni,NOT-SET,
-494,www.seua.am,217.113.19.67",40.181,44.5136,AM.SEUA.N1,State Engineering University of Armenia,seua.am,NOT-SET,
-495,ns1.zu.ae,195.229.145.4",24.4,54.37,AE.ZU.AC.N2,Zayed University - Name server,zu.ac.ae,NOT-SET,
-496,internet.fo,212.55.32.93",6,-6.47,FO.INTERNET.N1,Speedtest Faroe Islands,internet.fo,NOT-SET,
-497,fin-mta.net,188.117.42.132",60.2,22.16,FI.FIN-MTA.NET.N1,Speedtest Finland,fin-mta.net,NOT-SET,
-498,speed.unidata.it,217.72.110.80",41.4,12.3,IT.UNIDATA.N1,Speedtest Italy,unidata.it,NOT-SET,
-499,speedtest.net.pl,83.170.87.75",52.1,21,PL.SPEEDTEST.NET.N1,Speedtest Poland,speedtest.net.pl,NOT-SET,
-500,ftp.evoda.ro,89.32.43.250",44.2,26.06,RO.FTP.EVODA.N1,Speedtest Romania,ftp.evoda.ro,NOT-SET,
-501,speedtest.eglue.biz,212.18.63.105",46.6,15.39,SI.EGLUE.BIZ.N1,Speedtest Slovenia,eglue.biz,NOT-SET,
-502,www.inetvr.com.br,187.45.195.191",-23.1,-47.17,BR.INETVR.COM.N1,Speedtest Brazil,inetvr.com.br,NOT-SET,
-503,costaricaservers.com,200.122.160.20",9.9,-84.08,CR.COSTARICASERVERS.COM.N1,Speedtest Costa Rica,costaricaservers.com,NOT-SET,
-504,speedtest.grupoamnet.net,200.13.161.170",13.7,-89.2,SV.GRUPOAMNET.NET.N1,Speedtest El Salvador,grupoamnet.net,NOT-SET,
-505,gibnet.gi,195.166.192.7",36.13,-5.35,GI.GIBNET.N1,GibNet,gibnet.gi,NOT-SET,
-506,web.africaonline.co.sz,212.85.220.18",-26.,31.5,SZ.AFRICAONLINE.CO.N1,Africa Online Swaziland,africaonline.co.sz,NOT-SET,
-507,mail.qanet.gm,196.46.232.3",13.46,-16.567,GM.QANET.N1,QuantumNET,qanet.gm,B,
-508,mail.comium.com.lr,66.178.57.17",6.31,-10.804,LR.COMIUM.COM.N1,Comium Liberia Telecom,comium.com.lr,NOT-SET,
-509,mail.africell.sl,41.223.133.25",8.,-11.5,SL.AFRICELL.N1,Africell Cellular,africell.sl,NOT-SET,
-510,www.kall.fo,80.77.128.9",62.01,-6.767,FO.KALL.N1,Kall Cellular,kall.fo,NOT-SET,
-511,www.uda.ad,194.158.78.228",42.,1.517,AD.UDA.N1,University of Andorra,uda.ad,NOT-SET,
-512,www.belnet.net,193.190.130.15",50.83,4.333,BE.BELNET.NET.N1,Belnet,belnet.net,NOT-SET,
-513,ns1.priorweb.be,62.182.60.69",5,3.75,BE.PRIORWEB.N1,PriorWeb web hosting,priorweb.be,NOT-SET,
-514,www.tpn.bg,195.138.148.2",42.68,23.317,BG.TPN.N1,Telecom Partners Network Bulgaria,tpn.bg,NOT-SET,
-515,www.rtu.lv,213.175.89.169",56.9,24.1,LV.RTU.N1,Riga Technical University,rtu.lv,NOT-SET,
-516,ns1.restena.lu,158.64.1.23",49.7,6.167,LU.RESTENA.N1,Research and Education Network Luxembourg,restena.lu,NOT-SET,
-517,193.222.119.6,193.222.119.6",47.13,9.517,LI.LLV.N1,llv.li router,llv.li,NOT-SET,
-518,www.asm.md,193.226.65.35",47.00,28.858,MD.ASM.N2,Academy of Science Moldova,asm.md,NOT-SET,
-519,www.absrsm.sm,194.183.95.35",43.76,12.417,SM.ABSRSM.N1,Banking Assoc. of San Marino,absrsm.sm,NOT-SET,
-520,az-ix.net,62.212.244.7",40.,49.88,AZ.AZ-IX.NET.N1,Speedtest Azerbaijan,az-ix.net,B,
-521,fyllingenfotball.no,83.143.81.174",59.916,10.75,NO.FYLLINGENFOTBALL.N1,Fylling Football,fyllingenfotball.no,NOT-SET,
-522,gjerrigknarken.no,81.27.32.133",60.3,5.32,NO.GJERRIGKNARKEN.N1,GJERRIGKNARKEN,gjerrigknarken.no,NOT-SET,
-523,aol1.albaniaonline.net,217.24.240.66",41.1,20.18,AL.ALBANIAONLINE.NET.N1,Albanian Paliament,albaniaonline.net,B,
-524,avp.gov.al,109.69.2.189",41.,19.8,AL.GOV.AVP.N1,Public Procurement Advocate,avp.gov.al,NOT-SET,
-525,espg.upt.edu.pe,200.48.211.49",-16.3,-71.53,PE.EDU.UPT.N1,Graduate School of UPT,upt.edu.pe,NOT-SET,
-526,www.amharainfo.gov.et,213.55.85.226",11.60,37.3216,ET.AMHARAINFO.GOV.N1,Amhara National Regional State Bureau of Information,,amharainfo.gov.et,NOT-SET,
-527,www.aazimbabwe.co.zw,196.201.17.235",-17.81,31.045,ZW.AAZIMBABWE.CO.N1,Automobile Association of Zimbabwe,aazimbabwe.co.zw,NOT-SET,
-528,ns1.unikin.cd,41.242.128.132",-4.419,15.3097,CD.UNIKIN.N2,Universite de Kinshasa,unikin.cd,NOT-SET,
-529,www.ictp.tv,140.105.28.116",45.7074,13.716527,IT.ICTP.N3,ICTP Diploma Course Online,ictp.tv,NOT-SET,
-530,www.kcn.unima.mw,196.45.188.25",-15.802,35.0217,MW.KCN.UNIMA.N1,Kamuza College of Nursing,kcn.unima.mw,B,
-531,gplhost.co.il,117.121.245.9",32.9,34.79,IL.GPLHOST.CO.N1,Speedtest Israel,gplhost.co.il,NOT-SET,
-532,speedtest.sahara.com.sa,212.76.68.93",26.5,50.03,SA.SPEEDTEST.SAHARA.COM.N1,Speedtest Saudi Arabia,speedtest.sahara.com.sa,NOT-SET,
-533,speed.airnet.net.nz,202.137.240.186",-39.2,176.55,NZ.AIRNET.NET.N1,Speedtest New Zealand,airnet.net.nz,NOT-SET,
-534,speedtest.sby.dnet.net.id,202.148.11.34",-7.1,112.44,ID.DNET.NET.N1,Speedtest Indonesia,dnet.net.id,B,
-535,iepm-resp.slac.stanford.edu,134.79.104.81",37.4,-122.20,EDU.SLAC.STANFORD.N14,Stanford Linear Accelerator Center,slac.stanford.edu,I,
-536,iepmbw.twaren.net,211.79.63.77",24.781,120.993,NET.TWAREN.N1,Taiwan Advanced Research and Education Network,twaren.net,NOT-SET,
-537,ccp.si,193.2.242.162",46.0,14.5,SI.CCP.N1,Cultural Contact Point Slovania,ccp.si,NOT-SET,
-538,www.adu.mr,82.151.72.2",18.08,-15.976,MR.ADU.N1,Agence de Developpment KUmain,adu.mr,NOT-SET,
-539,www.bacim.mr,82.151.72.218",18.08,-15.975,MR.BACIM.N1,Bacim Bank,bacim.mr,NOT-SET,
-540,monitor.scarlet.an,190.2.128.86",12.,-68.56,AN.SCARLET.N1,Speedtest Dominican Republic,scarlet.an,NOT-SET,
-541,speedtest.com.sg,202.150.221.170",1.1,103.51,SG.SPEEDTEST.COM.N1,Speedtest Singapore,speedtest.com.sg,NOT-SET,
-542,www.lsx.com.la,202.62.101.207",17.966,102.6,LA.LSX.N1,Lao Securities Exchange,lsx.com.la,NOT-SET,
-543,webmail.izi.re,80.69.208.114",-20.8,55.47,RE.IZI.N1,IZI webmail,izi.re,NOT-SET,
-544,wwwinfo.jinr.ru,159.93.39.8",55.75,37.583,RU.DUBNA.N2,Joint Institute for Nuclear Research,dubna.su,NOT-SET,
-545,syd-a-ext1.aarnet.net.au,202.158.196.134",-33.883,151.2011,AU.AARNET.SYDNEY.NET,AARNet IPv6 Broker Service,aarnet.net.au,NOT-SET,
-546,elearning.braeburn.ac.ke,196.200.30.12",-1.2,36.81,KE.AC.BRAEBURN,Elearning Braeburn,braeburn.ac.ke,NOT-SET,
-547,transexpress.com.ni,190.53.38.218",12.1,-86.26,NI.COM.TRANSEXPRESS.N1,Trans Express,transexpress.com.ni,NOT-SET,
-548,cepad.org.ni,63.245.25.2",12.1,-86.26,NI.ORG.CEPAD.N1,CEPAD,cepad.org.ni,NOT-SET,
-549,movie.zing.vn,222.255.122.28",19.7,105.3166,VN.ZING.MOVIE.N1,Zing Movies,zing.vn,NOT-SET,
-550,melspeed.intervolve.com.au,122.100.4.228",-37.9,145.12,AU.INTERVOLVE.MELBOURNE.COM.N1,Speedtest Australia,intervolve.com.au,NOT-SET,
-551,nmsapps.bigair.net.au,202.171.190.50",-33.,151.2,AU.NMSAPPS.BIGAIR.NET.N1,Speedtest Australia,nmsapps.bigair.net.au,NOT-SET,
-552,speedtest.meganets.ru,89.108.108.111",55.1,37.57,RU.SPEEDTEST.MEGANETS.N1,Speedtest Russia,speedtest.meganets.ru,NOT-SET,
-553,datautama.net.id,203.89.24.34",-6.966,110.4167,ID.DATAUTAMA.NET.N1,Speedtest Indonesia,datautama.net.id,NOT-SET,
-554,www.mod.gov.af,81.85.243.66",34.516,69.1833,AF.MOD.GOV.AF,Afghan National Army,mod.gov.af,B,
-555,pinger.arn.dz,193.194.81.48",36.763,3.0506,DZ.ARN.N3,Academic and Research Network,arn.dz,M,
-556,bowlingzveza.si,82.149.22.114",46.554,15.6467,SI.BOWLINGZVEZA.N1,Bowling Association of Slovenia,bowlingzveza.si,NOT-SET,
-557,admision.unsch.edu.pe,200.121.72.187",-12.0,-77.05,PE.EDU.UNSCH,Universidad Nacional de San Cristobal de Huamanga,unsch.edu.pe,NOT-SET,
-558,hunnas.learn.ac.lk,192.248.1.165",6.935,79.8470,LK.LEARN.AC.N2,Lanka Education And Research Network,learn.ac.lk,M,
-559,st.netbynet.ru,79.120.31.237",55.1,37.57,RU.ST.NETBYNET.N1,Speedtest Russia,st.netbynet.ru,NOT-SET,
-560,speedtest.hns.net.in,120.88.46.30",18.9,72.82,IN.HNS.NET.N1,Speedtest India,hns.net.in,NOT-SET,
-561,www.officedubacbenin.bj,81.91.236.77",6.3,2.433,BJ.OFFICEDUBACBENIN.N1,Office Du Bac, Benin,officedubacbenin.bj,NOT-SET,
-562,www.ppesa.gov.et,213.55.76.98",,38,ET.PPESA.GOV.N1,Ethiopian Privatization and Public Enterprises Supervising Agency,ppesa.gov.et,NOT-SET,
-563,www.paynet.co.zw,196.44.186.219",-18.3,29.9167,ZW.PAYNET.CO.N1,PaynetSwitch,paynet.co.zw,NOT-SET,
-564,www.cuc.ac.cr,190.112.221.83",9.861,-83.9258,CR.CUC.AC.N1,Colegio Universitarios de Cartago,cuc.ac.c,B,
-565,btc.bw,168.167.168.34",-24.64,25.9119,BW.BTC.N1,Botswana Telecommunications Corporation,btc.bw,NOT-SET,
-566,speedtest.bigtelecom.ru,87.255.1.133",55.8,37.06,RU.BiGTELECOM.N1,Speedtest Russia,bigtelecom.ru,NOT-SET,
-567,web.hepgrid.uerj.br,200.143.196.20",-22.979,-43.2035,BR.HEPGRID.UERJ.N2,Universidade do Estado do Rio de Janeiro,uerj.br,M,
-568,www.cnss.ga,41.211.191.124",0.383,9.45,GA.CNSS.N1,Caisse Nationale de Securite Social,cnss.ga,NOT-SET,
-569,mail.unza.zm,196.46.196.4",-15.41,28.2833,ZM.UNZA.N3,University of Zambia,unza.zm,NOT-SET,
-570,speedtest.isp.qa,82.148.96.85",25.,51.52,QA.ISP.N1,Speedtest Qatar,isp.qa,NOT-SET,
-571,speedtest.wxnz.net,58.28.13.209",-36.8,174.77,NZ.SPEEDTEST.WXNZ.NET.N1,Speedtest New Zealand,speedtest.wxnz.net,NOT-SET,
-572,zz.nullwave.ru,217.70.119.254",55.0,82.93,RU.NULLWAVE.N1,Speedtest Russia,nullwave.ru,NOT-SET,
-573,speedtest.biznetnetworks.com,203.142.69.190",-6.1,106.83,ID.SPEEDTEST.BEZNETNETWORKS.COM.N1,Speedtest Indonesia,speedtest.biznetnetworks.com,NOT-SET,
-574,www.ocesb.com.my,202.73.10.4",3.5,101.89,MY.OCESB.COM.N2,Speedtest Malaysia,ocesb.com.my,NOT-SET,
-575,borsu20.cenbg.in2p3.fr,134.158.119.10",48.6,1.1,FR.IN2P3.N8,N2P3,in2p3.fr,NOT-SET,
-576,www.lechwe.sch.zm,81.199.193.4",-12.81,28.2,ZM.LECHWE.SCH.N1,Lechwe Education Trust,lechwe.sch.zm,NOT-SET,
-577,ping.riken.jp,134.160.4.17",35.70,139.767,JP.RIKEN.N3,The Institute of Physical and Chemical Research,riken.jp,MB,
-578,www.gbs.cd,217.171.88.141",-4.,15.3,CD.GBS.N1,Global Broadband Solution,gbs.cd,NOT-SET,
-579,www.dut.ac.za,196.35.150.170",-29.85,31.0114,ZA.DUT.AC.N1,Durban University of Technology,dut.ac.za,NOT-SET,
-580,www.acrossafricatours.co.zw,217.15.120.13",-17.81,31.045,ZW.ACROSSAFRICATOURS.CO.N2,Across Africa Tours,acrossafricatours.co.zw,NOT-SET,
-581,www.na.gov.la,115.84.70.203",17.966,102.6,LA.NA.GOV.N1,National Assembly of the Lao People's Democratic Republic,na.gov.la,NOT-SET,
-582,www.president.kg,212.42.119.16",42.873,74.6003,KG.PRESIDENT.N1,President of the Kyrghz Republic,president.kg,NOT-SET,
-583,cobra.unza.zm,196.46.196.5",-15.391,28.329,ZM.UNZA.N8,University of Zambia,unza.zm,NOT-SET,
-584,pinger.cern.ch,192.91.244.6",46.23249,6.045914,CH.CERN.N20,CERN,cern.ch,M,
-585,bne-a-ext1.aarnet.net.au,202.158.195.196",-27.498,153.014,AU.AARNET.BRISBANE.NET,AARNET PoP  Brisbane,aarnet.net.au,B,
-586,www.cut.edu.lb,89.108.129.100",33.871,35.5097,LB.CUT.EDU.N1,Centre Universitaire de Technologie de Tripoli,cut.edu.lb,B,
-587,www.sabah.com.my,27.0.4.20",5.983,116.0666,MY.SABAH.COM.N1,Sabah Commercial Network,sabah.com.my,NOT-SET,
-588,www.nwu.ac.za,143.160.36.150",-26.7,27.1,ZA.AC.NWU.N1,North-West University,nwu.ac.za,NOT-SET,
-589,library.uonbi.ac.ke,41.204.186.26",-1.2,36.8162,KE.UONBI.AC.N2,Library of the University of Nairobi,uonbi.ac.ke,NOT-SET,
-590,pinger.unesp.br,200.145.255.41",-23.5,-46.63,BR.UNESP.N1,University of Sao Paulo,unesp.br,MB,
-591,www.nomad.mu,196.46.59.13",-20.185,57.477,MU.NOMAD.N1,Nomad,nomad.mu,NOT-SET,
-592,www.mcss.sc,41.86.46.5",-4.616,55.45,SC.MCSS.N1,Marine Conservation Society,mcss.sc,NOT-SET,
-593,www.ruh.ac.lk,192.248.48.3",5.947,80.5434,LK.RUH.AC.N1,University of Ruhuna,ruh.ac.lk,NOT-SET,
-594,www.leo.co.ls,64.57.112.1",-29.316,27.483,LS.LEO.CO.N1,Leo Internet Service Provider,leo.co.ls,NOT-SET,
-595,www.lonab.bf,206.82.130.77",12.370,-1.5247,BF.LONAB.N1,Loterie Nationale Burkinabe,lonab.bf,NOT-SET,
-596,www.agpe.ma,212.217.0.30",34.025,-6.8361,MA.AGPE.N1,Association due Gharb pour la Protection de L'Envirronment.,agpe.ma,B,
-597,www.aerodept.edu.ly,62.240.36.40",32.876,13.187,LY.AERODEPT.EDU.N1,Al-Fateh University, Aeronautical Engineering Department,aerodept.edu.ly,NOT-SET,
-598,pinger.uet.edu.pk,111.68.98.132",31.5,74.36,PK.UET.EDU.N2,University of Engineering and Technology,uet.edu.pk,M,
-599,per-a-ext1.aarnet.net.au,202.158.195.4",-31.955,115.8595,AU.AARNET.PERTH.NET,AARNET PoP Perth,aarnet.net.au,B,
-600,www.helwan.edu.eg,193.227.34.41",29.866,31.3189,EG.HELWAN.EDU.N1,University of Helwan,helwan.edu.eg,NOT-SET,
-601,121.52.144.65,121.52.144.65",34.067,71.9907,PK.NUST.CAE.N2,College of Aeronautical Engineering,121.52.144.65,NOT-SET,
-602,www.nren.net.np,202.52.0.2",27.705,85.3303,NP.NREN.NET.N2,Nepal REserach and Education Network,nren.net.np,B,
-603,pinger.uettaxila.edu.pk,111.68.98.132",33.76789,72.825875,PK.UETTAXILA.EDU.N1,University of Engineering and Technology Taxila,uettaxila.edu.pk,M,
-604,www.unyp.cz,178.238.38.35",50.076,14.4305,CZ.UNYP.N1,University of New York, Prague,unyp.cz,NOT-SET,
-605,sagrid.ac.za,196.21.182.2",-29.1,26.2,ZA.SAGRID.AC.N1,South African National Compute Grid,sagrid.ac.za,NOT-SET,
-606,www.banjuldiocese.gm,212.60.76.13",13.45,-16.5775,GM.BANJULDIOCESE.N1,Catholic Diocese of Banjul,banjuldiocese.gm,NOT-SET,
-607,www.laotrade.org.la,202.62.103.120",17.966,102.6,LA.LAOTRADE.ORG.N1,Ministry of Trade and Commerce,laotrade.org.la,NOT-SET,
-608,gt-medicionesuy.rau.edu.uy,164.73.128.145",-34.88,-56.183,UY.RAU.EDU,gt-medicionesuy.rau.edu.uy,rau.edu.uy,NOT-SET,
-609,t2-monitor.ultralight.org,192.84.86.114",34.138,-118.1244,ORG.CALTECH.ULTRALIGHT.N1,Caltech HEP Ultralight,,ultralight.org,M,
-610,mon01.nren.net.np,202.52.0.3",27.7791,85.36836,NP.NREN.NET.N1,Nepal Research and Education Network,nren.net.np,NOT-SET,
-611,www.cnp.me,213.149.105.8",42.442,19.2615,ME.CNP.N1,Montenegrin National Theatre,cnp.me,NOT-SET,
-612,www.cvut.cz,147.32.3.39",50.087,14.4205,CZ.CVUT.N1,Czech Technical University,cvut.cz,NOT-SET,
-613,monitor.seecs.edu.pk,111.68.101.10",33.64288,72.990525,PK.SEECS.EDU.N2,School of Electrical Engineering and Computer Sciences, NUST,seecs.edu.pk,MB,
-614,www.unilag.edu.ng,196.45.48.50",6.45,3.3958,NG.UNILAG.EDU.N1,University of Lagos,unilag.edu.ng,B,
-615,www.agetur.bj,81.91.225.90",6.3,2.4333,BJ.AGETUR.N1,Agence d'Execution des travaux Urbains,agetur.bj,NOT-SET,
-616,www.inet.sy,91.144.8.211",33.,36.3,SY.INET.N1,iNET Internet Service Provider 2006-2011,inet.sy,NOT-SET,
-617,www.lesotho.gov.ls,41.203.191.3",-29.316,27.483,LS.LESOTHO.GOV.N1,Ministry of Communications,lesotho.gov.ls,B,
-618,pinger.nwfpuet.edu.pk,121.52.147.71",34.001,71.4855,PK.NWFPUET.EDU.N1,University of Engineering and Technology Peshawar,nwfpuet.edu.pk,M,
-619,npm.neduet.edu.pk,111.68.110.8",24.893,67.0281,PK.NEDUET.EDU.N1,NED University of Engineering & Technology, Karachi,neduet.edu.pk,M,
-620,www.acmad.ne,41.138.57.34",13.516,2.1167,NE.ACMAD.N1,African Centre of Meteorological Application for Development,acmad.ne,NOT-SET,
-621,hepls01.phys.uvic.ca,142.104.61.89",48.4,-123.35,CA.UVIC.N5,University of Victoria,uvic.ca,NOT-SET,
-622,www.nmmu.ac.za,192.96.15.244",-33.966,25.58,ZA.AC.NMMU.N1,Nelson Mandela Metropolitan University,nmmu.ac.za,NOT-SET,
-623,www.ku.ac.ke,194.201.253.8",-1.18,36.9279,KE.KU.AC.N2,Kenyatta University,ku.ac.ke,NOT-SET,
-624,www.utm.ac.mu,202.123.21.123",-20.161,57.499,MU.UTM.AC.N1,University of Technology Mauritius,utm.ac.mu,B,
-625,www.acat.org.sz,196.28.7.66",-26.316,31.133,SZ.ACAT.ORG.N1,Africa Cooperative Action Trust,acat.org.sz,B,
-626,pinger.sprace.org.br,200.136.80.16",-23.524,-46.6653,BR.ORG.SPRACE.N2,Sao Paulo Regional Analysis Center,sprace.org.br,M,
-627,access.sprace.org.br,200.136.80.18",-23.524,-46.6653,BR.ORG.SPRACE.N3,Sao Paulo Regional Analysis Center,sprace.org.br,NOT-SET,
-628,www.cob.edu.bs,65.75.64.69",25.083,-77.35,BS.COB.EDU.N1,College of the Bahamas,cob.edu.bs,NOT-SET,
-629,www.bos.gov.ls,196.202.246.8",-29.316,27.483,LS.BOS.GOV.N1,Bureau of Statistics,www.bos.gov.ls,NOT-SET,
-630,www.aio.upjs.sk,158.197.16.71",48.716,21.25,SK.AIO.UPJS.N1,Pavol Jozef Safarik University in Kosice,aio.upjs.sk,NOT-SET,
-631,cbr-a-ext1.aarnet.net.au,202.158.196.4",-35.25,149.1343,AU.AARNET.CANBERRA.NET,AARNET PoP Canberra,aarnet.net.au,B,
-632,www.fmci.ens.tn,41.225.8.45",36.802,10.1797,TN.FMCI.ENS.N1,Universite Montplaisir,fmci.ens.tn,NOT-SET,
-633,ps.lcg.ustc.edu.cn,202.38.140.115",39.,116.413,CN.USTC.LCG.PS.EDU.N1,ps.lcg.ustc.edu.cn,ustc.edu.cn,B,
-634,www.canal2temuco.cl,200.29.188.25",-29.953,-71.3436,CL.CANAL2TEMUCO.N1,Canal2Temuco,canal2temuco.cl,NOT-SET,
-635,pinger.uob.edu.pk,121.52.157.112",30.165,66.9908,PK.UOB.EDU.N3,University of Balochistan,uob.edu.pk,M,
-636,ns.rcub.bg.ac.rs,147.91.1.5",44.804,20.4798,RS.BG.AC.N1,University of Belgrade,rcub.bg.ac.rs,B,
-637,pinger.nca.edu.pk,111.68.102.68",31.56743,74.306972,PK.NCA.EDU.N2,National College of Arts, NCA, Lahore,nca.edu.pk,M,
-638,pinger-itc.pu.edu.pk,111.68.103.29",31.495,74.2942,PK.PU.EDU.N2,Punjab University, ITC Department,pu.edu.pk,NOT-SET,
-639,pinger.aiou.edu.pk,111.68.97.52",33.683,73.0538,PK.AIOU.EDU.N2,Allama Iqbal Open University, AIOU Islamabad,aiou.edu.pk,M,
-640,www.geocom.do,200.26.174.210",19.4,-70.7,DO.GEOCOM.N1,Geocom Dominicana,geocom.do,NOT-SET,
-641,www.fde.ec,200.110.94.62",-2.203,-79.897,EC.FDE.N1,,fde.ec,B,
-642,www.corpam.ec,201.219.15.18",-0.291,-78.5246,EC.CORPAM.N1,Corporacion de Ayuda Mutua Petroecuador, Quito,corpam.ec,NOT-SET,
-643,pinger.cemb.edu.pk,111.68.103.83",31.47798,74.262919,PK.CEMB.EDU.N2,NCEMB, University of Punjab,cemb.edu.pk,M,
-644,www.iranlng.ir,62.193.12.226",35.696,51.4231,IR.IRANLG.N1,Iran LNG Company,iranlng.ir,B,
-645,www.health.gov.mv,202.21.178.155",4.166,73.5,MV.HEALTH.GOV.N1,Ministry of Health and Family, Maldives,health.gov.mv,NOT-SET,
-646,pinger.lhr.nu.edu.pk,111.68.102.125",31.48104,74.303356,PK.NU.EDU.N2,FAST, B-Block, Faisal Town,lhr.nu.edu.pk,M,
-647,www-wanmon.slac.stanford.edu,134.79.197.197",37.417,-122.2035,EDU.SLAC.STANFORD.N16,SLAC National Accelerator Laboratory,slac.stanford.edu,NOT-SET,
-648,www.apdf.org.ml,217.64.107.135",12.6,-8,ML.ADPF.ORG.N1,L'association pour le Progres et la Defense des Droits des Femme,adpf.org.ml,NOT-SET,
-649,www.cbt.tm,217.174.226.81",37.9,58.3833,TM.CBT.N1,Centrl Bank of Turkmenistan,cbt.tm,NOT-SET,
-650,www.mogbiz.by,194.158.206.243",53.913,30.3364,BY.MOGBIZ.N1,Mogbiz,mogbiz.by,NOT-SET,
-651,www.afyamzuri.org.zm,196.46.124.19",-15.866,27.7667,ZM.AFYAMZURI,ORG.N1,AFYAMZUTI HIV Prevention and Wellness,afyamzuri.org.zm,NOT-SET,
-652,www.nic.mr,82.151.64.7",18.08,-15.975,MR.NIC.N2,NIC Mauritanie,nic.mr,NOT-SET,
-653,www.noor.net,217.139.227.20",30.040,31.2160,EG.NOOR.NET.N1,NOOR Advanced Technologies, SAE,noor.net,NOT-SET,
-654,www.act.edu.om,212.72.26.54",23.613,58.5922,OM.ACT.EDU.N1,Al Musanna College of Technoogy,act.edu.om,NOT-SET,
-655,ns1.credis.ro,195.95.166.203",44.435,26.0801,RO.CREDIS.N3,Credis,credis.ro,NOT-SET,
-656,www.presidencymaldives.gov.mv,202.1.201.180",4.178,73.5126,MV.PRESIDENCYMALDIVES.GOV.N1,The Presidents Office, Government of Maldives,presidencymaldives.gov.mv,NOT-SET,
-657,pingerqta.pern.edu.pk,121.52.157.157",30.26956,66.939694,PK.PINGERQTA.PERN.EDU.N2,HEC  Quetta Regional Centre,pern.edu.pk,M,
-658,pinger.lcwu.edu.pk,111.68.103.135",31.54477,74.328958,PK.LCWU.EDU.N2,Lahore College of Women University,lcwu.edu.pk,M,
-659,www.nelly.com.do,200.88.126.40",18.466,-69.9,DO.NELLY.COM.N1,Acqitucasa Republica Dominicana,nelly.com.do,NOT-SET,
-660,www.mtec.by,91.149.189.220",53.,27.5667,BY.MTEC.N1,Molodechno economic and trade college!,mtec.by,B,
-661,www.college.edu.sn,196.1.94.92",14.670,-17.4381,SN.COLLEGE.EDU.N1,Portail de Developpement Professionnel pour Education,college.edu.sn,NOT-SET,
-662,www.surcollege.edu.om,85.154.240.82",22.566,59.5289,OM.SURCOLLEGE.EDU.N1,Sur College of Applied Sciences,surcollege.edu.om,NOT-SET,
-663,pinger.ustb.edu.pk,213.229.80.194",32.984,70.6025,PK.USTB.EDU.N2,University of Science & Technology, IT Block, Near Sports Complex, Kohat Road, Bannu,ustb.edu.pk,NOT-SET,
-664,pinger.kohat.edu.pk,121.52.146.180",33.52182,71.446622,PK.KOHAT.EDU.N2,KUST, Kohat,kohat.edu.pk,M,
-665,www.refer.ga,217.77.72.76",0.383,9.45,GA.REFER,N1,Campus numerique francophone de Libreville,refor.ga,NOT-SET,
-666,www.ic.edu.lb,77.235.128.5",33.833,35.8333,LB.IC.N1,International College,ic.edu.lb,NOT-SET,
-667,www.muni.cz,147.251.5.231",49.198,16.6051,CZ.MUNI.N1,Masaryk University,muni.cz,NOT-SET,
-668,www.zedmobile.co.zm,81.199.101.213",-12.816,28.2,ZM.ZEDMOBILE.CO.ZM,vCash,zedmobile.co.zm,NOT-SET,
-669,pinger.usindh.edu.pk,121.52.154.50",25.41817,68.262133,PK.USINDH.EDU.N2,University of Sindh, Jamshoro,usindh.edu.pk,M,
-670,www.tele.gl,194.177.224.40",64.183,-51.75,GL.TELE.N1,Tele Post,tele.gl,NOT-SET,
-671,pinger.cdac.in,196.1.113.251",18.520,73.8567,IN.PUNE.CDAC.N2,NetOps, SANG-C-DAC, HQ-Pune,cdac.in,M,
-672,www.ttu.tj,77.95.1.234",38.536,68.78,TJ.TTU.N1,Tajik Technical Uuniversity,ttu.tj,NOT-SET,
-673,www.ygsmrb.org.ye,82.114.183.106",15.352,44.2074,YE.YGSMRB.ORG.N1,Yemen Geological Survey Minerals and Resources Board,ygsmrb.org.ye,NOT-SET,
-674,aup.seecs.edu.pk,121.52.146.67",34.020,71.4830,PK.AUP.SEECS.EDU,Agriculture University Peshawar,aup.edu.pk,M,
-675,geo.mff.cuni.cz,195.113.28.130",50.086,14.4106,CZ.CUNI.GEO.MFF.N1,Geographical Department, Charles University, Prague,mff.cuni.cz,NOT-SET,
-676,ns1.swiftkenya.com,80.240.192.7",-0.099,34.7508,KE.SWIFTKENYA.COM.N1,Swift Global,swiftkenya.com,B,
-677,pinger.isra.edu.pk,121.52.155.245",25.4347,68.380333,PK.ISRA.EDU.N2,ISRA Hyderabad,isra.edu.pk,M,
-678,hn.ly,174.37.215.98",32.889,13.1706,LY.HN.N1,AWS Hotel Reservations,hn.ly,NOT-SET,
-679,www.espe.edu.ec,192.188.58.167",-0.933,-78.6160,EC.ESPE.EDU.EC,Army Polytechnic School,espe.edu.ec,NOT-SET,
-680,twmb.info,61.56.191.124",24.7486,121.76520,TW.TWMB.INFO.N1,Subsidiary of Taiwan Mobile Co., Ltd.,twmb.info,NOT-SET,
-681,www.avaza.gov.tm,217.174.229.211",40.025,52.9576,TM.AVAZA.GOV.N1,Awaza National Tourist Zone,avaza.gov.tm,NOT-SET,
-682,www.nahaltrading.com.eg,41.222.168.137",30.047,31.2420,EG.NAHAL.COM.N1,N.A.H.A.L. Trading,nahaltrading.com.eg,NOT-SET,
-683,www.adencomplex.com.ye,195.94.0.128",12.800,45.0333,YE.ADENCOMPLEX.COM.N1,Aden Complex Touristic,adencomplex.com.ye,NOT-SET,
-684,www.queenscollege.edu.ye,195.94.0.226",15.352,44.2075,YE.QUEENSCOLLEGE.EDU.N1,Queens International Junior College,queenscollege.edu.ye,NOT-SET,
-685,pingerjms.pern.edu.pk,121.52.154.11",25.417,68.2627,PK.PERNSINDHUPOP.EDU.N2,Sindh University, Jamshoro,pern.edu.pk,M,
-686,hu.seecs.edu.pk,121.52.150.71",34.42249,73.245544,PK.HU.EDU.N2,Hazara University,hu.edu.pk,NOT-SET,
-687,www.nrf.ae,195.229.146.76",25.103,55.1685,AE.NRF.N1,National Research Foundation,nrf.ae,NOT-SET,
-688,www.cambridge.edu.jo,80.90.160.133",31.949,35.9329,JO.CAMBRIDGE.EDU,Cambridge High School,cambridge.edu.jo,NOT-SET,
-689,www.kfmc.med.sa,193.37.143.55",24.688,46.7224,SA.KFMC.MED,King Fahd Medical City,kfmc.med.sa,NOT-SET,
-690,pingerpwr.pern.edu.pk,121.52.150.242",33.99115,71.442767,PK.PERNPWRPOP.EDU.N2,HEC, RC Peshawar,pern.edu.pk,M,
-691,www.uew.edu.gh,41.74.91.129",5.337,-0.6255,GH.UEW.EDU.N1,University of Education. Winneba,uew.edu.gh,NOT-SET,
-692,sbkwu.seecs.edu.pk,121.52.157.21",30.191588,66.961221,PK.SBKWU.SEECS.EDU,SBK Women University Quetta,seecs.edu.pk,NOT-SET,
-693,nukhimain.seecs.edu.pk,111.68.108.109",24.85689,67.264848,PK.NUKHIMAIN.SEECS.EDU,NU-FAST Karachi,seecs.edu.pk,M,
-694,pingerisl-qau.pern.edu.pk,111.68.106.246",33.74617,73.135705,PK.PINGERISL-QAU.PERN.EDU,PERN PoP, Quaid-e-Azam university,pern.edu.pk,M,
-695,pingerkhi-uok.pern.edu.pk,111.68.107.242",24.940023,67.12093,PK.PINGERKHI-UOK.PERN.EDU,University of Karachi,pern.edu.pk,M,
-696,196.21.45.139,196.21.45.139",-33.9,18.41,ZA.BONTANY.UWC.AC.N1,Department of Botany, Univ of Western Cape,bontany.uwc.ac.za,NOT-SET,
-697,www.bcpng.org.pg,124.240.221.35",-9.464,147.1591,PG.BCPNG.ORG,Business Council of Papua New Guinea,bcpng.org.pg,NOT-SET,
-698,www.energy.gov.mn,202.179.8.199",47.923,106.9136,MN.ENERGY.GOV.N1,Ministry of Mineral Resources and Energy,energy.gov.mn,NOT-SET,
-699,www.hraparak.am,95.140.200.217",4,45,AM.HRAPARAK.N1,Hraparak.am,hraparak.am,B,
-700,www.nu.edu.sa,212.26.74.5",17.491,44.1323,SA.NU.EDU,Najran University,nu.edu.sa,NOT-SET,
-701,www.psmchs.edu.sa,213.230.21.42",26.276,50.1472,SA.PSMCHS.EDU,Prince Sultan Military College of Health Sciences,psmchs.edu.sa,NOT-SET,
-702,sau.seecs.edu.pk,121.52.155.69",25.433,68.5573,PK.SAU.SEECS.EDU,Sindh Agriculture University,seecs.edu.pk,M,
-703,pingerisl-fjwu.pern.edu.pk,111.68.106.250",33.58584,73.064719,PK.PINGERISL-FJWU.PERN.EDU,PERN PoP, Fatima Jinnah Women University,pern.edu.pk,M,
-704,www.ucc.edu.gh,41.204.53.162",5.103,-1.2825,GH.UCC.EDU.N1,University of Cape Coast,ucc.edu.gh,NOT-SET,
-705,www.campucss.edu.pe,206.214.217.238",-11.849,-76.4461,PE.CAMPUCSS.EDU,Universidad Catolica Sedes Sapientiae,campucss.edu.pe,NOT-SET,
-706,www.antenalivre.pt,94.46.3.16",38.679,-8.4622,PT.ANTENALIVRE,Antenalivre,antenalivre.pt,NOT-SET,
-707,www.undp.tj,94.199.19.7",38.536,68.7800,TJ.UNDP,United Nations Development Programe,undp.tj,NOT-SET,
-708,www.agriportail.tn,193.95.21.131",36.81,10.1660,TN.AGRIPORTAIL,Portal of Agriculture in Tunisia,agriportail.tn,NOT-SET,
-709,www.bis.k12.tr,212.58.28.139",41.005,28.977,TR.BIS.K12,British International School,bis.k12.tr,NOT-SET,
-710,www.cayirova.ber.tr,82.222.57.141",40.853,29.8815,TR.CAYIROVA.BER,City of Cayirova,cayirova.ber.tr,NOT-SET,
-711,www.doctors.ly,41.254.33.86",32.871,13.1935,LY.DOCTORS.N1,Libyan Spider,doctors.ly,NOT-SET,
-712,www.cnaps.mg,41.188.38.233",-18.914,47.5316,MG.CNAPS,National Social Insurance fund,cnaps.mg,NOT-SET,
-713,www.benuestate.gov.ng,41.222.209.140",7.730,8.5361,NG.BENUESTATE.GOV,Government of Benue State of Nigeria,benuestate.gov.ng,NOT-SET,
-714,www.manila.gov.ph,203.167.111.1",14.586,120.9825,PH.MANILA.GOV,City Of Manila,manila.gov.ph,NOT-SET,
-715,www.cbu.uz,195.158.31.77",41.266,69.2167,UZ.CBU,Central Bank of Uzbekistan,cbu.uz,NOT-SET,
-716,www.gi.alaska.edu,137.229.21.85",64.839,-147.7847,EDU.GI.ALASKA.N1,Geographical Institute, University of Alaska at Fairbanks,gi.alaska.edu,NOT-SET,
-717,www.gov.bw,168.167.134.24",-24.646,25.9119,BW.GOV.N1,Government of Botswana,gov.bw,B,
-718,www.oag.org.bw,168.167.134.74",-24.691,25.8785,BW.OAG.ORG.N1,Office of the Auditor General,oag.org.bw,NOT-SET,
-719,www.bankofbotswana.bw,83.143.28.88",-24.657,25.9119,BW.BANKOFBOTSWANA.N1,Bank of Botswana,bankofbotswana.bw,NOT-SET,
-720,www.hastingsdc.govt.nz,202.191.43.42",-39.649,176.8350,NZ.HASTINGSDC.GOVT.NZ,Hastings District Council,hastingsdc.govt.nz,NOT-SET,
-721,www.seanet.org.nz,131.203.86.114",-41.292,174.7732,NZ.SEANET.ORG.N1,SeaNet,seanet.org.nz,NOT-SET,
-722,www.egrem.com.cu,200.55.168.173",23.125,-82.3267,CU.EGREM.COM.N1,Egrem La Puertas de la Musica,egrem.com.cu,NOT-SET,
-723,www.ab.kg,195.38.166.130",42.873,74.6003,KG.AB.N1,Aiyl Bank,ab.kg,NOT-SET,
-724,www.akme.kg,85.115.208.108",42.873,74.6003,KG.AKME.N1,ACME Studio,Akme.kg,NOT-SET,
-725,www.uaa.alaska.edu,137.229.141.83",61.190,-149.828,EDU.UAA.ALASKA.N1,University of Alaska at Anchorage,uaa.alaska.edu,NOT-SET,
-726,pinger.iba-suk.edu.pk,121.52.155.76",27.72625,68.819397,PK.PINGER.IBA-SUK.EDU,IBA Sukkur,iba.edu.pk,M,
-727,pingerlhr-gcu.pern.edu.pk,111.68.102.210",31.574,74.3076,PK.PINGERLHR-GCU.PERN.EDU,Government College University,pern.edu.pk,M,
-728,www.estamer.ae,83.111.201.4",25.264,55.3117,AE.ESTAMER.AE,National Continuous Development and Professional Rehabilitation Program,estamer.ae,NOT-SET,
-729,www.princeton.edu,128.112.132.86",40.344,-74.6547,EDU.PRINCETON.N4,Princeton University,princeton.edu,NOT-SET,
-730,www.bidvestnamibia.com.na,41.218.69.50",-22.,17.083,NA.BIDVESTNAMIBIA.COM,Bidvest Namibia,www.bidvestnamibia.com.na,NOT-SET,
-731,www.aser.sn,41.208.153.76",14.7,-17.333,SN.ASER,Agence Senegalise de Electrification Rurale,aser.sn,NOT-SET,
-732,www.esmt.sn,213.154.80.147",14.725,-17.4647,SN.ESMT,Ecole Superieure Multinationale des Telecommunications,Terrain foyer Rocade, Dakar Liberte, SENEGAL,esmt.sn,B,
-733,www.noclibya.com.ly,62.240.36.38",32.886,13.1891,LY.NOCLIBYA.COM.N1,National Oil Company,noclibya.com.ly,NOT-SET,
-734,www.libyana.ly,62.240.36.58",32.876,13.1875,LY.LIBYANA.N1,Libyana Mobile Phone,libyana.ly,NOT-SET,
-735,www.moedu.gov.iq,78.109.236.122",35.468,44.3910,IQ.MOEDU.GOV.N1,Ministry of Education,moedu.gov.iq,NOT-SET,
-736,www.see.gob.do,190.167.196.166",18.496,-69.9193,DO.SEE.GOB.N1,Ministerio de Educacion,see.gob.do,NOT-SET,
-737,www.fid.mg,41.188.9.131",-18.914,47.5316,MG.FID,Response Fund for Development,fid.mg,B,
-738,www.aun.edu.ng,41.223.136.5",9.203,12.4954,NG.AUN.EDU,American University of Nigeria,aun.edu.ng,NOT-SET,
-739,www.gsis.gov.ph,210.5.70.65",14.609,121.0223,PH.GSIS.GOV,Government service Insurance system,gsis.gov.ph,NOT-SET,
-740,www.minzdrav.uz,62.209.153.230",41.266,69.2167,UZ.MINZDRAV,Ministry of Health Uzbekistan,minzdrav.uz,NOT-SET,
-741,win17.b2web.com.ve,200.74.197.244",10.491,-66.9021,VE.WIN17.B2WEB.COM,Inversions B2Web,win17.b2web.com.ve,NOT-SET,
-742,www.inia.gov.ve,190.202.124.231",10.244,-67.5937,VE.INIA.GOV,Gobierno Bolivariano de Venezuela,inia.gov.ve,NOT-SET,
-743,www.intercafe.bi,196.2.8.201",-3.376,29.3593,BI.INTERCAFE.N1,InterCafe Burundi,intercafe.bi,NOT-SET,
-744,www.afrinet.cd,41.222.216.214",-4.320,15.298,CD.AFRINET.N1,The African Society of Communication and Internet,afrinet.cd,B,
-745,airuniversity.seecs.edu.pk,111.68.96.101",33.71327,73.023525,PK.AIRUNIVERSITY.EDU.N2,Air University,airuniversity.edu.pk,M,
-746,www.sharif.ir,81.31.160.60",35.702,51.3513,IR.SHARIF,Sharif University,sharif.ir,NOT-SET,
-747,www.alief.dz,193.194.64.87",36.712,3.2124,DZ.ALIEF,Fournisseur de solutions Telecom et reseaux d' entreprises,alief.dz,NOT-SET,
-748,pinger.numl.edu.pk,111.68.97.109",33.66724,73.050663,PK.NUML.EDU,NUML University Islamabad,numl.edu.pk,M,
-749,quest.seecs.edu.pk,121.52.155.122",26.23594,68.390089,PK.QUEST.SEECS.EDU,Quaid-e-Awam University of Engineering, Science and Technology,seecs.edu.pk,M,
-750,www.cgr.gob.ni,165.98.53.164",12.150,-86.2683,NI.CGR.GOB,Comptroller General of Republic of Nicaragua,cgr.gob.ni,NOT-SET,
-751,www.tarena.tj,77.95.0.38",38.536,68.7800,TJ.TAREENA,The Tajik Academy Research and Educational Networks Association,tarena.tj,NOT-SET,
-752,www.akcansa.com.tr,178.18.195.34",41.005,28.977,TR.AKCANSA.COM,AKCANSA,akcansa.com.tr,NOT-SET,
-753,www.realbroadband.co.sz,196.28.7.21",-26.316,31.1333,SZ.REALBROADBAND.CO,Real Broadband,realbroadband.co.sz,NOT-SET,
-754,www.lbr.gov.lr,83.229.80.155",6.319,-10.810,LR.GOV.N1,Liberia Business Registry,lbr.gov.lr,B,
-755,www.iut.ac.ir,217.219.19.121",32.651,51.6792,IR.IUT.AC.N1,Isfahan University of Technology,iut.ac.ir,NOT-SET,
-756,www.sierratel.sl,41.205.231.217",8.484,-13.2287,SL.SIERRATEL,Sierra Tel,sierratel.sl,B,
-757,www.amcham.uz,217.29.116.177",41.266,69.2167,UZ.AMCHAM,American Chamber of Commerce,amcham.uz,NOT-SET,
-758,www.fpf.br,201.90.252.245",-3.0,-60.00,BR.FPF.N1,Paulo Feitoza Foundation - Satellite link,fpf.br,NOT-SET,
-759,maggie1.seecs.edu.pk,115.186.131.81",33.64288,72.990525,PK.SEECS.EDU.N6,School of Electrical Engineering and Computer Sciences, NUST,seecs.edu.pk,M,
-760,www.stmaryuniversitycollege.edu.et,213.55.83.210",9.022,38.7468,ET.STMARYCOLLEGE.N3,St Mary University College,stmarycollege.edu.et,B,
-761,ultralog.ampath.net,198.32.252.3",25.7,-80.90,NET.AMPATH.N2,Florida International University,ampath.net,M,
-762,lse.seecs.edu.pk,111.68.102.40",31.50968,74.347606,PK.LSE.EDU.N3,Lahore School of Economics,seecs.edu.pk,NOT-SET,
-763,www.acf.ci,213.136.96.12",5.336,-4.0278,CI.ACF.N1,Alliance Credit Finance,acf.ci,NOT-SET,
-764,www.cinfo.cu,169.158.178.119",23.135,-82.3583,CU.CINFO.N1,Ciencias de la Informacion,cinfo.cu.,NOT-SET,
-765,pingerlhr.pern.edu.pk,111.68.105.106",31.51071,74.352967,PK.PERNLHRPOP.EDU.N1,PERN POP LAHORE,pern.edu.pk,M,
-766,kinnaird.seecs.edu.pk,111.68.105.183",31.53720,74.340678,PK.KINNAIRD.SEECS.EDU,Kinnaird College for Women Lahore,kinnaird.seecs.edu.pk,M,
-767,nuisb.seecs.edu.pk,111.68.96.89",33.65538,73.015437,PK.NUISB.SEECS.EDU,FAST-NU Islamabad,seecs.edu.pk,M,
-768,pingerkhi-cpsp.pern.edu.pk,111.68.107.246",24.837604,67.0588744,PK.PINGERKHI-CPSP.PERN.EDU,College of Physician and Surgeon,pern.edu.pk,M,
-769,kitka.marnet.net.mk,194.149.131.2",4,21.433,MK.MARNET.N1,NOT-SET,marnet.net.mk,NOT-SET,
-770,www.ans.edu.ni,200.30.165.170",12.150,-86.2683,NI.ANS.EDU,American Nicaraguan School,ans.edu.ni,NOT-SET,
-771,www.accommodationpng.com.pg,202.171.240.208",-9.472,147.2,PG.ACCOMMODATIONPNG.COM,The Hideway Hotel,accommodationpng.com.pg,NOT-SET,
-772,www.edtc.ac.pg,202.95.202.7",-9.472,147.20,PG.EDTC.AC,www.edtc.ac.pg,edtc.ac.pg,NOT-SET,
-773,www.advocatus.pt,94.46.217.31",38.706,-9.1356,PT.ADVOCATUS,Advocatus,advocatus.pt,NOT-SET,
-774,www.ccis.org.tn,41.228.38.39",34.745,10.7613,TN.CCIS.ORG,Chamber Of Commerce and Industry,ccis.org.tn,NOT-SET,
-775,www.corpozulia.gov.ve,200.11.236.213",10.218,-72.0175,VE.CORPOZUELIA.GOV,Corpozulia Gov,corpozulia.gov.ve,NOT-SET,
-776,maggie2.seecs.edu.pk,115.186.131.82",33.64288,72.990525,PK.SEECS.EDU.N7,School of Electrical Engineering and Computer Sciences, NUST,seecs.edu.pk,M,
-777,www.kpl.net.la,115.84.101.244",17.964,102.6069,LA.KPL.NET.N1,Khaosan Pathet Lao (KPL),kpl.net.la,NOT-SET,
-778,www.laopdr.gov.la,203.110.66.105",17.966,102.6,LA.LAOPDR.N1,National Portal of LAOPDR,laopdr.gov.la,NOT-SET,
-779,www.tfanus.com.er,196.200.99.1",5.332,38.9262,ER.TFANUS.COM.N1,TFanus Enterprises,www.tfanus.com.er,NOT-SET,
-780,www.agrimarket.gov.bt,202.144.151.52",27.475,89.6087,BT.AGRIMARKET.N1,Department of Agricultural Marketing and Cooperatives,agrimarket.gov.bt,NOT-SET,
-781,www.advsouth.co.nz,202.174.117.137",-43.541,172.6474,NZ.ADVSOUTH.CO.N1,Adventure S0uth New Zealand,advsouth.co.nz,NOT-SET,
-782,www.agriculture.gouv.ci,196.201.67.171",5.336,-4.026,CI.AGRICULTURE.GOUV.N1,Ministere de l'agriculture,agriculture.gouv.ci,NOT-SET,
-783,pingerkhi.pern.edu.pk,111.68.108.11",24.888177,67.065914,PK.PERNKHIPOP.EDU.N2,PoP PERN, HEC Regional Office, Karachi,pern.edu.pk,M,
-784,pingermtn.pern.edu.pk,121.52.158.210",30.26972,71.506455,PK.PERNMTNPOP.EDU.N2,PERN2 BZU Multan PoP,pern.edu.pk,MB,
-785,pinger.giki.edu.pk,121.52.146.230",34.0690,72.64333,PK.GIKI.EDU.N1,Ghulam Ishaq Khan Institute,giki.edu.pk,M,
-786,pinger.vu.edu.pk,111.68.103.35",31.4008088,74.21349138,PK.VU.EDU,Virtual University,vu.edu.pk,M,
-787,www.uas.alaska.edu,137.229.218.103",58.383,-134.6410,EDU.UAS.ALASKA.N1,University of Alaska Southeast,uas.alaska.edu,NOT-SET,
-788,193.111.11.8,193.111.11.8",38.5,68.7739,TJ.911DUSHANBE.N1,911 Dushanbe,911dushanbe.tj,NOT-SET,
-789,www.brahman.iway.na,196.44.136.32",-22.5,17.08,NA.BRAHMAN.IWAY,Naminian Brahman Breeders Society,www.brahman.iway.na,NOT-SET,
-790,www.emploi.nat.tn,41.224.37.230",36.81,10.1660,TN.EMPLOI.NAT,National Agency for Employment and Self Employment,emploi.nat.tn,NOT-SET,
-791,www.alihan.com.tr,94.199.200.115",41.005,28.977,TR.ALIHAN.COM,Ali Han Web Designer,alihan.com.tr,NOT-SET,
-792,www.argon.com.tr,212.175.236.104",41.005,28.977,TR.ARGON.COM,Argon Kimya,argon.com.tr,NOT-SET,
-793,www.agrinamibia.com.na,196.44.136.21",-22.558,17.0825,NA.AGRINAMIBIA.COM.N1,Namibia Agricultural Union,agrinamibia.com.na,B,
-794,www.sjtu.edu.cn,202.120.2.102",31.017,121.4325,CN.SJTU.EDU.N2,Shanghai Jiaotong University,sjtu.edu.cn,NOT-SET,
-795,www.unibe.edu.do,200.26.171.243",18.469,-69.9044,DO.UNIBE.EDU.N1,Universidad Iberoamericana,unibe.edu.do,NOT-SET,
-796,www.aportmall.kz,212.154.192.83",43.250,76.8506,KZ.APORTMALL.N1,APort Malls,aportmall.kz,NOT-SET,
-797,www.sud.fo,217.172.81.67",62.227,-6.5756,FO.SUD.N1,Sud Choir,sud.fo,NOT-SET,
-798,www.eastafricauniversity.net,110.4.46.95",11.283,49.1667,SO.EASTAFRICAUNIVERSITY.N1,East Africa University,eastafricauniversity.net,B,
-799,www.out.ac.tz,196.43.84.246",-6.764,39.2707,TZ.OUT.AC.N1,Open University of Tanzania,out.ac.tz,NOT-SET,
-800,www.tishreen.edu.sy,95.159.58.36",35.521,35.8075,SY.TISHREEN.EDU.N1,Tishreen University,tishreen.edu.sy,NOT-SET,
-801,www.aic.ac.nz,119.224.133.130",-36.855,174.7651,NZ.AIC.AC.N1,Aukland International College,aic.ac.nz,B,
-802,pinger.sesame.org.jo,80.90.171.80",32.114,35.7144,JO.SESAME.ORG.N1,SESAME - Synchrotron-light for Experimental Science and Applications in the Middle East,sesame.org.jo,MB,
-803,www.grin.by,87.252.253.254",53.681,23.8146,BY.GRIN.N1,Ltd. Grodno information network,grin.by,NOT-SET,
-804,buitms.seecs.edu.pk,121.52.157.190",30.21431,66.993094,PK.BUITMS.SEECS.EDU,Balochistan University of Information Technology, Engineering and Management Sciences,seecs.edu.pk,M,
-805,pingerfsbd.pern.edu.pk,121.52.153.242",31.433807,73.0689096,PK.PERNFSBDPOP.EDU.N1,PERN2 POP FAISALABAD,pern.edu.pk,M,
-806,cae.seecs.edu.pk,121.52.147.136",34.062,71.987778,PK.CAE.SEECS.EDU, NUST-CAE PAF Academy Risalpur .,seecs.edu.pk,M,
-807,atlantic.com.gh,196.201.163.43",5.555,-0.1963,GH.ATLANTIC.COM.N2,Atlantic Group,atlantic.com.gh,NOT-SET,
-808,www.adpolice.gov.ae,194.170.200.102",24.438,54.4233,AE.ADPOLICE.GOV.N1,Abu Dhabi Police,adpolice.gov.ae,NOT-SET,
-809,www.gijima.com.na,196.44.128.214",-22.5,17.08,NA.GIJIMA.COM,Gijima Technology people,gijima.com.na,NOT-SET,
-810,www.andina.com.pe,190.102.133.195",-7.828,-74.8236,PE.ANDINA.COM,Agencia Peruana de Noticias,andina.com.pe,NOT-SET,
-811,www.bte.com.tn,193.95.75.120",36.81,10.1660,TN.BTE.COM,Bank of Tunisia and UAE,bte.com.tn,NOT-SET,
-812,www.afcp.kz,89.218.26.206",43.252,76.9365,KZ.AFCP.N1,Al Falah Capital Partners,afcp.kz,NOT-SET,
-813,www.minjust.kz,82.200.168.230",51.166,71.4190,KZ.MINJUST.N1,Ministry of Justice,minjust.kz,NOT-SET,
-814,www.tsinghua.edu.cn,166.111.4.100",40.004,116.3212,CN.TSINGHUA.N2,Tsinghua University,tsinghua.edu.cn,NOT-SET,
-815,www.thawraonline.sy,91.144.8.202",33.519,36.3134,SY.THAWRAONLINE.N1,Thawra online, Publishing for the Press,thawraonline.sy,NOT-SET,
-816,pinger.uaar.edu.pk,111.68.99.248",33.649,73.0824,PK.UAAR.EDU.N1,University of Arid Agriculture,uaar.edu.pk,NOT-SET,
-817,www.edls.edu.bs,24.244.141.213",25.060,-77.3450,BS.EDLS.EDU.N1,Eugene Dupuch Law School,edls.edu.bs,NOT-SET,
-818,www.sta.ne,41.203.159.9",13.488,2.1278,NE.STA.N1,Societe de Transformation Alimentaire,sta.ne,B,
-819,www.utem.edu.my,210.48.157.23",2.316,102.3209,MY.UTEM.EDU.N1,Technical University of Malaysia, Melaka,utem.edu.my,NOT-SET,
-820,www.unisza.edu.my,103.16.183.3",5.395,103.0828,MY.UNISZA.EDU.N1,Sultan Zainal Abidin University,unisza.edu.my,NOT-SET,
-821,singaporetech.edu.sg,119.31.233.174",1.290,103.8497,SG.SINGAPORETECH.EDU.N1,Singapore Institute of Technology,singaporetech.edu.sg,NOT-SET,
-822,www.ku.ac.th,158.108.216.5",13.847,100.5620,TH.KU.N1,Kasetsart University,ku.ac.th,NOT-SET,
-823,www.uinjkt.ac.id,116.66.206.163",-6.211,106.8452,ID.UINJKT.AC.N1,Jakarta Islamic State University,uinjkt.ac.id,NOT-SET,
-824,www.ugm.ac.id,175.111.88.11",-7.797,110.3688,ID.UGM.AC.N1,Gadjah Mada University,ugm.ac.id,NOT-SET,
-825,datakl.com,210.48.148.222",3.088,101.6841,MY.DATAKL.COM.N1,DataKL Solutions Sdn Bhd,datakl.com,NOT-SET,
-826,www.swu.edu.ph,121.96.58.6",10.302,123.8931,PH.SWU.EDU.N1,Southwestern University,swu.edu.ph,NOT-SET,
-827,ns3.pieas.edu.pk,111.68.99.196",33.655,73.2657,PK.PIEAS.EDU.N2,PIEAS University Nilore,pieas.edu.pk,M,
-828,www.afribone.net.gn,83.229.75.10",9.537,-13.6785,GN.AFRIBONE.NET.N1,Afribone Guinea,afribone.net.gn,NOT-SET,
-829,www.beltei.edu.kh,115.178.24.7",11.547,104.9148,KH.BELTEI.EDU.N1,Beltei International University,beltei.edu.kh,B,
-830,www.fsc.gi,85.115.130.130",6.143,-5.3583,GI.FSC.WWW,Financial Services Commission,fsc.gi,NOT-SET,
-831,www.anor.cm,195.24.207.182",3.896,11.5073,CM.ANOR.WWW,Agence des Normes et de la Qualite,anor.cm,B,
-832,www.eritel.com.er,196.200.104.161",15.332,38.9262,ER.ERITEL.COM.WWW,Eritrea Telecommunications,eritel.com.er,NOT-SET,
-833,www.ahlia.edu.bh,77.69.139.151",26.235,50.5930,BH.AHLIA.EDU.WWW,Ahlia University,ahlia.edu.bh,NOT-SET,
-834,www.alard.ps,188.225.189.73",32.225,35.2610,PS.ALARD.WWW,Al?Ard Palestinian Agri-Products Ltd,alard.ps,NOT-SET,
-835,www.dgs.pt,80.172.233.33",38.736,-9.1349,PT.DGS.WWW,Direcc?o-Geral da Saude,dgs.pt,NOT-SET,
-836,www.ucj.edu.sa,212.70.49.61",27.075,49.5910,SA.UCJ.EDU,Jubail University College,ucj.edu.sa,NOT-SET,
-837,www.boz.zm,197.220.201.197",-15.42,28.2832,ZM.BOZ.WWW,Bank of Zambia,boz.zm,NOT-SET,
-838,www.drexel.edu,144.118.66.83",39.959,-75.1968,DREXEL.EDU,Drexel University,drexel.edu,NOT-SET,
-839,www.ecu.edu,150.216.243.60",35.523,-77.3008,ECU,EDU,East Carolina University,ecu.edu,NOT-SET,
-840,www.gsu.edu,98.129.229.86",29.488,-98.3987,GSU.EDU,Georgia State University,gsu.edu,NOT-SET,
-841,www.uvm.edu,132.198.101.197",44.442,-73.0825,UVM.EDU,Univeristy of Vermont,uvm.edu,NOT-SET,
-842,www.unissa.edu.bn,202.93.220.165",4.905,114.912,BN.UNISSA.EDU,Sultan Sharif Ali Islamic University,unissa.edu.bn,NOT-SET,
-843,www.dte.edu.bn,202.93.217.225",4.579,114.2052,BN.DTE.EDU,Jefri Bolkiah Engineering College,dte.edu.bn,NOT-SET,
-844,www.mtssr.edu.bn,202.93.220.182",4.947,114.9539,BN.MTSSR.EDU,Maktab Teknik Sultan Saiful Rijal (MTSSR),mtssr.edu.bn,NOT-SET,
-845,115-186-135-82.nayatel.pk,115.186.135.82",33.716,73.0720,PK.NAYATEL.PTCL.N1,Nayatel (Pvt) Ltd.,nayatel.pk,NOT-SET,
-846,www.ed.ac.uk,129.215.233.64",55.947,-3.1867,UK.ED.AC.Na,University of Edinburgh,ed.ac.uk,NOT-SET,
-847,111.at-4-0--0.gw3.200p-sf.sonic.net,208.106.28.125",37.448,-122.1745,US.CA.MENLO-PARK.N2,Cambridge Ave,,sonic.net,NOT-SET,
-848,0.ae2.gw.200p-sf.sonic.net,79.36.211.53",37.448,-122.1803,US.CA.MENLO-PARK.N3,Menlo Park Sonic DSL,sonic.net,NOT-SET,
-849,www.mmu.edu.my,203.106.61.79",2.927,101.6410,MY.MMU.EDU.N1,Multimedia University, Cyberjaya, Selangor,mmu.edu.my,NOT-SET,
-850,www.assemblee.ne,41.190.228.6",13.511,2.1153,NE.ASSEMBLEE.NE,National Assembly of Niger,assemblee.ne,NOT-SET,
-851,www.carisp.sm,194.183.84.46",43.933,12.4667,SM.CARISP.N1,Cassa di Risparmio,,carisp.sm,NOT-SET,
-852,www.mme.gov.na,209.88.21.60",-22.599,17.0831,NA.MME.GOV.N1,Ministry of Mines and Energy,mme.gov.na,NOT-SET,
-853,www.babcock.edu.ng,41.203.82.85",7.010,3.6576,NG.BABCOCK.EDU.N1,Babcock University,babcock.edu.ng,NOT-SET,
-854,www.utar.edu.my,58.27.19.137",3.116,101.6363,MY.UTAR.EDU.N1,Universiti Tunku Abdul Rahman,utar.edu.my,NOT-SET,
-855,www.suvl.edu.sd,41.67.16.7",15.610,32.5424,SD.SUVL.ESU.WWW,University of Khartoum,suvl.edu.sd,B,
-856,www.mpaal.org.br,187.45.193.213",-23.550,-46.6333,BR.MPAAL.WWW,Motion Pictures Association America Latina,mpaal.org.br,NOT-SET,
-857,www.mop.cl,163.247.48.21",-33.439,-70.6537,CL.MOP.WWW,Ministry of Public Works,mop.cl,NOT-SET,
-858,www.alma.cl,200.2.1.13",-33.400,-70.5998,CL.ALMA.WWW,Atacama Large Millimeter/submillimeter Array (ALMA),alma.cl,NOT-SET,
-859,www.creolink.cm,41.223.30.44",3.866,11.5167,CM.CREOLINK.WWW,Creolink Communications,creolink.cm,NOT-SET,
-860,www.aalto.fi,130.233.224.254",60.182,24.8312,FI.AALTO.WWW,Aalto University,aalto.fi,NOT-SET,
-861,www.abo.fi,130.232.213.156",60.4,22.2833,FI.ABO.WWW,?bo Akademi University,abo.fi,NOT-SET,
-862,www.eniram.fi,83.145.253.133",60.152,24.8801,FI.ENIRAM.WWW,ENIRAM,eniram.fi,NOT-SET,
-863,www.activesector.kg,176.126.164.16",42.870,74.5879,KG.ACTIVESECTOR.WWW,Active Sector,activesector.kg,NOT-SET,
-864,www.unl.pt,193.137.110.30",38.7,-9.1396,PT.UNL.WWW,Universidade Nova de Lisboa,unl.pt,NOT-SET,
-865,www.suza.ac.tz,41.204.150.67",-6.165,39.1917,TZ.SUZA.WWW,The State University of Zanzibar,suza.ac.tz,NOT-SET,
-866,www.linea.gov.br,186.232.60.124",-22.903,-43.2096,BR.LINEA.GOV.N1,Laboratorio Interinstitucional de e-Astronomia,linea.gov.br,NOT-SET,
-867,76-191-222-1.dsl.sonic.net,76.181.222.1",37.447,-122.1755,US.CA.MENLO-PARK.N1,Cottrell Residence,sonic.net,NOT-SET,
-868,www.miu.edu.my,110.4.45.119",3.095,101.5927,MY.MIU.EDU.N1,Manipal International University,miu.edu.my,NOT-SET,
-869,www.btu.upm.edu.my,119.40.116.240",3.206,113.0930,MY.BTU.UPM.EDU.N1,Universiti Putra Malaysia Kampus Bintulu Sarawak,btu.upm.edu.my,NOT-SET,
-870,www.usu.ac.id,202.0.107.101",3.605,98.6693,ID.USU.AC.N1,University of North Sumatra,usu.ac.id,NOT-SET,
-871,www.unimas.my,49.50.236.15",1.465,110.4274,MY.UNIMAS.N1,University Malaysia Sarawak,unimas.my,NOT-SET,
-872,pingerisl-air.pern.edu.pk,111.68.106.242",33.718,73.0605,PK.PINGERISL-AIR.PERN_EDU.N1,HEC PoP office located at AIR University,isl-air.pern.edu.pk,M,
-873,www.auf.edu.ph,210.4.97.195",15.145,120.5943,PH.AUF.EDU.N1,Angeles University Foundation,auf.edu.ph,NOT-SET,
-874,58.26.240.61,58.26.240.61",1.537,110.3494,MY.TM.COM.N1,Telecom Malaysia router Kuching,tm.com.my,NOT-SET,
-875,www.mahsa.edu.my,175.139.189.25",3.154,101.6651,MY.MAHSA.EDU.N1,MAHSA University College,mahsa.edu.my,NOT-SET,
-876,pinger.fsksm.utm.my,161.139.68.188",1.558,103.6384,MY.UTM.PINGER,Faculty of Computer Sciences & Information Systems,  Universiti Teknologi Malaysia,fsksm.utm.my,M,
-877,www.eti.net.gn,41.79.237.18",9.51,13.717,GN.ETI.NET.N1,Biasy.net,eti.net.gn,B,
-878,www.ucu.edu.ar,190.228.68.197",-32.481,-58.2301,AR.UCU.EDU.N1,Universidad del Concepcion Uruguay,ucu.edu.ar,NOT-SET,
-879,www.unju.edu.ar,200.45.224.18",-24.186,-65.3001,AR.UNJU.EDU.N1,Universid Nacional de Jujuy,unju.edu.ar,NOT-SET,
-880,www.attiaslevy.gi,85.115.130.100",6.142,-5.3539,GI.ATTIASLEVY.WWW,Attias & Levy barristers and Solicitors,attiaslevy.gi,NOT-SET,
-881,www.egov.go.tz,197.149.176.2",-6.813,39.2927,TZ.EGOV.GO.WWW,United Republic of Tanzania government portal,egov.go.tz,NOT-SET,
-882,www.ppu.gov.af,125.213.193.27",34.528,69.1717,AF.PPU.GOV.WWW,Islamic Republic of Afghanistan Ministry of Finance Procurement unit,ppu.gov.af,NOT-SET,
-883,www.nacfa.com.er,196.200.97.4",16.666,38.4758,ER.NACFA.COM.WWW,Nacfa Corporation,nacfa.com.er,B,
-884,www.o.com.bh,193.188.124.83",26.157,50.4684,BH.O.WWW,Batelco O,o.com.bh,NOT-SET,
-885,www.bancatlan.hn,200.3.194.20",14.078,-87.1837,HN.BANCATLAN.WWW,Banco Atlantida,bancatlan.hn,NOT-SET,
-886,www.kia.ps,217.66.226.38",31.,35.2,PS.KIA.WWW,KIA Motors Palestine,kia.ps,NOT-SET,
-887,www.turkmenistan.gov.tm,217.174.229.126",37.930,58.3872,TM.TURKMENISTAN.GOV.N1,Turkmenistan: the Golden Age,turkmenistan.gov.tm,NOT-SET,
-888,www.itb.edu.bn,202.93.220.18",4.977,114.9003,BN.ITB.EDU.N1,Institute Technology of Brunei,itb.edu.bn,NOT-SET,
-889,www.unri.ac.id,103.10.169.245",0.515,101.4339,ID.UNRI.AC.N1,Riau University,unri.ac.id,NOT-SET,
-890,www.unair.ac.id,210.57.208.14",-7.289,112.7344,ID.UNAIR.AC.N1,Airlangga University,unair.ac.id,NOT-SET,
-891,www.polytechnic.edu.na,192.12.10.105",-22.566,17.0781,NA.POLYTECHNIC.EDU.N1,Polytechnic of Namibia,polytechnic.edu.na,NOT-SET,
-892,emerge.com.my,210.48.155.230",3.154,101.6032,MY.EMERGE.COM.N1,Emerge Innovations Technology,emerge.com.my,NOT-SET,
-893,www.uclv.edu.cu,200.55.145.10",22.436,-79.9006,CU.UCLV.EDU.N2,Universidad Central Marta Abreu de las Villas,uclv.edu.cu,NOT-SET,
-894,nav6.usm.my,122.255.105.253",5.354,100.3011,MY.USM.N1,Universiti Sains Malaysia,usm.my,NOT-SET,
-895,hon-adsl-166-044.telekom.net.sb,202.1.166.44",-9.43,159.956,SB.TELEKOM.NET.LEEMING,David Leeming, Consulting,telekom.net.sb,NOT-SET,
-896,www.upnm.edu.my,1.9.21.6",3.0524,101.7236,MY.UPNM.EDU.N1,Universiti Pertahanan Nasional Malaysia,upnm.edu.my,NOT-SET,
-897,pinger2.unimas.my,49.50.236.121",1.465,110.4274,MY.UNIMAS.RASPBERRY,University Malaysia, Sarawak,unimas.my,M,
-898,www.iua.edu.sd,41.67.44.12",15.530,32.5677,SD.IUA.EDU.WWW,International University of Africa,iua.edu.sd,NOT-SET,
-899,www.acgrc.am,212.34.226.101",40.194,44.4789,AM.ACGRC.WWW,Analytical Centre on Globalization and Regional Cooperation,acgrc.am,NOT-SET,
-900,www.indianembassy.am,217.113.0.245",40.183,44.4973,AM.INDIANEMBASSY.WWW,Embassy of India in Armenia,indianembassy.am,NOT-SET,
-901,www.ysmu.am,217.113.0.103",40.188,44.5251,AM.YSMU.WWW,Yerevan State Medical University,ysmu.am,NOT-SET,
-902,www.hydrocopper.cl,190.82.83.229",-33.469,-70.6420,CL.HYDROCOPPER.WWW,Hydro Copper,hydrocopper.cl,NOT-SET,
-903,www.minepat.gov.cm,195.24.199.65",3.863,11.5139,CM.MINEPAT.GOV.WWW,Ministere de l'Economie, de la Planification et de l'Amenagement du Territoire,minepat.gov.cm,NOT-SET,
-904,www.citycon.fi,82.116.255.85",60.816,23.6333,FI.CITYCON.WWW,CityCon,citycon.fi,NOT-SET,
-905,www.iu.edu.sa,85.194.79.77",24.481,39.5563,SA.IU.EDU,Islamic University,iu.edu.sa,NOT-SET,
-906,www.kfu.edu.sa,212.26.27.80",25.345,49.5935,SA.KFU.EDU,King Faisal University,kfu.edu.sa,NOT-SET,
-907,www.taibahu.edu.sa,212.138.90.5",24.481,39.5455,SA.TAIBAHU.EDU,Taibah University,taibahu.edu.sa,NOT-SET,
-908,www.caen.edu.pe,200.37.34.80",-12.161,-77.0192,PE.CAEN.EDU.N1,National Center for Higher studies,caen.edu.pe,NOT-SET,
-909,www.nus.edu.sg,137.132.21.27",1.294,103.7811,SG.NUS.EDU.N1,National University of Singapore,nus.edu.sg,NOT-SET,
-910,www.upsi.edu.my,202.190.201.62",3.685,101.5251,MY.UPSI.EDU.N1,Sultan Idris University of Education,upsi.edu.my,NOT-SET,
-911,www.usim.edu.my,103.18.92.98",2.842,101.7813,MY.USIM.EDU.N1,Islamic Science University of Malaysia,usim.edu.my,NOT-SET,
-912,www.untan.ac.id,203.24.50.2",-0.022,109.3303,ID.UNTAN.AC.N1,Tanjungpura University,untan.ac.id,NOT-SET,
-913,www.um.edu.my,202.185.111.194",3.160,101.6910,MY.UM.EDU.N1,University of Malaysia Kuala Lumpur,um.edu.my,NOT-SET,
-914,pinger.theenglishyouneed.com,128.79.33.176",48.7987,2.28236,FR.PASCALANTZ.N1,Pascal Antz NAS,theenglishyouneed.com,NOT-SET,
-915,www.futminna.edu.ng,197.157.218.37",9.653,6.5270,NG.FUTMINNA.EDU.N1,Federal University of Technology, Minna,futminna.edu.ng,NOT-SET,
-916,www.drtvnet.cg,41.203.0.229",-4.266,15.2833,CG.DRTVNET.N1,DRTVNET,drtvnet.cg,NOT-SET,
-917,www.su.edu.et,176.74.178.30",6.416,38.2513,ET.SU.EDU.N1,Semera University,su.edu.et,NOT-SET,
-918,pinger.fsktm.um.edu.my,202.185.107.238",3.124,101.6534,MY.UM.PINGER,University of Malaya,fsktm.um.edu.my,MB,
-919,hon-prepaid-173-173.telekom.net.sb,202.1.173.173",-9.430,159.9483,SB.TELECOM.NET.BANK,Commercial bank,telekom.net.sb,NOT-SET,
-920,www.uern.br,200.164.64.132",-5.574,-36.9089,BR.UERN.N1,Universidade do Estado do Rio Grande do Norte,uern.br,NOT-SET,
-921,www.togotelecom.tg,41.207.178.38",6.137,1.2125,TG.TOGOTELECOM.WWW,Togo Telecom,togotelecom.tg,NOT-SET,
-922,www.cmsf.cv,41.221.194.219",14.895,-24.495,CV.CMSF.WWW,Municipio de Sao Felipe,cmsf.cv,NOT-SET,
-923,www.imamu.edu.sa,212.138.117.22",24.813,46.7019,SA.IMAMU.EDU,Imam Muhammad Ibn Saud Islamic University,imamu.edu.sa,NOT-SET,
-924,www.costech.or.tz,41.93.33.213",-6.763,39.2453,TZ.COSTECH.WWW,Tanzania Commission for Science and Technology,costech.or.tz,NOT-SET,
-925,www.suanet.ac.tz,41.73.194.141",-6.822,37.6612,TZ.SUANET.WWW,Sokoine University of Agriculture,suanet.ac.tz,NOT-SET,
-926,www.zcuniversity.edu.zm,41.222.240.34",-12.838,28.0856,ZM.ZCUNI.EDU,Zambia Catholic University,zcuniversity.edu.zm,B,
-927,www.uniswafoundation.org.sz,69.63.71.163",-26.316,31.1333,SZ.UNISWA.ORG.WWW,UNISWA Foundation,uniswafoundation.org.sz,NOT-SET,
-928,www.albany.edu,169.226.1.110",42.692,-73.838,EDU.ALBANY.WWW,University at Albany, State University of New Yor,albany.edu,NOT-SET,
-929,www.alliant.edu,50.23.242.90",32.929,-96.8353,EDU.ALLIANT.WWW,Alliant International University,alliant.edu,NOT-SET,
-930,www.case.edu,129.22.104.136",41.507,-81.6053,EDU.CASE.WWW,Case Western Reserve University,case.edu,NOT-SET,
-931,www.cmu.edu,128.2.42.52",40.443,-79.9561,CMU.EDU,Carnegie Mellon University,cmu.edu,NOT-SET,
-932,www.columbia.edu,128.59.48.24",40.800,-73.9653,EDU.COLUMBIA.WWW,Columbia University,columbia.edu,NOT-SET,
-933,www.etsu.edu,151.141.9.181",36.313,-82.3535,EDU.ETSU.WWW,East Tennessee State University,etsu.edu,NOT-SET,
-934,www.yale.edu,130.132.35.53",41.308,-72.9282,EDU.YALE.WWW,Yale University,yale.edu,NOT-SET,
-935,www.ncl.ac.uk,128.240.233.197",54.980,-1.6157,UK.NCL.AC.N1,Newcastle University,ncl.ac.uk,NOT-SET,
-936,cc.in2p3.fr,134.158.69.34",45.7832,4.8664,FR.IN2P3.CC.N1,Computer Centre, IN2P3,cc.in2p3.fr,NOT-SET,
-937,www.fsjesr.ac.ma,196.200.139.12",34.015,-6.8327,MA.FSJESR.AC.N1,Faculte des Sciences Juridiques Economiques et Sociales,,fsjesr.ac.ma,NOT-SET,
-938,www.ucd.ac.ma,196.200.172.55",33.233,-8.5000,MA.UCD.AC.N1,Universite Chouaib Doukkali,ucd.ac.ma,NOT-SET,
-939,www.utp.edu.my,203.135.191.100",4.385,100.9793,MY.UTP.EDU.N1,Universiti Teknologi Petronas,utp.edu.my,NOT-SET,
-940,0.xe-5-1-0.gw3.equinix-sj.sonic.net,208.106.27.121",37.339,-121.8950,US.CA.MENLO-PARK.N4,SJ Sonic to Equinix,sonic.net,NOT-SET,
-941,pinger.unimas.my,49.50.236.98",1.465,110.4274,MY.UNIMAS.N4,University Malaysia, Sarawak,unimas.my,MB,
-942,www.umk.edu.my,103.26.75.111",6.164,102.2829,MY.UMK.EDU.N1,University Malaysia Kelantan,umk.edu.my,NOT-SET,
-943,www.mju.ac.th,119.46.62.8",18.898,99.0133,TH.MJU.AC.N1,Maejo University,mju.ac.th,NOT-SET,
-944,tribhuvan-university.edu.np,202.70.88.5",27.679,85.2865,NP.TRIBHUVAN-UNIVERSITY.N1,Tribhuvan University,tribhuvan-university.edu.np,NOT-SET,
-945,www.abu.edu.ng,41.203.92.117",11.152,7.6500,NG.ABU.EDU.N1,Ahmado Bello University,abu.edu.ng,NOT-SET,
-946,www.umt.edu.my,58.26.189.68",5.405,103.0877,MY.UMT.EDU.N1,University of Malaysia, Terenggaru,umt.edu.my,NOT-SET,
-947,www.maxis.com.my,202.75.129.146",3.3,101.25,MY.MAXIS.COM.N1,Maxis,maxis.com.my,NOT-SET,
-948,www.solomon.com.sb,202.1.169.5",-9.43,159.9483,SB.SOLOMON.COM.N1,Solomon Telekom,solomon.com.sb,NOT-SET,
-949,www.upm.edu.my,110.74.179.2",2.9995,101.70809,MY.UPM.EDU.N1,Universiti Putra Malaysia,upm.edu.my,NOT-SET,
-950,www.iust.edu.sy,77.44.253.15",33.072,36.1769,SY.IUST.EDU.N1,International University of Science & Technology,iust.edu.sy,NOT-SET,
-951,www.zeraa.gov.iq,78.109.237.44",33.314,44.4254,IQ.ZERAA.GOV.WWW,Ministry of Agriculture,zeraa.gov.iq,NOT-SET,
-952,pinger.daffodilvarsity.edu.bd,203.190.11.4",23.753,90.3773,BD.DAFFODILVARSITY.EDU.PINGER,Daffodil University,daffodilvarsity.edu.bd,M,
-953,www.mmu.ac.tz,41.220.128.13",-3.366,36.6833,TZ.MMU.WWW,MOUNT MERU UNIVERSITY,mmu.ac.tz,NOT-SET,
-954,www.mu.ac.zm,41.63.16.6",-14.447,28.4465,ZM.MU.WWW,Mulungushi University,mu.ac.zm,NOT-SET,
-955,115-186-132-222.nayatel.pk,115.186.132.222",33.716,73.0720,PK.NAYATEL.TRANSWORLD.N1,Nayatel (Pvt) Ltd.,nayatel.pk,NOT-SET,
-956,ms01.linea.gov.br,186.232.60.129",-22.903,-43.2096,BR.LINEA.GOV.N3,Laboratorio Interinstitucional de e-Astronomia,linea.gov.br,NOT-SET,
-957,www.mimos.my,202.45.139.67",3.062,101.6912,MY.MIMOS.N1,MIMOS-Berhad,mimos.my,NOT-SET,
-958,www.customs.gov.mv,202.21.178.82",4.176,73.5049,MV.CUSTOMS.GOV.N1,Maldives Customs Service,customs.gov.mv,NOT-SET,
-959,www.myren.net.my,203.80.16.120",2.925,101.6574,MY.MYREN.N1,Malaysain Research and Education Network,myren.net.my,NOT-SET,
-960,www.unikl.edu.my,113.23.141.10",3.114,101.6617,MY.UNIKL.EDU.N1,Universiti Kuala Lumpur,unikl.edu.my,NOT-SET,
-961,www.itc.edu.kh,203.189.148.71",11.570,104.8980,KH.ITC.EDU.N1,Institute of Technology of Cambodia,itc.edu.kh,NOT-SET,
-962,www.daffodilvarsity.edu.bd,203.190.10.90",23.753,90.3773,BD.DAFFODILVARSITY.EDU.WWW,Daffodil University,daffodilvarsity.edu.bd,B,
-963,www.viva.com.bh,37.131.68.72",26.239,50.5369,BH.VIVA.WWW,VIVA Telecom,viva.com.bh,NOT-SET,
-964,www.it.lut.fi,157.24.24.50",61.066,28.1833,FI.IT.LUT.WWW,Lappeenranta University of Technology,it.lut.fi,NOT-SET,
-965,www.logisticservices.hn,200.107.237.250",15.501,-88.0277,HN.LOGISTICSERVICES.WWW,Logistic Services,logisticservices.hn,NOT-SET,
-966,www.iaau.edu.kg,212.112.107.36",42.855,74.6809,KG.IAAU.EDU,International atatturk-alatoo university,iaau.edu.kg,NOT-SET,
-967,www.alfamicro.pt,130.185.84.10",38.699,-9.4395,PT.ALFAMICRO.WWW,Alfamicro,alfamicro.pt,NOT-SET,
-968,www.nauss.edu.sa,212.138.117.56",24.789,46.8624,SA.NAUSS.EDU,Naif Arab University for Security Sciences,nauss.edu.sa,NOT-SET,
-969,www.yuc.edu.sa,46.240.66.25",24.016,38.2075,SA.YUC.EDU,Yanbu University College,yuc.edu.sa,NOT-SET,
-970,www.hope.edu,209.140.194.21",42.742,-86.0661,EDU.HOPE.WWW,Hope University,hope.edu,NOT-SET,
-971,www.iastate.edu,129.186.23.166",42.03,-93.4652,EDU.IASTATE.WWW,Iowa State University,iastate.edu,NOT-SET,
-972,www.jhu.edu,128.220.192.40",39.328,-76.5967,JHU.EDU,Johns Hopkins University,jhu.edu,NOT-SET,
-973,www.kent.edu,131.123.246.53",41.1,-81.1966,EDU.KENT.WWW,Kent State University,kent.edu,NOT-SET,
-974,www.utk.edu,160.36.179.25",35.990,-83.9622,UTK.EDU,University of Tennessee,utk.edu,NOT-SET,
-975,www.utah.edu,155.97.137.55",40.785,-111.7367,UTAH.EDU,University of Utah,utah.edu,NOT-SET,
-976,www.uri.edu,131.128.1.19",41.477,-71.5208,URI.EDU,University of Rhode Island,uri.edu,NOT-SET,
-977,www.upenn.edu,23.3.105.130",45.783,-108.5007,EDU.UPENN.WWW,University of Pennsylvania,upenn.edu,NOT-SET,
-978,www.umn.edu,134.84.119.7",44.973,-93.2323,UMN.EDU,University of Minnesota,umn.edu,NOT-SET,
-979,www.ump.edu.my,211.25.212.12",3.807,103.326,MY.UMP.EDU,University Malaysia Pahang (UMP),ump.edu.my,NOT-SET,
-980,www.rmutt.ac.th,202.44.131.174",13.979,100.6138,TH.RMUTT.AC,Rajamangala University of Technology Thanyaburi,rmutt.ac.th,NOT-SET,
-981,www.unud.ac.id,103.29.196.229",-8.656,115.2221,ID.UNUD.AC,Udayana University,unud.ac.id,NOT-SET,
-982,www.unikadelasalle.ac.id,202.67.15.226",1.491,124.8428,ID.UNIKA.AC,De La Salle Catholic University, Manado,unikadelasalle.ac.id,NOT-SET,
-983,www.ulacit.ac.cr,201.195.91.147",9.941,-84.0771,CR.ULACIT.AC.WWW,Universidad Latinoamerica de Ciencia y Technologia,ulacit.ac.cr,NOT-SET,
-984,www.schule.at,78.104.67.113",48.296,14.3172,AT.SCHULE.WWW,Austrian School Portal,schule.at,NOT-SET,
-985,www.pnl.ac.id,222.124.3.22",5.188,97.1403,ID.PNL.AC,Politeknik Negeri Lhokseumawe,pnl.ac.id,NOT-SET,
-986,www.imprentanacional.go.cr,196.40.18.217",9.950,-84.1000,CR.IMPRENTANACIONAL.GO.WWW,Imprenta Nacional,imprentanacional.go.cr,NOT-SET,
-987,www.ubaguio.edu,121.97.68.42",15.551,120.8147,PH.UBAGUIO.EDU,University of Baguio,ubaguio.edu,NOT-SET,
-988,www.unila.ac.id,103.3.46.1",-5.450,105.2667,ID.UNILA.AC,Lampung University,unila.ac.id,NOT-SET,
-989,www.uns.ac.id,203.6.148.11",-7.566,110.8167,ID.UNS.AC,Sebelas Maret University,uns.ac.id,NOT-SET,
-990,www.unkhair.ac.id,49.50.10.117",0.795,127.3614,ID.UNKHAIR.AC,Khairun University,unkhair.ac.id,NOT-SET,
-991,www.undana.ac.id,118.97.37.124",-10.183,123.5833,ID.UNDANA.AC,University of Nusa Cendana,undana.ac.id,NOT-SET,
-992,www.unsrat.ac.id,180.250.208.56",1.491,124.8428,ID.UNSRAT.AC,Sam Ratulangi University,unsrat.ac.id,NOT-SET,
-993,www.unhas.ac.id,222.124.222.228",-5.130,119.4165,ID.UNHAS.AC,Hasanuddin University,unhas.ac.id,NOT-SET,
-994,www.upr.ac.id,49.50.8.211",-2.210,113.9200,ID.IPR.AC,University of Palangka Raya,upr.ac.id,NOT-SET,
-995,www.unlam.ac.id,118.91.130.250",-3.328,114.5892,ID.UNLAM.AC,Lambung Mangkurat University,unlam.ac.id,NOT-SET,
-996,www.startel.ao,41.222.236.20",-11.368,15.7324,AO.STARTEL.WWW,Startel,startel.ao,NOT-SET,
-997,www.gamcel.gm,212.60.66.243",13.453,-16.5775,GM.GAMCEL.WWW,Gamcel,gamcel.gm,NOT-SET,
-998,www.gamtel.gm,212.60.66.243",13.453,-16.5775,GM.GAMTEL.WWW,Gamtel Telecomunications,gamtel.gm,NOT-SET,
-999,www.univ-koudougou.bf,212.52.152.35",12.242,-2.3969,BF.UNIV-KOUDOUGOU.WWW,University Koudougou,univ-koudougou.bf,B,
-1000,pinger2.if.ufrj.br,146.164.36.25",-22.859,-43.2310,BR.UFRJ.PINGER,Universidade Federal do Rio de Janeiro,if.ufrj.br,M,
-1001,comsatsswl.seecs.edu.pk,111.68.104.98",30.642,73.1484,PK.COMSATSSWL.EDU,COMSATS Sahiwal,comsatsswl.seecs.edu.pk,M,
-1002,morrar.sfsq.georgetown.edu,86.36.103.11",25.317,51.4438,QA.SFSQ.GEORGETOWN.EDU,Georgetown School of Foreign Service in qatar,sfsq.georgetown.edu,NOT-SET,
-1003,www.it.su.se,193.11.30.141",59.362,18.0590,SE.IT.SU.WWW,Stockholms Universitet,it.su.se,B,
-1004,www.slc.dz,81.52.165.36",36.75352,3.025309,DZ.SLC.WWW,Smart Link Communications,slc.dz,NOT-SET,
-1005,www.ons.dz,196.20.66.99",,,DZ.ONS.WWW,Office National des Statistiques,ons.dz,NOT-SET,
-1006,www.hust.edu.vn,202.191.56.199",21.006,105.8430,VN.HUST.EDU, Hanoi University of Science and Technology (HUST),hust.edu.vn,NOT-SET,
-1007,www.polmed.ac.id,118.97.174.187",3.592,98.6640,ID.POLMED.AC,Politeknik Negeri Medan,polmed.ac.id,NOT-SET,
-1008,www.unja.ac.id,103.26.102.23",-1.596,103.6158,ID.UNJA.AC,Jambi University,unja.ac.id,NOT-SET,
-1009,www.uir.ac.id,118.97.170.214",0.293,101.7068,ID.UIR.AC,Riau The Islamic University,uir.ac.id,NOT-SET,
-1010,www.ucsy.edu.mm,203.81.81.245",17.002,96.0924,MM.UCSY.EDU,University of Computer Studies,ucsy.edu.mm,NOT-SET,
-1011,www.ecc.edu.jm,72.252.249.34",17.995,-76.7692,JM.ECC.EDU,EXCELSIOR COMMUNITY COLLEGE,ecc.edu.jm,NOT-SET,
-1012,www.tvcabo.co.ao,196.202.252.54",-8.836,13.2332,AO.TVCABO.WWW,TVCABO,tvcabo.co.ao,NOT-SET,
-1013,www.upa.edu.lb,213.175.177.203",33.871,35.5097,LB.UPA.EDU,l'Universite Antonine,upa.edu.lb,NOT-SET,
-1014,www.assemblee.bi,196.2.13.50",-3.383,29.3667,BI.ASSEMBLEE.WWW,National Assembly of Burundi,assemblee.bi,B,
-1015,www.oapburundi.bi,196.2.13.50",-3.384,29.3774,BI.OAPBURUNDI.WWW,ORGANISATION D'APPUI A L'AUTO-PROMOTION,oapburundi.bi,NOT-SET,
-1016,www.libtelco.com.lr,41.86.4.12",6.29083,-10.776024,LR.LIBTELCO.WWW,Liberia Telecommunications Coorporation,libtelco.com.lr,B,
-1017,www.rmutsv.ac.th,203.158.177.166",14.013,100.5305,TH.RMUTSV.AC,Rajamangala University of Technology Srivijaya,rmutsv.ac.th,NOT-SET,
-1018,www.ub.edu.ph,122.3.238.54",14.463,121.0547,PH.UB.EDU,University of Batangas,ub.edu.ph,NOT-SET,
-1019,www.umrah.ac.id,117.103.67.3",0.917,104.4465,ID.UMRAH.AC,Raja Ali Haji Maritime University,umrah.ac.id,NOT-SET,
-1020,www.uki.ac.id,202.51.119.151",-6.211,106.8452,ID.UKI.AC,Universitas Kristen Indonesia,uki.ac.id,NOT-SET,
-1021,www.unipa.ac.id,202.174.151.36",-0.861,134.0620,ID.UNIPA.AC,State University of Papua,unipa.ac.id,NOT-SET,
-1022,www.tarumanagara.ac.id,202.146.254.77",-6.211,106.8452,ID.TARU.AC,Tarumanagara University,tarumanagara.ac.id,NOT-SET,
-1023,www.upi.edu,103.23.244.6",-6.914,107.6082,ID.UPI.EDU,Indonesia University of Education,upi.edu,NOT-SET,
-1024,www.polikant.ac.id,203.171.221.37",-5.640,132.7475,ID.POLIKANT.AC,Tual State Polytechnic for Fishery,polikant.ac.id,NOT-SET,
-1025,www.um.ac.id,118.97.219.1",-7.981,112.6265,ID.UM.AC,State University of Malang,um.ac.id,NOT-SET,
-1026,www.nwa.gov.jm,208.163.60.156",18.007,-76.7991,JM.NWA.GOV,National Works Agency,nwa.gov.jm,NOT-SET,
-1027,www.costaatt.edu.tt,190.6.224.36",10.661,-61.5141,TT.COSTAATT.EDU,College of Science Technology and Applied Arts,costaatt.edu.tt,NOT-SET,
-1028,www.nalis.gov.tt,200.3.177.134",10.651,-61.5116,TT.NALIS.GOV,The National Library of Trinidad & Tobago,nalis.gov.tt,NOT-SET,
-1029,www.uls.edu.lb,193.188.135.50",33.866,35.5290,LB.ULS.EDU,Wisdom University,uls.edu.lb,NOT-SET,
-1030,www.cnrst.bf,212.52.137.27",12.380,-1.5066,BF.CNRST.WWW,Centre National de Research Scientifique et Tchnologique,cnrst.bf,NOT-SET,
-1031,www.tec.ac.cr,201.204.122.4",10.362,-84.5099,CR.TEC.AC.WWW,Tecnologico de Costa Rica,tec.ac.cr,NOT-SET,
-1032,pinger.uum.edu.my,103.5.183.14",6.461,100.5043,MY.UUM.EDU.PINGER,University Utara Malaysia,uum.edu.my,M,
-1033,www.vnuhcm.edu.vn,203.162.44.79",10.782,106.6954,VN.VNUHCM.EDU,Vietnam National University, Ho Chi Minh City,vnuhcm.edu.vn,NOT-SET,
-1034,www.smu.edu.sg,54.254.98.20",1.296,103.8506,SG.SMU.EDU,Singapore Management University,smu.edu.sg,NOT-SET,
-1035,www.up.ac.th,49.231.18.100",19.029,99.8953,TH.UP.AC,University of Phayao,up.ac.th,NOT-SET,
-1036,www.bsc.edu.ph,203.177.140.44",14.604,120.9822,PH.BSC.EDU,Bukidnon State University,bsc.edu.ph,NOT-SET,
-1037,www.aq.edu.ph,121.96.25.168",13.138,123.7353,PH.AQ.EDU,Aquinas University of Legazpi,aq.edu.ph,NOT-SET,
-1038,www.ue.edu.ph,116.50.153.37",14.552,121.0678,PH.UE.EDU,University of the East,ue.edu.ph,NOT-SET,
-1039,www.upmin.edu.ph,202.137.114.137",7.086,125.4830,PH.UPMIN.EDU,University of the Philippines Mindanao,upmin.edu.ph,NOT-SET,
-1040,www.unsyiah.ac.id,203.217.173.206",5.550,95.3167,ID.UNSYIAH.AC,Syiah Kuala University,unsyiah.ac.id,NOT-SET,
-1041,www.unimal.ac.id,180.250.40.110",5.188,97.1403,ID.UNIMAL.AC,Malikussaleh University,unimal.ac.id,NOT-SET,
-1042,www.polinpdg.ac.id,222.124.193.194",-0.950,100.3531,ID.POLINPDG.AC,Andalas State Polytechnics,polinpdg.ac.id,NOT-SET,
-1043,www2.unp.ac.id,222.124.193.131",-0.950,100.3531,ID.UNP.AC,Padang State University,unp.ac.id,NOT-SET,
-1044,www.unikin.cd,41.242.128.134",-4.419,15.3097,CD.UNIKIN.N1,Universite de Kinshasa,unikin.cd,NOT-SET,
-1045,www.ubb.ac.id,203.217.172.104",-2.129,106.1096,ID.UBB.AC,Bangka Belitung University,ubb.ac.id,NOT-SET,
-1046,www.unib.ac.id,118.97.161.147",-3.792,102.2620,ID.UNIB.AC,University of Bengkulu,unib.ac.id,NOT-SET,
-1047,www.unsri.ac.id,222.124.194.11",-2.990,104.7566,ID.UNSRI.AC,Sriwijaya University,unsri.ac.id,NOT-SET,
-1048,www.polsri.ac.id,202.9.69.34",-2.990,104.7566,ID.POLSRI.AC,Sriwijaya State Polytechnic,polsri.ac.id,NOT-SET,
-1049,www.atmajaya.ac.id,110.35.83.27",-6.211,106.8452,ID.ATMAJAYA.AC,Atma Jaya Catholic University of Indonesia,atmajaya.ac.id,NOT-SET,
-1050,www.surya.ac.id,119.235.30.147",-6.178,106.6319,ID.SURYA.AC,Surya University,surya.ac.id,NOT-SET,
-1051,www.ipb.ac.id,202.124.205.244",-6.600,106.8000,ID.IPB.AC,Bogor Agricultural University,ipb.ac.id,NOT-SET,
-1052,www.undip.ac.id,182.255.0.120",-6.966,110.4167,ID.UNDIP.AC,Diponegoro University,undip.ac.id,NOT-SET,
-1053,www.unicen.ac.id,103.247.8.136",-2.533,140.7170,ID.UNICEN.AC,Cenderawasih University,unicen.ac.id,NOT-SET,
-1054,www.untad.ac.id,180.250.171.14",-0.898,119.8506,ID.UNTAD.AC,Tadulako University,untad.ac.id,NOT-SET,
-1055,www.unmul.ac.id,222.124.216.138",-0.502,117.1538,ID.UNMUL.AC,Mulawarman University,unmul.ac.id,NOT-SET,
-1056,www.mmcert.org.mm,203.81.81.251",16.8,96.15,MM.MMCERT.ORG,Myanmar Computer Emergency Response Term,mmcert.org.mm,NOT-SET,
-1057,www.kisr.edu.kw,161.252.9.68",29.369,47.9783,KW.KISR.EDU,Kuwait Institute of Scientific Research,kisr.edu.kw,NOT-SET,
-1058,www.ncu.edu.jm,216.10.221.136",18.015,-77.4996,JM.NCU.EDU,Northern Caribbean University,ncu.edu.jm,NOT-SET,
-1059,www.vnu.edu.vn,112.137.142.4",21.000,105.8418,VN.VNU.EDU,Vietnam National University, Hoanoi,vnu.edu.vn,NOT-SET,
-1060,www.uii.ac.id,202.162.37.148",-7.797,110.3688,ID.UII.AC,Islamic University of Indonesia,uii.ac.id,NOT-SET,
-1061,www.its.ac.id,202.46.129.20",-7.264,112.7456,ID.ITS.AC,Sepuluh Nopember Institute of Technology,its.ac.id,NOT-SET,
-1062,www.borneo.ac.id,180.250.193.177",3.303,117.6243,ID.BORNEO.AC,Borneo Tarakan University,borneo.ac.id,NOT-SET,
-1063,www.moe.edu.kw,168.187.127.151",29.369,47.9783,KW.MOE.EDU,Ministry of Education,moe.edu.kw,NOT-SET,
-1064,www.cmi.edu.jm,65.183.4.198",17.946,-76.7708,JM.CMI.EDU,Caribbean Maritime Institute,cmi.edu.jm,NOT-SET,
-1065,uhmanoa-tp.ps.uhnet.net,132.160.6.178",21.2997,-157.815471,NET.UHNET.N1,PerfSONAR node at University Of Hawaii,uhnet.net,NOT-SET,
-1066,www.unisim.edu.sg,202.94.70.56",1.328,103.7758,SG.UNISIM.EDU,SIM University,unisim.edu.sg,NOT-SET,
-1067,www.npu.ac.th,202.29.55.4",17.398,104.7210,TH.NPU.AC,Nakhon Phanom University,npu.ac.th,NOT-SET,
-1068,www.ptwit.ac.th,202.29.68.13",13.747,100.5258,TH.PTWIT.AC,Pathumwan Institute of Technology,ptwit.ac.th,NOT-SET,
-1069,www.buu.ac.th,202.28.77.163",13.75,100.5014,TH.BUU.AC,Burapha University (BUU),buu.ac.th,NOT-SET,
-1070,www.ait.asia,203.159.12.4",13.75,100.5014,TH.AIT.WWW,Asian Institute of Technology,ait.asia,NOT-SET,
-1071,www.unand.ac.id,180.250.36.39",-0.950,100.3531,ID.UNAND.AC,Andalas University,unand.ac.id,NOT-SET,
-1072,www.umn.ac.id,123.231.236.229",-6.178,106.6319,ID.UMN.AC,Multimedia Nusantara University,umn.ac.id,NOT-SET,
-1073,www.unsoed.ac.id,103.9.22.112",-7.431,109.2478,ID.UNSOED.AC,Jenderal Soedirman University,unsoed.ac.id,NOT-SET,
-1074,www.unesa.ac.id,223.25.104.6",-7.264,112.7456,ID.UNESA.AC,Surabaya State University,unesa.ac.id,NOT-SET,
-1075,www.unpatti.ac.id,103.247.8.135",-3.656,128.1664,ID.UNPATTI.AC,University of Pattimura,unpatti.ac.id,NOT-SET,
-1076,www.cbbank.com.mm,122.248.112.137",16.783,96.1667,MM.CBBANK.WWW,CO-OPERATIVE BANK,cbbank.com.mm,NOT-SET,
-1077,www.kmbs.edu.kw,62.215.130.227",29.369,47.9783,KW.KMBS.EDU,Kuwait-Maastricht Business School,kmbs.edu.kw,NOT-SET,
-1078,www.cba.edu.kw,139.141.236.130",29.369,47.9783,KW.CBA.EDU,College of Business Administration,cba.edu.kw,NOT-SET,
-1079,www.customs.gov.tt,190.213.6.155",10.6,-61.5167,TT.CUSTOMS.GOV,Customs and Excise Division,customs.gov.tt,NOT-SET,
-1080,www.artlib.net.tw,59.125.85.228",4.143,120.6631,TW.ARTLIB.NET.WWW,National Taiwan Museum of Fine Arts,www.artlib.net.tw,NOT-SET,
-1081,www.manahj.edu.iq,78.109.237.225",33.327,44.4193,IQ.MANAHJ.EDU.WWW,Ministry of Education,manahj.edu.iq,NOT-SET,
-1082,www.parlament.gv.at,161.110.13.1",48.208,16.3586,AT.PARLAMENT.GV.WWW,Austrian Parliament,parlament.gv.at,NOT-SET,
-1083,www.andi.dz,213.179.181.44",36.73333,3.133333,DZ.ANDI.WWW,National Agency of Investment and Development,andi.dz,NOT-SET,
+#id,node_name,node_ip
+1,0.ae2.gw.200p-sf.sonic.net,79.36.211.53
+2,0.xe-5-1-0.gw3.equinix-sj.sonic.net,208.106.27.121
+3,111.at-4-0--0.gw3.200p-sf.sonic.net,208.106.28.125
+4,115-186-132-222.nayatel.pk,115.186.132.222
+5,115-186-135-82.nayatel.pk,115.186.135.82
+6,121.52.144.65,121.52.144.65
+7,128.250.54.22,128.250.54.22
+8,130.209.4.16,130.209.4.16
+9,131.154.99.10,131.154.99.10
+10,140.109.1.1,140.109.1.1
+11,140.109.18.50,140.109.18.50
+12,140.109.246.1,140.109.246.1
+13,140.109.32.1,140.109.32.1
+14,147.231.26.40,147.231.26.40
+15,152.3.57.20,152.3.57.20
+16,192.215.17.39,192.215.17.39
+17,192.83.196.111,192.83.196.111
+18,193.111.11.8,193.111.11.8
+19,193.222.119.6,193.222.119.6
+20,195.24.192.47,195.24.192.47
+21,196.21.45.139,196.21.45.139
+22,198.10.49.62,198.10.49.62
+23,199.77.194.26,199.77.194.26
+24,203.255.248.205,203.255.248.205
+25,216.59.82.1,216.59.82.1
+26,58.26.240.61,58.26.240.61
+27,76-191-222-1.dsl.sonic.net,76.181.222.1
+28,access.sprace.org.br,200.136.80.18
+29,adl-a-ext1.aarnet.net.au,202.158.195.68
+30,admision.unsch.edu.pe,200.121.72.187
+31,adsl-63-204-8-81.dsl.snfc21.pacbell.net,63.204.8.81
+32,ai3-sfc.jp.apan.net,203.181.248.241
+33,aias.cs.ucy.ac.cy,194.42.16.1
+34,aidabg.net,195.24.54.2
+35,aim-e1.ph.net,165.220.1.29
+36,aip.org,192.58.150.10
+37,airuniversity.seecs.edu.pk,111.68.96.101
+38,alfalfa.pas.rochester.edu,128.151.144.230
+39,alp4ct.ct.infn.it,192.84.150.104
+40,amp-kiwi.cs.waikato.ac.nz,192.107.171.130
+41,aol1.albaniaonline.net,217.24.240.66
+42,argus.stanford.edu,171.64.7.115
+43,arizona.edu,128.196.128.233
+44,aspu.edu.jo,217.29.240.15
+45,atgrid.grid.umich.edu,141.211.43.109
+46,atlantic.com.gh,196.201.163.43
+47,aup.seecs.edu.pk,121.52.146.67
+48,avaxfi.fi.infn.it,192.84.145.14
+49,avp.gov.al,109.69.2.189
+50,az-ix.net,62.212.244.7
+51,b.root-servers.net,192.228.79.201
+52,ba.sanet.sk,192.108.138.12
+53,bne-a-ext1.aarnet.net.au,202.158.195.196
+54,borsu20.cenbg.in2p3.fr,134.158.119.10
+55,bowlingzveza.si,82.149.22.114
+56,brunsvigia.tenet.ac.za,196.21.99.222
+57,btc.bw,168.167.168.34
+58,bu.edu,128.197.27.7
+59,buitms.seecs.edu.pk,121.52.157.190
+60,buphy.bu.edu,128.197.41.42
+61,cache.kr.apan.net,203.255.248.3
+62,cad.zju.edu.cn,210.32.131.2
+63,cae.seecs.edu.pk,121.52.144.69
+64,caltech.edu,131.215.239.108
+65,calvin.niams.nih.gov,165.112.114.25
+66,canel4.iis.sinica.edu.tw,140.109.20.1
+67,canel5.iis.sinica.edu.tw,140.109.19.1
+68,carmen.to.infn.it,192.84.137.1
+69,cavssy.ca.infn.it,192.84.132.1
+70,cbinet.bi,196.2.12.32
+71,cbr-a-ext1.aarnet.net.au,202.158.196.4
+72,cc.if.ufrj.br,146.164.36.25
+73,cc.in2p3.fr,134.158.69.34
+74,ccali.in2p3.fr,134.158.240.4
+75,ccd0.in2p3.fr,134.158.105.60
+76,ccp.si,193.2.242.162
+77,cdcnet.uniandes.edu.co,157.253.1.13
+78,cdhf2.gsfc.nasa.gov,192.67.83.6
+79,cepad.org.ni,63.245.25.2
+80,charm.physics.ucsb.edu,128.111.19.35
+81,chez.mana.pf,202.3.227.242
+82,cio-sys.cisco.com,192.31.7.130
+83,cir.red.sv,168.243.254.1
+84,cmu.edu,128.2.10.162
+85,cobra.unza.zm,196.46.196.5
+86,cornell.edu,128.253.161.179
+87,costaricaservers.com,200.122.160.20
+88,csflinux.rl.ac.uk,130.246.183.136
+89,d.root-servers.net,128.8.10.90
+90,datakl.com,210.48.148.222
+91,datautama.net.id,203.89.24.34
+92,db.nea.fr,193.51.64.1
+93,dcc.bg,213.167.0.228
+94,dept.physics.upenn.edu,128.91.43.98
+95,desperado.utd.rochester.edu,128.151.7.1
+96,dmzmon0.deemz.net,198.49.208.10
+97,dns.cit.cornell.edu,192.35.82.50
+98,dns.edu.cn,202.112.0.35
+99,dns.sinica.edu.tw,140.109.1.10
+100,domen.uninett.no,158.38.62.25
+101,drw-a-pm1.aarnet.net.au,202.158.196.202
+102,dsna1.na.infn.it,192.84.134.50
+103,duhs.seecs.edu.pk,111.68.111.77
+104,dxcnaf.cnaf.infn.it,131.154.3.1
+105,dzero.bu.edu,128.197.41.63
+106,elearning.braeburn.ac.ke,196.200.30.12
+107,eltca1.epfl.ch,128.178.128.21
+108,emerge.com.my,210.48.155.230
+109,enacol.cv,195.8.3.90
+110,enterprise.phys.vt.edu,198.82.152.153
+111,espg.upt.edu.pe,200.48.211.49
+112,fed.ornl.gov,134.167.108.3
+113,fin-mta.net,188.117.42.132
+114,fisica.usac.edu.gt,168.234.75.209
+115,fnal.fnal.gov,131.225.111.1
+116,ford.cefet-rj.br,200.9.149.201
+117,frcu.eun.eg,193.227.1.1
+118,ftp.eso.org,134.171.56.106
+119,ftp.evoda.ro,89.32.43.250
+120,ftp.jach.hawaii.edu,128.171.90.222
+121,ftp.noao.edu,140.252.1.52
+122,ftp.physics.carleton.ca,134.117.14.27
+123,ftp.stsci.edu,130.167.1.16
+124,fwi.ie,82.195.146.32
+125,fyllingenfotball.no,83.143.81.174
+126,gamsv01.in2p3.fr,193.48.98.5
+127,gbps.no,213.158.230.10
+128,geo.mff.cuni.cz,195.113.28.130
+129,gibnet.gi,195.166.192.7
+130,gjerrigknarken.no,81.27.32.133
+131,glastlnx06.slac.stanford.edu,134.79.86.186
+132,gluino.phys.unm.edu,198.59.169.74
+133,gn.refer.org,82.206.223.82
+134,gntmon.oucs.ox.ac.uk,163.1.13.20
+135,gplhost.co.il,117.121.245.9
+136,gppnm.gridpp.rl.ac.uk,130.246.187.2
+137,grpmail1.mail.vanderbilt.edu,129.59.1.112
+138,gt-medicionesuy.rau.edu.uy,164.73.128.145
+139,gua.amnetdatos.net,200.30.144.3
+140,guide.just.edu.jo,87.236.232.129
+141,gye.impsat.net.ec,200.31.30.47
+142,h-st2-7.aspn.net,63.25.143.3
+143,hba-a-pm1.aarnet.net.au,202.158.196.194
+144,hep.physics.mcgill.ca,132.206.6.88
+145,hep1.c.u-tokyo.ac.jp,157.82.60.173
+146,hepls01.phys.uvic.ca,142.104.61.89
+147,hepnrc.hep.net,131.225.110.18
+148,heptel.rl.ac.uk,193.63.181.6
+149,hepwww.ph.qmw.ac.uk,138.37.51.91
+150,hn.ly,174.37.215.98
+151,hon-adsl-166-044.telekom.net.sb,202.1.166.44
+152,hon-prepaid-173-173.telekom.net.sb,202.1.173.173
+153,hoss.ece.rice.edu,128.42.246.165
+154,hu.seecs.edu.pk,121.52.150.71
+155,hunnas.learn.ac.lk,192.248.1.165
+156,iaeand.iaea.org,195.212.98.83
+157,iastate.edu,129.186.1.99
+158,icfamon.dl.ac.uk,193.62.127.224
+159,icfamon.rl.ac.uk,130.246.135.152
+160,icsun1.ic.ornl.gov,128.219.64.47
+161,iepm-resp.slac.stanford.edu,134.79.104.81
+162,iepmbw.twaren.net,211.79.63.77
+163,if.ufrj.br,146.164.36.15
+164,ihep.ac.cn,202.38.128.6
+165,infn-garr.pi.infn.it,212.189.154.1
+166,info.fuw.edu.pl,193.0.80.28
+167,institutokilpatrick.edu.pa,168.77.202.30
+168,internet.fo,212.55.32.93
+169,ippm.utah.edu,155.99.55.11
+170,julius.ktl.mii.lt,193.219.50.3
+171,kadri.ut.ee,193.40.5.94
+172,kinnaird.seecs.edu.pk,111.68.105.183
+173,kitka.marnet.net.mk,194.149.131.2
+174,lbl.gov,128.3.7.82
+175,leonis.nus.edu.sg,137.132.1.18
+176,library.ucb.edu.bh,81.22.17.7
+177,library.uonbi.ac.ke,41.204.186.26
+178,linhost2.utic.net.ba,195.130.35.104
+179,llnl.gov,128.115.249.1
+180,lnfnet.lnf.infn.it,193.206.84.12
+181,lns62.lns.cornell.edu,128.84.47.62
+182,lnsuni1.lns.infn.it,192.84.151.3
+183,lobelia.physics.wisc.edu,128.104.28.5
+184,lse.seecs.edu.pk,111.68.102.40
+185,ludens.elte.hu,157.181.2.1
+186,lurch.cns.syr.edu,128.230.12.5
+187,m.root-servers.net,202.12.27.33
+188,maggie1.seecs.edu.pk,115.186.131.81
+189,maggie2.seecs.edu.pk,115.186.131.82
+190,magic.mn,202.131.224.80
+191,mail.africell.sl,212.6.57.27
+192,mail.comium.com.lr,66.178.57.17
+193,mail.fcien.edu.uy,164.73.80.11
+194,mail.gnet.tn,193.95.75.236
+195,mail.kipt.kharkov.ua,193.239.180.1
+196,mail.lttnet.net,62.240.32.4
+197,mail.neda.af,117.55.192.5
+198,mail.prl.res.in,210.212.155.234
+199,mail.qanet.gm,196.46.232.3
+200,mail.td.refer.org,193.219.212.3
+201,mail.unza.zm,196.46.196.4
+202,mail192.er.doe.gov,192.73.213.47
+203,mail2.starcom.co.ug,41.190.128.21
+204,mailhub.scl.ameslab.gov,147.155.137.19
+205,main.kyungwon.ac.kr,203.249.126.5
+206,mathrisc1.lunet.edu,192.135.141.11
+207,mcs.anl.gov,140.221.9.6
+208,mctest.itep.ru,194.85.69.140
+209,megalan.bg,95.111.55.251
+210,mel-a-ext1.aarnet.net.au,202.158.195.132
+211,melspeed.intervolve.com.au,122.100.4.228
+212,mercury.uvic.ca,142.104.193.196
+213,mit.edu,18.7.22.69
+214,mnhepw.hep.umn.edu,128.101.220.105
+215,moe.rice.edu,128.42.205.44
+216,mon01.nren.net.np,202.52.0.3
+217,monet.astro.uiuc.edu,128.174.51.155
+218,monitor.scarlet.an,190.2.128.86
+219,monitor.seecs.edu.pk,111.68.101.10
+220,movie.zing.vn,222.255.122.28
+221,ms01.linea.gov.br,186.232.60.129
+222,multivac.sdsc.edu,132.249.20.57
+223,munnari.oz.au,202.29.151.3
+224,mvxme1.me.infn.it,192.135.18.10
+225,mvxrm1.roma1.infn.it,141.108.5.3
+226,namunu.learn.ac.lk,192.248.1.161
+227,nav6.usm.my,122.255.105.253
+228,needmore.physics.indiana.edu,129.79.157.90
+229,net.shams.edu.eg,193.227.20.23
+230,netgate.net,205.214.169.4
+231,netmon.physics.carleton.ca,134.117.14.93
+232,netslave1.cc.monash.edu.au,130.194.1.99
+233,netvideo.bnl.gov,130.199.5.34
+234,netwatch.sinica.edu.tw,140.109.13.101
+235,nic.bme.hu,152.66.115.1
+236,nic.nordu.net,192.36.148.17
+237,niobe.ncsa.uiuc.edu,141.142.36.38
+238,nlcta10.slac.stanford.edu,134.79.56.171
+239,nmsapps.bigair.net.au,202.171.190.50
+240,noc.kr.apan.net,203.255.248.51
+241,noc4.sysadm.suny.edu,141.254.1.11
+242,npm.neduet.edu.pk,111.68.110.8
+243,ns-ext.vix.com,204.152.184.64
+244,ns.above.net,207.126.96.162
+245,ns.bora.net,164.124.101.2
+246,ns.conacyt.gob.sv,168.243.10.151
+247,ns.concentric.net,207.155.183.72
+248,ns.cybercentro.com.sv,201.247.241.145
+249,ns.demon.co.uk,158.152.1.193
+250,ns.digex.net,164.109.1.3
+251,ns.dns.br,200.160.0.5
+252,ns.fq.edu.uy,164.73.160.194
+253,ns.hana.ne.kr,220.90.238.66
+254,ns.hanarotel.net,210.180.98.85
+255,ns.hip.fi,128.214.56.84
+256,ns.hitel.net,203.245.15.2
+257,ns.jp.apan.net,203.181.248.3
+258,ns.kiev.ua,193.29.220.3
+259,ns.kornet.ne.kr,211.216.50.150
+260,ns.kotis.net,203.233.202.33
+261,ns.kreonet.re.kr,134.75.30.1
+262,ns.krnic.net,202.30.50.50
+263,ns.netsgo.com,210.115.125.37
+264,ns.nownuri.net,203.238.128.24
+265,ns.osaka-u.ac.jp,133.1.192.4
+266,ns.pipex.net,158.43.128.26
+267,ns.psi.net,38.8.48.2
+268,ns.rcub.bg.ac.rs,147.91.1.5
+269,ns.shinbiro.net,202.30.143.11
+270,ns.sinp.msu.ru,213.131.0.1
+271,ns.thrunet.co.kr,210.117.65.100
+272,ns.uchicago.edu,128.135.12.23
+273,ns.uu.net,137.39.1.3
+274,ns1.alfred.edu,149.84.147.232
+275,ns1.credis.ro,195.95.166.203
+276,ns1.es.net,198.128.2.10
+277,ns1.pi.infn.it,212.189.152.2
+278,ns1.priorweb.be,62.182.60.69
+279,ns1.restena.lu,158.64.1.23
+280,ns1.retina.ar,200.10.202.3
+281,ns1.swiftkenya.com,80.240.192.7
+282,ns1.tcd.ie,134.226.1.114
+283,ns1.unikin.cd,83.229.125.114
+284,ns1.uta.edu,129.107.1.9
+285,ns1.zu.ae,195.229.145.4
+286,ns2.dns.br,200.19.119.99
+287,ns2.indiana.edu,129.79.5.100
+288,ns2.jp.apan.net,203.181.248.30
+289,ns2.retina.ar,200.10.202.4
+290,ns2.sztaki.hu,193.225.86.1
+291,ns3.nic.fr,192.134.0.49
+292,ns3.pieas.edu.pk,111.68.99.196
+293,nuclear.physics.sunysb.edu,129.49.30.2
+294,nuisb.seecs.edu.pk,111.68.96.89
+295,nukhimain.seecs.edu.pk,111.68.108.109
+296,nyu.edu,128.122.253.92
+297,octopus.phy.bg.ac.yu,147.91.80.11
+298,ohio-state.edu,128.146.214.28
+299,om16.omantel.net.om,212.72.1.186
+300,omnigate.clarkson.edu,128.153.4.2
+301,ongkot.kmutt.ac.th,202.44.8.66
+302,oppie.physics.umd.edu,129.2.42.5
+303,ornl.gov,128.219.128.17
+304,orpheus.sc.intel.com,143.183.2.11
+305,osfserver.le.infn.it,192.84.152.11
+306,ouhep1.nhn.ou.edu,129.15.30.147
+307,pa.cache.nlanr.net,192.172.226.121
+308,pc-isdn.desy.de,131.169.118.33
+309,pdsfgrid2.nersc.gov,128.55.24.27
+310,pdsfgrid4.nersc.gov,128.55.24.29
+311,per-a-ext1.aarnet.net.au,202.158.195.4
+312,phy.duke.edu,152.3.182.1
+313,ping.cern.ch,137.138.28.176
+314,ping.cs.wisc.edu,128.105.252.4
+315,ping.desy.de,131.169.5.90
+316,ping.isnic.is,193.4.58.91
+317,ping.rhnet.is,130.208.16.20
+318,ping.riken.jp,134.160.4.17
+319,ping.rmki.kfki.hu,148.6.176.200
+320,ping.slac.stanford.edu,134.79.18.21
+321,pinger-itc.pu.edu.pk,111.68.103.29
+322,pinger-ncp.ncp.edu.pk,111.68.99.142
+323,pinger.acmesecurity.org,200.145.216.40
+324,pinger.aiou.edu.pk,111.68.97.52
+325,pinger.alquds.edu,62.90.25.198
+326,pinger.arn.dz,193.194.81.48
+327,pinger.ascr.doe.gov,192.73.213.124
+328,pinger.cdac.in,196.1.113.251
+329,pinger.cdacmumbai.in,202.141.151.30
+330,pinger.cemb.edu.pk,111.68.103.83
+331,pinger.cern.ch,192.91.244.6
+332,pinger.comsats.edu.pk,203.124.40.43
+333,pinger.cse.ust.hk,143.89.41.37
+334,pinger.es.net,198.128.3.19
+335,pinger.fsksm.utm.my,161.139.146.158
+336,pinger.fsktm.um.edu.my,202.185.107.238
+337,pinger.giki.edu.pk,121.52.151.109
+338,pinger.hep.caltech.edu,131.215.116.42
+339,pinger.iba-suk.edu.pk,121.52.155.11
+340,pinger.ictp.it,140.105.28.117
+341,pinger.isra.edu.pk,121.52.155.245
+342,pinger.kohat.edu.pk,121.52.146.180
+343,pinger.lcwu.edu.pk,111.68.103.135
+344,pinger.lhr.nu.edu.pk,111.68.102.125
+345,pinger.narss.sci.eg,195.43.3.135
+346,pinger.nca.edu.pk,111.68.102.68
+347,pinger.nchc.org.tw,140.110.20.230
+348,pinger.numl.edu.pk,111.68.97.109
+349,pinger.nwfpuet.edu.pk,121.52.147.71
+350,pinger.pern.edu.pk,111.68.106.254
+351,pinger.sesame.org.jo,80.90.171.80
+352,pinger.slac.stanford.edu,134.79.104.80
+353,pinger.sprace.org.br,200.136.80.16
+354,pinger.stanford.edu,171.66.6.39
+355,pinger.theenglishyouneed.com,128.79.33.176
+356,pinger.uaar.edu.pk,111.68.99.248
+357,pinger.uet.edu.pk,111.68.98.132
+358,pinger.uettaxila.edu.pk,111.68.98.132
+359,pinger.unesp.br,200.145.255.41
+360,pinger.unimas.my,49.50.236.98
+361,pinger.uob.edu.pk,121.52.157.112
+362,pinger.usindh.edu.pk,121.52.154.50
+363,pinger.ustb.edu.pk,213.229.80.194
+364,pinger.vu.edu.pk,111.68.103.35
+365,pingerfsbd.pern.edu.pk,121.52.153.242
+366,pingerisl-air.pern.edu.pk,111.68.106.242
+367,pingerisl-fjwu.pern.edu.pk,111.68.106.250
+368,pingerisl-qau.pern.edu.pk,111.68.106.246
+369,pingerjms.pern.edu.pk,121.52.154.2
+370,pingerkhi-cpsp.pern.edu.pk,111.68.107.246
+371,pingerkhi-uok.pern.edu.pk,111.68.107.242
+372,pingerkhi.pern.edu.pk,111.68.108.11
+373,pingerlhr-gcu.pern.edu.pk,111.68.102.210
+374,pingerlhr-pu.pern.edu.pk,111.68.102.214
+375,pingerlhr.pern.edu.pk,111.68.105.106
+376,pingermtn.pern.edu.pk,121.52.158.210
+377,pingerpwr.pern.edu.pk,121.52.150.231
+378,pingerqta.pern.edu.pk,121.52.157.157
+379,pollinbg.in2p3.fr,134.158.128.120
+380,portal.ucb.edu.bo,190.129.73.16
+381,pp2.it.su.se,130.237.162.80
+382,prime.edu.np,202.52.0.9
+383,ps.lcg.ustc.edu.cn,202.38.140.115
+384,purdue.edu,128.210.7.199
+385,quest.seecs.edu.pk,121.52.155.122
+386,rainbow.inp.nsk.su,84.237.43.50
+387,raman.physics.ucla.edu,128.97.23.117
+388,rftpexp.rhic.bnl.gov,130.199.54.10
+389,rockvax.rockefeller.edu,129.85.1.21
+390,rzserv2.gsi.de,140.181.69.13
+391,sadc-fanr.org.zw,193.220.40.13
+392,sagrid.ac.za,196.21.182.2
+393,sarcee.phys.ualberta.ca,129.128.7.65
+394,sau.seecs.edu.pk,121.52.155.69
+395,sbkwu.seecs.edu.pk,121.52.157.21
+396,scipp.ucsc.edu,128.114.130.20
+397,server2.infn.it,131.154.1.3
+398,sg4.tsukuba.jp.hep.net,202.13.200.2
+399,singaporetech.edu.sg,119.31.233.174
+400,sirsyed.ssuet.edu.pk,111.68.108.179
+401,sitka.triumf.ca,142.90.106.59
+402,skitter.kaist.kr.apan.net,192.249.24.30
+403,snowmassserver.snowmass2001.org,131.225.68.53
+404,sopee.net,62.87.220.34
+405,spdtst.doda.uz,195.158.18.218
+406,speed.airnet.net.nz,202.137.240.186
+407,speed.alienstation.ro,89.115.178.1
+408,speed.chassco.net,112.78.219.248
+409,speed.unidata.it,217.72.110.80
+410,speedcheck.liwest.at,212.33.36.188
+411,speedtest-roubaix.snsci.net,91.121.112.28
+412,speedtest.airwire.ie,195.222.111.223
+413,speedtest.amnetdatos.com.ni,165.98.132.8
+414,speedtest.bbmax.co.uk,85.233.160.167
+415,speedtest.bigtelecom.ru,87.255.1.133
+416,speedtest.bitcom.com.br,187.63.191.2
+417,speedtest.biznetnetworks.com,203.142.69.190
+418,speedtest.cablecolor.hn,190.92.1.5
+419,speedtest.com.sg,202.150.221.170
+420,speedtest.dc.utel.ua,213.186.113.5
+421,speedtest.dsl.li,82.117.0.15
+422,speedtest.eglue.biz,212.18.63.105
+423,speedtest.grupoamnet.net,200.13.161.170
+424,speedtest.hns.net.in,120.88.46.30
+425,speedtest.isp.qa,82.148.96.85
+426,speedtest.ivory.azstarnet.az,89.147.255.10
+427,speedtest.kis.lt,193.0.251.8
+428,speedtest.meganets.ru,89.108.108.111
+429,speedtest.net.bh,193.188.112.43
+430,speedtest.net.pl,83.170.87.75
+431,speedtest.ontelecoms.gr,91.132.5.198
+432,speedtest.orangemali.net,196.200.80.4
+433,speedtest.rack66.com,85.88.55.41
+434,speedtest.ratiokontakt.de,212.63.133.222
+435,speedtest.sahara.com.sa,212.76.68.93
+436,speedtest.sby.dnet.net.id,202.148.11.34
+437,speedtest.servihosting.es,84.232.1.9
+438,speedtest.starnet.md,77.67.73.222
+439,speedtest.techconcepts.co.za,66.8.85.147
+440,speedtest.tmnet.se,84.243.62.5
+441,speedtest.tsl.gr,147.52.17.45
+442,speedtest.wxnz.net,58.28.13.209
+443,speedtest2.giganet.hu,193.138.125.61
+444,spin.riken.bnl.gov,130.199.80.216
+445,st.netbynet.ru,79.120.31.237
+446,stargrid01.rcf.bnl.gov,130.199.6.111
+447,sun01a.desy.de,131.169.200.2
+448,sunysb.edu,129.49.2.176
+449,surf.sno.laurentian.ca,142.51.70.5
+450,svr1dx.fisica.uniud.it,158.110.40.19
+451,syd-a-ext1.aarnet.net.au,202.158.196.134
+452,syr.edu,128.230.18.35
+453,t2-monitor.ultralight.org,192.84.86.114
+454,tbn04.nikhef.nl,192.16.186.229
+455,tg.refer.org,41.207.188.10
+456,thorin.physik.uni-mainz.de,134.93.129.216
+457,thunderbird.internet2.edu,207.75.164.95
+458,tpr.kr.apan.net,203.255.248.1
+459,transexpress.com.ni,190.53.38.218
+460,tribhuvan-university.edu.np,202.70.88.5
+461,trieste-gw1.ts.infn.it,140.105.6.1
+462,twmb.info,61.56.191.124
+463,uaf.seecs.edu.pk,121.52.152.22
+464,ucr.edu,138.23.226.101
+465,ucsd.edu,132.239.180.101
+466,uhheph.phys.hawaii.edu,128.171.11.7
+467,ultralog.ampath.net,198.32.252.3
+468,umn.edu,134.84.119.207
+469,uoregon.edu,128.223.142.125
+470,ust.edu.sd,95.131.65.81
+471,usuhs.mil,131.158.7.14
+472,utdallas.edu,129.110.10.36
+473,utk.edu,160.36.179.25
+474,utkvm1.utk.edu,160.36.178.69
+475,v-www.ihep.ac.cn,202.38.128.7
+476,vaxmi.mi.infn.it,192.84.138.1
+477,vidconf.triumf.ca,142.90.114.155
+478,vle.iiu.edu.pk,111.68.97.162
+479,w4.lns.cornell.edu,128.84.44.110
+480,waib.gouv.bj,81.91.232.2
+481,washington.edu,140.142.3.7
+482,wayne.edu,141.217.1.22
+483,web-a.lvdats.lv,93.177.237.245
+484,web.africaonline.co.sz,212.85.220.18
+485,web.hepgrid.uerj.br,200.143.196.20
+486,webmail.izi.re,80.69.208.114
+487,westnet.ie,78.153.203.102
+488,win17.b2web.com.ve,200.74.197.244
+489,wisc.edu,144.92.9.144
+490,wsgs00.lngs.infn.it,192.84.135.4
+491,www-05.nexus.ao,41.221.254.23
+492,www-hep.phys.cmu.edu,128.2.115.21
+493,www-wanmon.slac.stanford.edu,134.79.197.197
+494,www.6telecoms.co.tz,41.77.226.4
+495,www.aazimbabwe.co.zw,196.201.17.235
+496,www.ab.kg,195.38.166.130
+497,www.absrsm.sm,194.183.95.35
+498,www.abu.edu.ng,41.203.92.117
+499,www.ac.lk,192.248.1.164
+500,www.acat.org.sz,196.28.7.66
+501,www.accommodationpng.com.pg,202.171.240.208
+502,www.acet.or.tz,41.220.180.1
+503,www.acf.ci,213.136.96.12
+504,www.acmad.ne,41.138.57.34
+505,www.acrossafricatours.co.zw,217.15.120.13
+506,www.act.edu.om,212.72.26.54
+507,www.adach.ae,86.96.196.32
+508,www.adencomplex.com.ye,195.94.0.128
+509,www.adpolice.gov.ae,194.170.200.102
+510,www.adsl.com.na,196.1.28.12
+511,www.adu.mr,82.151.72.2
+512,www.advocatus.pt,94.46.217.31
+513,www.advsouth.co.nz,202.174.117.137
+514,www.aerodept.edu.ly,62.240.36.40
+515,www.afcp.kz,89.218.26.206
+516,www.afe.mr,82.151.64.110
+517,www.afribone.net.gn,83.229.75.10
+518,www.afrinet.cd,41.222.216.214
+519,www.afyamzuri.org.zm,196.46.124.19
+520,www.agestado.com.br,200.182.48.131
+521,www.agetur.bj,81.91.225.90
+522,www.agpe.ma,212.217.0.30
+523,www.agriculture.gouv.ci,196.201.67.171
+524,www.agrimarket.gov.bt,202.144.151.52
+525,www.agrinamibia.com.na,196.44.136.21
+526,www.agriportail.tn,193.95.21.131
+527,www.aic.ac.nz,119.224.133.130
+528,www.aims.ac.za,41.206.196.194
+529,www.aio.upjs.sk,158.197.16.71
+530,www.aisha.ac.zm,196.12.12.67
+531,www.ait.ac.th,203.159.12.5
+532,www.akcansa.com.tr,178.18.195.34
+533,www.akme.kg,85.115.208.108
+534,www.alief.dz,193.194.64.87
+535,www.alihan.com.tr,94.199.200.115
+536,www.allianzeunicollege.edu.my,110.4.41.15
+537,www.alquds.edu,195.114.29.145
+538,www.amcham.uz,217.29.116.177
+539,www.amharainfo.gov.et,213.55.85.226
+540,www.ams.ac.ir,194.225.16.5
+541,www.anadolu.edu.tr,193.140.21.18
+542,www.andina.com.pe,190.102.133.195
+543,www.ans.edu.ni,200.30.165.170
+544,www.antenalivre.pt,94.46.3.16
+545,www.apdf.org.ml,217.64.107.135
+546,www.aportmall.kz,212.154.192.83
+547,www.argon.com.tr,212.175.236.104
+548,www.aser.sn,41.208.153.76
+549,www.asm.md,193.226.65.35
+550,www.assemblee.ne,41.190.228.6
+551,www.auf.edu.ph,210.4.97.195
+552,www.aui.ma,196.12.203.30
+553,www.aun.edu.ng,41.223.136.5
+554,www.auth.gr,155.207.1.12
+555,www.avaza.gov.tm,217.174.229.211
+556,www.babcock.edu.ng,41.203.82.85
+557,www.bacim.mr,82.151.72.218
+558,www.banjuldiocese.gm,212.60.76.13
+559,www.bankofbotswana.bw,83.143.28.88
+560,www.bcpng.org.pg,124.240.221.35
+561,www.belnet.net,193.190.130.15
+562,www.beltei.edu.kh,115.178.24.7
+563,www.benuestate.gov.ng,41.222.209.140
+564,www.bidvestnamibia.com.na,41.218.69.50
+565,www.bis.k12.tr,212.58.28.139
+566,www.bonesha.bi,196.2.12.32
+567,www.bos.gov.ls,196.202.246.8
+568,www.bracuniversity.net,202.168.254.6
+569,www.brahman.iway.na,196.44.136.32
+570,www.brunet.bn,61.6.254.1
+571,www.bte.com.tn,193.95.75.120
+572,www.btm.com.br,200.218.6.3
+573,www.btu.upm.edu.my,119.40.116.240
+574,www.bu.edu,128.197.26.35
+575,www.caen.edu.pe,200.37.34.80
+576,www.cambridge.edu.jo,80.90.160.133
+577,www.camnet.cm,195.24.192.36
+578,www.camnet.com.kh,203.223.32.17
+579,www.campucss.edu.pe,206.214.217.238
+580,www.canal2temuco.cl,200.29.188.25
+581,www.carisp.sm,194.183.84.46
+582,www.carnet.hr,161.53.160.25
+583,www.cau.ac.kr,165.194.95.137
+584,www.cayirova.ber.tr,82.222.57.141
+585,www.cbn.net.id,210.210.191.202
+586,www.cbt.tm,217.174.226.81
+587,www.cbu.uz,195.158.31.77
+588,www.ccis.org.tn,41.228.38.39
+589,www.ccs.ornl.gov,134.167.16.23
+590,www.centroin.com.br,200.225.63.214
+591,www.cern.ch,137.138.144.168
+592,www.cgr.gob.ni,165.98.53.164
+593,www.channeli.net,210.112.192.30
+594,www.cici.edu.kh,66.147.244.217
+595,www.cinfo.cu,169.158.178.119
+596,www.cisco.com,198.133.219.25
+597,www.cms.sn,41.208.153.133
+598,www.cnaps.mg,41.188.38.233
+599,www.cnp.me,213.149.105.8
+600,www.cnss.ga,41.211.191.124
+601,www.cob.edu.bs,65.75.64.69
+602,www.college.edu.sn,196.1.94.92
+603,www.corpam.ec,201.219.15.18
+604,www.corpozulia.gov.ve,200.11.236.213
+605,www.criba.edu.ar,168.96.204.37
+606,www.csir.co.za,146.64.81.59
+607,www.csir.org.gh,41.220.48.79
+608,www.cst.edu.ve,200.6.155.210
+609,www.cuc.ac.cr,208.165.49.115
+610,www.cuc.edu.ve,201.249.245.167
+611,www.cudi.edu.mx,132.248.194.81
+612,www.customs.gov.mv,202.21.178.82
+613,www.cut.edu.lb,89.108.129.100
+614,www.cvut.cz,147.32.3.39
+615,www.cyfronet.krakow.pl,149.156.2.252
+616,www.daffodilvarsity.edu.bd,203.190.10.90
+617,www.data.com,12.130.5.36
+618,www.dcc.uchile.cl,192.80.24.4
+619,www.desy.de,131.169.30.61
+620,www.doctors.ly,41.254.33.86
+621,www.drtvnet.cg,41.203.0.229
+622,www.duet.ac.bd,203.112.196.165
+623,www.dut.ac.za,196.35.150.170
+624,www.dvo.ru,94.198.16.4
+625,www.eastafricauniversity.net,110.4.46.95
+626,www.ebanksalaam.dj,196.201.195.44
+627,www.ecm.ub.es,161.116.81.151
+628,www.ecnu.edu.cn,202.101.26.146
+629,www.ed.ac.uk,129.215.233.64
+630,www.edls.edu.bs,24.244.141.213
+631,www.edtc.ac.pg,202.95.202.7
+632,www.egrem.com.cu,200.55.168.173
+633,www.eldjazair.net.dz,193.194.64.71
+634,www.embratel.net.br,200.255.125.206
+635,www.emploi.nat.tn,41.224.37.230
+636,www.energy.gov.mn,202.179.8.199
+637,www.er.doe.gov,205.254.141.139
+638,www.es.net,198.128.3.112
+639,www.esmt.sn,213.154.80.147
+640,www.espe.edu.ec,192.188.58.167
+641,www.estamer.ae,83.111.201.4
+642,www.eti.net.gn,82.206.222.21
+643,www.fapesp.br,143.108.10.6
+644,www.fde.ec,200.110.94.62
+645,www.fid.mg,41.188.9.131
+646,www.fisica.edu.uy,164.73.83.126
+647,www.fmci.ens.tn,41.225.8.45
+648,www.fnal.gov,131.225.70.2
+649,www.fpf.br,201.90.252.245
+650,www.fsjesr.ac.ma,196.200.139.12
+651,www.fulbright.org.cy,194.154.128.22
+652,www.futminna.edu.ng,197.157.218.37
+653,www.fys.uio.no,129.240.84.18
+654,www.gbs.cd,217.171.88.141
+655,www.geocom.do,200.26.174.210
+656,www.gi.alaska.edu,137.229.21.85
+657,www.gijima.com.na,196.44.128.214
+658,www.giki.edu.pk,121.52.144.100
+659,www.globalone.com.br,189.126.103.227
+660,www.gov.bw,168.167.134.24
+661,www.grin.by,87.252.253.254
+662,www.gsi.de,140.181.64.223
+663,www.gsis.gov.ph,210.5.70.65
+664,www.hallym.ac.kr,210.115.225.12
+665,www.harvard.edu,173.203.129.90
+666,www.hastingsdc.govt.nz,202.191.43.42
+667,www.health.gov.mv,202.21.178.155
+668,www.hellenic.ac.zw,196.29.35.76
+669,www.helwan.edu.eg,193.227.34.41
+670,www.hep.anl.gov,146.139.180.60
+671,www.hep.brown.edu,128.148.63.160
+672,www.hep.uiuc.edu,128.174.118.162
+673,www.hepi.edu.ge,217.147.226.4
+674,www.het.brown.edu,128.148.26.157
+675,www.hpu.edu,207.97.208.129
+676,www.hraparak.am,95.140.200.217
+677,www.hut.edu.vn,202.191.57.195
+678,www.hz.zj.cn,61.175.163.41
+679,www.ic.cd,41.194.60.3
+680,www.ic.edu.lb,77.235.128.5
+681,www.ictp.tv,140.105.28.116
+682,www.ifs.ac.lk,192.248.97.1
+683,www.ihep.ac.cn,202.38.128.8
+684,www.ihep.su,194.190.161.169
+685,www.iitk.ac.in,203.200.95.142
+686,www.iitkgp.ac.in,202.63.234.243
+687,www.ikf.physik.uni-frankfurt.de,141.2.243.3
+688,www.ill.fr,193.49.43.124
+689,www.immigration.gov.ph,124.6.144.116
+690,www.in2p3.fr,134.158.69.48
+691,www.indiana.edu,129.79.78.192
+692,www.indo.net.id,202.159.32.22
+693,www.indosat.net.id,124.81.92.144
+694,www.inet.sy,91.144.8.211
+695,www.inetvr.com.br,187.45.195.191
+696,www.infn.it,193.206.84.220
+697,www.inia.gov.ve,190.202.124.231
+698,www.intercafe.bi,196.2.8.201
+699,www.intercollege.ac.cy,82.116.203.18
+700,www.ioe.edu.np,202.70.91.13
+701,www.ionmed.agh.edu.pl,149.156.96.9
+702,www.iranlng.ir,62.193.12.226
+703,www.ird.ne,41.138.57.1
+704,www.irk.ru,195.206.58.122
+705,www.itb.ac.id,167.205.1.34
+706,www.itb.edu.bn,202.93.220.18
+707,www.itc.edu.kh,203.189.148.71
+708,www.iucc.ac.il,128.139.202.17
+709,www.iust.edu.sy,77.44.253.15
+710,www.iut.ac.ir,217.219.19.121
+711,www.kall.fo,80.77.128.9
+712,www.kazrena.kz,89.250.80.3
+713,www.kcn.unima.mw,196.45.188.25
+714,www.kek.jp,130.87.104.107
+715,www.kfmc.med.sa,193.37.143.55
+716,www.kie.ac.rw,196.12.157.205
+717,www.kist.ac.rw,41.197.25.6
+718,www.kku.edu.sa,212.26.68.5
+719,www.knu.ac.kr,155.230.11.1
+720,www.kph.uni-mainz.de,134.93.178.19
+721,www.kpl.net.la,115.84.101.244
+722,www.ku.ac.ke,194.201.253.8
+723,www.ku.ac.th,158.108.216.5
+724,www.lanl.gov,204.121.3.13
+725,www.laopdr.gov.la,203.110.66.105
+726,www.laotrade.org.la,202.62.103.120
+727,www.lbr.gov.lr,83.229.80.155
+728,www.lechwe.sch.zm,81.199.193.4
+729,www.leo.co.ls,64.57.112.1
+730,www.lesotho.gov.ls,41.203.191.3
+731,www.libyana.ly,62.240.36.58
+732,www.lightning.net,216.218.186.2
+733,www.linea.gov.br,186.232.60.124
+734,www.lip.pt,193.136.91.226
+735,www.lonab.bf,206.82.130.77
+736,www.lsx.com.la,202.62.101.207
+737,www.lunet.edu,192.135.141.50
+738,www.mahsa.edu.my,175.139.189.25
+739,www.manila.gov.ph,203.167.111.1
+740,www.maxis.com.my,202.75.129.146
+741,www.mcs.anl.gov,140.221.9.81
+742,www.mcss.sc,41.86.46.5
+743,www.mfa.gov.bn,202.160.15.163
+744,www.microcom.cd,66.36.196.209
+745,www.micti.co.mz,196.3.97.231
+746,www.mimos.my,202.45.139.67
+747,www.minjust.kz,82.200.168.230
+748,www.minzdrav.uz,62.209.153.230
+749,www.miu.edu.my,110.4.45.119
+750,www.mju.ac.th,110.164.58.213
+751,www.ml.refer.org,196.200.90.99
+752,www.mme.gov.na,209.88.21.60
+753,www.mmu.edu.my,203.106.61.79
+754,www.mod.gov.af,81.85.243.66
+755,www.moedu.gov.iq,78.109.236.122
+756,www.mof.gov.sd,196.202.144.245
+757,www.mogbiz.by,194.158.206.243
+758,www.monash.edu.my,59.191.192.148
+759,www.montclair.edu,130.68.1.187
+760,www.most.gov.np,202.45.144.21
+761,www.mppmu.mpg.de,134.107.24.10
+762,www.msu.ru,193.232.113.151
+763,www.mt.net.mk,195.26.152.130
+764,www.mtec.by,91.149.189.220
+765,www.muchs.ac.tz,41.216.220.102
+766,www.multilink.ht,200.80.96.15
+767,www.multinet.af,202.86.23.70
+768,www.muni.cz,147.251.5.231
+769,www.museumsnc.co.za,196.211.11.236
+770,www.myren.net.my,203.80.16.120
+771,www.na.gov.la,115.84.70.203
+772,www.nahaltrading.com.eg,41.222.168.137
+773,www.nbi.dk,130.225.212.5
+774,www.ncl.ac.uk,128.240.233.197
+775,www.nelly.com.do,200.88.126.40
+776,www.nersc.gov,128.55.6.34
+777,www.netvalley.net,216.187.103.168
+778,www.newinti.edu.my,124.150.142.118
+779,www.nic.ci,213.136.100.82
+780,www.nic.mr,82.151.64.7
+781,www.nikhef.nl,192.16.199.166
+782,www.nmmu.ac.za,192.96.15.244
+783,www.noc.gov.iq,188.124.18.91
+784,www.noclibya.com.ly,62.240.36.38
+785,www.nomad.mu,196.46.59.13
+786,www.noor.net,217.139.227.20
+787,www.nren.nasa.gov,198.10.138.131
+788,www.nren.net.np,202.52.0.2
+789,www.nrf.ae,195.229.146.76
+790,www.ntc.net.np,202.70.64.2
+791,www.nu.edu.sa,212.26.74.5
+792,www.nus.edu.sg,137.132.21.27
+793,www.nwu.ac.za,143.160.36.150
+794,www.oag.org.bw,168.167.134.74
+795,www.ocesb.com.my,202.73.10.4
+796,www.officedubacbenin.bj,81.91.236.77
+797,www.okstate.edu,139.78.99.6
+798,www.out.ac.tz,196.43.84.246
+799,www.pa.msu.edu,35.9.68.172
+800,www.paynet.co.zw,196.44.186.219
+801,www.pgia.ac.lk,203.94.67.67
+802,www.phy.bris.ac.uk,137.222.30.8
+803,www.phys.s.u-tokyo.ac.jp,133.11.1.3
+804,www.physics.rutgers.edu,128.6.228.190
+805,www.physics.umd.edu,128.8.140.6
+806,www.physik.rwth-aachen.de,134.130.4.35
+807,www.pnae.mg,196.192.40.200
+808,www.pol34.pl,212.51.192.18
+809,www.poly.ac.mw,41.221.97.114
+810,www.polytechnic.edu.na,192.12.10.105
+811,www.ppesa.gov.et,213.55.76.98
+812,www.presidencymaldives.gov.mv,202.1.201.180
+813,www.president.kg,212.42.119.16
+814,www.princeton.edu,128.112.132.86
+815,www.ps.uci.edu,128.200.48.62
+816,www.psi.gov.ps,217.66.226.35
+817,www.psmchs.edu.sa,213.230.21.42
+818,www.qiup.edu.my,103.6.196.75
+819,www.queenscollege.edu.ye,195.94.0.226
+820,www.realbroadband.co.sz,196.28.7.21
+821,www.refer.ga,217.77.72.76
+822,www.refer.sn,213.154.65.67
+823,www.registro.br,200.160.2.3
+824,www.riesgroup.dj,196.201.197.76
+825,www.rl.ac.uk,130.246.135.175
+826,www.rol.net.mv,202.21.176.41
+827,www.rsu.ac.th,110.164.199.217
+828,www.rtu.lv,213.175.89.169
+829,www.ru.ac.bd,180.211.185.196
+830,www.ru.ac.za,146.231.129.7
+831,www.rub.edu.bt,202.144.158.150
+832,www.ruh.ac.lk,192.248.48.3
+833,www.runnet.ru,85.142.191.3
+834,www.rwandaparliament.gov.rw,41.74.172.4
+835,www.sabah.com.my,27.0.4.20
+836,www.sc.doe.gov,205.254.144.200
+837,www.sci.am,93.187.162.21
+838,www.scl.ameslab.gov,147.155.137.28
+839,www.sdsc.edu,132.249.21.111
+840,www.seanet.org.nz,131.203.86.114
+841,www.see.gob.do,190.167.196.166
+842,www.seua.am,217.113.19.67
+843,www.sharif.ir,81.31.160.60
+844,www.sierratel.sl,41.205.225.140
+845,www.singaren.net.sg,203.30.39.3
+846,www.singtel.com,203.208.248.10
+847,www.sjtu.edu.cn,202.120.2.102
+848,www.slac.stanford.edu,134.79.18.188
+849,www.solomon.com.sb,202.1.169.5
+850,www.sta.ne,41.203.159.9
+851,www.stmaryuniversitycollege.edu.et,213.55.83.210
+852,www.su.edu.et,176.74.178.30
+853,www.sud.fo,217.172.81.67
+854,www.sun.com,192.9.49.33
+855,www.supercomp.org,63.118.7.16
+856,www.surcollege.edu.om,85.154.240.82
+857,www.sustech.edu,41.67.53.4
+858,www.swu.edu.ph,121.96.58.6
+859,www.tarena.tj,77.95.0.38
+860,www.tau.ac.il,132.66.16.6
+861,www.tele.gl,194.177.224.40
+862,www.ternet.or.tz,196.43.84.242
+863,www.tfanus.com.er,196.200.99.1
+864,www.thawraonline.sy,91.144.8.202
+865,www.thphys.may.ie,149.157.205.5
+866,www.tishreen.edu.sy,95.159.58.36
+867,www.tpn.bg,195.138.148.2
+868,www.tresor.ga,217.77.72.249
+869,www.triumf.ca,142.90.113.81
+870,www.tsc.ru,84.237.0.66
+871,www.tse.com.er,196.200.102.6
+872,www.tsinghua.edu.cn,166.111.4.100
+873,www.ttu.tj,77.95.1.234
+874,www.tubane.bi,196.2.13.50
+875,www.turkmenistan.gov.tm,217.174.229.126
+876,www.u-tokyo.ac.jp,133.11.114.194
+877,www.uaa.alaska.edu,137.229.141.83
+878,www.uac.bj.refer.org,81.91.236.226
+879,www.uam.es,150.244.9.237
+880,www.uas.alaska.edu,137.229.218.103
+881,www.ub.tg,41.207.188.27
+882,www.ubd.edu.bn,202.160.1.54
+883,www.uca.edu.sv,168.243.1.4
+884,www.ucc.edu.gh,41.204.53.162
+885,www.ucd.ac.ma,196.200.172.55
+886,www.uchicago.edu,128.135.13.112
+887,www.ucla.edu,169.232.55.224
+888,www.uclv.edu.cu,200.55.145.10
+889,www.ucu.edu.ar,190.228.68.197
+890,www.uda.ad,194.158.78.228
+891,www.udsm.ac.tz,196.44.161.106
+892,www.uem.mz,196.3.96.21
+893,www.uern.br,200.164.64.132
+894,www.uet.edu.pk,111.68.102.6
+895,www.uew.edu.gh,41.74.91.129
+896,www.ug.edu.gh,197.255.124.90
+897,www.ugm.ac.id,175.111.91.159
+898,www.uia.mx,192.203.177.1
+899,www.uinjkt.ac.id,116.66.206.163
+900,www.um.edu.my,202.185.111.194
+901,www.umk.edu.my,58.26.188.6
+902,www.umss.edu.bo,200.87.182.20
+903,www.umt.edu.my,161.139.193.85
+904,www.una.py,200.10.228.135
+905,www.unair.ac.id,210.57.208.14
+906,www.undp.tj,94.199.19.7
+907,www.unesp.br,200.145.1.9
+908,www.uni-mb.si,164.8.23.111
+909,www.unibe.edu.do,200.26.171.243
+910,www.unikin.cd,83.229.125.115
+911,www.unikl.edu.my,113.23.141.10
+912,www.unilag.edu.ng,196.45.48.50
+913,www.unimas.my,49.50.236.15
+914,www.unisza.edu.my,161.142.148.23
+915,www.unitec.edu,200.107.212.133
+916,www.univ-mahajanga.mg,41.188.42.18
+917,www.univ-ouaga.bf,212.52.131.9
+918,www.univ-sba.dz,80.249.75.2
+919,www.unju.edu.ar,200.45.224.18
+920,www.unn.ru,85.143.0.20
+921,www.unri.ac.id,103.10.169.245
+922,www.untan.ac.id,203.24.50.2
+923,www.unyp.cz,178.238.38.35
+924,www.uoa.gr,195.134.71.229
+925,www.uoi.gr,195.130.120.109
+926,www.uol.com.br,200.221.2.45
+927,www.upesh.edu.pk,121.52.147.5
+928,www.upm.edu.my,110.74.179.2
+929,www.upnm.edu.my,1.9.21.6
+930,www.upsi.edu.my,202.190.201.62
+931,www.uran.ru,195.19.155.194
+932,www.usep.edu.ph,202.137.113.149
+933,www.usim.edu.my,58.26.99.98
+934,www.usu.ac.id,202.0.107.9
+935,www.utar.edu.my,58.27.19.137
+936,www.utem.edu.my,210.48.157.23
+937,www.utl.co.ug,196.0.0.243
+938,www.utm.ac.mu,202.123.21.123
+939,www.utm.my,161.139.145.85
+940,www.utp.edu.my,203.135.191.100
+941,www.vnn.vn,203.162.168.130
+942,www.voctech.org.bn,202.93.208.90
+943,www.voe.at,62.218.39.47
+944,www.weizmann.ac.il,132.77.150.57
+945,www.ygsmrb.org.ye,82.114.183.106
+946,www.zedmobile.co.zm,81.199.101.213
+947,wwwinfo.jinr.ru,159.93.39.8
+948,xdc.arm.gov,130.199.208.73
+949,yale.edu,128.36.0.1
+950,zebu.uoregon.edu,128.223.21.25
+951,znsun1.ifh.de,141.34.1.16
+952,zz.nullwave.ru,217.70.119.254
 

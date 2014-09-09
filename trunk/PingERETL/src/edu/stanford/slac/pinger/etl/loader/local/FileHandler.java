@@ -72,8 +72,9 @@ public class FileHandler  {
 
 	public void writeContentAndClean() {
 		try {
-			PrintWriter out;
-			out = new PrintWriter(new BufferedWriter(new FileWriter(currentFilePath, false)));
+			if (fileContent==null || fileContent.toString().equals(""))
+				return;
+			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(currentFilePath, false)));
 			out.write(fileContent.toString());
 			out.close();
 			fileContent = new StringBuffer();

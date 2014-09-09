@@ -17,7 +17,7 @@ public class GetPingtableCSV {
 					 *debug=-1 -> only critical errors 
 					 */
 					"debug=0",
-					"downlaodCSVFiles=1,downloadedCSVDirectory=c:\\downloadedCSV,monitorNodes=[aup.seecs.edu.pk],metrics=[throughput],ticks=[daily],years=[2012]",
+					"downlaodCSVFiles=1,downloadedCSVDirectory=c:\\downloadedCSV,monitorNodes=[airuniversity.seecs.edu.pk],metrics=[alpha],ticks=[daily],years=[2007],timeout=[2000],maxattempt=[35]",
 			};
 		}		
 
@@ -48,6 +48,8 @@ public class GetPingtableCSV {
 		String ticks[] = null;
 		String years[] = null;
 		String months[] = null;
+		String timeouts[] = null;
+		String maxattempts[] = null;
 		String monitorNodes[] = null;
 		String downloadedCSVDirectory = null;
 		for (String ag : ags) {
@@ -67,7 +69,16 @@ public class GetPingtableCSV {
 				String s = ag.replace("months=[", "");
 				s = s.replace("]", "");
 				months = s.split("-");
-			}else if (ag.contains("downloadedCSVDirectory")) {
+			} else if (ag.contains("timeout")) {
+				String s = ag.replace("timeout=[", "");
+				s = s.replace("]", "");
+				timeouts = s.split("-");
+			} else if (ag.contains("maxattempt")) {
+				String s = ag.replace("maxattempt=[", "");
+				s = s.replace("]", "");
+				maxattempts = s.split("-");
+			} 
+			else if (ag.contains("downloadedCSVDirectory")) {
 				downloadedCSVDirectory = ag.replace("downloadedCSVDirectory=", "");
 			} else if (ag.contains("monitorNodes")) {
 				String s = ag.replace("monitorNodes=[", "");
@@ -82,11 +93,13 @@ public class GetPingtableCSV {
 		for (String monitorNode : monitorNodes)  
 			for (String metric : metrics) 
 				for (String tick : ticks)
-					for (String year : years) { 
-							Logger.log("Downloading CSV files for " + metric + " " + tick );
-							PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, null);
-							pingtableCSVDownloader.run();
-						}
+					for (String year : years)
+						for (String maxattempt : maxattempts) 
+							for (String timeout : timeouts) {
+								Logger.log("Downloading CSV files for " + metric + " " + tick );
+								PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, null, maxattempt, timeout);
+								pingtableCSVDownloader.run();
+							}
 
 
 	}

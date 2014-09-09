@@ -117,4 +117,8 @@ public final class Logger {
 	public static void setLOG_DIR(String log_dir) {
 		LOG_DIR =  log_dir;
 	}
+	
+	public static void setDebugLevel(int level) {
+		C.DEBUG_LEVEL = level;
+	}
 }

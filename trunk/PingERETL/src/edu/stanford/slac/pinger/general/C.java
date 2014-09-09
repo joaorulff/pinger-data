@@ -175,9 +175,7 @@ public final class C {
 	 * level > 0 prints in console.
 	 * @param level
 	 */
-	public static void setDebugLevel(int level) {
-		DEBUG_LEVEL = level;
-	}
+	
 
 }
 
