@@ -14,8 +14,8 @@ public class GenerateERelation {
 			args = new String[]{
 				"debug=0",
 				//C:\Users\Renan\Dropbox\PendriveOnline\_Mestrado\WfC\WfETL\exp\csvDownloader\0\.\downloadedCSV\allyearly_pinger.slac.stanford.edu_100_throughput.csv
-				//"activityTag=csvDownloader,extractorFile=c:/extractor/file.txt,fields=METRIC;TICK;MONITOR;CSV_FILE,inputDataset=throughput;allyearly;pinger.slac.stanford.edu,downloadedCSVDirectory=./downloadedCSV"
-				"activityTag=transform,extractorFile=./ERelation.txt,fields=YEAR;MONTH;METRIC;TICK;MONITOR;TRANSFORMED_FILE,inputDataset=2014;minimum_rtt;daily;pinger.nwfpuet.edu.pk,transformedFilesDirectory=/C:/Users/Renan/Dropbox/PendriveOnline/_Mestrado/WfC/WfETL/exp/_shared/downloadedCSV"
+				"activityTag=csvDownloader,extractorFile=c:/extractor/file.txt,fields=YEAR;MONTH;METRIC;TICK;MAXATTEMPT;TIMEOUT;CSV_FILE,inputDataset=2008;02;throughput;hourly;35;500,downloadedCSVDirectory=./downloadedCSV"
+				//"activityTag=transform,extractorFile=./ERelation.txt,fields=YEAR;MONTH;METRIC;TICK;MONITOR;TRANSFORMED_FILE,inputDataset=2014;02;minimum_rtt,transformedFilesDirectory=/C:/Users/Renan/Dropbox/PendriveOnline/_Mestrado/WfC/WfETL/exp/_shared/downloadedCSV"
 			};
 		}	
 		start(args);
@@ -79,10 +79,10 @@ public class GenerateERelation {
 		}
 
 		String year = separatedInputDataset[0];
-		String metric = separatedInputDataset[1];
-		String tick = separatedInputDataset[2];
-		String monitor = separatedInputDataset[3];
-		String filePath = dir.getPath() + File.separator + Utils.getFileNameBeginning(tick, metric, year, monitor) + "_MonthNumber.csv";
+		String month = separatedInputDataset[1];
+		String metric = separatedInputDataset[2];
+		String tick = separatedInputDataset[3];
+		String filePath = dir.getPath() + File.separator + Utils.getFileNameBeginningHourly(tick, metric, year, month) + "_DayNumber.csv";
 
 		StringBuilder sb = new StringBuilder();
 		sb.append(fields + "\n");

@@ -378,6 +378,20 @@ public class Utils {
 			return fileNameBeginning;
 		}
 	}
+	
+	private static String fileNameBeginningHourly;
+	public static String getFileNameBeginningHourly(String tick, String metric, String year, String month) {
+		if (fileNameBeginningHourly!=null) {
+			return fileNameBeginningHourly;
+		} else {
+			if (tick != null && metric != null && year != null) {
+				fileNameBeginningHourly = year + "_" + month + "_" + metric + "_" +  tick;
+			} else {
+				fileNameBeginningHourly = "n_";
+			}
+			return fileNameBeginningHourly;
+		}
+	}
 
 	private static JsonObject countriesJson;
 	public static JsonObject getCountriesJson() {
