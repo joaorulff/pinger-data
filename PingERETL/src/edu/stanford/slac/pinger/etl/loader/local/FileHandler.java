@@ -98,7 +98,7 @@ public class FileHandler  {
 		fileContentSize = 0;
 		currentFileIndex = 1;
 		currentFilePath = transformedFilesDirectory+getFileName();
-		Utils.createFileGrantingPermissions(currentFilePath);
+		//Utils.createFileGrantingPermissions(currentFilePath);
 		
 		CUT_HEAP_MEMORY = (int) (Runtime.getRuntime().freeMemory()/C.CUT_HEAP_COEF); //divided by 2 is the standard.. divided by 10 generates lots of files of ~ 13 MB
 		CUT_HD = C.CUT_HD;

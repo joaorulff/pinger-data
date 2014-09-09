@@ -8,6 +8,7 @@ import com.google.gson.JsonArray;
 import edu.stanford.slac.pinger.etl.loader.local.FileHandler;
 import edu.stanford.slac.pinger.etl.transformer.CSVProcessorFromFile;
 import edu.stanford.slac.pinger.etl.transformer.PingMeasurementCSVBuilder;
+import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
@@ -53,7 +54,7 @@ public class TransformAndSavePingtableCSV {
 		try {
 			monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
 		} catch (Exception e) {
-			Logger.error("Error code: 05 - Could not find monitor node " + monitorNode);
+			Logger.error("Could not find monitor node " + monitorNode, ErrorCode.MONITOR_DETAILS);
 			return;
 		}
 		CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode); 

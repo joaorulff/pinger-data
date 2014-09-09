@@ -4,6 +4,7 @@ import java.io.File;
 
 import com.google.gson.JsonObject;
 
+import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.rest.HttpGetter;
@@ -30,15 +31,19 @@ public class PingtableCSVDownloader {
 		this.packetSize = packetSize;
 	}
 	public void run() {
-		JsonObject monitoringNodeDetails = null;
-		try {
-			monitoringNodeDetails = Utils.getNodeDetails().get(monitorNode).getAsJsonObject();
-		} catch (Exception e) {
-			Logger.log("Error with " + monitorNode, e, "errors");
-			return;
+		if (month==null) {
+			JsonObject monitoringNodeDetails = null;
+			try {
+				monitoringNodeDetails = Utils.getNodeDetails().get(monitorNode).getAsJsonObject();
+			} catch (Exception e) {
+				Logger.log("Error with " + monitorNode, e, "errors");
+				return;
+			}
+			String fromNickName =  monitoringNodeDetails.get("NodeNickName").getAsString();
+			getPingtableAndWriteTSVFileDaily(fromNickName);
 		}
-		String fromNickName =  monitoringNodeDetails.get("NodeNickName").getAsString();
-		getPingtableAndWriteTSVFileDaily(fromNickName);
+		else
+			getPingtableAndWriteTSVFileHourly(null);
 	}
 
 	private void getPingtableAndWriteTSVFileDaily(String fromNickName) {
@@ -51,7 +56,7 @@ public class PingtableCSVDownloader {
 							"from="+fromNickName+"&"+
 							"to=WORLD&" +
 							"ex=none&only=all&dataset=hep&percentage=any&dnode=on&"+
-							"tick="+tickParameter+"&"+
+							"tick=hourly&"+
 							"year="+year+"&"+
 							"month="+month;
 
@@ -77,6 +82,44 @@ public class PingtableCSVDownloader {
 		}
 	}
 
+	private void getPingtableAndWriteTSVFileHourly(String fromNickName) {
+		for (String day : Utils.getDaysOfAMonth(year, month)) {
+			String url =     	
+					"http://www-wanmon.slac.stanford.edu/cgi-wrap/pingtable.pl?format=tsv&"+
+							"file="+metric+"&"+
+							"by=by-node&" +
+							"size="+packetSize+"&"+
+							"from=WORLD&"+
+							"to=WORLD&" +
+							"ex=none&only=all&dataset=hep&percentage=any&dnode=on&"+
+							"tick="+tickParameter+"&"+
+							"year="+year+"&"+
+							"month="+month+"&"+
+							"day="+day;
+
+
+			String htmlContent = getPingTableTSV(url);
+			if (htmlContent == null) {
+				//Logger.log("Warning! Could not get TSV file for the URL: " + url, "errors");
+				continue;
+			}
+			File downloadedDir = new File(downloadedCSVDirectory);
+			if (!downloadedDir.exists()) {
+				downloadedDir.mkdirs();
+			}
+			downloadedCSVDirectory = downloadedDir.getAbsolutePath() + File.separator;
+			String dirPath = downloadedCSVDirectory;
+			File dir = new File(dirPath);
+			if (!dir.exists()) {
+				dir.mkdirs();
+			}
+			String filePath = dirPath + year + "_" + month +  "_" + metric + "_" + tickParameter + "_" + day +".csv";
+			Utils.createFileGrantingPermissions(filePath);
+			Utils.writeIntoFile(htmlContent, filePath);
+		}
+	}
+
+	
 	@Deprecated
 	private void getPingtableAndWriteTSVFileOriginal(String fromNickName) {
 		String url =     	
@@ -113,7 +156,7 @@ public class PingtableCSVDownloader {
 		HttpGetter httpGetter = new HttpGetter(Integer.parseInt(maxattempt), Integer.parseInt(timeout));
 		String s = httpGetter.readPageConstrained(URL);
 		if (s != null && s.contains(">Sorry<")){
-			Logger.error("Error code 02: Sorry message appeared in the URL: " + URL);
+			Logger.error("Sorry message appeared in the URL: " + URL, ErrorCode.SORRY_MESSAGE);
 			return null;
 		} else if (s==null) return null;
 		else return s;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
+import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 
@@ -34,7 +35,7 @@ public class CSVProcessorFromFile {
 		String filePath = inputDir + Utils.getFileNameBeginning(tick, metric, year, monitor) +"_"+month+".csv";
 		String csv = Utils.readFile(filePath);
 		if (csv==null) {
-			Logger.error("Error code 01: File does not exist: " + filePath);
+			Logger.error("File does not exist: ", ErrorCode.FILE_DOESNT_EXIST);
 			return null;
 		}
 		String []lines = csv.split("\n");

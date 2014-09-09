@@ -11,6 +11,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import edu.stanford.slac.pinger.general.C;
+import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 
 public class HttpGetter {
@@ -53,7 +54,7 @@ public class HttpGetter {
 				}
 			}
 		}
-		Logger.error("Error code: 01; Maximum attempts exceeded to access the URL " + URL);
+		Logger.error("Maximum attempts exceeded to access the URL ", ErrorCode.UNREACHED);
 		return null;
 	}
 	
@@ -87,7 +88,7 @@ public class HttpGetter {
 				}
 			}
 		}
-		Logger.error("Error code: 01; Maximum attempts exceeded to access the URL " + URL);
+		Logger.error("Maximum attempts exceeded to access the URL " + URL, ErrorCode.UNREACHED);
 		return null;
 	}
 

@@ -11,6 +11,7 @@ import edu.stanford.slac.pinger.beans.MetricBean;
 import edu.stanford.slac.pinger.beans.PingMeasurementBean;
 import edu.stanford.slac.pinger.etl.loader.local.FileHandler;
 import edu.stanford.slac.pinger.general.C;
+import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.MeasurementUtils;
 import edu.stanford.slac.pinger.general.utils.Utils;
@@ -53,7 +54,7 @@ public class PingMeasurementCSVBuilder {
 			sourceContinentId = Integer.parseInt(ContinentBean.MAP.get(
 					continentInitials).getId());
 		} catch (Exception e) {
-			Logger.error("Error code: 03 - Tried to get details about " + monitoring, e, "errors");
+			Logger.error("Tried to get details about " + monitoring, ErrorCode.MONITOR_DETAILS);
 			return;
 		}
 
@@ -82,8 +83,7 @@ public class PingMeasurementCSVBuilder {
 						.get(continentInitials).getId());
 
 			} catch (Exception e) {
-				Logger.error("Error code: 03 - Tried to get details about " + monitored, e,
-						"errors");
+				Logger.error("Tried to get details about " + monitored, ErrorCode.MONITOR_DETAILS);
 				continue;
 			}
 			instantiate(fileHandler, timeVal, sourceId, sourceCountryId,
@@ -113,14 +113,14 @@ public class PingMeasurementCSVBuilder {
 		try {
 			mapMetricBean = MeasurementUtils.mapMetricBean;
 		} catch (Exception e) {
-			Logger.error("Error code: 02 - Error when getting map.", e);
+			Logger.error("Error when getting map.", ErrorCode.MAP_ERROR);
 			System.exit(-1);
 		}
 		MetricBean metricBean = null;
 		try {
 			metricBean = mapMetricBean.get(metric);
 		} catch (Exception e) {
-			Logger.error("Error code: 02 - Error when getting Metric Bean.", e);
+			Logger.error("Error when getting Metric Bean.", ErrorCode.MAP_ERROR);
 			System.exit(-1);
 		}
 
@@ -142,7 +142,7 @@ public class PingMeasurementCSVBuilder {
 			try {
 				timeFromDaysJson = Long.parseLong(days.get(time).getAsString());
 			} catch (Exception e) {
-				Logger.error("Error code: 04 - " + time + " is not a valid time.");
+				Logger.error(time + " is not a valid time.", ErrorCode.TIME_FORMAT);
 				continue;
 			}
 
