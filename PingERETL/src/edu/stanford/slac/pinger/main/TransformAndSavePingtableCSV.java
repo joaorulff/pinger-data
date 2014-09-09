@@ -19,16 +19,13 @@ public class TransformAndSavePingtableCSV {
 		if (args.length == 0) {
 			args = new String[]{
 					"debug=0",
-					"transformFile=1,inputDir=/home/renan/Documents/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
+					"transformFile=1,inputDir=C:/Users/Renan/Desktop/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
 			};
 		}		
 		start(args);
 	}
 
 	public static void transformFile(String arg) {
-
-		
-		
 		String ags[] = arg.split(",");
 		String inputDir = null;
 		String monitorNode = null;	
@@ -51,11 +48,16 @@ public class TransformAndSavePingtableCSV {
 				transformedFilesDirectory = ag.replace("transformedFilesDirectory=", "").trim();				
 			} 
 		}
-		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode); 
-		JsonArray monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
-
+		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode);
+		JsonArray monitoredArr = null;
+		try {
+			monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
+		} catch (Exception e) {
+			Logger.error("Error code: 05 - Could not find monitor node " + monitorNode);
+			return;
+		}
 		CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode); 
-		
+
 		ArrayList<HashMap<String,HashMap<String, String>>> monthsInAnYearMaps = csvProcessor.getMonthsInAnYearMaps();
 
 		for (HashMap<String,HashMap<String, String>> map : monthsInAnYearMaps) {

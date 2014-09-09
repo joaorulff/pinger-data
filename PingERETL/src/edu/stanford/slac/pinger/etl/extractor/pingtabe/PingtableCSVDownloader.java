@@ -15,12 +15,14 @@ import edu.stanford.slac.pinger.rest.HttpGetter;
  */
 public class PingtableCSVDownloader {
 
-	private String metric, tickParameter, year, month;
+	private String metric, tickParameter, year, month, maxattempt, timeout;
 	private String monitorNode, packetSize;
 	private String downloadedCSVDirectory;
-	public PingtableCSVDownloader(String downloadedCSVDirectory, String monitorNode, String metric, String packetSize, String tickParameter, String year, String month) {
+	public PingtableCSVDownloader(String downloadedCSVDirectory, String monitorNode, String metric, String packetSize, String tickParameter, String year, String month, String maxattempt, String timeout) {
 		this.year = year;
 		this.month = month;
+		this.maxattempt = maxattempt;
+		this.timeout = timeout;
 		this.downloadedCSVDirectory = downloadedCSVDirectory;
 		this.tickParameter = tickParameter;
 		this.metric = metric;
@@ -106,9 +108,10 @@ public class PingtableCSVDownloader {
 		Utils.createFileGrantingPermissions(filePath);
 		Utils.writeIntoFile(htmlContent, filePath);
 	}
-	private static String getPingTableTSV(String URL) {
+	private String getPingTableTSV(String URL) {
 		Logger.log(URL);
-		String s = HttpGetter.readPage(URL);
+		HttpGetter httpGetter = new HttpGetter(Integer.parseInt(maxattempt), Integer.parseInt(timeout));
+		String s = httpGetter.readPageConstrained(URL);
 		if (s != null && s.contains(">Sorry<")){
 			Logger.error("Error code 02: Sorry message appeared in the URL: " + URL);
 			return null;

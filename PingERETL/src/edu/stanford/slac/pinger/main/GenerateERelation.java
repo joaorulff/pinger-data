@@ -15,7 +15,7 @@ public class GenerateERelation {
 				"debug=0",
 				//C:\Users\Renan\Dropbox\PendriveOnline\_Mestrado\WfC\WfETL\exp\csvDownloader\0\.\downloadedCSV\allyearly_pinger.slac.stanford.edu_100_throughput.csv
 				//"activityTag=csvDownloader,extractorFile=c:/extractor/file.txt,fields=METRIC;TICK;MONITOR;CSV_FILE,inputDataset=throughput;allyearly;pinger.slac.stanford.edu,downloadedCSVDirectory=./downloadedCSV"
-				"activityTag=csvDownloader,extractorFile=./ERelation.txt,fields=YEAR;MONTH;METRIC;TICK;MONITOR;CSV_FILE,inputDataset=2014;04;minimum_rtt;daily;pinger.nwfpuet.edu.pk,downloadedCSVDirectory=/C:/Users/Renan/Dropbox/PendriveOnline/_Mestrado/WfC/WfETL/exp/_shared/downloadedCSV"
+				"activityTag=transform,extractorFile=./ERelation.txt,fields=YEAR;MONTH;METRIC;TICK;MONITOR;TRANSFORMED_FILE,inputDataset=2014;minimum_rtt;daily;pinger.nwfpuet.edu.pk,transformedFilesDirectory=/C:/Users/Renan/Dropbox/PendriveOnline/_Mestrado/WfC/WfETL/exp/_shared/downloadedCSV"
 			};
 		}	
 		start(args);

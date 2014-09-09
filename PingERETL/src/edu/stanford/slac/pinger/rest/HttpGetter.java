@@ -15,9 +15,48 @@ import edu.stanford.slac.pinger.general.Logger;
 
 public class HttpGetter {
 
-	private static final int MAX_ATTEMPT = 35;
-	private static final int TIMEOUT = 5000; //ms
+	private static final int MAX_ATTEMPT = 50;
+	private static final int TIMEOUT = 6000; //ms
 
+	private int maxAttempt, timeOut;
+	public HttpGetter(int maxAttempt, int timeOut) {
+		this.maxAttempt = maxAttempt;
+		this.timeOut = timeOut;
+	}
+	public String readPageConstrained(String URL) {
+		int attempt = 0;
+		while (attempt++ < maxAttempt) {
+			BufferedReader in = null;
+			try {
+				URL url = new URL(URL);
+				URLConnection con = url.openConnection();
+				con.setConnectTimeout(timeOut);
+				in = new BufferedReader(new InputStreamReader(con.getInputStream(),"UTF-8"));
+				StringBuffer sb = new StringBuffer();
+				int read;
+				char[] cbuf = new char[1024];
+				while ((read = in.read(cbuf)) != -1)
+					sb.append(cbuf, 0, read);
+				String s = sb.toString();
+				return s;
+			}
+			catch (Exception e){				
+				Logger.log("Attempt " + attempt + " to access URL: "+ URL + " timed out.", e);
+				continue;
+			}finally {
+				if (in != null) {
+					try {
+						in.close();
+					} catch (IOException e) {
+						Logger.log("readPage", e);
+					}
+				}
+			}
+		}
+		Logger.error("Error code: 01; Maximum attempts exceeded to access the URL " + URL);
+		return null;
+	}
+	
 	public static String readPage(String URL) {
 		int attempt = 0;
 		while (attempt++ < MAX_ATTEMPT) {
