@@ -16,6 +16,7 @@ import edu.stanford.slac.pinger.general.utils.Utils;
 public class CreateMonitoringMonitoredJson {	
 
 	public static void generateMonitoringMonitoredJSON() {
+		Logger.setDebugLevel(1);
 		JsonObject MonitoringNodes = new JsonObject();
 		ArrayList<String> sourceList = NodesUtils.getSourceNodes();
 		if (sourceList==null) {

@@ -68,6 +68,11 @@ public final class Logger {
 		_log("ERROR: " + msg, LOG_DIR+FILE_PREFIX+"err1.txt",true, null);
 	}
 
+	public static void error(Object msg, int errCode) {
+		_log("ERROR CODE: " + errCode + " - " + msg, LOG_DIR+FILE_PREFIX+"err1.txt",true, null);
+	}
+
+	
 	public static void error(Object msg, Exception e) {
 		_log("ERROR: " + msg, LOG_DIR+FILE_PREFIX+"err1.txt",true, e);
 	}

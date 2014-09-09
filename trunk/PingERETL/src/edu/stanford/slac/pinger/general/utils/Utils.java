@@ -4,7 +4,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,6 +23,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 
 import edu.stanford.slac.pinger.general.C;
+import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 
 public class Utils {
@@ -254,6 +259,11 @@ public class Utils {
 		return ret;	
 	}
 
+	public static String removeLastCharacterFromString(String s) {
+		if (s.length()==0) return s;
+		else return s.substring(0, s.length()-1);
+	}
+
 	private static JsonObject NODE_DETAILS = null;
 	public static JsonObject getNodeDetails() {
 		if (NODE_DETAILS==null) {
@@ -311,6 +321,26 @@ public class Utils {
 		return date;
 	}
 
+	public static ArrayList<String> getDaysOfAMonth(String yyyy, String mm) {
+		try {
+			String dd = "01";
+			String defaultDateStr = mm + "/" + dd + "/" + yyyy;
+			SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+			Date defaultDate = sdf.parse(defaultDateStr);
+			Calendar cal = new GregorianCalendar();
+			cal.setTime(defaultDate);
+			int maximumOfDaysInTheMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+			ArrayList<String> daysOfMonth = new ArrayList<String>();
+			for (int i = 1; i <= maximumOfDaysInTheMonth; i++) {
+				daysOfMonth.add((i < 10)?"0"+i:""+i);
+			}
+			return daysOfMonth;
+		} catch (Exception e) {
+			Logger.error("" + mm + " or " + yyyy + " are not valid parameters.", ErrorCode.DATE_FORMAT);
+			return null;
+		}
+	}
+	
 	public static String getCurrentMethodName() {
 		try {
 			return Thread.currentThread().getStackTrace()[2].getMethodName(); //shows name of the function which called this function

@@ -17,7 +17,7 @@ public class GetPingtableCSV {
 					 *debug=-1 -> only critical errors 
 					 */
 					"debug=0",
-					"downlaodCSVFiles=1,downloadedCSVDirectory=c:\\downloadedCSV,monitorNodes=[airuniversity.seecs.edu.pk],metrics=[alpha],ticks=[daily],years=[2007],timeout=[2000],maxattempt=[35]",
+					"downlaodCSVFiles=1,downloadedCSVDirectory=c:\\downloadedCSV,metrics=[alpha],ticks=[hourly],years=[2007],months=[01],timeout=[2000],maxattempt=[35]",
 			};
 		}		
 
@@ -50,7 +50,7 @@ public class GetPingtableCSV {
 		String months[] = null;
 		String timeouts[] = null;
 		String maxattempts[] = null;
-		String monitorNodes[] = null;
+		String monitorNodes[] = {""};
 		String downloadedCSVDirectory = null;
 		for (String ag : ags) {
 			if (ag.contains("metrics")) {
@@ -90,14 +90,15 @@ public class GetPingtableCSV {
 		Logger.FILE_PREFIX += Arrays.toString(metrics).replace("[", "").replace("]", "").replace(", ", "_") + "_";
 		Logger.FILE_PREFIX += Arrays.toString(ticks).replace("[", "").replace("]", "").replace(", ", "_") + "_";
 
+		String month = months.length>0?months[0]:null;
+		
 		for (String monitorNode : monitorNodes)  
 			for (String metric : metrics) 
 				for (String tick : ticks)
 					for (String year : years)
 						for (String maxattempt : maxattempts) 
 							for (String timeout : timeouts) {
-								Logger.log("Downloading CSV files for " + metric + " " + tick );
-								PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, null, maxattempt, timeout);
+								PingtableCSVDownloader pingtableCSVDownloader = new PingtableCSVDownloader(downloadedCSVDirectory, monitorNode, metric, C.DEFAULT_PACKET_SIZE, tick, year, month, maxattempt, timeout);
 								pingtableCSVDownloader.run();
 							}
 

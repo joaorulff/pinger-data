@@ -42,12 +42,12 @@ public class GenerateInputDataset {
 		
 		ArrayList<String> sourceNodes = NodesUtils.getSourceNodes();
 
-		String tick = "daily";
+		String tick = "hourly";
 		StringBuilder output = new StringBuilder();
-		output.append("YEAR;METRIC;TICK;MONITOR;MAXATTEMPT;TIMEOUT\n");
+		output.append("YEAR;MONTH;METRIC;TICK;MAXATTEMPT;TIMEOUT\n");
 		//output.append("YEAR;METRIC;TICK;MONITOR\n");
 		ArrayList<String> years = new ArrayList<String>();
-		for (int i = 2003; i <= 2014; i++) {
+		for (int i = 1998; i <= 2014; i++) {
 			years.add(i+"");
 		}
 		
@@ -57,11 +57,9 @@ public class GenerateInputDataset {
 		for (String year : years) 
 			for (String metric : MeasurementUtils.METRICS)
 				//for (String tick : MeasurementUtils.TICKS)
-				//for (String month : Utils.getMonths()) 
-					for (String monitor : sourceNodes) {
-						output.append(year+";"+metric+";"+tick+";"+monitor+";"+MAXATTEMPT+";"+TIMEOUT+"\n");
+				for (String month : Utils.getMonths()) 
+						output.append(year+";"+month+";"+metric+";"+tick+";"+MAXATTEMPT+";"+TIMEOUT+"\n");
 						//output.append(year+";"+metric+";"+tick+";"+monitor+"\n");
-					}
 
 		Utils.writeIntoFile(output.toString(), inputDatasetFile);
 
