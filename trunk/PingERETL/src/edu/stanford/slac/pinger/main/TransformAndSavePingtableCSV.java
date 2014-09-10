@@ -20,7 +20,8 @@ public class TransformAndSavePingtableCSV {
 		if (args.length == 0) {
 			args = new String[]{
 					"debug=0",
-					"transformFile=1,inputDir=C:/Users/Renan/Desktop/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
+					//"transformFile=1,inputDir=C:/Users/Renan/Desktop/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
+					"transformFile=1,inputDir=C:/Users/Renan/Documents/Sample/Sample,transformedFilesDirectory=./transformedFiles,metric=maximum_rtt,tick=hourly,year=1998,month=01",
 			};
 		}		
 		start(args);
@@ -34,6 +35,7 @@ public class TransformAndSavePingtableCSV {
 		String tickParameter = null;
 		String transformedFilesDirectory = null;
 		String year = null;
+		String month = null;
 		for (String ag : ags) {
 			if (ag.contains("metric")) {
 				metric = ag.replace("metric=", "").trim();
@@ -43,12 +45,18 @@ public class TransformAndSavePingtableCSV {
 				tickParameter = ag.replace("tick=", "").trim();
 			} else if (ag.contains("year")) {
 				year = ag.replace("year=", "").trim();
-			}  else if (ag.contains("monitorNode")) {
+			} else if (ag.contains("month")) {
+				month = ag.replace("month=", "").trim();
+			} else if (ag.contains("monitorNode")) {
 				monitorNode = ag.replace("monitorNode=", "").trim();				
 			} else if (ag.contains("transformedFilesDirectory")) {
 				transformedFilesDirectory = ag.replace("transformedFilesDirectory=", "").trim();				
 			} 
 		}
+		if (tickParameter.equals("hourly")) {
+			startHourly(transformedFilesDirectory, metric, year, month);
+		} else {
+		
 		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode);
 		JsonArray monitoredArr = null;
 		try {
@@ -66,7 +74,14 @@ public class TransformAndSavePingtableCSV {
 			measurement.run();
 		}
 		outputFileHandler.writeContentAndClean();
+		
+		}
 
+	}
+	
+	public static void startHourly(String transformedFilesDirectory, String metric, String year, String month) {
+		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, metric, year, month, true);
+		//CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode);
 	}
 
 	public static void start(String[] args) {	

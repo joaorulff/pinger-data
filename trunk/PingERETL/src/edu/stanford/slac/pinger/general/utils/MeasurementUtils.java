@@ -21,7 +21,6 @@ public final class MeasurementUtils {
 	};
 	
 	public static String[] METRICS = {
-		/*
 		"throughput",
 		"packet_loss",
 		"average_rtt",
@@ -33,13 +32,14 @@ public final class MeasurementUtils {
 		"unreachability",
 		"zero_packet_loss_frequency",
 		"minimum_rtt",
-		*/
-		
+
+		/*
 		"iqr",
 		"maximum_rtt",
 		"minimum_packet_loss",
 		"out_of_order_packets",
 		"unpredictability",
+		*/
 	};
 	
 	public static HashMap<String,MetricBean> mapMetricBean = null;
