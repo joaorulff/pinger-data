@@ -11,7 +11,8 @@ import edu.stanford.slac.pinger.general.utils.Utils;
 public class CSVProcessorFromFile {
 
 	private String inputDir;
-	private String year, metric, tick, monitor;
+	private String year, month, metric, tick, monitor;
+	private boolean isHourly;
 	
 	public CSVProcessorFromFile(String inputDir, String year, String metric, String tick, String monitor) {
 		this.inputDir = inputDir;
@@ -19,6 +20,15 @@ public class CSVProcessorFromFile {
 		this.metric = metric;
 		this.tick = tick;
 		this.monitor = monitor;
+	}
+	
+	public CSVProcessorFromFile(String inputDir, String year, String metric, String tick, String month, boolean isHourly) {
+		this.inputDir = inputDir;
+		this.year = year;
+		this.metric = metric;
+		this.tick = tick;
+		this.month = month;
+		this.isHourly = isHourly;
 	}
 	
 	public ArrayList<HashMap<String,HashMap<String, String>>> getMonthsInAnYearMaps() {
