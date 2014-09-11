@@ -6,13 +6,14 @@ import java.util.HashMap;
 import com.google.gson.JsonArray;
 
 import edu.stanford.slac.pinger.etl.loader.local.FileHandler;
+import edu.stanford.slac.pinger.etl.loader.local.FileHandlerHourly;
 import edu.stanford.slac.pinger.etl.transformer.CSVProcessorFromFile;
+import edu.stanford.slac.pinger.etl.transformer.PingHourlyMeasurementCSVBuilder;
 import edu.stanford.slac.pinger.etl.transformer.PingMeasurementCSVBuilder;
 import edu.stanford.slac.pinger.general.ErrorCode;
 import edu.stanford.slac.pinger.general.Logger;
 import edu.stanford.slac.pinger.general.utils.Utils;
 import edu.stanford.slac.pinger.main.commons.MainCommons;
-import edu.stanford.slac.pinger.main.pre.CreateNodeDetailsJson;
 
 public class TransformAndSavePingtableCSV {
 
@@ -21,7 +22,7 @@ public class TransformAndSavePingtableCSV {
 			args = new String[]{
 					"debug=0",
 					//"transformFile=1,inputDir=C:/Users/Renan/Desktop/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
-					"transformFile=1,inputDir=C:/Users/Renan/Documents/Sample/Sample,transformedFilesDirectory=./transformedFiles,metric=maximum_rtt,tick=hourly,year=1998,month=01",
+					"transformFile=1,inputDir=C:/Users/Renan/Documents/Sample/Sample/,transformedFilesDirectory=./transformedFiles,metric=iqr,tick=hourly,year=1998,month=01",
 			};
 		}		
 		start(args);
@@ -54,34 +55,36 @@ public class TransformAndSavePingtableCSV {
 			} 
 		}
 		if (tickParameter.equals("hourly")) {
-			startHourly(transformedFilesDirectory, metric, year, month);
+			startHourly(transformedFilesDirectory, inputDir, metric, year, month, tickParameter);
 		} else {
-		
-		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode);
-		JsonArray monitoredArr = null;
-		try {
-			monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
-		} catch (Exception e) {
-			Logger.error("Could not find monitor node " + monitorNode, ErrorCode.MONITOR_DETAILS);
-			return;
-		}
-		CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode); 
 
-		ArrayList<HashMap<String,HashMap<String, String>>> monthsInAnYearMaps = csvProcessor.getMonthsInAnYearMaps();
+			FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode);
+			JsonArray monitoredArr = null;
+			try {
+				monitoredArr = Utils.getMonitorMonitoredJSON().get(monitorNode).getAsJsonArray();
+			} catch (Exception e) {
+				Logger.error("Could not find monitor node " + monitorNode, ErrorCode.MONITOR_DETAILS);
+				return;
+			}
+			CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode); 
 
-		for (HashMap<String,HashMap<String, String>> map : monthsInAnYearMaps) {
-			PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, tickParameter, year, null);
-			measurement.run();
-		}
-		outputFileHandler.writeContentAndClean();
-		
+			ArrayList<HashMap<String,HashMap<String, String>>> monthsInAnYearMaps = csvProcessor.getMonthsInAnYearMaps();
+
+			for (HashMap<String,HashMap<String, String>> map : monthsInAnYearMaps) {
+				PingMeasurementCSVBuilder measurement = new PingMeasurementCSVBuilder(outputFileHandler, monitorNode, map, monitoredArr, metric, tickParameter, year, null);
+				measurement.run();
+			}
+			outputFileHandler.writeContentAndClean();
+
 		}
 
 	}
-	
-	public static void startHourly(String transformedFilesDirectory, String metric, String year, String month) {
-		FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, metric, year, month, true);
-		//CSVProcessorFromFile csvProcessor = new CSVProcessorFromFile(inputDir, year, metric, tickParameter, monitorNode);
+
+	public static void startHourly(String transformedFilesDirectory, String inputDir, String metric, String year, String month, String tick) {
+		FileHandlerHourly outputFileHandler = new FileHandlerHourly(transformedFilesDirectory, tick, metric, year, month);
+		PingHourlyMeasurementCSVBuilder csvBuilder = new PingHourlyMeasurementCSVBuilder(outputFileHandler, inputDir, year, month, metric, tick);
+		csvBuilder.run();
+		outputFileHandler.writeContentAndClean();
 	}
 
 	public static void start(String[] args) {	
