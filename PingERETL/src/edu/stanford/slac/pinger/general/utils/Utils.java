@@ -2,7 +2,9 @@ package edu.stanford.slac.pinger.general.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.lang.management.ManagementFactory;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,6 +14,7 @@ import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.zip.GZIPInputStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -40,6 +43,28 @@ public class Utils {
 		} finally {
 			try {
 				fis.close();
+			} catch (Exception e) {
+				Logger.log("readFile " + filePath + " ", e, "errors");
+				return null;
+			}
+		}
+	}
+	
+	public static String readGZipFile(String filePath) {
+		InputStream is = null; File f = null;
+		try {
+			f = new File(filePath);
+			is = new GZIPInputStream(new FileInputStream(f));
+			StringWriter writer = new StringWriter();
+			IOUtils.copy(is, writer);
+			String everything = writer.toString();
+			return everything;
+		} catch (Exception e) {
+			Logger.log("FILE NOT FOUND! -- Could not read the file " + f.getAbsolutePath(), e, "fileNotFound");
+			return null;
+		} finally {
+			try {
+				is.close();
 			} catch (Exception e) {
 				Logger.log("readFile " + filePath + " ", e, "errors");
 				return null;

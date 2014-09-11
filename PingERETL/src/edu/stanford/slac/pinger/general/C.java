@@ -77,6 +77,7 @@ public final class C {
 	public static final String MONITORING_MONITORED_JSON_FILE_WWW = "/afs/slac.stanford.edu/g/www/www-iepm/pinger/lod/data/json/MonitoringMonitoredNodes.js";
 	public static final String MONITORING_MONITORED_COUNTRIES_WWW = "/afs/slac.stanford.edu/g/www/www-iepm/pinger/lod/data/json/monitoring_monitored_countries.js";
 
+	public static final String HOURS_JSON = JSON_DIR + "hoursIds.json";
 	public static final String DAYS_JSON = JSON_DIR + "daysIds.json";
 	public static final String MONTHS_JSON = JSON_DIR + "monthsIds.json";
 	public static final String YEARS_JSON = JSON_DIR + "yearsIds.json";
@@ -92,13 +93,14 @@ public final class C {
 	public static final String CONTINENT_CSV = CSV_DIR + "continent.csv";
 	public static final String COUNTRY_CSV = CSV_DIR + "country.csv";
 	public static final String DAY_CSV = CSV_DIR + "day.csv";
+	public static final String YEAR_CSV = CSV_DIR + "year.csv";	
+	public static final String HOUR_CSV = CSV_DIR + "time_hourly.csv";
 	
 	public static final String DESTINATION_NODE_CSV = CSV_DIR + "destination_node.csv";
 	public static final String DESTINATION_SOURCE_NODE_CSV = CSV_DIR + "destination_source_node.csv";
 	public static final String METRIC_CSV = CSV_DIR + "metric.csv";
 	public static final String MONTH_CSV = CSV_DIR + "month.csv";	
 	public static final String SOURCE_NODE_CSV = CSV_DIR + "source_node.csv";
-	public static final String YEAR_CSV = CSV_DIR + "year.csv";	
 	
 	
 	/* *******************************************************

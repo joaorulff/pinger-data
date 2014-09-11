@@ -32,8 +32,6 @@ public class FileHandler  {
 	private String metric;
 	private String year;
 	private String monitor;
-	private String month;
-	private boolean isHourly;
 	
 	public FileHandler(String transformedFilesDirectory, String tick, String metric, String year, String monitor) {
 		this.year = year;
@@ -43,16 +41,6 @@ public class FileHandler  {
 		this.monitor = monitor;
 		start();
 	}
-	
-	public FileHandler(String transformedFilesDirectory, String metric, String year, String month, boolean isHourly) {
-		this.year = year;
-		this.transformedFilesDirectory = transformedFilesDirectory;
-		this.metric = metric;
-		this.month = month;
-		this.isHourly = isHourly;
-		start();
-	}
-	
 	public void addRow(String row) {
 		fileContent.append(row);
 		checkHeap();
