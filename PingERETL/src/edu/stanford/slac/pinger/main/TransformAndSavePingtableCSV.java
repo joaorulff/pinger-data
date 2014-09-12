@@ -22,7 +22,8 @@ public class TransformAndSavePingtableCSV {
 			args = new String[]{
 					"debug=0",
 					//"transformFile=1,inputDir=C:/Users/Renan/Desktop/PingtableData2/,transformedFilesDirectory=./transformedFiles,monitorNode=pinger.slac.stanford.edu,metric=throughput,tick=daily,year=2003",
-					"transformFile=1,inputDir=C:/Users/Renan/Documents/Sample/Sample/,transformedFilesDirectory=./transformedFiles,metric=iqr,tick=hourly,year=1998,month=01",
+					//"transformFile=1,inputDir=C:/Users/Renan/Documents/Sample/Sample/,transformedFilesDirectory=./transformedFiles,metric=iqr,tick=hourly,year=1998,month=01",
+					"transformFile=1,ftpData=1,inputDir=C:/Users/Renan/Documents/archive-average_rtt-100-by-node/archive-average_rtt-100-by-node~/tmp/average_rtt-100-by-node/,transformedFilesDirectory=./transformedFiles,metric=iqr,tick=hourly,year=2010,month=01",
 			};
 		}		
 		start(args);
@@ -37,6 +38,7 @@ public class TransformAndSavePingtableCSV {
 		String transformedFilesDirectory = null;
 		String year = null;
 		String month = null;
+		boolean ftpData = false;
 		for (String ag : ags) {
 			if (ag.contains("metric")) {
 				metric = ag.replace("metric=", "").trim();
@@ -50,12 +52,15 @@ public class TransformAndSavePingtableCSV {
 				month = ag.replace("month=", "").trim();
 			} else if (ag.contains("monitorNode")) {
 				monitorNode = ag.replace("monitorNode=", "").trim();				
+			} else if (ag.contains("ftpData=1")) {
+				ftpData = true;
 			} else if (ag.contains("transformedFilesDirectory")) {
 				transformedFilesDirectory = ag.replace("transformedFilesDirectory=", "").trim();				
 			} 
 		}
+		
 		if (tickParameter.equals("hourly")) {
-			startHourly(transformedFilesDirectory, inputDir, metric, year, month, tickParameter);
+			startHourly(transformedFilesDirectory, inputDir, metric, year, month, tickParameter, ftpData);
 		} else {
 
 			FileHandler outputFileHandler = new FileHandler(transformedFilesDirectory, tickParameter, metric, year, monitorNode);
@@ -80,10 +85,14 @@ public class TransformAndSavePingtableCSV {
 
 	}
 
-	public static void startHourly(String transformedFilesDirectory, String inputDir, String metric, String year, String month, String tick) {
+	public static void startHourly(String transformedFilesDirectory, String inputDir, String metric, String year, String month, String tick, boolean ftpData) {
 		FileHandlerHourly outputFileHandler = new FileHandlerHourly(transformedFilesDirectory, tick, metric, year, month);
-		PingHourlyMeasurementCSVBuilder csvBuilder = new PingHourlyMeasurementCSVBuilder(outputFileHandler, inputDir, year, month, metric, tick);
-		csvBuilder.run();
+		if (ftpData) {
+			
+		} else {
+			PingHourlyMeasurementCSVBuilder csvBuilder = new PingHourlyMeasurementCSVBuilder(outputFileHandler, inputDir, year, month, metric, tick);
+			csvBuilder.run();
+		}
 		outputFileHandler.writeContentAndClean();
 	}
 

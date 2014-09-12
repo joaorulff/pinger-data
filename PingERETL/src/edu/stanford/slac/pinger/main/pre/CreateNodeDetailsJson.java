@@ -15,8 +15,8 @@ import edu.stanford.slac.pinger.general.utils.Utils;
 public class CreateNodeDetailsJson {	
 
 	public static void main(String[] args)  {
-		String nodeDetails = "";
-		String urlContent = "";
+		StringBuilder nodeDetails = new StringBuilder("");
+		StringBuilder urlContent = new StringBuilder("");
 
 		try {
 			URL nodesCfUrl = new URL(C.NODE_DETAILS_CF);
@@ -29,28 +29,28 @@ public class CreateNodeDetailsJson {
 			Boolean descriptionEnding = false;
 
 			while ((inputLine = in.readLine()) != null && descriptionBeginning == false){
-				urlContent += inputLine + "\n";
+				urlContent.append(inputLine + "\n");
 
 				if (inputLine.startsWith("%NODE_DETAILS")){
 					descriptionBeginning = true;
 				}
 			}
 
-			urlContent += inputLine + "\n";
-			nodeDetails += inputLine + "\n";
+			urlContent.append(inputLine + "\n");
+			nodeDetails.append(inputLine + "\n");
 
 			while ((inputLine = in.readLine()) != null && descriptionEnding == false){
-				urlContent += inputLine + "\n";
+				urlContent.append(inputLine + "\n");
 
 				if (inputLine.startsWith(");")){
 					descriptionEnding = true;
 				}else{
-					nodeDetails += inputLine + "\n";
+					nodeDetails.append(inputLine + "\n");
 				}
 			}
 
 			while ((inputLine = in.readLine()) != null){
-				urlContent += inputLine + "\n";
+				urlContent.append(inputLine + "\n");
 			}
 
 			in.close();
@@ -59,7 +59,7 @@ public class CreateNodeDetailsJson {
 			Logger.error(e);
 		}
 
-		String[] eachNodeDetails = nodeDetails.split("],\n\n");	
+		String[] eachNodeDetails = nodeDetails.toString().split("],\n\n");	
 		String[] temp = null;
 		String nodeName = null;
 		String nodeInfo = null;
@@ -68,7 +68,7 @@ public class CreateNodeDetailsJson {
 		String value = null;
 		int nodeID = 0;
 
-		String nodeDetailsContent = "{\n\n";
+		StringBuilder nodeDetailsContent = new StringBuilder("{\n\n");
 
 		Pattern latlongPattern = Pattern.compile("([0-9]+([.][0-9]+)?)([ ]|[\t])([0-9]+([.][0-9]+)?)");
 
@@ -86,40 +86,40 @@ public class CreateNodeDetailsJson {
 					switch (j) {
 					case 0:
 						nodeID++;
-						nodeDetailsContent += "\t" + nodeName + ": {\n"
-								+ "\t\t\"NodeID\":\"" + nodeID + "\",\n"
-								+ "\t\t\"NodeName\":" + nodeName + ",\n"
-								+ "\t\t\"NodeIP\":" + value.substring(1).trim() + "\",\n";	//Ignore the initial "["
+						nodeDetailsContent.append("\t" + nodeName + ": {\n");
+						nodeDetailsContent.append("\t\t\"NodeID\":\"" + nodeID + "\",\n");
+						nodeDetailsContent.append("\t\t\"NodeName\":" + nodeName + ",\n");
+						nodeDetailsContent.append("\t\t\"NodeIP\":" + value.substring(1).trim() + "\",\n");	//Ignore the initial "["
 						break;
 					case 1:
-						nodeDetailsContent += "\t\t\"NodeSiteName\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"NodeSiteName\":" + value + "\",\n");
 						break;
 					case 2:
-						nodeDetailsContent += "\t\t\"NodeNickName\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"NodeNickName\":" + value + "\",\n");
 						break;
 					case 3:
-						nodeDetailsContent += "\t\t\"NodeFullName\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"NodeFullName\":" + value + "\",\n");
 						break;
 					case 4:
-						nodeDetailsContent += "\t\t\"LocationDescription\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"LocationDescription\":" + value + "\",\n");
 						break;
 					case 5:
-						nodeDetailsContent += "\t\t\"Country\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"Country\":" + value + "\",\n");
 						break;
 					case 6:
-						nodeDetailsContent += "\t\t\"Continent\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"Continent\":" + value + "\",\n");
 						break;
 					case 7:
 						try {
 							if (value.contains("\"\"") || value.contains("NOT-SET")) {
-								nodeDetailsContent += "\t\t\"Latitude\":\"\",\n"
-										+ "\t\t\"Longitude\":\"\",\n";
+								nodeDetailsContent.append("\t\t\"Latitude\":\"\",\n");
+								nodeDetailsContent.append("\t\t\"Longitude\":\"\",\n");
 
 							} else {
 								Matcher m = latlongPattern.matcher(value);
 								if( m.matches()) {
-									nodeDetailsContent += "\t\t\"Latitude\":\"" + m.group(1).trim() + "\",\n"
-											+ "\t\t\"Longitude\":\"" + m.group(4).trim() + "\",\n";
+									nodeDetailsContent.append("\t\t\"Latitude\":\"" + m.group(1).trim() + "\",\n");
+									nodeDetailsContent.append("\t\t\"Longitude\":\"" + m.group(4).trim() + "\",\n");
 								}
 							}
 						} catch (Exception e) {
@@ -127,43 +127,43 @@ public class CreateNodeDetailsJson {
 						}
 						break;
 					case 8:
-						nodeDetailsContent += "\t\t\"ProjectType\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"ProjectType\":" + value + "\",\n");
 						break;
 					case 9:
-						nodeDetailsContent += "\t\t\"PingServer\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"PingServer\":" + value + "\",\n");
 						break;
 					case 10:
-						nodeDetailsContent += "\t\t\"TraceServer\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"TraceServer\":" + value + "\",\n");
 						break;
 					case 11:
-						nodeDetailsContent += "\t\t\"DataServer\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"DataServer\":" + value + "\",\n");
 						break;
 					case 12:
-						nodeDetailsContent += "\t\t\"NodeURL\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"NodeURL\":" + value + "\",\n");
 						break;
 					case 13:
-						nodeDetailsContent += "\t\t\"NodeGMT\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"NodeGMT\":" + value + "\",\n");
 						break;
 					case 14:
-						nodeDetailsContent += "\t\t\"Group\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"Group\":" + value + "\",\n");
 						break;
 					case 15:
-						nodeDetailsContent += "\t\t\"AppUser\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"AppUser\":" + value + "\",\n");
 						break;
 					case 16:
-						nodeDetailsContent += "\t\t\"ContactInformation\":" + value + "\",\n";
+						nodeDetailsContent.append("\t\t\"ContactInformation\":" + value + "\",\n");
 						break;
 					case 17:
 						if (value.contains("\n")) {
 							value = value.replace("\n", " ");
 						}
-						nodeDetailsContent += "\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n";	//The last line of node description doesn't end with comma
+						nodeDetailsContent.append("\t\t\"NodeComments\":" + value.substring(0, value.length()-1) + "\n");	//The last line of node description doesn't end with comma
 						break;
 					default:
 						break;
 					}
 				}
-				nodeDetailsContent += "\t},";
+				nodeDetailsContent.append("\t},");
 
 			} catch (Exception e) {
 				Logger.error(e);
@@ -171,11 +171,11 @@ public class CreateNodeDetailsJson {
 			}
 		}	
 
-		nodeDetailsContent = nodeDetailsContent.substring(0,nodeDetailsContent.length()-1);
-		nodeDetailsContent += "\n}";
+		String nodeDetailsContentStr = Utils.removeLastCharacterFromString(nodeDetailsContent.toString());
+		nodeDetailsContentStr += "\n}";
 
-		Utils.writeIntoFile(urlContent, C.PERL_DIR+"nodes.cf");
-		Utils.writeIntoFile(nodeDetailsContent, C.NODEDETAILS_JSON_FILE);
+		Utils.writeIntoFile(urlContent.toString(), C.PERL_DIR+"nodes.cf");
+		Utils.writeIntoFile(nodeDetailsContentStr, C.NODEDETAILS_JSON_FILE);
 
 		try {
 			Utils.getNodeDetails();
