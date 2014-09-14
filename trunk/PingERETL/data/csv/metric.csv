@@ -1,4 +1,3 @@
-#id,display_name,instantiation_mame,default_unit
 1,Throughput,TCPThroughputMeasurement,Kilobitpersec
 2,Packet Loss,PacketLossMeasurement,percent
 3,Average RTT,AverageRoundTripDelayMeasurement,millisecond
@@ -10,4 +9,9 @@
 9,Unreachability,PingUnreachabilityMeasurement,Dimensionless
 10,Zero Packet Loss Frequency,ZeroPacketLossFrequencyMeasurement,percent
 11,Minimum RTT,MinimumRoundTripDelayMeasurement,millisecond
+12,Interquartile Range,SimpleMeasurementIQRMeasurement,millisecond
+13,Maximum RTT,MaximumRoundTripDelayMeasurement,millisecond
+14,Minimum Packet Loss,MinimumPacketLossMeasurement,percent
+15,Packets Out of Order,OutOfOrderPacketsMeasurement,Dimensionless
+16,Unpredictability,PingUnpredictabilityMeasurement,Dimensionless
 
